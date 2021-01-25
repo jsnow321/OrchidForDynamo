@@ -4,6 +4,9 @@ The major number follows the Dynamo version, 130.x.x is usable in Dynamo +1.3.0.
 
 ### History of Orchid for Dynamo 1.3.x ###  
   
+134.7.0  
+- Support for external applications are moved to independent assemblies, this includes support for IfxExport.
+  
 134.6.4  
 - Filters, Schedules and parameter Definitions (project and family parameters) added.  
   

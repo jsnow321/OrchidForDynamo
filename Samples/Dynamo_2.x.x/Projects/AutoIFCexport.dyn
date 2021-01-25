@@ -216,7 +216,7 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.IFC.SettingByName@string",
+      "FunctionSignature": "Orchid.IfcExport.IFC.SettingByName@string",
       "Id": "7a1488d687084f22a761fdc797bd3d6c",
       "Inputs": [
         {
@@ -244,7 +244,7 @@
       "Description": "Ifc export setting, based on the available in the document\n\nIFC.SettingByName (name: string = null): var[]..[]"
     },
     {
-      "ConcreteType": "Orchid.E.RevitProject.Common.IFC.Setting, OrchidRE",
+      "ConcreteType": "Orchid.E.IfcExport.Setting, OrchidIE",
       "SelectedIndex": 9,
       "NodeType": "ExtensionNode",
       "Id": "534e8d9a094e4d5fbab195c3918a5190",
@@ -264,7 +264,7 @@
       "Description": "Dropdown for IFC export setting"
     },
     {
-      "ConcreteType": "Orchid.E.RevitProject.Common.IFC.Version, OrchidRE",
+      "ConcreteType": "Orchid.E.IfcExport.Version, OrchidIE",
       "SelectedIndex": 8,
       "NodeType": "ExtensionNode",
       "Id": "46d53c325e89465bba913f214cad5581",
@@ -326,7 +326,7 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.IFC.SettingGeneral@var,string,string,int,int,bool,bool",
+      "FunctionSignature": "Orchid.IfcExport.IFC.SettingGeneral@var,string,string,int,int,bool,bool",
       "Id": "448c29dfc42d42278501ee853537fa38",
       "Inputs": [
         {
@@ -410,7 +410,7 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.IFC.SettingAdditional@var,bool,bool,bool,bool,int",
+      "FunctionSignature": "Orchid.IfcExport.IFC.SettingAdditional@var,bool,bool,bool,bool,int",
       "Id": "8ca2dbf1872749009c7c867e9c7ebc43",
       "Inputs": [
         {
@@ -483,7 +483,7 @@
       "Description": "Set additional content and level of detail IFC export setting\n\nIFC.SettingAdditional (setting: var, Export2Dplan: bool = false, LinkedFiles: bool = false, VisibleElements: bool = false, RoomsInView: bool = false, LOD: int = 2): var[]..[]"
     },
     {
-      "ConcreteType": "Orchid.E.RevitProject.Common.IFC.FileType, OrchidRE",
+      "ConcreteType": "Orchid.E.IfcExport.FileType, OrchidIE",
       "SelectedIndex": 0,
       "NodeType": "ExtensionNode",
       "Id": "a34677e80fe2429cab0c047a0db6c02e",
@@ -503,7 +503,7 @@
       "Description": "Dropdown for IFC file type"
     },
     {
-      "ConcreteType": "Orchid.E.RevitProject.Common.IFC.LevelOfDetail, OrchidRE",
+      "ConcreteType": "Orchid.E.IfcExport.LevelOfDetail, OrchidIE",
       "SelectedIndex": 2,
       "NodeType": "ExtensionNode",
       "Id": "da24580631bc4fa58a3805da7314c648",
@@ -523,7 +523,7 @@
       "Description": "Dropdown for IFC Level Of Detail"
     },
     {
-      "ConcreteType": "Orchid.E.RevitProject.Common.IFC.SpaceBoundary, OrchidRE",
+      "ConcreteType": "Orchid.E.IfcExport.SpaceBoundary, OrchidIE",
       "SelectedIndex": 1,
       "NodeType": "ExtensionNode",
       "Id": "ddca20980f244f9b94fb99b7a37a79b2",
@@ -545,7 +545,7 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.IFC.SettingProperty@var,bool,bool,bool,bool,bool,bool,string,bool,string",
+      "FunctionSignature": "Orchid.IfcExport.IFC.SettingProperty@var,bool,bool,bool,bool,bool,bool,string,bool,string",
       "Id": "30ea7115058545f2a88f9ea54bfb9106",
       "Inputs": [
         {
@@ -654,7 +654,7 @@
       "Description": "Set Property sets IFC export setting\n\nIFC.SettingProperty (setting: var, revitProperty: bool = false, commonProperty: bool = true, baseQuantities: bool = false, exportSchedules: bool = false, specificSchedules: bool = false, userProperty: bool = false, userPropertyFile: string = null, parameterMapping: bool = false, parameterMappingFile: string = null): var[]..[]"
     },
     {
-      "ConcreteType": "Orchid.E.RevitProject.Common.IFC.SitePlacement, OrchidRE",
+      "ConcreteType": "Orchid.E.IfcExport.SitePlacement, OrchidIE",
       "SelectedIndex": 3,
       "NodeType": "ExtensionNode",
       "Id": "c9221ec0bf0c4ee1801d4fc0682143e0",
@@ -716,7 +716,7 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.IFC.SettingAdvanced@var,bool,bool,bool,bool,bool,bool,bool,bool,bool",
+      "FunctionSignature": "Orchid.IfcExport.IFC.SettingAdvanced@var,bool,bool,bool,bool,bool,bool,bool,bool,bool",
       "Id": "dc446320a9344f6eb28d31e5894aaafd",
       "Inputs": [
         {
@@ -1054,7 +1054,7 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.IFC.Export@Orchid.RevitProject.Common.Document,var,Revit.Elements.Element,Revit.Elements.Element,string,bool",
+      "FunctionSignature": "Orchid.IfcExport.IFC.Export@Orchid.RevitProject.Common.Document,var,Revit.Elements.Element,Revit.Elements.Element,string,bool",
       "Id": "7966bbd888b84e5f9c28d08a88759656",
       "Inputs": [
         {
@@ -1445,7 +1445,7 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.IFC.Export@Orchid.RevitProject.Common.Document,var,Revit.Elements.Element,Revit.Elements.Element,string,bool",
+      "FunctionSignature": "Orchid.IfcExport.IFC.Export@Orchid.RevitProject.Common.Document,var,Revit.Elements.Element,Revit.Elements.Element,string,bool",
       "Id": "34c8aba7ff2a405c95d8dc6f8dac5276",
       "Inputs": [
         {
@@ -1520,7 +1520,7 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.IFC.SettingByName@string",
+      "FunctionSignature": "Orchid.IfcExport.IFC.SettingByName@string",
       "Id": "d907a480130b40e19828c7b0e56e394a",
       "Inputs": [
         {
@@ -1548,7 +1548,7 @@
       "Description": "Ifc export setting, based on the available in the document\n\nIFC.SettingByName (name: string = null): var[]..[]"
     },
     {
-      "ConcreteType": "Orchid.E.RevitProject.Common.IFC.Setting, OrchidRE",
+      "ConcreteType": "Orchid.E.IfcExport.Setting, OrchidIE",
       "SelectedIndex": 1,
       "NodeType": "ExtensionNode",
       "Id": "59f3956acd6f483fb662bd5520f5b9a3",

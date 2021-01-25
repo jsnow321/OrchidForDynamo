@@ -67,13 +67,13 @@
       <PortInfo index="1" default="False" />
       <PortInfo index="2" default="False" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSVarArgFunction>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="be786b59-9b29-45db-b779-6ba6981a6907" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Sigma.Document" x="2109.84523417236" y="344.7338367219" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidRB.dll" function="Orchid.Applications.Sigma.Document@string">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="be786b59-9b29-45db-b779-6ba6981a6907" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Sigma.Document" x="2109.84523417236" y="344.7338367219" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidSigma.dll" function="Orchid.Sigma.Document@string">
       <PortInfo index="0" default="True" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
     <CoreNodeModels.Watch guid="ce8b0b44-e5d1-4c64-b919-d86ae06f710f" type="CoreNodeModels.Watch" nickname="Watch" x="2380.74241531821" y="427.154092306863" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
       <PortInfo index="0" default="False" />
     </CoreNodeModels.Watch>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="3ba92882-72bb-496c-8c86-6c6bc6cb0d08" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Sigma.SetData" x="2380.09651222585" y="239.151217338473" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidRB.dll" function="Orchid.Applications.Sigma.SetData@var,var[]..[],bool,var[]..[]">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="3ba92882-72bb-496c-8c86-6c6bc6cb0d08" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Sigma.SetData" x="2380.09651222585" y="239.151217338473" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidSigma.dll" function="Orchid.Sigma.SetData@var,var[]..[],bool,var[]..[]">
       <PortInfo index="0" default="True" />
       <PortInfo index="1" default="True" />
       <PortInfo index="2" default="True" />
@@ -86,7 +86,7 @@
       <PortInfo index="0" default="False" />
     </CoreNodeModels.Watch>
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="de2bfd59-042e-472a-b65d-3401e8800742" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="2109.34972797238" y="968.598987378496" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="{&quot;(2.)&quot;,&quot;PRIMARY ELEMENTS, CARCASS&quot;};" ShouldFocus="false" />
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="02dfd4ee-e9b5-493d-8b72-12079f2ba75a" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Sigma.Clearing" x="2544.34972797238" y="938.385654045162" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="true" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidRB.dll" function="Orchid.Applications.Sigma.Clearing@var,var[]..[]">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="02dfd4ee-e9b5-493d-8b72-12079f2ba75a" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Sigma.Clearing" x="2544.34972797238" y="938.385654045162" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="true" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidSigma.dll" function="Orchid.Sigma.Clearing@var,var[]..[]">
       <PortInfo index="0" default="True" />
       <PortInfo index="1" default="False" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
@@ -94,7 +94,7 @@
       <PortInfo index="0" default="False" />
     </CoreNodeModels.Watch>
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="b36148bf-474b-41e0-8fa2-ed6d86e2c1c0" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="2108.6021666896" y="1229.23385363421" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="{&quot;(2.)&quot;,&quot;PRIMARY ELEMENTS, CARCASS&quot;};" ShouldFocus="false" />
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="f4cddf45-4059-49a2-a1f3-d55f9fd7701f" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Sigma.Delete" x="2543.6021666896" y="1199.02052030088" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="true" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidRB.dll" function="Orchid.Applications.Sigma.Delete@var,var[]..[]">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="f4cddf45-4059-49a2-a1f3-d55f9fd7701f" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Sigma.Delete" x="2543.6021666896" y="1199.02052030088" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="true" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidSigma.dll" function="Orchid.Sigma.Delete@var,var[]..[]">
       <PortInfo index="0" default="True" />
       <PortInfo index="1" default="False" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
@@ -145,7 +145,7 @@
     <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="cb524771-5f27-4c96-aa7b-b95a4eac7648" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Count" x="-46.6769211407" y="969.454200948164" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="BuiltIn" function="Count@var[]..[]">
       <PortInfo index="0" default="False" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="882f7d18-d4b3-4de3-9455-20501d999847" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Sigma.Component" x="1339.16761976995" y="-69.0848835474796" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidRB.dll" function="Orchid.Applications.Sigma.Component@var[]..[],Revit.Elements.Element[],string,double[],string,double,bool">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="882f7d18-d4b3-4de3-9455-20501d999847" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Sigma.Component" x="1339.16761976995" y="-69.0848835474796" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidSigma.dll" function="Orchid.Sigma.Component@var[]..[],Revit.Elements.Element[],string,double[],string,double,bool">
       <PortInfo index="0" default="False" />
       <PortInfo index="1" default="False" />
       <PortInfo index="2" default="False" />
@@ -154,7 +154,7 @@
       <PortInfo index="5" default="True" />
       <PortInfo index="6" default="True" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="74884007-07ce-4c12-b481-0f72c593c93c" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Sigma.Component" x="1314.41216310138" y="383.68293365171" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidRB.dll" function="Orchid.Applications.Sigma.Component@var[]..[],Revit.Elements.Element[],string,double[],string,double,bool">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="74884007-07ce-4c12-b481-0f72c593c93c" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Sigma.Component" x="1314.41216310138" y="383.68293365171" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidSigma.dll" function="Orchid.Sigma.Component@var[]..[],Revit.Elements.Element[],string,double[],string,double,bool">
       <PortInfo index="0" default="False" />
       <PortInfo index="1" default="False" />
       <PortInfo index="2" default="False" />
@@ -163,7 +163,7 @@
       <PortInfo index="5" default="True" />
       <PortInfo index="6" default="True" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="f2b4a0a9-c031-4bee-86c7-8dc8a0ef25af" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Sigma.Component" x="1356.41558737973" y="834.032260762046" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidRB.dll" function="Orchid.Applications.Sigma.Component@var[]..[],Revit.Elements.Element[],string,double[],string,double,bool">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="f2b4a0a9-c031-4bee-86c7-8dc8a0ef25af" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Sigma.Component" x="1356.41558737973" y="834.032260762046" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidSigma.dll" function="Orchid.Sigma.Component@var[]..[],Revit.Elements.Element[],string,double[],string,double,bool">
       <PortInfo index="0" default="False" />
       <PortInfo index="1" default="False" />
       <PortInfo index="2" default="False" />

@@ -4,6 +4,9 @@ The major number follows the Dynamo version, 200.x.x is usable in Dynamo +2.0.0.
 
 ### History of Orchid for Dynamo 2.0.x ###  
   
+204.2.0  
+- Support for external applications are moved to independent assemblies, this includes support for IfxExport.
+  
 204.1.4  
 - Filters, Schedules and parameter Definitions (project and family parameters) added.  
   

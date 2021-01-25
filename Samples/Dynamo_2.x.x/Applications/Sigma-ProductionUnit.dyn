@@ -986,7 +986,7 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Applications.Sigma.Document@string",
+      "FunctionSignature": "Orchid.Sigma.Document@string",
       "Id": "be786b599b2945dbb7796ba6981a6907",
       "Inputs": [
         {
@@ -1045,7 +1045,7 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Applications.Sigma.SetData@var,var[]..[],bool,var[]..[]",
+      "FunctionSignature": "Orchid.Sigma.SetData@var,var[]..[],bool,var[]..[]",
       "Id": "3ba9288272bb496c8c866c6bc6cb0d08",
       "Inputs": [
         {
@@ -1180,7 +1180,7 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Applications.Sigma.Clearing@var,var[]..[]",
+      "FunctionSignature": "Orchid.Sigma.Clearing@var,var[]..[]",
       "Id": "02dfd4eee9b5493d8b7212079f2ba75a",
       "Inputs": [
         {
@@ -1268,7 +1268,7 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Applications.Sigma.Delete@var,var[]..[]",
+      "FunctionSignature": "Orchid.Sigma.Delete@var,var[]..[]",
       "Id": "f4cddf45405949a2a1f3d55f9fd7701f",
       "Inputs": [
         {
@@ -1815,7 +1815,7 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Applications.Sigma.Component@var[]..[],Revit.Elements.Element[],string,double[],string,double,bool",
+      "FunctionSignature": "Orchid.Sigma.Component@var[]..[],Revit.Elements.Element[],string,double[],string,double,bool",
       "Id": "882f7d18d4b34de3945520501d999847",
       "Inputs": [
         {
@@ -1899,7 +1899,7 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Applications.Sigma.Component@var[]..[],Revit.Elements.Element[],string,double[],string,double,bool",
+      "FunctionSignature": "Orchid.Sigma.Component@var[]..[],Revit.Elements.Element[],string,double[],string,double,bool",
       "Id": "7488400707ce4c12b4810f72c593c93c",
       "Inputs": [
         {
@@ -1983,7 +1983,7 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Applications.Sigma.Component@var[]..[],Revit.Elements.Element[],string,double[],string,double,bool",
+      "FunctionSignature": "Orchid.Sigma.Component@var[]..[],Revit.Elements.Element[],string,double[],string,double,bool",
       "Id": "f2b4a0a9c0314bee86c78dc8a0ef25af",
       "Inputs": [
         {

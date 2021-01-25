@@ -20,16 +20,16 @@
     <CoreNodeModels.Input.BoolSelector guid="7203f3f1-9c02-48da-bc3d-4574073ef4d2" type="CoreNodeModels.Input.BoolSelector" nickname="Boolean" x="4041.8811933739" y="1550.0463061686" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
       <System.Boolean>True</System.Boolean>
     </CoreNodeModels.Input.BoolSelector>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="7a1488d6-8708-4f22-a761-fdc797bd3d6c" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="IFC.SettingByName" x="3010.37019259893" y="1488.0463061686" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidRB.dll" function="Orchid.RevitProject.Common.IFC.SettingByName@string">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="7a1488d6-8708-4f22-a761-fdc797bd3d6c" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="IFC.SettingByName" x="3010.37019259893" y="1488.0463061686" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidIB.dll" function="Orchid.IfcExport.IFC.SettingByName@string">
       <PortInfo index="0" default="True" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
-    <Orchid.E.RevitProject.Common.IFC.Setting guid="534e8d9a-094e-4d5f-bab1-95c3918a5190" type="Orchid.E.RevitProject.Common.IFC.Setting" nickname="IFC Setting" x="2689.37019259893" y="1488.0463061686" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="true" isPinned="false" index="9:IFC4 Design Transfer View" />
-    <Orchid.E.RevitProject.Common.IFC.Version guid="46d53c32-5e89-465b-ba91-3f214cad5581" type="Orchid.E.RevitProject.Common.IFC.Version" nickname="IFC Version" x="3326.37019259893" y="1563.21287856365" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="8:IFC4 Design Transfer View" />
+    <Orchid.E.IfcExport.Setting guid="534e8d9a-094e-4d5f-bab1-95c3918a5190" type="Orchid.E.IfcExport.Setting" nickname="IFC Setting" x="2689.37019259893" y="1488.0463061686" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="true" isPinned="false" index="9:IFC4 Design Transfer View" />
+    <Orchid.E.IfcExport.Version guid="46d53c32-5e89-465b-ba91-3f214cad5581" type="Orchid.E.IfcExport.Version" nickname="IFC Version" x="3326.37019259893" y="1563.21287856365" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="8:IFC4 Design Transfer View" />
     <CoreNodeModels.Input.BoolSelector guid="1a089988-16f9-434a-bf60-bbb36c6e44f8" type="CoreNodeModels.Input.BoolSelector" nickname="Boolean" x="4650.36782567453" y="1566.86215122904" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
       <System.Boolean>True</System.Boolean>
     </CoreNodeModels.Input.BoolSelector>
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="0fd5493b-8b83-4e2c-b0c5-8d46a11464c7" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="4650.36782567453" y="1674.49440198592" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="true" isPinned="false" CodeText="&quot;..\\testIFCexport.json&quot;;" ShouldFocus="false" />
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="448c29df-c42d-4227-8501-ee853537fa38" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="IFC.SettingGeneral" x="3666.8811933739" y="1488.0463061686" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidRB.dll" function="Orchid.RevitProject.Common.IFC.SettingGeneral@var,string,string,int,int,bool,bool">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="448c29df-c42d-4227-8501-ee853537fa38" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="IFC.SettingGeneral" x="3666.8811933739" y="1488.0463061686" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidIB.dll" function="Orchid.IfcExport.IFC.SettingGeneral@var,string,string,int,int,bool,bool">
       <PortInfo index="0" default="False" />
       <PortInfo index="1" default="True" />
       <PortInfo index="2" default="True" />
@@ -38,7 +38,7 @@
       <PortInfo index="5" default="True" />
       <PortInfo index="6" default="True" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="8ca2dbf1-8727-4900-9c7c-867e9c7ebc43" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="IFC.SettingAdditional" x="4279.8811933739" y="1488.0463061686" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidRB.dll" function="Orchid.RevitProject.Common.IFC.SettingAdditional@var,bool,bool,bool,bool,int">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="8ca2dbf1-8727-4900-9c7c-867e9c7ebc43" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="IFC.SettingAdditional" x="4279.8811933739" y="1488.0463061686" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidIB.dll" function="Orchid.IfcExport.IFC.SettingAdditional@var,bool,bool,bool,bool,int">
       <PortInfo index="0" default="False" />
       <PortInfo index="1" default="True" />
       <PortInfo index="2" default="True" />
@@ -46,10 +46,10 @@
       <PortInfo index="4" default="True" />
       <PortInfo index="5" default="True" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
-    <Orchid.E.RevitProject.Common.IFC.FileType guid="a34677e8-0fe2-429c-ab0c-047a0db6c02e" type="Orchid.E.RevitProject.Common.IFC.FileType" nickname="IFC File Type" x="3326.37019259893" y="1673.21287856365" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="0:IFC" />
-    <Orchid.E.RevitProject.Common.IFC.LevelOfDetail guid="da245806-31bc-4fa5-8a38-05da7314c648" type="Orchid.E.RevitProject.Common.IFC.LevelOfDetail" nickname="IFC Level Of Detail" x="4041.8811933739" y="1634.0463061686" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="2:Medium" />
-    <Orchid.E.RevitProject.Common.IFC.SpaceBoundary guid="ddca2098-0f24-4f9b-94fb-99b7a37a79b2" type="Orchid.E.RevitProject.Common.IFC.SpaceBoundary" nickname="IFC Space Boundary" x="3326.37019259893" y="1781.21287856365" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="1:1st Level" />
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="30ea7115-0585-45f2-a88f-9ea54bfb9106" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="IFC.SettingProperty" x="4951.11215839452" y="1488.0463061686" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidRB.dll" function="Orchid.RevitProject.Common.IFC.SettingProperty@var,bool,bool,bool,bool,bool,bool,string,bool,string">
+    <Orchid.E.IfcExport.FileType guid="a34677e8-0fe2-429c-ab0c-047a0db6c02e" type="Orchid.E.IfcExport.FileType" nickname="IFC File Type" x="3326.37019259893" y="1673.21287856365" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="0:IFC" />
+    <Orchid.E.IfcExport.LevelOfDetail guid="da245806-31bc-4fa5-8a38-05da7314c648" type="Orchid.E.IfcExport.LevelOfDetail" nickname="IFC Level Of Detail" x="4041.8811933739" y="1634.0463061686" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="2:Medium" />
+    <Orchid.E.IfcExport.SpaceBoundary guid="ddca2098-0f24-4f9b-94fb-99b7a37a79b2" type="Orchid.E.IfcExport.SpaceBoundary" nickname="IFC Space Boundary" x="3326.37019259893" y="1781.21287856365" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="1:1st Level" />
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="30ea7115-0585-45f2-a88f-9ea54bfb9106" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="IFC.SettingProperty" x="4951.11215839452" y="1488.0463061686" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidIB.dll" function="Orchid.IfcExport.IFC.SettingProperty@var,bool,bool,bool,bool,bool,bool,string,bool,string">
       <PortInfo index="0" default="False" />
       <PortInfo index="1" default="True" />
       <PortInfo index="2" default="True" />
@@ -61,14 +61,14 @@
       <PortInfo index="8" default="True" />
       <PortInfo index="9" default="True" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
-    <Orchid.E.RevitProject.Common.IFC.SitePlacement guid="c9221ec0-bf0c-4ee1-801d-4fc0682143e0" type="Orchid.E.RevitProject.Common.IFC.SitePlacement" nickname="IFC Project Origin" x="3326.37019259893" y="1890.21287856365" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="3:Internal coordinates" />
+    <Orchid.E.IfcExport.SitePlacement guid="c9221ec0-bf0c-4ee1-801d-4fc0682143e0" type="Orchid.E.IfcExport.SitePlacement" nickname="IFC Project Origin" x="3326.37019259893" y="1890.21287856365" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="3:Internal coordinates" />
     <CoreNodeModels.Input.BoolSelector guid="ef87380b-c893-48f9-a7be-2230731e0f03" type="CoreNodeModels.Input.BoolSelector" nickname="Boolean" x="3326.37019259893" y="1998.21287856365" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
       <System.Boolean>True</System.Boolean>
     </CoreNodeModels.Input.BoolSelector>
     <CoreNodeModels.Input.BoolSelector guid="d96d7820-f09b-464f-a79c-58d1b81345aa" type="CoreNodeModels.Input.BoolSelector" nickname="Boolean" x="5370.11215839452" y="1670.0463061686" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
       <System.Boolean>True</System.Boolean>
     </CoreNodeModels.Input.BoolSelector>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="dc446320-a934-4f6e-b28d-31e5894aaafd" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="IFC.SettingAdvanced" x="5605.11215839452" y="1488.0463061686" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidRB.dll" function="Orchid.RevitProject.Common.IFC.SettingAdvanced@var,bool,bool,bool,bool,bool,bool,bool,bool,bool">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="dc446320-a934-4f6e-b28d-31e5894aaafd" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="IFC.SettingAdvanced" x="5605.11215839452" y="1488.0463061686" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidIB.dll" function="Orchid.IfcExport.IFC.SettingAdvanced@var,bool,bool,bool,bool,bool,bool,bool,bool,bool">
       <PortInfo index="0" default="False" />
       <PortInfo index="1" default="True" />
       <PortInfo index="2" default="True" />
@@ -103,7 +103,7 @@
     <CoreNodeModels.Watch guid="7289b333-dacd-4ce8-a95a-f974a54f9779" type="CoreNodeModels.Watch" nickname="Watch" x="6282.08094130448" y="1225.51416510874" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
       <PortInfo index="0" default="False" />
     </CoreNodeModels.Watch>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="7966bbd8-88b8-4e5f-9c28-d08a88759656" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="IFC.Export" x="6402.64511483104" y="1462.0463061686" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidRB.dll" function="Orchid.RevitProject.Common.IFC.Export@Orchid.RevitProject.Common.Document,var,Revit.Elements.Element,Revit.Elements.Element,string,bool">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="7966bbd8-88b8-4e5f-9c28-d08a88759656" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="IFC.Export" x="6402.64511483104" y="1462.0463061686" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidIB.dll" function="Orchid.IfcExport.IFC.Export@Orchid.RevitProject.Common.Document,var,Revit.Elements.Element,Revit.Elements.Element,string,bool">
       <PortInfo index="0" default="True" />
       <PortInfo index="1" default="True" />
       <PortInfo index="2" default="True" />
@@ -144,7 +144,7 @@
       <PortInfo index="2" default="False" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
     <DSRevitNodesUI.Views guid="62fe807a-67c0-4485-8b30-a21035a9d5b6" type="DSRevitNodesUI.Views" nickname="Views" x="6349.1793709756" y="866.733742700053" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="20:{3D}" />
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="34c8aba7-ff2a-405c-95d8-dc6f8dac5276" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="IFC.Export" x="6645.1793709756" y="723.733742700053" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidRB.dll" function="Orchid.RevitProject.Common.IFC.Export@Orchid.RevitProject.Common.Document,var,Revit.Elements.Element,Revit.Elements.Element,string,bool">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="34c8aba7-ff2a-405c-95d8-dc6f8dac5276" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="IFC.Export" x="6645.1793709756" y="723.733742700053" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidIB.dll" function="Orchid.IfcExport.IFC.Export@Orchid.RevitProject.Common.Document,var,Revit.Elements.Element,Revit.Elements.Element,string,bool">
       <PortInfo index="0" default="True" />
       <PortInfo index="1" default="True" />
       <PortInfo index="2" default="True" />
@@ -152,10 +152,10 @@
       <PortInfo index="4" default="True" />
       <PortInfo index="5" default="True" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="d907a480-130b-40e1-9828-c7b0e56e394a" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="IFC.SettingByName" x="6349.1793709756" y="758.733742700053" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidRB.dll" function="Orchid.RevitProject.Common.IFC.SettingByName@string">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="d907a480-130b-40e1-9828-c7b0e56e394a" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="IFC.SettingByName" x="6349.1793709756" y="758.733742700053" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidIB.dll" function="Orchid.IfcExport.IFC.SettingByName@string">
       <PortInfo index="0" default="True" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
-    <Orchid.E.RevitProject.Common.IFC.Setting guid="59f3956a-cd6f-483f-b662-bd5520f5b9a3" type="Orchid.E.RevitProject.Common.IFC.Setting" nickname="IFC Setting" x="6010.1793709756" y="758.733742700053" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="1:IFC2x3 Coordination View 2.0" />
+    <Orchid.E.IfcExport.Setting guid="59f3956a-cd6f-483f-b662-bd5520f5b9a3" type="Orchid.E.IfcExport.Setting" nickname="IFC Setting" x="6010.1793709756" y="758.733742700053" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="1:IFC2x3 Coordination View 2.0" />
     <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="f5d5654d-c1af-4025-abc7-b1a6752a81f1" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Document.Current" x="6011.48797088641" y="585.784345286666" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidRB.dll" function="Orchid.RevitProject.Common.Document.Current" />
     <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="f3ceaddc-5e47-406c-bf85-c354c6af658c" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="DataStream.Await" x="6349.1793709756" y="623.733742700053" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Orchid\bin\OrchidRB.dll" function="Orchid.Common.DataStream.Await@var[]..[],var[]..[]">
       <PortInfo index="0" default="False" />
