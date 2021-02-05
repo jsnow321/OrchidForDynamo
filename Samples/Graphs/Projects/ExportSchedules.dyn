@@ -1,0 +1,394 @@
+{
+  "Uuid": "91dc9923-2861-4eea-9e3e-4cdc069d1959",
+  "IsCustomNode": false,
+  "Description": null,
+  "Name": "ExportSchedules",
+  "ElementResolver": {
+    "ResolutionMap": {
+      "DSCore.String": {
+        "Key": "DSCore.String",
+        "Value": "DSCoreNodes.dll"
+      }
+    }
+  },
+  "Inputs": [
+    {
+      "Id": "9d9fff4876e74735ba50c9396e9de52b",
+      "Name": "String",
+      "Type": "string",
+      "Value": ".\\Skemaer",
+      "Description": "Creates a string."
+    }
+  ],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Schedules.Schedule.GetData@Revit.Elements.Views.ScheduleView,string",
+      "Id": "49323bf437334a30b80fa087af4d3b66",
+      "Inputs": [
+        {
+          "Id": "0339de4471aa4f388bcfdf857e5d90fc",
+          "Name": "scheduleView",
+          "Description": "Schedule as Dynamo type\n\nScheduleView",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "06375a36ffa643a2846056d7ad18d7f0",
+          "Name": "country",
+          "Description": "Country as string\n\nstring\nDefault value : \"en-US\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "a472b3c7e7884cfcb75541eeb365c195",
+          "Name": "Value",
+          "Description": "All Values in the schedule as a list",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get schedule view, return data as setup in schedule. return value as integer, double and/or string according to the selected culture (Country)\n\nSchedule.GetData (scheduleView: ScheduleView, country: string = \"en-US\"): var[]..[]"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": ".\\Skemaer",
+      "Id": "9d9fff4876e74735ba50c9396e9de52b",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "9d56f7d585974a4697dda79fabcec454",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSOffice.Data.ExportExcel@string,string,int,int,var[][],bool",
+      "Id": "f0f76740d1fd47588413f6c9080d1df0",
+      "Inputs": [
+        {
+          "Id": "67639931f183447da6639f76ee88003e",
+          "Name": "filePath",
+          "Description": "File path to the Microsoft Excel spreadsheet.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ce674cdf0683469a82f68e149abe0830",
+          "Name": "sheetName",
+          "Description": "Name of the workseet to write data to.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "cbd5ff48bac541da87e1f8b7bb7d1160",
+          "Name": "startRow",
+          "Description": "Start row for writing data. Enter 0 for Row 1, 1 for Row 2, etc.\n\nint",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "28e691675cbe454699b83d08c3906b44",
+          "Name": "startCol",
+          "Description": "Start column for writing data. Enter 0 for Column A, 1 for Column B, etc.\n\nint",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "03a935b6348c41b7bb1fbee863a01dec",
+          "Name": "data",
+          "Description": "Data to write to the spreadsheet.\n\nvar[][]",
+          "UsingDefaultValue": false,
+          "Level": 3,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "32c1be7fdb6a4dbc8fd4470541fef859",
+          "Name": "overWrite",
+          "Description": "bool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "42e86cfa82b64c298d88bb425603b833",
+          "Name": "data",
+          "Description": "Data written to the spreadsheet.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Write data to a Microsoft Excel spreadsheet. Data is written by row with sublists to be written in successive rows. Rows and columns are zero-indexed; for example, the value in the data list at [0,0] will be written to cell A1. Null values and empty lists are written to Excel as empty cells. This node requires Microsoft Excel to be installed.\n\nData.ExportExcel (filePath: string, sheetName: string, startRow: int, startCol: int, data: var[][], overWrite: bool = false): var[][]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "0;",
+      "Id": "a3e37ce547a141ef834e13503e673abf",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "666cdeedba464d9fb864f2b0e775e5c5",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Views.View.ByName@string",
+      "Id": "4b586717dbe54a82a19753c8b278d3ba",
+      "Inputs": [
+        {
+          "Id": "274cf856cfe34aec8387d0a07e675a76",
+          "Name": "name",
+          "Description": "Name of the View\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "f16c5430859e484e976b9a1d55f985c4",
+          "Name": "View",
+          "Description": "View",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "View by name in current document\n\nView.ByName (name: string): Element"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "\"Room Schedule\";",
+      "Id": "1fe8a3e40b2645348cdf1283f2745010",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "23852899904343f286b37cadd66f00d1",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "a472b3c7e7884cfcb75541eeb365c195",
+      "End": "03a935b6348c41b7bb1fbee863a01dec",
+      "Id": "05d7256cb3004155a1f8196603d061cb"
+    },
+    {
+      "Start": "9d56f7d585974a4697dda79fabcec454",
+      "End": "67639931f183447da6639f76ee88003e",
+      "Id": "fd93b952080646c8abd18ea70ec82cd2"
+    },
+    {
+      "Start": "666cdeedba464d9fb864f2b0e775e5c5",
+      "End": "cbd5ff48bac541da87e1f8b7bb7d1160",
+      "Id": "d210aa19a214440a8f3983c829880fb4"
+    },
+    {
+      "Start": "666cdeedba464d9fb864f2b0e775e5c5",
+      "End": "28e691675cbe454699b83d08c3906b44",
+      "Id": "be80cdab91024f03a43248a6089041b0"
+    },
+    {
+      "Start": "f16c5430859e484e976b9a1d55f985c4",
+      "End": "0339de4471aa4f388bcfdf857e5d90fc",
+      "Id": "e293acf80a534c6494b37bc0062c0349"
+    },
+    {
+      "Start": "23852899904343f286b37cadd66f00d1",
+      "End": "274cf856cfe34aec8387d0a07e675a76",
+      "Id": "72089425a8114b08bb4aab8a1ee1e87a"
+    },
+    {
+      "Start": "23852899904343f286b37cadd66f00d1",
+      "End": "ce674cdf0683469a82f68e149abe0830",
+      "Id": "72879302d8dd4a00bc26d6a203b2c569"
+    }
+  ],
+  "Dependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.0.4.12684",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Schedule.GetData",
+        "Id": "49323bf437334a30b80fa087af4d3b66",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1374.05231928629,
+        "Y": 1001.48737018623
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String",
+        "Id": "9d9fff4876e74735ba50c9396e9de52b",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1709.5430875012994,
+        "Y": 882.996230069883
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Data.ExportExcel",
+        "Id": "f0f76740d1fd47588413f6c9080d1df0",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1993.1109214078995,
+        "Y": 896.897275690699
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "a3e37ce547a141ef834e13503e673abf",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1836.8172880069994,
+        "Y": 825.647302700103
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "View.ByName",
+        "Id": "4b586717dbe54a82a19753c8b278d3ba",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1128.19982601544,
+        "Y": 1001.48737018623
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "1fe8a3e40b2645348cdf1283f2745010",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 888.94404312199424,
+        "Y": 924.49128325254549
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "cf40ce7934044b36a4601f50d02bc898",
+        "Title": "Export to Excel",
+        "Nodes": [
+          "f0f76740d1fd47588413f6c9080d1df0",
+          "9d9fff4876e74735ba50c9396e9de52b",
+          "a3e37ce547a141ef834e13503e673abf"
+        ],
+        "Left": 1699.5430875012994,
+        "Top": 779.647302700103,
+        "Width": 519.56783390660007,
+        "Height": 340.249972990596,
+        "FontSize": 30.0,
+        "InitialTop": 825.647302700103,
+        "InitialHeight": 295.587775123346,
+        "TextblockHeight": 36.0,
+        "Background": "#FFA4E1FF"
+      },
+      {
+        "Id": "2bb5901a76144161b2e35b6b854897a6",
+        "Title": "Schedules",
+        "Nodes": [
+          "49323bf437334a30b80fa087af4d3b66",
+          "4b586717dbe54a82a19753c8b278d3ba",
+          "1fe8a3e40b2645348cdf1283f2745010"
+        ],
+        "Left": 878.94404312199424,
+        "Top": 871.49128325254549,
+        "Width": 741.10827616429572,
+        "Height": 248.99608693368452,
+        "FontSize": 36.0,
+        "InitialTop": 924.49128325254549,
+        "InitialHeight": 328.658851445347,
+        "TextblockHeight": 43.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": -712.71313399154519,
+    "Y": -252.73192882980629,
+    "Zoom": 0.8355004341815685
+  }
+}

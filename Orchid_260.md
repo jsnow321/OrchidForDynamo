@@ -11,7 +11,7 @@ The major number follows the Dynamo version, 260.x.x is usable in Dynamo +2.6.0.
 - 1st version of Orchid for the Dynamo 2.6.x series.  
   
 250.0.2  
-- Filters, Schedules and parameter Definitions (project and family parameters) added.  
+- Filters, Schedules, and parameter Definitions (project and family parameters) added.  
   
 250.0.1  
 - Refactoring of Core nodes, nodes are moved into Common. Several other functions are also refactored into other namespaces.  

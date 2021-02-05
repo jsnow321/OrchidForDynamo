@@ -1,0 +1,789 @@
+{
+  "Uuid": "3c9d0464-8643-5ffe-96e5-ab1769818209",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "File.NewProject",
+  "ElementResolver": {
+    "ResolutionMap": {
+      "Directory": {
+        "Key": "DSCore.IO.Directory",
+        "Value": "DSCoreNodes.dll"
+      },
+      "Directory.Contents": {
+        "Key": "DSCore.IO.Directory",
+        "Value": "DSCoreNodes.dll"
+      }
+    }
+  },
+  "Inputs": [
+    {
+      "Id": "af4aae3ad8b44117aa55a68a8b515611",
+      "Name": "Directory Path",
+      "Type": "string",
+      "Value": ".\\testSet\\",
+      "Description": "Creates a string."
+    },
+    {
+      "Id": "da8e57c782d247458a6daed05c4d7c06",
+      "Name": "Template Path",
+      "Type": "string",
+      "Value": "C:\\ProgramData\\Autodesk\\RVT 2019\\Templates\\DanEDU\\DanEDU Building.rte",
+      "Description": "Creates a string."
+    },
+    {
+      "Id": "a75c4ae7a75f48bc96d1dd65f3cae83d",
+      "Name": "Extension",
+      "Type": "string",
+      "Value": ".rvt",
+      "Description": "Creates a string."
+    },
+    {
+      "Id": "b06d817bb4494b26b0b9a18197d3009e",
+      "Name": "Directory Path",
+      "Type": "string",
+      "Value": ".\\testSet\\",
+      "Description": "Creates a string."
+    },
+    {
+      "Id": "2a6f390ccab44d61853696effe9ae401",
+      "Name": "Template Path",
+      "Type": "string",
+      "Value": "C:\\ProgramData\\Autodesk\\RVT 2019\\Templates\\DanEDU\\DanEDU Systems.rte",
+      "Description": "Creates a string."
+    },
+    {
+      "Id": "2c7292fd42334de9ab3821a9e939b570",
+      "Name": "Extension",
+      "Type": "string",
+      "Value": ".rvt",
+      "Description": "Creates a string."
+    }
+  ],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "[\"new1\", \"new2\"];",
+      "Id": "3dad2bb8583d4b0cbf1282bb17391542",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "f14daf7c3f9a4c7285b896bf3e434c6b",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": ".\\testSet\\",
+      "Id": "af4aae3ad8b44117aa55a68a8b515611",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "6bdbc63cc2b14daaa1a9561b79573561",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "C:\\ProgramData\\Autodesk\\RVT 2019\\Templates\\DanEDU\\DanEDU Building.rte",
+      "Id": "da8e57c782d247458a6daed05c4d7c06",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "bb8e24b7bc2f4c5586f4b57e83d1ae6e",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "a+b+c;",
+      "Id": "0e94cb960d77462c93c0cff19424297a",
+      "Inputs": [
+        {
+          "Id": "fec748b1dcbb4a07af6d2dbac1f6b19c",
+          "Name": "a",
+          "Description": "a",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "53c7e6d43ecd4df99617903f5ce0199e",
+          "Name": "b",
+          "Description": "b",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3192c46c60794544acde1dab3e145844",
+          "Name": "c",
+          "Description": "c",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "9dfa8f9b98374897aece20ac7717c162",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": ".rvt",
+      "Id": "a75c4ae7a75f48bc96d1dd65f3cae83d",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "5ba31b551a294eedb6e87ec3e2291a04",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "66f958c1bb6340b59d4323b287e6baa9",
+      "Inputs": [
+        {
+          "Id": "9931cb5477ab4ceda0e1aa58bd56c6dc",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "7257c469590c4feeb2d73a4b2e4633a5",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "[\"new3\", \"new4\"];",
+      "Id": "1c05344dcaf4484ea55bf9a78328f623",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "7b0930a22ea34aac9c5574375e998ca9",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": ".\\testSet\\",
+      "Id": "b06d817bb4494b26b0b9a18197d3009e",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "aee416d8e6754d5aad74187197f14c6f",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "a+b+c;",
+      "Id": "ac91972b1fa042b69d3bb73bd05e411a",
+      "Inputs": [
+        {
+          "Id": "fca3bfb2a0134c629a90b36a7af900e1",
+          "Name": "a",
+          "Description": "a",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "28a36be744b64f308de31faa83c95f03",
+          "Name": "b",
+          "Description": "b",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3dbf09b22f9d47949487608878b3fd09",
+          "Name": "c",
+          "Description": "c",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "8525778e24e84a95a603bedbd2b866fe",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "C:\\ProgramData\\Autodesk\\RVT 2019\\Templates\\DanEDU\\DanEDU Systems.rte",
+      "Id": "2a6f390ccab44d61853696effe9ae401",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "d539b6b36a014113be305efce20b12d6",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": ".rvt",
+      "Id": "2c7292fd42334de9ab3821a9e939b570",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "95363fd45967426c848eafe4fed14235",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "30a04da5bd084ab7a001c2048158b086",
+      "Inputs": [
+        {
+          "Id": "37872a3e95ce460f94d3e5105c9314b5",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "45a9e5cb9e514b9bb7b6f483d0fb4941",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.CreateList, CoreNodeModels",
+      "VariableInputPorts": true,
+      "NodeType": "ExtensionNode",
+      "Id": "19fa14df3c6f4215aa5c9761d687cc1f",
+      "Inputs": [
+        {
+          "Id": "9567ecc30bcb46e7a4d0c0734787ceb9",
+          "Name": "item0",
+          "Description": "Item Index #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "13c1d95821bd46eca6b801f545121f48",
+          "Name": "item1",
+          "Description": "Item Index #1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "2ab97f4de3f14b008df37e8313cfeadb",
+          "Name": "list",
+          "Description": "A list",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Makes a new list out of the given inputs"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Common.Document.NewProject@string[],string[]",
+      "Id": "414d0dd48d8148d9adeac6c2df238690",
+      "Inputs": [
+        {
+          "Id": "3d325114969b465d8428d2daf49f4fdd",
+          "Name": "file",
+          "Description": "File(s), must be new project file name(s) incl. path\n\nstring[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b980832c73c74048a2cd27fc1dce57d5",
+          "Name": "template",
+          "Description": "Project template(s) incl. path\n\nstring[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "86f56bcf755941a695b688415cf4edb8",
+          "Name": "watch",
+          "Description": "Add a watch node to verify the output",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Create new project by name\n\nDocument.NewProject (file: string[], template: string[]): string"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Common.Document.NewProject@string[],string[]",
+      "Id": "eddaad6e589343689d6b321107342730",
+      "Inputs": [
+        {
+          "Id": "e62485390cf648f8928e4389b701b82d",
+          "Name": "file",
+          "Description": "File(s), must be new project file name(s) incl. path\n\nstring[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "310609ba112d4fcdb97af1a879b78369",
+          "Name": "template",
+          "Description": "Project template(s) incl. path\n\nstring[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "557abcecaf91438384adbca536ee299c",
+          "Name": "watch",
+          "Description": "Add a watch node to verify the output",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Create new project by name\n\nDocument.NewProject (file: string[], template: string[]): string"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "f14daf7c3f9a4c7285b896bf3e434c6b",
+      "End": "53c7e6d43ecd4df99617903f5ce0199e",
+      "Id": "478d57c5676d448c93d88b70df63071e"
+    },
+    {
+      "Start": "6bdbc63cc2b14daaa1a9561b79573561",
+      "End": "fec748b1dcbb4a07af6d2dbac1f6b19c",
+      "Id": "8f1831680e174b91821ee3747bd62d33"
+    },
+    {
+      "Start": "bb8e24b7bc2f4c5586f4b57e83d1ae6e",
+      "End": "9567ecc30bcb46e7a4d0c0734787ceb9",
+      "Id": "b40f4b8c3e174b418f9780832dc438f7"
+    },
+    {
+      "Start": "9dfa8f9b98374897aece20ac7717c162",
+      "End": "e62485390cf648f8928e4389b701b82d",
+      "Id": "33273666272f4112a8ce8a3d1d4502ad"
+    },
+    {
+      "Start": "5ba31b551a294eedb6e87ec3e2291a04",
+      "End": "3192c46c60794544acde1dab3e145844",
+      "Id": "b38c3e64040549c2b4ca1d23bd1c8422"
+    },
+    {
+      "Start": "7b0930a22ea34aac9c5574375e998ca9",
+      "End": "28a36be744b64f308de31faa83c95f03",
+      "Id": "1ec48511ed7e4126b7ac6ed349c746db"
+    },
+    {
+      "Start": "aee416d8e6754d5aad74187197f14c6f",
+      "End": "fca3bfb2a0134c629a90b36a7af900e1",
+      "Id": "4c60cbcc85ca478f9943c40bddfabec6"
+    },
+    {
+      "Start": "8525778e24e84a95a603bedbd2b866fe",
+      "End": "3d325114969b465d8428d2daf49f4fdd",
+      "Id": "8fbe94b60aaf40b5976c75f83a36c247"
+    },
+    {
+      "Start": "d539b6b36a014113be305efce20b12d6",
+      "End": "13c1d95821bd46eca6b801f545121f48",
+      "Id": "dfd0eef6bad84059b4171e7935463697"
+    },
+    {
+      "Start": "d539b6b36a014113be305efce20b12d6",
+      "End": "b980832c73c74048a2cd27fc1dce57d5",
+      "Id": "0606f642ee6e42fc99b6a770f4d07bd1"
+    },
+    {
+      "Start": "95363fd45967426c848eafe4fed14235",
+      "End": "3dbf09b22f9d47949487608878b3fd09",
+      "Id": "5bf344b3e0fe4e7eaaff1134148dfedc"
+    },
+    {
+      "Start": "2ab97f4de3f14b008df37e8313cfeadb",
+      "End": "310609ba112d4fcdb97af1a879b78369",
+      "Id": "69000eb23105441c803d5a42b3da3f91"
+    },
+    {
+      "Start": "86f56bcf755941a695b688415cf4edb8",
+      "End": "9931cb5477ab4ceda0e1aa58bd56c6dc",
+      "Id": "110717d6aecb476a93a24332a76448ef"
+    },
+    {
+      "Start": "557abcecaf91438384adbca536ee299c",
+      "End": "37872a3e95ce460f94d3e5105c9314b5",
+      "Id": "7dc5ca1b46dd42e682987b4ce9ef91a4"
+    }
+  ],
+  "Dependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.0.3.8810",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Project file name",
+        "Id": "3dad2bb8583d4b0cbf1282bb17391542",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -1465.025225688,
+        "Y": 565.846238557447
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Directory Path",
+        "Id": "af4aae3ad8b44117aa55a68a8b515611",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -1465.025225688,
+        "Y": 482.059571890781
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Template Path",
+        "Id": "da8e57c782d247458a6daed05c4d7c06",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -1318.31053810552,
+        "Y": 783.552856403061
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "0e94cb960d77462c93c0cff19424297a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -1195.025225688,
+        "Y": 559.272905224114
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Extension",
+        "Id": "a75c4ae7a75f48bc96d1dd65f3cae83d",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -1465.025225688,
+        "Y": 674.206238557447
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "66f958c1bb6340b59d4323b287e6baa9",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -648.462530704522,
+        "Y": 1188.90872923728
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Project file name",
+        "Id": "1c05344dcaf4484ea55bf9a78328f623",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -1463.69303480697,
+        "Y": 1120.71239412365
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Directory Path",
+        "Id": "b06d817bb4494b26b0b9a18197d3009e",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -1463.69303480697,
+        "Y": 1036.92572745699
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "ac91972b1fa042b69d3bb73bd05e411a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -1193.69303480697,
+        "Y": 1114.13906079032
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Template Path",
+        "Id": "2a6f390ccab44d61853696effe9ae401",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -1312.91391061125,
+        "Y": 1316.35037309182
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Extension",
+        "Id": "2c7292fd42334de9ab3821a9e939b570",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -1463.69303480697,
+        "Y": 1229.07239412365
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "30a04da5bd084ab7a001c2048158b086",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -651.047949387786,
+        "Y": 537.659055397269
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "List.Create",
+        "Id": "19fa14df3c6f4215aa5c9761d687cc1f",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -919.16600726017,
+        "Y": 995.839400932158
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Document.NewProject",
+        "Id": "414d0dd48d8148d9adeac6c2df238690",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -919.761211019853,
+        "Y": 1190.19435884518
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Document.NewProject",
+        "Id": "eddaad6e589343689d6b321107342730",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -918.22854099047,
+        "Y": 537.236820762642
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "11ad0a735594403cb9e457e3fb668477",
+        "Title": "Template and New Projects",
+        "Nodes": [
+          "3dad2bb8583d4b0cbf1282bb17391542",
+          "af4aae3ad8b44117aa55a68a8b515611",
+          "0e94cb960d77462c93c0cff19424297a",
+          "da8e57c782d247458a6daed05c4d7c06",
+          "a75c4ae7a75f48bc96d1dd65f3cae83d"
+        ],
+        "Left": -1475.025225688,
+        "Top": 436.059571890781,
+        "Width": 389.0,
+        "Height": 446.49328451228,
+        "FontSize": 30.0,
+        "InitialTop": 482.059571890781,
+        "InitialHeight": 294.529390440742,
+        "TextblockHeight": 36.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "4bc56a81b1d94697a01e90f4a04382fd",
+        "Title": "Template and New Projects",
+        "Nodes": [
+          "1c05344dcaf4484ea55bf9a78328f623",
+          "b06d817bb4494b26b0b9a18197d3009e",
+          "ac91972b1fa042b69d3bb73bd05e411a",
+          "2a6f390ccab44d61853696effe9ae401",
+          "2c7292fd42334de9ab3821a9e939b570"
+        ],
+        "Left": -1473.69303480697,
+        "Top": 990.92572745699,
+        "Width": 389.0,
+        "Height": 424.42464563483009,
+        "FontSize": 30.0,
+        "InitialTop": 1036.92572745699,
+        "InitialHeight": 460.341027892106,
+        "TextblockHeight": 36.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": 907.38686428117637,
+    "Y": -126.67690124392453,
+    "Zoom": 0.59888857126616435
+  }
+}

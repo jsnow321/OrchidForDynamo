@@ -1,0 +1,137 @@
+{
+  "Uuid": "3c9d0464-8643-5ffe-96e5-ab1769818209",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "Phase",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "a6aeae73e5db4367b9d97ff961733d3b",
+      "Inputs": [
+        {
+          "Id": "9df8fc20e08b478c9e11064823d7738c",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "6669a36912604e66a13d78874e72c8af",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "Orchid.E.RevitProject.Common.Phase, OrchidRE",
+      "SelectedIndex": 3,
+      "NodeType": "ExtensionNode",
+      "Id": "432e879919a84c328b26cf1208072c71",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "a6fecacb9fe241efb6096ee94833a903",
+          "Name": "Phase",
+          "Description": "The selected Phase",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Dropdown for phases in the document"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "a6fecacb9fe241efb6096ee94833a903",
+      "End": "9df8fc20e08b478c9e11064823d7738c",
+      "Id": "8bcb203e4c6e4ee58b91b8094bfd7f37"
+    }
+  ],
+  "Dependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": false,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.0.4.12684",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "a6aeae73e5db4367b9d97ff961733d3b",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 287.45226510504,
+        "Y": 384.933893139072
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Phases",
+        "Id": "432e879919a84c328b26cf1208072c71",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 10.4522651050399,
+        "Y": 384.933893139072
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "c9b77c34709b4772b5ccaf6ea05ff021",
+        "Title": "Project phase",
+        "Nodes": [
+          "a6aeae73e5db4367b9d97ff961733d3b",
+          "432e879919a84c328b26cf1208072c71"
+        ],
+        "Left": 0.45226510503989914,
+        "Top": 338.933893139072,
+        "Width": 375.00000000000011,
+        "Height": 139.0,
+        "FontSize": 30.0,
+        "InitialTop": 384.933893139072,
+        "InitialHeight": 145.0,
+        "TextblockHeight": 36.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": 246.04627185851029,
+    "Y": -38.327533808308488,
+    "Zoom": 1.5104721119203302
+  }
+}

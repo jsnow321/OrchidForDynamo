@@ -1,0 +1,521 @@
+{
+  "Uuid": "3c9d0464-8643-5ffe-96e5-ab1769818209",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "Timer",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.DateTime.Now",
+      "Id": "3686f186b30a4c1a8f7f2c1831b7a819",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "497e27983dec4fce915ee7900f3e6f36",
+          "Name": "dateTime",
+          "Description": "DateTime",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "The current system date and time.\n\nDateTime.Now: var"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.TimeSpan.TotalSeconds@var",
+      "Id": "a80cdbc7f8024aea8f8bec4b115a4b2d",
+      "Inputs": [
+        {
+          "Id": "4f1893f5891d4be4bd99ad4447cc88d1",
+          "Name": "timeSpan",
+          "Description": "A TimeSpan.\n\nvar",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "5115fdede3eb4596a8f557071570483c",
+          "Name": "double",
+          "Description": "double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Converts the total amount of time represented by a TimeSpan to an inexact number of seconds.\n\nTimeSpan.TotalSeconds (timeSpan: var): double"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.TimeSpan.TotalMilliseconds@var",
+      "Id": "d2b9cfc5c5f34da2bc789756d2557a3e",
+      "Inputs": [
+        {
+          "Id": "601e82ac88d8491694515d3c19c2fdb1",
+          "Name": "timeSpan",
+          "Description": "A TimeSpan.\n\nvar",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "430f589126f744688bee3931134fc273",
+          "Name": "double",
+          "Description": "double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Converts the total amount of time represented by a TimeSpan to an inexact number of milliseconds.\n\nTimeSpan.TotalMilliseconds (timeSpan: var): double"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "3636efab7b5f4749b52b4b8b48e450b1",
+      "Inputs": [
+        {
+          "Id": "dfb3dbf3bbe54498b833f066231027eb",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "6a4043fdaa9444bd834caf3d204ba4b7",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "82d8177dd916470fbec79692649349c5",
+      "Inputs": [
+        {
+          "Id": "7ea5be41fb2a4718ae6739f4a81c6d66",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "ad8db65f3ed741448e17b60f70e8167b",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "1..80000;",
+      "Id": "0b6d3389b8a541eda422993ca8650944",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "47a3727ac27148c1b2d9c7afa65b7c23",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "*@var[]..[],var[]..[]",
+      "Id": "ef5827fd1527473ea21a81274c3c80ad",
+      "Inputs": [
+        {
+          "Id": "e78804f96359447fb769b8681f68cd47",
+          "Name": "x",
+          "Description": "x value.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "a6ed868622ae4c9589ec4115971f1e9f",
+          "Name": "y",
+          "Description": "y value.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "4283d82adaeb4410b60e81fd3de15d41",
+          "Name": "var[]..[]",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Multiplies x by y.\n\n* (x: var[]..[], y: var[]..[]): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.DataStream.Timer@var[]..[],var",
+      "Id": "c361a1adc1f74351a02c4e527af3fd33",
+      "Inputs": [
+        {
+          "Id": "b352a33df30e46938ef43866768c541b",
+          "Name": "pass",
+          "Description": "Data to pass\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "4f67e0f4f8ac4416af037a24ae8bd156",
+          "Name": "dateTime",
+          "Description": "Input date time\n\nvar\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "0afa87d3df844321ae15930790f7b6b7",
+          "Name": "pass",
+          "Description": "Passed data",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f542f736aabc4e539a9458f4e65329e3",
+          "Name": "DateTime",
+          "Description": "Output date time",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "2efb8e6ce8994d0a9cf341309226f781",
+          "Name": "TimeSpan",
+          "Description": "Time span (time elapsed)",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Measure the time via passing a data stream to verify computational processing\n\nDataStream.Timer (pass: var[]..[], dateTime: var = null): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.DataStream.Timer@var[]..[],var",
+      "Id": "3e3045f8292b449186b15a6ffd7266cf",
+      "Inputs": [
+        {
+          "Id": "f14a49bd898340babd21834d39465521",
+          "Name": "pass",
+          "Description": "Data to pass\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "0b5da35954914f17aea5679b0c16b6c5",
+          "Name": "dateTime",
+          "Description": "Input date time\n\nvar\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "8bc907fa6e464ea48d61d38dd0692613",
+          "Name": "pass",
+          "Description": "Passed data",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "97a4a49182374dfc97971874bcf9f155",
+          "Name": "DateTime",
+          "Description": "Output date time",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c5263d2f39eb442b9ecdef1ed78c5331",
+          "Name": "TimeSpan",
+          "Description": "Time span (time elapsed)",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Measure the time via passing a data stream to verify computational processing\n\nDataStream.Timer (pass: var[]..[], dateTime: var = null): var[]..[]"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "497e27983dec4fce915ee7900f3e6f36",
+      "End": "4f67e0f4f8ac4416af037a24ae8bd156",
+      "Id": "ef784d565821430796dd4802df3ade28"
+    },
+    {
+      "Start": "5115fdede3eb4596a8f557071570483c",
+      "End": "dfb3dbf3bbe54498b833f066231027eb",
+      "Id": "9b6816499e494b4e800ce3aed244765a"
+    },
+    {
+      "Start": "430f589126f744688bee3931134fc273",
+      "End": "7ea5be41fb2a4718ae6739f4a81c6d66",
+      "Id": "896091bf4ad5404ebce665ca09dfbb7a"
+    },
+    {
+      "Start": "47a3727ac27148c1b2d9c7afa65b7c23",
+      "End": "b352a33df30e46938ef43866768c541b",
+      "Id": "ca1738be4d4c497ea498fd48cd3c3d68"
+    },
+    {
+      "Start": "4283d82adaeb4410b60e81fd3de15d41",
+      "End": "f14a49bd898340babd21834d39465521",
+      "Id": "a05071f964d04e8bbaa212a1ee11cfde"
+    },
+    {
+      "Start": "0afa87d3df844321ae15930790f7b6b7",
+      "End": "e78804f96359447fb769b8681f68cd47",
+      "Id": "b0ae4934a8304bc292680e9dfc83a133"
+    },
+    {
+      "Start": "0afa87d3df844321ae15930790f7b6b7",
+      "End": "a6ed868622ae4c9589ec4115971f1e9f",
+      "Id": "1d931917d02b4a26b87365b4e608f0db"
+    },
+    {
+      "Start": "f542f736aabc4e539a9458f4e65329e3",
+      "End": "0b5da35954914f17aea5679b0c16b6c5",
+      "Id": "55ca0b2ff7e9486f857c7c2dc7183310"
+    },
+    {
+      "Start": "c5263d2f39eb442b9ecdef1ed78c5331",
+      "End": "4f1893f5891d4be4bd99ad4447cc88d1",
+      "Id": "78a90df006b0488d9943c8832e4f2f42"
+    },
+    {
+      "Start": "c5263d2f39eb442b9ecdef1ed78c5331",
+      "End": "601e82ac88d8491694515d3c19c2fdb1",
+      "Id": "49df5e7a12484e519ce52f55f854c85a"
+    }
+  ],
+  "Dependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.0.3.8810",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "DateTime.Now",
+        "Id": "3686f186b30a4c1a8f7f2c1831b7a819",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 9.84218406063554,
+        "Y": 382.243580882968
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "TimeSpan.TotalSeconds",
+        "Id": "a80cdbc7f8024aea8f8bec4b115a4b2d",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1258.32606604362,
+        "Y": 445.892189036284
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "TimeSpan.TotalMilliseconds",
+        "Id": "d2b9cfc5c5f34da2bc789756d2557a3e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1258.32606604362,
+        "Y": 555.892189036284
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "3636efab7b5f4749b52b4b8b48e450b1",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1577.32606604362,
+        "Y": 445.892189036284
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "82d8177dd916470fbec79692649349c5",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1577.32606604362,
+        "Y": 555.892189036284
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "0b6d3389b8a541eda422993ca8650944",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 118.632518809276,
+        "Y": 535.879727189411
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "*",
+        "Id": "ef5827fd1527473ea21a81274c3c80ad",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 655.982073165765,
+        "Y": 407.708703274441
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "DataStream.Timer",
+        "Id": "c361a1adc1f74351a02c4e527af3fd33",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 317.326066043616,
+        "Y": 474.892189036284
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "DataStream.Timer",
+        "Id": "3e3045f8292b449186b15a6ffd7266cf",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 922.326066043616,
+        "Y": 474.892189036284
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "a18c7d4fa9ab4ac98de5b3e38f6ef42a",
+        "Title": "Important!\r\nPlace DateTime.Now in upper left corner of the graph to get the correct time elapsed",
+        "Nodes": [
+          "3686f186b30a4c1a8f7f2c1831b7a819",
+          "a80cdbc7f8024aea8f8bec4b115a4b2d",
+          "d2b9cfc5c5f34da2bc789756d2557a3e",
+          "3636efab7b5f4749b52b4b8b48e450b1",
+          "82d8177dd916470fbec79692649349c5",
+          "0b6d3389b8a541eda422993ca8650944",
+          "ef5827fd1527473ea21a81274c3c80ad",
+          "c361a1adc1f74351a02c4e527af3fd33",
+          "3e3045f8292b449186b15a6ffd7266cf"
+        ],
+        "Left": -0.15781593936445937,
+        "Top": 300.243580882968,
+        "Width": 1688.4838819829843,
+        "Height": 364.648608153316,
+        "FontSize": 30.0,
+        "InitialTop": 382.243580882968,
+        "InitialHeight": 244.786666666667,
+        "TextblockHeight": 72.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": -1257.2154934244668,
+    "Y": -124.15847635876605,
+    "Zoom": 1.0009240009373888
+  }
+}

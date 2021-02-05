@@ -1,0 +1,254 @@
+{
+  "Uuid": "3c9d0464-8643-5ffe-96e5-ab1769818209",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "Purge PostCommand",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [
+    {
+      "Id": "18282843a3e14ce8b0d193bd9a48d4e3",
+      "Name": "Boolean",
+      "Type": "boolean",
+      "Value": "false",
+      "Description": "Selection between a true and false."
+    },
+    {
+      "Id": "94607050ac284d46a56c50397347a40b",
+      "Name": "Boolean",
+      "Type": "boolean",
+      "Value": "false",
+      "Description": "Selection between a true and false."
+    }
+  ],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Common.Document.Purge@var,bool",
+      "Id": "ddd5774bec4542d4bc396b354da656bc",
+      "Inputs": [
+        {
+          "Id": "9c3707f69d654285960cfd866a5cbea2",
+          "Name": "document",
+          "Description": "Document (rvt) as Orchid document\n\nvar\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f13fd4f425a44ee9b5f9ccaee8180dbb",
+          "Name": "completely",
+          "Description": "Includes purging materials and assets\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "5bef46d7c1674a0fa48d7e97758eb633",
+          "Name": "void",
+          "Description": "void",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Purge document. Set \"completely\" to true for including materials and assets! Please note \"completely\" purges also materials and materials assets that are used in \"peripheral\" elements and settings. Among this is included materials/assets bound to imported model elements, and materials/assets in settings like \"Site\" etc.\n\nDocument.Purge (document: var = null, completely: bool = false): void"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
+      "NodeType": "BooleanInputNode",
+      "InputValue": false,
+      "Id": "18282843a3e14ce8b0d193bd9a48d4e3",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "573d9f75b8354088844fa7f101bf1936",
+          "Name": "",
+          "Description": "Boolean",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Selection between a true and false."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Common.PostCommand.Purge@bool",
+      "Id": "db3276f8228e47e487dd25e25aa71646",
+      "Inputs": [
+        {
+          "Id": "d82313a658654c87818108581c155ebf",
+          "Name": "activate",
+          "Description": "Set to true to activate (and false to deactivate)\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "4e7371610828480abc7440152cc2660e",
+          "Name": "void",
+          "Description": "void",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Purge document using Post Command. Post commands can only take the current document to be run once. Re-run the graph to re-activate the post command. To get back the \"Purge\" window inside Revit, set the \"activate\" value to \"false\" and re-run the graph once more!\n\nPostCommand.Purge (activate: bool = false): void"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
+      "NodeType": "BooleanInputNode",
+      "InputValue": false,
+      "Id": "94607050ac284d46a56c50397347a40b",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "e3654464db9944088310d84acdde80ca",
+          "Name": "",
+          "Description": "Boolean",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Selection between a true and false."
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "573d9f75b8354088844fa7f101bf1936",
+      "End": "f13fd4f425a44ee9b5f9ccaee8180dbb",
+      "Id": "9fbb4d56d40d4232a5b6fb977b2676b2"
+    },
+    {
+      "Start": "e3654464db9944088310d84acdde80ca",
+      "End": "d82313a658654c87818108581c155ebf",
+      "Id": "102adb9ee32b482d90ed017c9f3e8067"
+    }
+  ],
+  "Dependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": false,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.0.3.8810",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Document.Purge",
+        "Id": "ddd5774bec4542d4bc396b354da656bc",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 145.049621712334,
+        "Y": 482.507452241028
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Boolean",
+        "Id": "18282843a3e14ce8b0d193bd9a48d4e3",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -89.9503782876652,
+        "Y": 508.507452241028
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "PostCommand.Purge",
+        "Id": "db3276f8228e47e487dd25e25aa71646",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": true,
+        "X": 144.437963522946,
+        "Y": 744.603831671273
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Boolean",
+        "Id": "94607050ac284d46a56c50397347a40b",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -90.5620364770544,
+        "Y": 744.603831671273
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "04d6fd5bc4094be1aa9b609e388cc297",
+        "Title": "orchid",
+        "Nodes": [
+          "ddd5774bec4542d4bc396b354da656bc",
+          "18282843a3e14ce8b0d193bd9a48d4e3"
+        ],
+        "Left": -99.9503782876652,
+        "Top": 436.507452241028,
+        "Width": 465.9999999999992,
+        "Height": 165.0,
+        "FontSize": 30.0,
+        "InitialTop": 482.507452241028,
+        "InitialHeight": 123.0,
+        "TextblockHeight": 36.0,
+        "Background": "#FFA4E1FF"
+      },
+      {
+        "Id": "c382082233774c81a34784f68985582e",
+        "Title": "orchid",
+        "Nodes": [
+          "db3276f8228e47e487dd25e25aa71646",
+          "94607050ac284d46a56c50397347a40b"
+        ],
+        "Left": -100.56203647705441,
+        "Top": 698.603831671273,
+        "Width": 447.0000000000004,
+        "Height": 139.0,
+        "FontSize": 30.0,
+        "InitialTop": 744.603831671273,
+        "InitialHeight": 245.025152033043,
+        "TextblockHeight": 36.0,
+        "Background": "#FFA4E1FF"
+      }
+    ],
+    "X": 176.254982101984,
+    "Y": -277.975802383882,
+    "Zoom": 1.20434735205389
+  }
+}

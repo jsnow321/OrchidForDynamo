@@ -8,7 +8,7 @@ The major number follows the Dynamo version, 130.x.x is usable in Dynamo +1.3.0.
 - Support for external applications are moved to independent assemblies, this includes support for IfxExport.
   
 134.6.4  
-- Filters, Schedules and parameter Definitions (project and family parameters) added.  
+- Filters, Schedules, and parameter Definitions (project and family parameters) added.  
   
 134.6.3  
 - Refactoring of Core nodes, nodes are moved into Common. Several other functions are also refactored into other namespaces.  
@@ -42,7 +42,7 @@ The major number follows the Dynamo version, 130.x.x is usable in Dynamo +1.3.0.
 - Core: Math.Random, Math.RandomList.  
   
 134.3.10  
-- Package refactored to comply with naming convensions  
+- Package refactored to comply with naming conventions  
 - Primary support for Dynamo version changed to 1.3.4.x  
 - Parameter: ProjectParameters, SharedParameters, GlobalParameters, AddIfcParameters (in document and Family document)  
 - FamilyName (for element and element type), ElementType.Name  
@@ -74,7 +74,7 @@ The major number follows the Dynamo version, 130.x.x is usable in Dynamo +1.3.0.
 - FamilyDocument: GetCategory and SetCategory node for the document added. Tooltip added AddParameter, AddsharedParameter.  
   
 132.3.2  
-- Application: All Sigma nodes is updated supporting live connection.  
+- Application: All Sigma nodes are updated supporting live connection.  
   
 132.3.1  
 - FamilyDocument: Parameters.GetValue and Parameters.SetValue updated.  
@@ -92,7 +92,7 @@ The major number follows the Dynamo version, 130.x.x is usable in Dynamo +1.3.0.
 - Parameter nodes added: AddProjectParameter, AddSharedParameter, ChangeCategory, and DeleteParameter.  
   
 130.2.5  
-- Element nodes updated to take list of document.  
+- Element nodes updated to take list of documents.  
   
 130.2.4  
 - FamilyDocument.AddParameter node added for Category input (FamilyType).  

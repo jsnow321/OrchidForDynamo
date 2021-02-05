@@ -8,7 +8,7 @@ The major number follows the Dynamo version, 200.x.x is usable in Dynamo +2.0.0.
 - Support for external applications are moved to independent assemblies, this includes support for IfxExport.
   
 204.1.4  
-- Filters, Schedules and parameter Definitions (project and family parameters) added.  
+- Filters, Schedules, and parameter Definitions (project and family parameters) added.  
   
 203.1.3  
 - Refactoring of Core nodes, nodes are moved into Common. Several other functions are also refactored into other namespaces.  
@@ -17,7 +17,7 @@ The major number follows the Dynamo version, 200.x.x is usable in Dynamo +2.0.0.
 - Rebuild of classes so types not provided by the dynamo team now are wrapped into Orchid types.  
   
 203.1.1	 
-- Element: nodes for views, and viewtemplates.  
+- Element: nodes for views, and view templates.  
   
 203.1.0  
 - Element: nodes for spatial elements, grouping, views, viewports, and grids.  
@@ -26,7 +26,7 @@ The major number follows the Dynamo version, 200.x.x is usable in Dynamo +2.0.0.
 - Total refactored and major parts recoded.  
 
 202.4.2  
-- Core: nodes for BuiltInParameter. Nodes for copying and transferring elements between different document. Nodes for opening, save and closing central files. Nodes for linking files into documents.  
+- Core: nodes for BuiltInParameter. Nodes for copying and transferring elements between different documents. Nodes for opening, save and closing central files. Nodes for linking files into documents.  
 
 202.4.1  
 - Materials: +100 new nodes for materials in a new branch.  
@@ -42,7 +42,7 @@ The major number follows the Dynamo version, 200.x.x is usable in Dynamo +2.0.0.
 - Core: Math.Random, Math.RandomList.  
 
 202.3.10  
-- Package refactored to comply with naming convensions  
+- Package refactored to comply with naming conventions  
 - Primary support for Dynamo version changed to 2.0.2.x  
 - Parameter: ProjectParameters, SharedParameters, GlobalParameters, AddIfcParameters (in document and Family document)  
 - FamilyName (for element and element type), ElementType.Name  
@@ -74,7 +74,7 @@ The major number follows the Dynamo version, 200.x.x is usable in Dynamo +2.0.0.
 - FamilyDocument: GetCategory and SetCategory node for the document added. Tooltip added AddParameter, AddsharedParameter.  
 
 201.3.2  
-- Application: All Sigma nodes is updated supporting live connection.  
+- Application: All Sigma nodes are updated supporting live connection.  
 
 201.3.1  
 - FamilyDocument: Parameters.GetValue and Parameters.SetValue updated.  
@@ -92,7 +92,7 @@ The major number follows the Dynamo version, 200.x.x is usable in Dynamo +2.0.0.
 - Parameter nodes added: AddProjectParameter, AddSharedParameter, ChangeCategory, and DeleteParameter.  
 
 200.2.5  
-- Element nodes updated to take list of document.  
+- Element nodes updated to take list of documents.  
 
 200.2.4  
 - FamilyDocument.AddParameter node added for Category input (FamilyType).  
