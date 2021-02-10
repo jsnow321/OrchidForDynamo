@@ -347,12 +347,12 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Create family type by name. Note: If no input to name is provided (default as null), then a default family type will be created named as the familyDocument.\n\nFamilyType.Create (familyDocument: var = null, name: string = null): var[]..[]"
+      "Description": "Create family type by name. NOTE: If no input to name is provided (default as null), then a default family type will be created named as the familyDocument. NOTE: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.Create (familyDocument: var = null, name: string = null): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitFamily.Parameter.Add@var,string[],string,string,string,bool,bool",
+      "FunctionSignature": "Orchid.RevitFamily.Parameter.Create@var,string[],string,string,string,bool,bool",
       "Id": "06c2d83eae3241749a7aa9d7765d6c24",
       "Inputs": [
         {
@@ -367,7 +367,7 @@
         {
           "Id": "e5e6e617e7c04d96b4ab3b097972f5b2",
           "Name": "parameterName",
-          "Description": "The name of the parameter to create\n\nstring[]",
+          "Description": "The name of the parameter to add (create)\n\nstring[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -376,7 +376,7 @@
         {
           "Id": "8c91a92ab27548a3ac9cccf94ee8d0de",
           "Name": "type",
-          "Description": "Parameter Type\n\nstring",
+          "Description": "BuiltIn Parameter Type\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -385,7 +385,7 @@
         {
           "Id": "57248f179173415d918e9e19c671b9d4",
           "Name": "group",
-          "Description": "Parameter Group\n\nstring",
+          "Description": "BuiltIn Parameter Group\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -403,7 +403,7 @@
         {
           "Id": "07076568b0bb40f3a9a20f2cdabebdbd",
           "Name": "instance",
-          "Description": "Is instance parameter, otherwise it's a type parameter\n\nbool\nDefault value : false",
+          "Description": "Is instance parameter?, otherwise it's a type parameter!\n\nbool\nDefault value : false",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -412,7 +412,7 @@
         {
           "Id": "f0ebf2c8ae094df5bce0f9a3b69c1b7e",
           "Name": "reporting",
-          "Description": "Is reporting parameter. Is only available to Length and Angle parameters!\n\nbool\nDefault value : false",
+          "Description": "Is reporting parameter? Is only available to Length and Angle parameters!\n\nbool\nDefault value : false",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -431,7 +431,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Add (create) parameter by name\n\nParameter.Add (familyDocument: var = null, parameterName: string[], type: string, group: string, tooltip: string = null, instance: bool = false, reporting: bool = false): var[]..[]"
+      "Description": "Create family parameter by name and by type.\n\nParameter.Create (familyDocument: var = null, parameterName: string[], type: string, group: string, tooltip: string = null, instance: bool = false, reporting: bool = false): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -488,7 +488,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Set family parameter value by parameter name. Provided values must comply with the number of family types! Note: If no family type is provided (default as null), then will the default family type in the familyDocument be used. Furthermore, If no family types exists, then a default family type will be created named as the familyDocument.\n\nParameter.SetValue (familyDocument: var = null, familyType: var[] = null, parameterName: string[], value: var[]): var[]..[]"
+      "Description": "Set family parameter value by parameter name. Provided values must comply with the number of family types! NOTE: If no family type is provided (default as null), then will the default family type in the familyDocument be used. Furthermore, If no family types exists, then a default family type will be created named as the familyDocument.\n\nParameter.SetValue (familyDocument: var = null, familyType: var[] = null, parameterName: string[], value: var[]): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -1007,7 +1007,7 @@
       "ScaleFactor": 1.0,
       "HasRunWithoutCrash": true,
       "IsVisibleInDynamoLibrary": true,
-      "Version": "2.0.3.8810",
+      "Version": "2.0.4.12684",
       "RunType": "Manual",
       "RunPeriod": "1000"
     },
@@ -1116,7 +1116,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Parameter.Add",
+        "Name": "Parameter.Create",
         "Id": "06c2d83eae3241749a7aa9d7765d6c24",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
@@ -1282,7 +1282,7 @@
         "Height": 322.0,
         "FontSize": 30.0,
         "InitialTop": -814.408921660395,
-        "InitialHeight": 209.535254712649,
+        "InitialHeight": 353.0,
         "TextblockHeight": 36.0,
         "Background": "#FFA4E1FF"
       },
@@ -1300,7 +1300,7 @@
         "Height": 349.122205811988,
         "FontSize": 30.0,
         "InitialTop": -846.617474221968,
-        "InitialHeight": 175.0,
+        "InitialHeight": 277.122205811988,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       },
@@ -1318,7 +1318,7 @@
         "Height": 420.67778536491403,
         "FontSize": 30.0,
         "InitialTop": -846.41223125284,
-        "InitialHeight": 227.0,
+        "InitialHeight": 276.67778536491403,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       },
@@ -1335,7 +1335,7 @@
         "Height": 272.25357918966597,
         "FontSize": 30.0,
         "InitialTop": -714.002604914259,
-        "InitialHeight": 123.0,
+        "InitialHeight": 269.25357918966597,
         "TextblockHeight": 36.0,
         "Background": "#FFA4E1FF"
       },
@@ -1353,7 +1353,7 @@
         "Height": 257.61817275945293,
         "FontSize": 30.0,
         "InitialTop": -786.168256725989,
-        "InitialHeight": 149.0,
+        "InitialHeight": 263.61817275945293,
         "TextblockHeight": 36.0,
         "Background": "#FFA4E1FF"
       },
@@ -1371,13 +1371,13 @@
         "Height": 191.075329928727,
         "FontSize": 30.0,
         "InitialTop": -358.564692566937,
-        "InitialHeight": 125.062966961228,
+        "InitialHeight": 222.075329928727,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       }
     ],
-    "X": 296.62844261469371,
-    "Y": 537.82504248259067,
-    "Zoom": 0.19617367648487721
+    "X": 692.219603764091,
+    "Y": 814.91709364370445,
+    "Zoom": 0.48723254367312235
   }
 }

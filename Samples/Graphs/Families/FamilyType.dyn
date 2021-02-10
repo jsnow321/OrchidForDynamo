@@ -233,12 +233,12 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Create family type by name. Note: If no input to name is provided (default as null), then a default family type will be created named as the familyDocument. Note: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.Create (familyDocument: var = null, name: string = null): var[]..[]"
+      "Description": "Create family type by name. NOTE: If no input to name is provided (default as null), then a default family type will be created named as the familyDocument. NOTE: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.Create (familyDocument: var = null, name: string = null): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitFamily.Parameter.Add@var,string[],string,string,string,bool,bool",
+      "FunctionSignature": "Orchid.RevitFamily.Parameter.Create@var,string[],string,string,string,bool,bool",
       "Id": "06c2d83eae3241749a7aa9d7765d6c24",
       "Inputs": [
         {
@@ -253,7 +253,7 @@
         {
           "Id": "2f9a9c7197874cc29e145b6b384650d3",
           "Name": "parameterName",
-          "Description": "The name of the parameter to create\n\nstring[]",
+          "Description": "The name of the parameter to add (create)\n\nstring[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -262,7 +262,7 @@
         {
           "Id": "0401b2dfdf804e419f1d36ea93bed265",
           "Name": "type",
-          "Description": "Parameter Type\n\nstring",
+          "Description": "BuiltIn Parameter Type\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -271,7 +271,7 @@
         {
           "Id": "d6783b16d0f84d199a8522fb51331c98",
           "Name": "group",
-          "Description": "Parameter Group\n\nstring",
+          "Description": "BuiltIn Parameter Group\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -289,7 +289,7 @@
         {
           "Id": "323c9aca1e5646e38ee99af9a7090496",
           "Name": "instance",
-          "Description": "Is instance parameter, otherwise it's a type parameter\n\nbool\nDefault value : false",
+          "Description": "Is instance parameter?, otherwise it's a type parameter!\n\nbool\nDefault value : false",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -298,7 +298,7 @@
         {
           "Id": "f4b7893229854470a6cb1692a592dafb",
           "Name": "reporting",
-          "Description": "Is reporting parameter. Is only available to Length and Angle parameters!\n\nbool\nDefault value : false",
+          "Description": "Is reporting parameter? Is only available to Length and Angle parameters!\n\nbool\nDefault value : false",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -317,7 +317,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Add (create) parameter by name\n\nParameter.Add (familyDocument: var = null, parameterName: string[], type: string, group: string, tooltip: string = null, instance: bool = false, reporting: bool = false): var[]..[]"
+      "Description": "Create family parameter by name and by type.\n\nParameter.Create (familyDocument: var = null, parameterName: string[], type: string, group: string, tooltip: string = null, instance: bool = false, reporting: bool = false): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -347,7 +347,7 @@
       "Outputs": [
         {
           "Id": "dc71f867eecd49cbaf5e4cb869c7559d",
-          "Name": "bool",
+          "Name": "boolean",
           "Description": "bool value if parameter is deleted",
           "UsingDefaultValue": false,
           "Level": 2,
@@ -386,7 +386,7 @@
       "Outputs": [
         {
           "Id": "5f7ff4eb71b8462995fb0f65b1cbf0ce",
-          "Name": "bool",
+          "Name": "boolean",
           "Description": "bool value if family type is deleted (if family type existed)",
           "UsingDefaultValue": false,
           "Level": 2,
@@ -395,7 +395,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Delete family type by name. Note: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.Delete (familyDocument: var = null, familyType: var = null): var[]..[]"
+      "Description": "Delete family type by name. NOTE: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.Delete (familyDocument: var = null, familyType: var = null): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -443,7 +443,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Rename family type by name. Note: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.Rename (familyDocument: var = null, sourceName: string[], targetName: string[]): var[]..[]"
+      "Description": "Rename family type by name. NOTE: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.Rename (familyDocument: var = null, sourceName: string[], targetName: string[]): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -482,7 +482,7 @@
       "Outputs": [
         {
           "Id": "4dc4d2348e8c4cff96068ef2131b7010",
-          "Name": "bool",
+          "Name": "boolean",
           "Description": "bool value if parameter is renamed (if parameter existed)",
           "UsingDefaultValue": false,
           "Level": 2,
@@ -784,7 +784,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get all family types. Note: If no family types exists, then a default family type will be created named as the familyDocument. Note: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.All ( ): var[]..[]"
+      "Description": "Get all family types. NOTE: If no family types exists, then a default family type will be created named as the familyDocument. NOTE: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.All ( ): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -804,7 +804,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get the current family type. Note: If no current family types exists, then a default family type will be created named as the familyDocument. Note: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.Current ( ): FamilyType"
+      "Description": "Get the current family type. NOTE: If no current family types exists, then a default family type will be created named as the familyDocument. NOTE: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.Current ( ): FamilyType"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -983,7 +983,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Convert Autodesk Revit family type to Orchid family type. Note: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.ToOrchidType (familyType: var): FamilyType"
+      "Description": "Convert Autodesk Revit family type to Orchid family type. NOTE: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.ToOrchidType (familyType: var): FamilyType"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -1111,7 +1111,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get all family types. Note: If no family types exists, then a default family type will be created named as the familyDocument. Note: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.All (familyDocument: var = null): var[]..[]"
+      "Description": "Get all family types. NOTE: If no family types exists, then a default family type will be created named as the familyDocument. NOTE: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.All (familyDocument: var = null): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -1150,7 +1150,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get family type by name in current document. Note: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.ByName (familyDocument: var = null, name: string): FamilyType"
+      "Description": "Get family type by name in current document. NOTE: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.ByName (familyDocument: var = null, name: string): FamilyType"
     }
   ],
   "Connectors": [
@@ -1362,7 +1362,7 @@
       "ScaleFactor": 1.0,
       "HasRunWithoutCrash": true,
       "IsVisibleInDynamoLibrary": true,
-      "Version": "2.0.3.8810",
+      "Version": "2.0.4.12684",
       "RunType": "Manual",
       "RunPeriod": "1000"
     },
@@ -1451,7 +1451,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Parameter.Add",
+        "Name": "Parameter.Create",
         "Id": "06c2d83eae3241749a7aa9d7765d6c24",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
@@ -1774,7 +1774,7 @@
         ],
         "Left": 980.307215181739,
         "Top": -1499.9678568818,
-        "Width": 870.47524177645107,
+        "Width": 892.47524177645107,
         "Height": 282.63999999999987,
         "FontSize": 30.0,
         "InitialTop": -1453.9678568818,
@@ -1792,7 +1792,7 @@
         ],
         "Left": 979.909273141505,
         "Top": -1100.37716274819,
-        "Width": 558.99999999999511,
+        "Width": 580.99999999999511,
         "Height": 282.63999999999385,
         "FontSize": 30.0,
         "InitialTop": -1054.37716274819,
@@ -1810,7 +1810,7 @@
         ],
         "Left": 299.970397424624,
         "Top": -1100.78381902057,
-        "Width": 558.0,
+        "Width": 580.0,
         "Height": 318.06666666666706,
         "FontSize": 30.0,
         "InitialTop": -1054.78381902057,
@@ -1924,8 +1924,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": 462.28883704192788,
-    "Y": 1417.5135186789914,
-    "Zoom": 0.59638629815185473
+    "X": 422.31480415466939,
+    "Y": 1602.9076897856223,
+    "Zoom": 0.676073120598444
   }
 }

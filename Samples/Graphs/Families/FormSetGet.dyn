@@ -50,13 +50,13 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitFamily.Parameter.Add@Orchid.RevitProject.Common.Document,string[],string,string,string,bool,bool",
+      "FunctionSignature": "Orchid.RevitFamily.Parameter.Create@var,string[],string,string,string,bool,bool",
       "Id": "1bb38fec400c4f218488d70667c4b2fe",
       "Inputs": [
         {
           "Id": "981cab2d8e5d43db99c2ca59c508a88b",
           "Name": "familyDocument",
-          "Description": "Family document (rfa) as Orchid document\n\nDocument\nDefault value : null",
+          "Description": "Family document (rfa) as Orchid document\n\nvar\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -65,7 +65,7 @@
         {
           "Id": "ba03b93fb176403e92743567f1942ebf",
           "Name": "parameterName",
-          "Description": "The name of the parameter to create\n\nstring[]",
+          "Description": "The name of the parameter to add (create)\n\nstring[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -74,7 +74,7 @@
         {
           "Id": "804f812abb4340bd97f9bd406dee081f",
           "Name": "type",
-          "Description": "Parameter Type\n\nstring",
+          "Description": "BuiltIn Parameter Type\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -83,7 +83,7 @@
         {
           "Id": "ff9bba43db19403aa9a3373d37c530af",
           "Name": "group",
-          "Description": "Parameter Group\n\nstring",
+          "Description": "BuiltIn Parameter Group\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -101,7 +101,7 @@
         {
           "Id": "953562b280ae4d5b862d945dae43af92",
           "Name": "instance",
-          "Description": "Is instance parameter, otherwise it's a type parameter\n\nbool\nDefault value : false",
+          "Description": "Is instance parameter?, otherwise it's a type parameter!\n\nbool\nDefault value : false",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -110,7 +110,7 @@
         {
           "Id": "ac63a72dd67c4a2a94931c1a3383f060",
           "Name": "reporting",
-          "Description": "Is reporting parameter. Is only available to Length and Angle parameters!\n\nbool\nDefault value : false",
+          "Description": "Is reporting parameter? Is only available to Length and Angle parameters!\n\nbool\nDefault value : false",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -129,7 +129,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Add (create) parameter by name\n\nParameter.Add (familyDocument: Document = null, parameterName: string[], type: string, group: string, tooltip: string = null, instance: bool = false, reporting: bool = false): var[]..[]"
+      "Description": "Create family parameter by name and by type.\n\nParameter.Create (familyDocument: var = null, parameterName: string[], type: string, group: string, tooltip: string = null, instance: bool = false, reporting: bool = false): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
@@ -154,13 +154,13 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitFamily.Parameter.Associate@Orchid.RevitProject.Common.Document,string,Revit.Elements.Element,string",
+      "FunctionSignature": "Orchid.RevitFamily.Parameter.Associate@var,string,Revit.Elements.Element,string",
       "Id": "fe2b705614fe494bb9d72d676d774cba",
       "Inputs": [
         {
           "Id": "50ccc3dccb614ce6b4a655f8c32b2258",
           "Name": "familyDocument",
-          "Description": "Family document (rfa) as Orchid document\n\nDocument\nDefault value : null",
+          "Description": "Family document (rfa) as Orchid document\n\nvar\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -206,7 +206,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Associate document parameter with element parameter (e.g. nested family) Note: An element to associate may be an internal geometry element in the family or a loaded nested family. The latter is denoted FamilySymbol and is the same as a FamilyType in a project document.\n\nParameter.Associate (familyDocument: Document = null, parameterName: string, element: Element, elementParameter: string): var[]..[]"
+      "Description": "Associate document parameter with element parameter (e.g. nested family) NOTE: An element to associate may be an internal geometry element in the family or a loaded nested family. The latter is denoted FamilySymbol and is the same as a FamilyType in a project document.\n\nParameter.Associate (familyDocument: var = null, parameterName: string, element: Element, elementParameter: string): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -226,7 +226,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get current document\n\nDocument.Current: Document"
+      "Description": "Get current document\n\nDocument.Current: var"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -309,13 +309,13 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitFamily.Parameter.SetValue@Orchid.RevitProject.Common.Document,var[],string[],var[]",
+      "FunctionSignature": "Orchid.RevitFamily.Parameter.SetValue@var,var[],string[],var[]",
       "Id": "546dc216fb9b461ab7e533cc484fb727",
       "Inputs": [
         {
           "Id": "3d50ce6dfed946a797ff8e60f35abf11",
           "Name": "familyDocument",
-          "Description": "Family document (rfa) as Orchid document\n\nDocument\nDefault value : null",
+          "Description": "Family document (rfa) as Orchid document\n\nvar\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -361,7 +361,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Set family parameter value by parameter name. Provided values must comply with the number of family types! Note: If no family type is provided (default as null), then will the default family type in the familyDocument be used. Furthermore, If no family types exists, then a default family type will be created named as the familyDocument.\n\nParameter.SetValue (familyDocument: Document = null, familyType: var[] = null, parameterName: string[], value: var[]): var[]..[]"
+      "Description": "Set family parameter value by parameter name. Provided values must comply with the number of family types! NOTE: If no family type is provided (default as null), then will the default family type in the familyDocument be used. Furthermore, If no family types exists, then a default family type will be created named as the familyDocument.\n\nParameter.SetValue (familyDocument: var = null, familyType: var[] = null, parameterName: string[], value: var[]): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
@@ -540,7 +540,7 @@
   "View": {
     "Dynamo": {
       "ScaleFactor": 1.0,
-      "HasRunWithoutCrash": false,
+      "HasRunWithoutCrash": true,
       "IsVisibleInDynamoLibrary": true,
       "Version": "2.0.4.12684",
       "RunType": "Manual",
@@ -571,7 +571,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Parameter.Add",
+        "Name": "Parameter.Create",
         "Id": "1bb38fec400c4f218488d70667c4b2fe",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
@@ -695,7 +695,7 @@
         "Height": 354.0,
         "FontSize": 30.0,
         "InitialTop": -570.53152930795,
-        "InitialHeight": 293.493333333334,
+        "InitialHeight": 253.493333333333,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       },
@@ -713,7 +713,7 @@
         "Height": 283.64,
         "FontSize": 30.0,
         "InitialTop": -570.478882167272,
-        "InitialHeight": 201.066666666667,
+        "InitialHeight": 280.64,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       },
@@ -732,7 +732,7 @@
         "Height": 392.0,
         "FontSize": 30.0,
         "InitialTop": -570.919379981809,
-        "InitialHeight": 202.08,
+        "InitialHeight": 398.0,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       },
@@ -749,13 +749,13 @@
         "Height": 139.0,
         "FontSize": 30.0,
         "InitialTop": -792.644833538887,
-        "InitialHeight": 123.0,
+        "InitialHeight": 145.0,
         "TextblockHeight": 36.0,
         "Background": "#FFA4E1FF"
       }
     ],
-    "X": 67.7628637213384,
-    "Y": 923.552797105627,
-    "Zoom": 0.812642529368887
+    "X": 69.984208646123022,
+    "Y": 1008.732373405958,
+    "Zoom": 0.86044503109646864
   }
 }

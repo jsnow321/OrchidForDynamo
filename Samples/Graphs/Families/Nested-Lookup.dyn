@@ -68,7 +68,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Create family type by name. Note: If no input to name is provided (default as null), then a default family type will be created named as the familyDocument. Note: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.Create (familyDocument: var = null, name: string = null): var[]..[]"
+      "Description": "Create family type by name. NOTE: If no input to name is provided (default as null), then a default family type will be created named as the familyDocument. NOTE: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.Create (familyDocument: var = null, name: string = null): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
@@ -111,7 +111,7 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitFamily.Parameter.Add@var,string[],string,string,string,bool,bool",
+      "FunctionSignature": "Orchid.RevitFamily.Parameter.Create@var,string[],string,string,string,bool,bool",
       "Id": "1bb38fec400c4f218488d70667c4b2fe",
       "Inputs": [
         {
@@ -126,7 +126,7 @@
         {
           "Id": "988d4d8bd4924070a4f5f4b1d4e6c3c7",
           "Name": "parameterName",
-          "Description": "The name of the parameter to create\n\nstring[]",
+          "Description": "The name of the parameter to add (create)\n\nstring[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -135,7 +135,7 @@
         {
           "Id": "8086ade439ff46eaa9feceef9461d133",
           "Name": "type",
-          "Description": "Parameter Type\n\nstring",
+          "Description": "BuiltIn Parameter Type\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -144,7 +144,7 @@
         {
           "Id": "84139016cbb74072bc1f428fdb6f7258",
           "Name": "group",
-          "Description": "Parameter Group\n\nstring",
+          "Description": "BuiltIn Parameter Group\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -162,7 +162,7 @@
         {
           "Id": "1ef627f200964b89b79414330b149cd7",
           "Name": "instance",
-          "Description": "Is instance parameter, otherwise it's a type parameter\n\nbool\nDefault value : false",
+          "Description": "Is instance parameter?, otherwise it's a type parameter!\n\nbool\nDefault value : false",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -171,7 +171,7 @@
         {
           "Id": "778b67ffa43c49a7ac9411893687c893",
           "Name": "reporting",
-          "Description": "Is reporting parameter. Is only available to Length and Angle parameters!\n\nbool\nDefault value : false",
+          "Description": "Is reporting parameter? Is only available to Length and Angle parameters!\n\nbool\nDefault value : false",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -190,7 +190,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Add (create) parameter by name\n\nParameter.Add (familyDocument: var = null, parameterName: string[], type: string, group: string, tooltip: string = null, instance: bool = false, reporting: bool = false): var[]..[]"
+      "Description": "Create family parameter by name and by type.\n\nParameter.Create (familyDocument: var = null, parameterName: string[], type: string, group: string, tooltip: string = null, instance: bool = false, reporting: bool = false): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
@@ -296,7 +296,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Set family parameter value by parameter name. Provided values must comply with the number of family types! Note: If no family type is provided (default as null), then will the default family type in the familyDocument be used. Furthermore, If no family types exists, then a default family type will be created named as the familyDocument.\n\nParameter.SetValue (familyDocument: var = null, familyType: var[] = null, parameterName: string[], value: var[]): var[]..[]"
+      "Description": "Set family parameter value by parameter name. Provided values must comply with the number of family types! NOTE: If no family type is provided (default as null), then will the default family type in the familyDocument be used. Furthermore, If no family types exists, then a default family type will be created named as the familyDocument.\n\nParameter.SetValue (familyDocument: var = null, familyType: var[] = null, parameterName: string[], value: var[]): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
@@ -373,7 +373,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Associate document parameter with element parameter (e.g. nested family) Note: An element to associate may be an internal geometry element in the family or a loaded nested family. The latter is denoted FamilySymbol and is the same as a FamilyType in a project document.\n\nParameter.Associate (familyDocument: var = null, parameterName: string, element: Element, elementParameter: string): var[]..[]"
+      "Description": "Associate document parameter with element parameter (e.g. nested family) NOTE: An element to associate may be an internal geometry element in the family or a loaded nested family. The latter is denoted FamilySymbol and is the same as a FamilyType in a project document.\n\nParameter.Associate (familyDocument: var = null, parameterName: string, element: Element, elementParameter: string): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -433,7 +433,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get nested family type (FamilySymbol) in the family document. Note: Nested families in a family document and in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.GetNested (familyDocument: var = null): var[]..[]"
+      "Description": "Get nested family type (FamilySymbol) in the family document. NOTE: Nested families in a family document and in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.GetNested (familyDocument: var = null): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
@@ -476,7 +476,7 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitFamily.Parameter.Add@var,string[],string,string,string,bool,bool",
+      "FunctionSignature": "Orchid.RevitFamily.Parameter.Create@var,string[],string,string,string,bool,bool",
       "Id": "9e8841e53687461fb67db16a4e48fbbf",
       "Inputs": [
         {
@@ -491,7 +491,7 @@
         {
           "Id": "30ef40d6679741f8a21ee15d48137219",
           "Name": "parameterName",
-          "Description": "The name of the parameter to create\n\nstring[]",
+          "Description": "The name of the parameter to add (create)\n\nstring[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -500,7 +500,7 @@
         {
           "Id": "7c774eda0c2841438ea7246a72a0072c",
           "Name": "type",
-          "Description": "Parameter Type\n\nstring",
+          "Description": "BuiltIn Parameter Type\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -509,7 +509,7 @@
         {
           "Id": "82a6c8c83458482c9b927fea413f9f7a",
           "Name": "group",
-          "Description": "Parameter Group\n\nstring",
+          "Description": "BuiltIn Parameter Group\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -527,7 +527,7 @@
         {
           "Id": "52def33c39db4bddac9854e998ecf0dc",
           "Name": "instance",
-          "Description": "Is instance parameter, otherwise it's a type parameter\n\nbool\nDefault value : false",
+          "Description": "Is instance parameter?, otherwise it's a type parameter!\n\nbool\nDefault value : false",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -536,7 +536,7 @@
         {
           "Id": "84e3ff6debda49238e094fa002ed634e",
           "Name": "reporting",
-          "Description": "Is reporting parameter. Is only available to Length and Angle parameters!\n\nbool\nDefault value : false",
+          "Description": "Is reporting parameter? Is only available to Length and Angle parameters!\n\nbool\nDefault value : false",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -555,7 +555,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Add (create) parameter by name\n\nParameter.Add (familyDocument: var = null, parameterName: string[], type: string, group: string, tooltip: string = null, instance: bool = false, reporting: bool = false): var[]..[]"
+      "Description": "Create family parameter by name and by type.\n\nParameter.Create (familyDocument: var = null, parameterName: string[], type: string, group: string, tooltip: string = null, instance: bool = false, reporting: bool = false): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -760,7 +760,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Set family parameter value by parameter name. Provided values must comply with the number of family types! Note: If no family type is provided (default as null), then will the default family type in the familyDocument be used. Furthermore, If no family types exists, then a default family type will be created named as the familyDocument.\n\nParameter.SetValue (familyDocument: var = null, familyType: var[] = null, parameterName: string[], value: var[]): var[]..[]"
+      "Description": "Set family parameter value by parameter name. Provided values must comply with the number of family types! NOTE: If no family type is provided (default as null), then will the default family type in the familyDocument be used. Furthermore, If no family types exists, then a default family type will be created named as the familyDocument.\n\nParameter.SetValue (familyDocument: var = null, familyType: var[] = null, parameterName: string[], value: var[]): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
@@ -848,7 +848,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Set family formula by parameter name. Note: If no family types exists, then a default family type will be created named as the familyDocument.\n\nFormula.Set (familyDocument: var = null, parameterName: string, value: string): var[]..[]"
+      "Description": "Set family formula by parameter name. NOTE: If no family types exists, then a default family type will be created named as the familyDocument.\n\nFormula.Set (familyDocument: var = null, parameterName: string, value: string): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -1331,7 +1331,7 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitFamily.Parameter.Add@var,string[],Revit.Elements.Category,string,string,bool,bool",
+      "FunctionSignature": "Orchid.RevitFamily.Parameter.Create@var,string[],Revit.Elements.Category,string,string,bool,bool",
       "Id": "db9787476cba421ca8de6b18a46083f8",
       "Inputs": [
         {
@@ -1346,7 +1346,7 @@
         {
           "Id": "93817653e76f41258c4150e4a0dc3bf7",
           "Name": "parameterName",
-          "Description": "The name of the parameter to create\n\nstring[]",
+          "Description": "The name of the parameter to add (create)\n\nstring[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1364,7 +1364,7 @@
         {
           "Id": "799e22d681b94cc8b0c02615fec3dce8",
           "Name": "group",
-          "Description": "Parameter Group\n\nstring",
+          "Description": "BuiltIn Parameter Group\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1382,7 +1382,7 @@
         {
           "Id": "2d502ffa35d64207b2a390b214d843e3",
           "Name": "instance",
-          "Description": "Is instance parameter, otherwise it's a type parameter\n\nbool\nDefault value : false",
+          "Description": "Is instance parameter?, otherwise it's a type parameter!\n\nbool\nDefault value : false",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1391,7 +1391,7 @@
         {
           "Id": "42da87f8990e4b88bf7be11edd872e19",
           "Name": "reporting",
-          "Description": "Is reporting parameter. Is only available to Length and Angle parameters!\n\nbool\nDefault value : false",
+          "Description": "Is reporting parameter? Is only available to Length and Angle parameters!\n\nbool\nDefault value : false",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1410,7 +1410,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Add (create) parameter by name\n\nParameter.Add (familyDocument: var = null, parameterName: string[], category: Category, group: string, tooltip: string = null, instance: bool = false, reporting: bool = false): var[]..[]"
+      "Description": "Create family parameter by name and by type.\n\nParameter.Create (familyDocument: var = null, parameterName: string[], category: Category, group: string, tooltip: string = null, instance: bool = false, reporting: bool = false): var[]..[]"
     },
     {
       "ConcreteType": "DSRevitNodesUI.Categories, DSRevitNodesUI",
@@ -1909,7 +1909,7 @@
       "Outputs": [
         {
           "Id": "5be1ce99569c45e3a1dd33a05531a0ff",
-          "Name": "bool",
+          "Name": "boolean",
           "Description": "Bool value if parameter has associated elements",
           "UsingDefaultValue": false,
           "Level": 2,
@@ -2848,7 +2848,7 @@
       "ScaleFactor": 1.0,
       "HasRunWithoutCrash": true,
       "IsVisibleInDynamoLibrary": true,
-      "Version": "2.0.3.8810",
+      "Version": "2.0.4.12684",
       "RunType": "Manual",
       "RunPeriod": "1000"
     },
@@ -2887,7 +2887,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Parameter.Add",
+        "Name": "Parameter.Create",
         "Id": "1bb38fec400c4f218488d70667c4b2fe",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
@@ -2977,7 +2977,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Parameter.Add",
+        "Name": "Parameter.Create",
         "Id": "9e8841e53687461fb67db16a4e48fbbf",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
@@ -3227,7 +3227,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Parameter.Add",
+        "Name": "Parameter.Create",
         "Id": "db9787476cba421ca8de6b18a46083f8",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
@@ -3561,7 +3561,7 @@
         "Height": 239.30420760775291,
         "FontSize": 30.0,
         "InitialTop": -743.259132783933,
-        "InitialHeight": 149.0,
+        "InitialHeight": 219.30420760775291,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       },
@@ -3578,7 +3578,7 @@
         "Height": 295.0,
         "FontSize": 30.0,
         "InitialTop": -542.934812247424,
-        "InitialHeight": 293.493333333334,
+        "InitialHeight": 222.0,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       },
@@ -3596,7 +3596,7 @@
         "Height": 317.71955993721394,
         "FontSize": 30.0,
         "InitialTop": -568.409241052137,
-        "InitialHeight": 202.08,
+        "InitialHeight": 279.71955993721394,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       },
@@ -3616,10 +3616,10 @@
         "Left": 2800.00732911847,
         "Top": 188.27420430278602,
         "Width": 1290.1057322856,
-        "Height": 485.52476826655,
+        "Height": 443.52476826655,
         "FontSize": 30.0,
         "InitialTop": 306.274204302786,
-        "InitialHeight": 220.0,
+        "InitialHeight": 252.52476826654998,
         "TextblockHeight": 108.0,
         "Background": "#FFFFAA45"
       },
@@ -3638,7 +3638,7 @@
         "Height": 386.406956409976,
         "FontSize": 30.0,
         "InitialTop": -569.032998279749,
-        "InitialHeight": 201.066666666667,
+        "InitialHeight": 383.406956409976,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       },
@@ -3655,7 +3655,7 @@
         "Height": 294.99999999999977,
         "FontSize": 30.0,
         "InitialTop": 80.9777172020552,
-        "InitialHeight": 253.0,
+        "InitialHeight": 221.9999999999998,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       },
@@ -3675,7 +3675,7 @@
         "Height": 211.57197162215698,
         "FontSize": 30.0,
         "InitialTop": -867.422546478471,
-        "InitialHeight": 159.209748167737,
+        "InitialHeight": 217.57197162215698,
         "TextblockHeight": 36.0,
         "Background": "#FFD4B6DB"
       },
@@ -3694,7 +3694,7 @@
         "Height": 318.06666666666689,
         "FontSize": 30.0,
         "InitialTop": -14.4868046565969,
-        "InitialHeight": 201.066666666667,
+        "InitialHeight": 280.06666666666689,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       },
@@ -3716,7 +3716,7 @@
         "Height": 473.35582769534039,
         "FontSize": 30.0,
         "InitialTop": -16.1790898058034,
-        "InitialHeight": 383.291632942744,
+        "InitialHeight": 489.35582769534039,
         "TextblockHeight": 36.0,
         "Background": "#FFA4E1FF"
       },
@@ -3736,10 +3736,10 @@
         "Left": 2799.89106974515,
         "Top": -319.821013615689,
         "Width": 1311.1057322855995,
-        "Height": 431.50684993291503,
+        "Height": 389.50684993291503,
         "FontSize": 30.0,
         "InitialTop": -273.821013615689,
-        "InitialHeight": 294.71971835936,
+        "InitialHeight": 249.50684993291503,
         "TextblockHeight": 36.0,
         "Background": "#FFFFAA45"
       },
@@ -3757,7 +3757,7 @@
         "Height": 363.93333333333294,
         "FontSize": 30.0,
         "InitialTop": -1016.23646882186,
-        "InitialHeight": 253.0,
+        "InitialHeight": 369.93333333333294,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       },
@@ -3775,7 +3775,7 @@
         "Height": 215.7444125407,
         "FontSize": 30.0,
         "InitialTop": -568.990220091913,
-        "InitialHeight": 197.17599532481,
+        "InitialHeight": 212.7444125407,
         "TextblockHeight": 36.0,
         "Background": "#FFA4E1FF"
       },
@@ -3794,7 +3794,7 @@
         "Height": 292.64,
         "FontSize": 30.0,
         "InitialTop": 821.858113358588,
-        "InitialHeight": 240.64,
+        "InitialHeight": 253.64,
         "TextblockHeight": 72.0,
         "Background": "#FFB5B5B5"
       },
@@ -3813,11 +3813,11 @@
         ],
         "Left": 2799.54196489131,
         "Top": -1410.65739258952,
-        "Width": 1226.38390167148,
-        "Height": 715.253373209874,
+        "Width": 1182.38390167148,
+        "Height": 633.253373209874,
         "FontSize": 30.0,
         "InitialTop": -1364.65739258952,
-        "InitialHeight": 378.254518224246,
+        "InitialHeight": 617.253373209874,
         "TextblockHeight": 36.0,
         "Background": "#FFA4E1FF"
       },
@@ -3831,17 +3831,17 @@
         ],
         "Left": 1800.36220588024,
         "Top": -1360.41733516142,
-        "Width": 859.0559371622,
-        "Height": 424.0,
+        "Width": 842.0559371622,
+        "Height": 405.0,
         "FontSize": 30.0,
         "InitialTop": -1314.41733516142,
-        "InitialHeight": 126.599877167918,
+        "InitialHeight": 146.08312139443,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       }
     ],
-    "X": 360.1430993995624,
-    "Y": 556.77196950832786,
-    "Zoom": 0.318424266986455
+    "X": 367.81145989906315,
+    "Y": 621.05579276096614,
+    "Zoom": 0.32582042966706948
   }
 }
