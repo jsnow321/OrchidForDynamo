@@ -125,7 +125,7 @@
         {
           "Id": "2f4f8463716244fe813401c8a9d76f89",
           "Name": "file",
-          "Description": "The shared parameter file, incl. path\n\nstring\nDefault value : null (disabled)",
+          "Description": "The shared parameter file, incl. path.\n\nstring\nDefault value : null (disabled)",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -136,7 +136,7 @@
         {
           "Id": "61ce288d2e614bcab0ef3d92273f8d00",
           "Name": "file",
-          "Description": "The shared parameter file",
+          "Description": "The shared parameter file.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -144,7 +144,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Set the shared parameter file\n\nSharedParameter.SetFile (file: string = null): string"
+      "Description": "Set the shared parameter file.\n\nSharedParameter.SetFile (file: string = null): string"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -387,7 +387,7 @@
         {
           "Id": "08f7335f66ce4cfbb6f06f52f50d2f11",
           "Name": "path",
-          "Description": "Path to the file\n\nstring",
+          "Description": "Path to the file.\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -398,7 +398,7 @@
         {
           "Id": "40c43d88c16840b78909f514ac4ba671",
           "Name": "file",
-          "Description": "File object",
+          "Description": "File object.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -406,7 +406,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get file from a path\n\nFile.FromPath (path: string): string"
+      "Description": "Get file from a path.\n\nFile.FromPath (path: string): string"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -475,7 +475,7 @@
         {
           "Id": "2d9c9ff52e894d2c8a4b11d522ec2208",
           "Name": "file",
-          "Description": "The shared parameter file, incl. path\n\nstring\nDefault value : null",
+          "Description": "The shared parameter file, incl. path.\n\nstring\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -486,7 +486,7 @@
         {
           "Id": "a6330f5c9e48457c818445a0615482ec",
           "Name": "GroupName",
-          "Description": "List of group names",
+          "Description": "List of group names.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -495,7 +495,7 @@
         {
           "Id": "17769503b7b24ac5af1b651b0d95cce8",
           "Name": "ParameterType",
-          "Description": "List of types",
+          "Description": "List of types.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -504,7 +504,7 @@
         {
           "Id": "3d7a83a866de47ac81b3d1e983c7523b",
           "Name": "ParameterName",
-          "Description": "List of parameters",
+          "Description": "List of parameters.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -513,7 +513,7 @@
         {
           "Id": "59abe74dc0f64d06bfd5797c39dcd4e1",
           "Name": "Definition",
-          "Description": "List of definitions",
+          "Description": "List of definitions.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -522,7 +522,7 @@
         {
           "Id": "8fb8182a3bd2431788809e9d31e57d92",
           "Name": "Guid",
-          "Description": "List of guids",
+          "Description": "List of guids.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -541,7 +541,7 @@
         {
           "Id": "da1de42a23024bc1b5083e7dc2e5b1fc",
           "Name": "file",
-          "Description": "The shared parameter file, incl. path\n\nstring\nDefault value : null",
+          "Description": "The shared parameter file, incl. path.\n\nstring\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -552,7 +552,7 @@
         {
           "Id": "5c7931ee3c66472fa2bf6b9acee09813",
           "Name": "ParameterType",
-          "Description": "List of types",
+          "Description": "List of types.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -561,7 +561,7 @@
         {
           "Id": "d0c0039874d94c0792274101613f873d",
           "Name": "GroupName",
-          "Description": "List of group names",
+          "Description": "List of group names.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -570,7 +570,7 @@
         {
           "Id": "9a407b7f77d04678b948ff0ed4d1136a",
           "Name": "ParameterName",
-          "Description": "List of parameters",
+          "Description": "List of parameters.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -579,7 +579,7 @@
         {
           "Id": "9e2cd8c4d94d4fa0b366ca7210226129",
           "Name": "Definition",
-          "Description": "List of definitions",
+          "Description": "List of definitions.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -588,7 +588,7 @@
         {
           "Id": "e4fcd4f9a35948ebbc07f1e9c70adb40",
           "Name": "Guid",
-          "Description": "List of guids",
+          "Description": "List of guids.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -637,7 +637,7 @@
         {
           "Id": "73f5d194de334838ace3e559045bd04d",
           "Name": "file",
-          "Description": "The shared parameter file, incl. path\n\nstring\nDefault value : null",
+          "Description": "The shared parameter file, incl. path.\n\nstring\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -648,7 +648,7 @@
         {
           "Id": "1f2e9d4502d64c9cbfdfa27f7dc6eda7",
           "Name": "GroupName",
-          "Description": "List of group names",
+          "Description": "List of group names.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -657,7 +657,7 @@
         {
           "Id": "3a6b3954c77546e58124a26e52332f54",
           "Name": "ParameterName",
-          "Description": "List of parameters",
+          "Description": "List of parameters.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -666,7 +666,7 @@
         {
           "Id": "9b9699c7c00b4760a76c1a823f016332",
           "Name": "ParameterType",
-          "Description": "List of types",
+          "Description": "List of types.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -675,7 +675,7 @@
         {
           "Id": "81d2d62e45df418b89c198d51376d821",
           "Name": "Definition",
-          "Description": "List of definitions",
+          "Description": "List of definitions.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -684,7 +684,7 @@
         {
           "Id": "7c64981d541a45da8d35c455366aa09d",
           "Name": "Guid",
-          "Description": "List of guids",
+          "Description": "List of guids.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -692,7 +692,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get all shared parameter by file\n\nSharedParameter.ByFile (file: string = null): var[]..[]"
+      "Description": "Get all shared parameter by file.\n\nSharedParameter.ByFile (file: string = null): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -704,7 +704,7 @@
         {
           "Id": "4b5f471d7d114461967f1ebd5867f70d",
           "Name": "file",
-          "Description": "The shared parameter file",
+          "Description": "The shared parameter file.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -712,7 +712,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get the shared parameter file as string\n\nSharedParameter.GetFile ( ): string"
+      "Description": "Get the shared parameter file as string.\n\nSharedParameter.GetFile ( ): string"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -927,7 +927,7 @@
         {
           "Id": "25ecb9d8a9d84f848cdcb7e002c0db63",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nvar[]\nDefault value : null",
+          "Description": "Document (rvt) as Orchid document.\n\nvar[]\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -936,7 +936,7 @@
         {
           "Id": "951c9f5581c74f25b454fedec8f72198",
           "Name": "file",
-          "Description": "Shared Parameter file incl. file extension\n\nstring",
+          "Description": "Shared Parameter file incl. file extension.\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -945,7 +945,7 @@
         {
           "Id": "370e1e01fa494d17896ca90a0ed4bdcd",
           "Name": "groupName",
-          "Description": "Group of the parameter to add from the file, If no group is supplied, all possible groups are selected\n\nstring[]",
+          "Description": "Group of the parameter to add from the file. If no group is supplied, all possible groups are selected.\n\nstring[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -954,7 +954,7 @@
         {
           "Id": "ca6ca7c541c84705a60bc1e114647817",
           "Name": "group",
-          "Description": "BuiltIn Parameter Group to add pr. provided group\n\nstring[]",
+          "Description": "BuiltIn Parameter Group to add pr. provided group.\n\nstring[]",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -963,7 +963,7 @@
         {
           "Id": "f713ee4955ab47b691fc3b0c9d85f1ab",
           "Name": "instance",
-          "Description": "Is instance parameter? Otherwise it's a type parameter! Boolean value must be set pr. provided group\n\nbool[]\nDefault value : null",
+          "Description": "Is instance parameter? Otherwise it's a type parameter! Boolean value must be set pr. provided group.\n\nbool[]\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -972,7 +972,7 @@
         {
           "Id": "ae9e5f1aa1014e39819f3ccca39bca20",
           "Name": "vary",
-          "Description": "Vary parameter between groups? Boolean value must be set pr. provided group\n\nbool[]\nDefault value : null",
+          "Description": "Vary parameter between groups? Boolean value must be set pr. provided group.\n\nbool[]\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -981,7 +981,7 @@
         {
           "Id": "543570ba08a745eb9b522e3258bf7cf7",
           "Name": "category",
-          "Description": "Category(ies) the parameter applies to, If no category is supplied, all possible categories are selected\n\nCategory[]\nDefault value : null",
+          "Description": "Category(ies) the parameter applies to. If no category is supplied, all possible categories are selected.\n\nCategory[]\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -992,7 +992,7 @@
         {
           "Id": "c7ce2f3de4cb4c688526dfcf7bbd0db2",
           "Name": "Parameter",
-          "Description": "Parameter as Dynamo type",
+          "Description": "Parameter as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1001,7 +1001,7 @@
         {
           "Id": "7967bac8ed244c4985a3b4b61096be40",
           "Name": "GroupName",
-          "Description": "List of group names",
+          "Description": "List of group names.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1009,7 +1009,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Add parameters by groupName, by the provided shared parameter file. Parameters are set with the same settings pr. provided group and attached the same provided category(ies). NOTE. If the parameter exists is the category binding being updated, and tooltip is being added if exsist!\n\nSharedParameter.AddByFile (document: var[] = null, file: string, groupName: string[], group: string[], instance: bool[] = null, vary: bool[] = null, category: Category[] = null): var[]..[]"
+      "Description": "Add parameters by groupName, by the provided shared parameter file. Parameters are set with the same settings pr. provided group and attached the same provided category(ies). Note: If the parameter exists is the category binding being updated, and tooltip is being added if exsist!\n\nSharedParameter.AddByFile (document: var[] = null, file: string, groupName: string[], group: string[], instance: bool[] = null, vary: bool[] = null, category: Category[] = null): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -1223,7 +1223,7 @@
         {
           "Id": "70062dc8208446b8a3f53f390919ba86",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nvar[]\nDefault value : null",
+          "Description": "Document (rvt) as Orchid document.\n\nvar[]\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1232,7 +1232,7 @@
         {
           "Id": "c4c59f3f31bc4eb7a91b450349544447",
           "Name": "category",
-          "Description": "Category(ies) the parameter applies to, If no category is supplied, all possible categories are selected\n\nCategory[]\nDefault value : null",
+          "Description": "Category(ies) the parameter applies to. If no category is supplied, all possible categories are selected.\n\nCategory[]\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1243,7 +1243,7 @@
         {
           "Id": "cf5243e2da854e7e905c385e08135020",
           "Name": "Parameter",
-          "Description": "Parameter as Dynamo type",
+          "Description": "Parameter as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1251,7 +1251,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Add basic BIM7AA shared parameters in the project (BIM7AATypeID, BIM7AATypeCode, BIM7AATypeNumber, BIM7AATypeName, BIM7AATypeDescription, BIM7AATypeComments). Parameters are set with the same settings pr. provided group and attached the same provided category(ies). NOTE. If the parameter exists is the category binding being updated, and tooltip is being added if exsist!\n\nSharedParameter.AddBIM7AA (document: var[] = null, category: Category[] = null): var[]..[]"
+      "Description": "Add BIM7AA type shared parameters in the project (BIM7AATypeID, BIM7AATypeCode, BIM7AATypeNumber, BIM7AATypeName, BIM7AATypeDescription, BIM7AATypeComments). Parameters are set with the same settings pr. group and attached the same provided category(ies). Note: If the parameter exists is the category binding being updated, and tooltip is being added if exsist!\n\nSharedParameter.AddBIM7AA (document: var[] = null, category: Category[] = null): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -1262,7 +1262,7 @@
         {
           "Id": "3d95484a0b474813a1376f5311b91c31",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nvar[]\nDefault value : null",
+          "Description": "Document (rvt) as Orchid document.\n\nvar[]\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1271,7 +1271,7 @@
         {
           "Id": "ef7e0a4c3efd4399b9362e4d9d4c1007",
           "Name": "category",
-          "Description": "Category(ies) the parameter applies to, If no category is supplied, all possible categories are selected\n\nCategory[]\nDefault value : null",
+          "Description": "Category(ies) the parameter applies to. If no category is supplied, all possible categories are selected.\n\nCategory[]\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1282,7 +1282,7 @@
         {
           "Id": "f7f5eb92e892463797d424e90c6822cb",
           "Name": "Parameter",
-          "Description": "Parameter as Dynamo type",
+          "Description": "Parameter as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1290,7 +1290,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Add basic IFC shared parameters in the project (IfcExportAs, IfcExportType, IfcDescription, IFC CAD Layer). Parameters are set with the same settings pr. provided group and attached the same provided category(ies). NOTE. If the parameter exists is the category binding being updated, and tooltip is being added if exsist!\n\nSharedParameter.AddIFC (document: var[] = null, category: Category[] = null): var[]..[]"
+      "Description": "Add basic IFC type and instance shared parameters in the project (IfcExportAs, IfcExportType, IfcDescription, IFC CAD Layer). Parameters are set with the same settings pr. group and attached the same provided category(ies). Note: If the parameter exists is the category binding being updated, and tooltip is being added if exsist!\n\nSharedParameter.AddIFC (document: var[] = null, category: Category[] = null): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -1514,7 +1514,7 @@
         {
           "Id": "77b8cc232f4c4f3bba9b39f2a0c25c85",
           "Name": "path",
-          "Description": "Path to the file\n\nstring",
+          "Description": "Path to the file.\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1525,7 +1525,7 @@
         {
           "Id": "458df5f2a1ce499abe51d109566038a6",
           "Name": "file",
-          "Description": "File object",
+          "Description": "File object.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1533,7 +1533,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get file from a path\n\nFile.FromPath (path: string): string"
+      "Description": "Get file from a path.\n\nFile.FromPath (path: string): string"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -1544,7 +1544,7 @@
         {
           "Id": "fda333162fa6497fb8080efb6b9e1ea5",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nvar\nDefault value : null",
+          "Description": "Document (rvt) as Orchid document.\n\nvar\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1553,7 +1553,7 @@
         {
           "Id": "7ea4e2aa43c5429eab83216cb9f175a0",
           "Name": "categoryType",
-          "Description": "CategoryType\n\nstring\nDefault value : null",
+          "Description": "CategoryType.\n\nstring\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1564,7 +1564,7 @@
         {
           "Id": "f1e78dcc151941b2bfcbd3fe9ba2853d",
           "Name": "Element",
-          "Description": "Element",
+          "Description": "Element.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1573,7 +1573,7 @@
         {
           "Id": "60c84a249ce74f7093b6b58ef8d89e2a",
           "Name": "Category",
-          "Description": "Category",
+          "Description": "Category.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1582,7 +1582,7 @@
         {
           "Id": "00df6860ace24f1c99e9c5f240ce20d9",
           "Name": "CategoryType",
-          "Description": "CategoryType",
+          "Description": "CategoryType.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1600,7 +1600,7 @@
       "Inputs": [],
       "Outputs": [
         {
-          "Id": "5284ecd15f5b4393a45c7f19ab64f8c2",
+          "Id": "0ccb8e2bf26546979d74cdd3fdccf106",
           "Name": "",
           "Description": "Value of expression at line 2",
           "UsingDefaultValue": false,
@@ -1681,7 +1681,7 @@
         {
           "Id": "08b3c21c7c694824bfe3d7eb43d63c7b",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nvar[]\nDefault value : null",
+          "Description": "Document (rvt) as Orchid document.\n\nvar[]\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1690,7 +1690,7 @@
         {
           "Id": "25ee13d7f1414a02a3d04db9f2c32b7a",
           "Name": "groupName",
-          "Description": "Group of the parameter to add from the file, If no group is supplied, all possible groups are selected\n\nstring[]",
+          "Description": "Group of the parameter to add from the file, If no group is supplied, all possible groups are selected.\n\nstring[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1699,7 +1699,7 @@
         {
           "Id": "e35086a5f3ab467aac1ac93e938cf42f",
           "Name": "group",
-          "Description": "BuiltIn Parameter Group to add pr. provided group\n\nstring[]",
+          "Description": "BuiltIn Parameter Group to add pr. provided group.\n\nstring[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1708,7 +1708,7 @@
         {
           "Id": "f4148c727db54a99809c398b191f2036",
           "Name": "instance",
-          "Description": "Is instance parameter? Otherwise it's a type parameter! Boolean value must be set pr. provided group\n\nbool[]\nDefault value : null",
+          "Description": "Is instance parameter? Otherwise it's a type parameter! Boolean value must be set pr. provided group.\n\nbool[]\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1717,7 +1717,7 @@
         {
           "Id": "372f2bbf608748a6b375babb5059cd14",
           "Name": "vary",
-          "Description": "Vary parameter between groups? Boolean value must be set pr. provided group\n\nbool[]\nDefault value : null",
+          "Description": "Vary parameter between groups? Boolean value must be set pr. provided group.\n\nbool[]\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1726,7 +1726,7 @@
         {
           "Id": "c043983c0dbe44ac9132a1701b2ecb63",
           "Name": "category",
-          "Description": "Category(ies) the parameter applies to, If no category is supplied, all possible categories are selected\n\nCategory[]\nDefault value : null",
+          "Description": "Category(ies) the parameter applies to. If no category is supplied, all possible categories are selected.\n\nCategory[]\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1737,7 +1737,7 @@
         {
           "Id": "3c352945af2042efa36f6d5b804e94e6",
           "Name": "Parameter",
-          "Description": "Parameter as Dynamo type",
+          "Description": "Parameter as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1746,7 +1746,7 @@
         {
           "Id": "79eead057c8a491eb77783a93d98b30a",
           "Name": "GroupName",
-          "Description": "List of group names",
+          "Description": "List of group names.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1754,7 +1754,105 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Add shared parameters by groupName, from current loaded shared parameter file. Parameters are set with the same settings pr. provided group and attached the same provided category(ies). NOTE. If the parameter exists is the category binding being updated, and tooltip is being added if exsist!\n\nSharedParameter.AddByGroup (document: var[] = null, groupName: string[], group: string[], instance: bool[] = null, vary: bool[] = null, category: Category[] = null): var[]..[]"
+      "Description": "Add shared parameters by groupName, from current loaded shared parameter file. Parameters are set with the same settings pr. provided group and attached the same provided category(ies). Note: If the parameter exists is the category binding being updated, and tooltip is being added if exsist!\n\nSharedParameter.AddByGroup (document: var[] = null, groupName: string[], group: string[], instance: bool[] = null, vary: bool[] = null, category: Category[] = null): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Parameters.SharedParameter.AddCCS@var[],Revit.Elements.Category[]",
+      "Id": "b497344f8eaa4677b7a5d70290826743",
+      "Inputs": [
+        {
+          "Id": "25d7d83d07ea420a9a80cd51bcd83d8b",
+          "Name": "document",
+          "Description": "Document (rvt) as Orchid document.\n\nvar[]\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "a2ff5abf1c40494c943e9d1196240232",
+          "Name": "category",
+          "Description": "Category(ies) the parameter applies to. If no category is supplied, all possible categories are selected.\n\nCategory[]\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "8cbb30e41a61484281cf6d7f2227f60d",
+          "Name": "Parameter",
+          "Description": "Parameter as Dynamo type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Add basic CCS type and instance shared parameters in the project. Parameters are set with the same settings pr. group and attached the same provided category(ies). Note: If the parameter exists is the category binding being updated, and tooltip is being added if exsist!\n\nSharedParameter.AddCCS (document: var[] = null, category: Category[] = null): var[]..[]"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "3dc1e345a20a48d6baf9b9f5bfc0926f",
+      "Inputs": [
+        {
+          "Id": "a11a13d0d3ea43128a9971682cd171fe",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "149ca482e63d4807aee7b38896cdc6de",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.Elements.Element.Name",
+      "Id": "52f5d579dbe7460ebd5c5c6f201c9225",
+      "Inputs": [
+        {
+          "Id": "d65ce6ac75f24a0a9a9c320d285fb87a",
+          "Name": "element",
+          "Description": "Revit.Elements.Element",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "1e2793bbb53142a89cb491d3c93ed390",
+          "Name": "string",
+          "Description": "string",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get the Name of the Element\n\nElement.Name: string"
     }
   ],
   "Connectors": [
@@ -1984,7 +2082,12 @@
       "Id": "a7b7a84e87794c8e9422dfe80acfd770"
     },
     {
-      "Start": "5284ecd15f5b4393a45c7f19ab64f8c2",
+      "Start": "60c84a249ce74f7093b6b58ef8d89e2a",
+      "End": "a2ff5abf1c40494c943e9d1196240232",
+      "Id": "5b7ff5639f1642258b7dc40ae826697f"
+    },
+    {
+      "Start": "0ccb8e2bf26546979d74cdd3fdccf106",
       "End": "7ea4e2aa43c5429eab83216cb9f175a0",
       "Id": "6fbf43768f154cd78c9dee6559ab7409"
     },
@@ -2007,6 +2110,16 @@
       "Start": "79eead057c8a491eb77783a93d98b30a",
       "End": "d611e234029d4a61b13bea4844520d67",
       "Id": "8b9de930488a44398e83a7944f2d340c"
+    },
+    {
+      "Start": "8cbb30e41a61484281cf6d7f2227f60d",
+      "End": "d65ce6ac75f24a0a9a9c320d285fb87a",
+      "Id": "4a590cfe629c4f99955f405bd9622d80"
+    },
+    {
+      "Start": "1e2793bbb53142a89cb491d3c93ed390",
+      "End": "a11a13d0d3ea43128a9971682cd171fe",
+      "Id": "a6700c8192084c25929114dab68d4e30"
     }
   ],
   "Dependencies": [],
@@ -2231,7 +2344,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "X": 352.461696306771,
-        "Y": 24.162701177193497
+        "Y": 24.1627011771935
       },
       {
         "ShowGeometry": true,
@@ -2300,8 +2413,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1124.0236068077136,
-        "Y": 827.3472326997196
+        "X": 2076.2079624703838,
+        "Y": -557.91380375000108
       },
       {
         "ShowGeometry": true,
@@ -2310,8 +2423,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1482.9753215602541,
-        "Y": 827.3472326997196
+        "X": 1717.2562477178435,
+        "Y": -557.91380375000108
       },
       {
         "ShowGeometry": true,
@@ -2320,8 +2433,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -814.97532156025432,
-        "Y": 827.3472326997196
+        "X": 2385.2562477178435,
+        "Y": -557.91380375000108
       },
       {
         "ShowGeometry": true,
@@ -2330,8 +2443,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -2189.9753215602541,
-        "Y": 781.12056603305291
+        "X": 1010.2562477178434,
+        "Y": -604.14047041666777
       },
       {
         "ShowGeometry": true,
@@ -2340,8 +2453,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -761.64464916635916,
-        "Y": -187.46205699237325
+        "X": 618.3564715178195,
+        "Y": -366.70721498855488
       },
       {
         "ShowGeometry": true,
@@ -2350,8 +2463,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1064.6446491663592,
-        "Y": -187.46205699237325
+        "X": 315.35647151781961,
+        "Y": -366.70721498855488
       },
       {
         "ShowGeometry": true,
@@ -2360,8 +2473,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -761.82308509756535,
-        "Y": -544.45202374337532
+        "X": 618.3564715178195,
+        "Y": -723.69718173955687
       },
       {
         "ShowGeometry": true,
@@ -2370,8 +2483,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1064.8230850975654,
-        "Y": -544.45202374337532
+        "X": 315.35647151781961,
+        "Y": -723.69718173955687
       },
       {
         "ShowGeometry": true,
@@ -2380,8 +2493,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1409.8230850975654,
-        "Y": -544.45202374337532
+        "X": -29.643528482180415,
+        "Y": -723.69718173955687
       },
       {
         "ShowGeometry": true,
@@ -2390,8 +2503,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1409.6446491663592,
-        "Y": -187.46205699237325
+        "X": -29.643528482180415,
+        "Y": -366.70721498855488
       },
       {
         "ShowGeometry": true,
@@ -2400,8 +2513,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1124.0236068077136,
-        "Y": 938.21140559389175
+        "X": 2076.2079624703838,
+        "Y": -447.04963085582887
       },
       {
         "ShowGeometry": true,
@@ -2410,8 +2523,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1762.9753215602541,
-        "Y": 753.3472326997196
+        "X": 1437.2562477178435,
+        "Y": -631.91380375000108
       },
       {
         "ShowGeometry": true,
@@ -2420,8 +2533,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1124.0236068077136,
-        "Y": 216.22892790962499
+        "X": 2076.261478315158,
+        "Y": -1142.1664335596654
       },
       {
         "ShowGeometry": true,
@@ -2430,8 +2543,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -821.02360680771335,
-        "Y": 216.22892790962499
+        "X": 2379.2614783151585,
+        "Y": -1142.1664335596654
       },
       {
         "ShowGeometry": true,
@@ -2440,8 +2553,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -2190.0236068077138,
-        "Y": 142.95195168077009
+        "X": 1010.261478315158,
+        "Y": -1215.4434097885203
       },
       {
         "ShowGeometry": true,
@@ -2450,8 +2563,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1124.0236068077136,
-        "Y": 329.24914765912825
+        "X": 2076.261478315158,
+        "Y": -1029.146213810162
       },
       {
         "ShowGeometry": true,
@@ -2480,8 +2593,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1793.1682693470559,
-        "Y": -353.59902815490466
+        "X": -432.10027397608712,
+        "Y": -724.21341476624514
       },
       {
         "ShowGeometry": true,
@@ -2490,8 +2603,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -2129.1682693470561,
-        "Y": -340.95902815490456
+        "X": -768.10027397608815,
+        "Y": -711.57341476624515
       },
       {
         "ShowGeometry": true,
@@ -2500,8 +2613,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1756.0236068077136,
-        "Y": 399.17861834743678
+        "X": 1444.2614783151582,
+        "Y": -959.21674312185348
       },
       {
         "ShowGeometry": true,
@@ -2510,8 +2623,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1763.9753215602541,
-        "Y": 1046.3472326997194
+        "X": 1436.2562477178435,
+        "Y": -338.91380375000125
       },
       {
         "ShowGeometry": true,
@@ -2520,8 +2633,38 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1469.5623536196679,
-        "Y": 216.22892790962499
+        "X": 1730.7227315032039,
+        "Y": -1142.1664335596654
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "SharedParameter.AddCCS",
+        "Id": "b497344f8eaa4677b7a5d70290826743",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -29.643528482180415,
+        "Y": -1233.8603532457905
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "3dc1e345a20a48d6baf9b9f5bfc0926f",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 618.3564715178195,
+        "Y": -1233.8603532457905
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Element.Name",
+        "Id": "52f5d579dbe7460ebd5c5c6f201c9225",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 315.35647151781961,
+        "Y": -1233.8603532457905
       }
     ],
     "Annotations": [
@@ -2619,11 +2762,11 @@
           "42660d764bca437c81d5e9c916b3a997"
         ],
         "Left": 342.461696306771,
-        "Top": -21.837298822806503,
+        "Top": -21.8372988228065,
         "Width": 578.0,
         "Height": 155.0,
         "FontSize": 30.0,
-        "InitialTop": 24.162701177193497,
+        "InitialTop": 24.1627011771935,
         "InitialHeight": 145.0,
         "TextblockHeight": 36.0,
         "Background": "#FFFFB8D8"
@@ -2636,12 +2779,12 @@
           "127360ac516c4c7caaf007fdee503955",
           "f86bcf1698cf489cb9509780d4f12d3c"
         ],
-        "Left": -1419.6446491663592,
-        "Top": -240.46205699237325,
-        "Width": 839.0,
-        "Height": 247.0,
+        "Left": -39.643528482180415,
+        "Top": -419.70721498855488,
+        "Width": 895.99999999999989,
+        "Height": 320.0,
         "FontSize": 36.0,
-        "InitialTop": -187.46205699237325,
+        "InitialTop": -366.70721498855488,
         "InitialHeight": 145.0,
         "TextblockHeight": 43.0,
         "Background": "#FFBB87C6"
@@ -2654,12 +2797,12 @@
           "9b2d184f6001469789a11907a0807169",
           "a82937cafe784e5bbe444df20724d1aa"
         ],
-        "Left": -1419.8230850975654,
-        "Top": -597.45202374337532,
-        "Width": 886.0,
+        "Left": -39.643528482180415,
+        "Top": -776.69718173955687,
+        "Width": 885.99999999999989,
         "Height": 277.0,
         "FontSize": 36.0,
-        "InitialTop": -544.45202374337532,
+        "InitialTop": -723.69718173955687,
         "InitialHeight": 145.0,
         "TextblockHeight": 43.0,
         "Background": "#FFBB87C6"
@@ -2676,12 +2819,12 @@
           "96b03f8659d04e71b4d93c896f21ba60",
           "a48a30c4f5444e8db6f4049db7d8dd10"
         ],
-        "Left": -2199.9753215602541,
-        "Top": 700.3472326997196,
-        "Width": 1684.9999999999998,
+        "Left": 1000.2562477178434,
+        "Top": -684.91380375000108,
+        "Width": 1685.0,
         "Height": 505.0,
         "FontSize": 36.0,
-        "InitialTop": 753.3472326997196,
+        "InitialTop": -631.91380375000108,
         "InitialHeight": 437.99999999999977,
         "TextblockHeight": 43.0,
         "Background": "#FFFFAA45"
@@ -2697,13 +2840,13 @@
           "13e1dd5dbb2c46a6be73e4a6e0c8f59e",
           "ab728bd079bf40be8a5f9c7a7b0faaf9"
         ],
-        "Left": -2200.0236068077138,
-        "Top": 89.9519516807701,
+        "Left": 1000.261478315158,
+        "Top": -1268.4434097885203,
         "Width": 1667.0000000000005,
         "Height": 504.27697622885489,
         "FontSize": 36.0,
-        "InitialTop": 142.95195168077009,
-        "InitialHeight": 401.22666666666669,
+        "InitialTop": -1215.4434097885203,
+        "InitialHeight": 401.2266666666668,
         "TextblockHeight": 43.0,
         "Background": "#FFFFAA45"
       },
@@ -2714,19 +2857,37 @@
           "aae1a0ac17e7418196fb103ba3415966",
           "5a9adfef507241d78ab123ba249dcd34"
         ],
-        "Left": -2139.1682693470561,
-        "Top": -406.59902815490466,
-        "Width": 639.00000000000023,
+        "Left": -778.10027397608815,
+        "Top": -777.21341476624514,
+        "Width": 639.000000000001,
         "Height": 198.0,
         "FontSize": 36.0,
-        "InitialTop": -353.59902815490466,
-        "InitialHeight": 157.6400000000001,
+        "InitialTop": -724.21341476624514,
+        "InitialHeight": 157.64,
         "TextblockHeight": 43.0,
         "Background": "#FFD4B6DB"
+      },
+      {
+        "Id": "1a34ce08e52548f5ae45b60234235921",
+        "Title": "Add CCS parameters",
+        "Nodes": [
+          "3dc1e345a20a48d6baf9b9f5bfc0926f",
+          "52f5d579dbe7460ebd5c5c6f201c9225",
+          "b497344f8eaa4677b7a5d70290826743"
+        ],
+        "Left": -39.643528482180415,
+        "Top": -1286.8603532457905,
+        "Width": 957.99999999999989,
+        "Height": 431.0,
+        "FontSize": 36.0,
+        "InitialTop": -1233.8603532457905,
+        "InitialHeight": 145.0,
+        "TextblockHeight": 43.0,
+        "Background": "#FFBB87C6"
       }
     ],
-    "X": 579.07417876286206,
-    "Y": 439.6441800284199,
-    "Zoom": 0.25071610052789323
+    "X": 511.37510316381145,
+    "Y": 442.92433693013083,
+    "Zoom": 0.33466051149458925
   }
 }
