@@ -6,4 +6,33 @@ Please clone the sample files in this folder to use them. The sample files are a
   
 To use these sample files, please open one of the Revit documents in the "Data" folder. By doing this the "root" directory will be set correctly in all the graphs!  
 
-<img src="../samples2.png" />  
+![folder](../img/folder.png) Orchid Samples  
+&nbsp; ![folder](../img/folder.png) Data  
+&nbsp;&nbsp;&nbsp; ![folder](../img/folder.png) 2018_Data  
+&nbsp;&nbsp;&nbsp; ![folder](../img/folder.png) 2019_Data  
+&nbsp;&nbsp;&nbsp; ![folder](../img/folder.png) 2020_Data  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![folder](../img/folder.png) testSet  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![file](../img/file1.png) 2020_changeMaterial.rvt  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![file](../img/file1.png) 2020_defaultFamily.rfa  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![file](../img/file1.png) 2020_defaultProject.rvt  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![file](../img/file1.png) 2020_ProductionUnit.rvt  
+&nbsp;&nbsp;&nbsp; ![folder](../img/folder.png) 2021_Data  
+&nbsp;&nbsp;&nbsp; ... and many more data files  
+&nbsp; ![folder](../img/folder.png) Graphs  
+&nbsp;&nbsp;&nbsp; ![folder](../img/folder.png) Applications  
+&nbsp;&nbsp;&nbsp; ![folder](../img/folder.png) Core  
+&nbsp;&nbsp;&nbsp; ![folder](../img/folder.png) Elements  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![file](../img/file2.png) Category.dyn  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![file](../img/file3.png) Category.png  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![file](../img/file2.png) CompoundLayer.dyn  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![file](../img/file3.png) CompoundLayer.png  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![file](../img/file2.png) Filter.dyn  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![file](../img/file3.png) Filter.png  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![file](../img/file2.png) SpatialElement.dyn  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![file](../img/file3.png) SpatialElement.png  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![file](../img/file2.png) Workset.dyn  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![file](../img/file3.png) Workset.png  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... and many more graph/image files  
+&nbsp;&nbsp;&nbsp; ![folder](../img/folder.png) Families  
+&nbsp;&nbsp;&nbsp; ![folder](../img/folder.png) Materials  
+&nbsp;&nbsp;&nbsp; ![folder](../img/folder.png) Projects  

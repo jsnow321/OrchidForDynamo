@@ -1,28 +1,35 @@
-﻿# Orchid  
+﻿![logo](img/logo.png)
+# &nbsp; OrchidForDynamo  
+</br>
+
+![maintained](https://img.shields.io/maintenance/yes/2021)
+![commit](https://img.shields.io/github/last-commit/erfajo/orchidfordynamo)
+[![license](https://img.shields.io/badge/License-CC%20BY--ND%204.0-brightgreen)](http://creativecommons.org/licenses/by-nd/4.0/)  
 Orchid is a solution designed for use in the [Dynamo](http://dynamobim.org) environment. The solution is designed to support practical, technical, logical, and mathematical issues. In particular, is some solutions designed to handle nD-list issues. In addition, are solutions for applications included that not necessarily are Autodesk products.  
   
 **Software environment:**  
 Built for Dynamo 2.6.0 (Revit 2021), 2.3.0 (Revit 2020), and 2.0.4 (Revit 2019, 2018).  
-Note: The version for Dynamo 1.3.4 (Revit 2019, 2018, 2017) is obsolete!  
+Note: The version for Dynamo 1.3.4 (Revit 2019, 2018) is obsolete and will be deprecated by the release of Revit 2022!  
   
 **Orchid Samples:**  
-In the [samples](Samples) folder are examples in using the Orchid package placed. For further informations read the [Readme](Samples/readme.md) file!    
+In the [samples](Samples) folder are examples using the Orchid package placed. For further informations read the [Readme](Samples/readme.md) file!    
   
 **History/Change Log:**  
-<a href="Orchid_260.md">Orchid 260</a>   
-<a href="Orchid_230.md">Orchid 230</a>  
-<a href="Orchid_200.md">Orchid 200</a>  
-<a href="Orchid_130.md">Orchid 130</a> &nbsp;&nbsp;&nbsp; Note: the version is <b>obsolete</b>  
-
+[![orchid](https://img.shields.io/badge/Orchid-260-lightgrey)](Orchid_260.md)
+[![orchid](https://img.shields.io/badge/Orchid-230-lightgrey)](Orchid_230.md)
+[![orchid](https://img.shields.io/badge/Orchid-200-lightgrey)](Orchid_200.md)
+[![orchid](https://img.shields.io/badge/Orchid-130-lightgrey)](Orchid_130.md)  
+</br>
+ 
 ---
-## Install or Update in Dynamo  
-Use the executable installer in the **[Builds](Builds)** folder to install the Orchid package.  
+## Install or Update the package for Dynamo  
+Use the executable installer in the **[Builds](Builds)** folder to install the Orchid package. Please note the vertical versions of Orchid are coded for a specific version of Dynamo and Revit to ensure code is applicable for that exact combination, and not least due to the enormous scope of Orchid.  
   
 Select the executable according to your dynamo version!  
-OrchidforDynamo_260 &nbsp;&nbsp;&nbsp; (for the dynamo 2.6.x branch)  
-OrchidforDynamo_230 &nbsp;&nbsp;&nbsp; (for the dynamo 2.3.x branch)  
-OrchidforDynamo_200 &nbsp;&nbsp;&nbsp; (for the dynamo 2.0.x branch)  
-OrchidforDynamo_130 &nbsp;&nbsp;&nbsp; (for the dynamo 1.3.x branch. Note: the version is obsolete)  
+[![orchid](https://img.shields.io/badge/Orchid-260-brightgreen) &nbsp;&nbsp;&nbsp; ![dynamo](https://img.shields.io/badge/Dynamo-2.6-blue) &nbsp;&nbsp;&nbsp; ![revit](https://img.shields.io/badge/Revit-2021-blue)](Builds/OrchidForDynamo_260.exe)  
+[![orchid](https://img.shields.io/badge/Orchid-230-brightgreen) &nbsp;&nbsp;&nbsp; ![dynamo](https://img.shields.io/badge/Dynamo-2.3-blue) &nbsp;&nbsp;&nbsp; ![revit](https://img.shields.io/badge/Revit-2020-blue)](Builds/OrchidForDynamo_230.exe)  
+[![orchid](https://img.shields.io/badge/Orchid-200-brightgreen) &nbsp;&nbsp;&nbsp; ![dynamo](https://img.shields.io/badge/Dynamo-2.0-blue) &nbsp;&nbsp;&nbsp; ![revit](https://img.shields.io/badge/Revit-2019%20&verbar;%202018-blue)](Builds/OrchidForDynamo_200.exe)  
+[![orchid](https://img.shields.io/badge/Orchid-130-red) &nbsp;&nbsp;&nbsp; ![dynamo](https://img.shields.io/badge/Dynamo-1.3-red) &nbsp;&nbsp;&nbsp; ![revit](https://img.shields.io/badge/Revit-2019%20&verbar;%202018-red) &nbsp;&nbsp;&nbsp; ![obsolete](https://img.shields.io/badge/version_is-obsolete-red)](Builds/OrchidForDynamo_130.exe)  
   
 <span style="color:red">**REVIT AND DYNAMO MUST BE CLOSED DURING INSTALLATION!**</span>  
   
@@ -33,7 +40,7 @@ Select the zip-file according to your dynamo version!
 Orchid_260_? &nbsp;&nbsp;&nbsp; (for the dynamo 2.6.x branch)  
 Orchid_230_? &nbsp;&nbsp;&nbsp; (for the dynamo 2.3.x branch)  
 Orchid_200_? &nbsp;&nbsp;&nbsp; (for the dynamo 2.0.x branch)  
-Orchid_130_? &nbsp;&nbsp;&nbsp; (for the dynamo 1.3.x branch. Note: the version is obsolete)  
+Orchid_130_? &nbsp;&nbsp;&nbsp; (for the dynamo 1.3.x branch. Note: the version is obsolete and will be deprecated by the release of Revit 2022!)  
 
 The individual version is avalible both for the sandbox version and for the version used Inside revit.  
 ?_Revit &nbsp;&nbsp;&nbsp; (the Revit version)  
@@ -44,8 +51,8 @@ If Orchid dosnt work after installation, then try to see if you have one of thes
   
 ---
 ## Node description and organization  
-Nodes are generally seen arranged in four node assemblies depending on the version. Two assemblies cover the Revit version and two assemblies cover the Core (Sandbox) version. Each of the two sets of assemblies has an assembly for base/standard nodes and an assembly for extensible nodes, mainly dropdown nodes. Besides these four, are assemblies covering icons for the nodes present.  
-The nodes may also be used as textual scripted functions in code blocks and custom nodes, example using design script as the Dynamo functions.  
+Nodes are generally arranged in four node assemblies depending the version. Two assemblies cover the Revit version and two assemblies cover the Core (Sandbox) version. Each of the two sets of assemblies has an assembly for base/standard nodes and an assembly for extensible nodes, mainly dropdown nodes. Besides these four, are assemblies covering external applications outside Revit and icons for the nodes present.  
+The nodes may also be used as textual scripted functions in code blocks and custom nodes, example when using design script in code blocks as the Dynamo functions.  
   
 Inside Dynamo is the Orchid package nodes arranged into different main branches: Common, RevitFamily, RevitMaterial, RevitProject, About, and Applications. The last branch covers functions for external applications outside Revit. The first four branches covers functions to be used inside Revit. the About branch cover nodes for information about the Orchid package.  
   
@@ -59,10 +66,8 @@ Erik Falck Jørgensen
   
 All content in this repository is part of the Orchid package.  
   
-<a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/">
-<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nd/4.0/88x31.png" /></a>  
+[![license](https://i.creativecommons.org/l/by-nd/4.0/88x31.png)](http://creativecommons.org/licenses/by-nd/4.0/)  
   
-This work is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/">
-Creative Commons Attribution-NoDerivatives 4.0 International License</a> (CC BY-ND 4.0).  
-  
+This work is licensed under the [Creative Commons Attribution-NoDerivatives 4.0 International](http://creativecommons.org/licenses/by-nd/4.0/) license (CC BY-ND 4.0).  
+
 In short terms does the CC BY-ND license state: This license allows for redistribution, commercial and non-commercial, as long as it is passed along unchanged and in whole, with credit to the author.  
