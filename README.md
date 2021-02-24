@@ -1,7 +1,6 @@
 ﻿![logo](img/logo.png)
-# &nbsp; OrchidForDynamo  
-</br>
-
+# &nbsp; Orchid  
+  
 ![maintained](https://img.shields.io/maintenance/yes/2021)
 ![commit](https://img.shields.io/github/last-commit/erfajo/orchidfordynamo)
 [![license](https://img.shields.io/badge/License-CC%20BY--ND%204.0-brightgreen)](http://creativecommons.org/licenses/by-nd/4.0/)  
@@ -12,15 +11,14 @@ Built for Dynamo 2.6.0 (Revit 2021), 2.3.0 (Revit 2020), and 2.0.4 (Revit 2019, 
 Note: The version for Dynamo 1.3.4 (Revit 2019, 2018) is obsolete and will be deprecated by the release of Revit 2022!  
   
 **Orchid Samples:**  
-In the [samples](Samples) folder are examples using the Orchid package placed. For further informations read the [Readme](Samples/readme.md) file!    
+In the [samples](Samples) folder are examples using the Orchid package placed. For further informations read the [Readme](Samples/readme.md) file!  
   
 **History/Change Log:**  
 [![orchid](https://img.shields.io/badge/Orchid-260-lightgrey)](Orchid_260.md)
 [![orchid](https://img.shields.io/badge/Orchid-230-lightgrey)](Orchid_230.md)
 [![orchid](https://img.shields.io/badge/Orchid-200-lightgrey)](Orchid_200.md)
 [![orchid](https://img.shields.io/badge/Orchid-130-lightgrey)](Orchid_130.md)  
-</br>
- 
+  
 ---
 ## Install or Update the package for Dynamo  
 Use the executable installer in the **[Builds](Builds)** folder to install the Orchid package. Please note the vertical versions of Orchid are coded for a specific version of Dynamo and Revit to ensure code is applicable for that exact combination, and not least due to the enormous scope of Orchid.  
@@ -32,16 +30,17 @@ Select the executable according to your dynamo version!
 [![orchid](https://img.shields.io/badge/Orchid-130-red) &nbsp;&nbsp;&nbsp; ![dynamo](https://img.shields.io/badge/Dynamo-1.3-red) &nbsp;&nbsp;&nbsp; ![revit](https://img.shields.io/badge/Revit-2019%20&verbar;%202018-red) &nbsp;&nbsp;&nbsp; ![obsolete](https://img.shields.io/badge/version_is-obsolete-red)](Builds/OrchidForDynamo_130.exe)  
   
 <span style="color:red">**REVIT AND DYNAMO MUST BE CLOSED DURING INSTALLATION!**</span>  
-  
+</br>
+
 ### Manually installation
 The Orchid package may also be installed by manually copying files from the **[Zipped](Zipped)** folder. This is only recommendable for experienced users! To install/update this way, please unzip the zip-file of the chosen version into your dynamo package folder, into a folder named **Orchid**. Download may be handled either by downloading a single file, or by cloning or zipping the repository. The package folder path can be found in Dynamo via the menu item 'Settings' -> 'Manage Node and Package Paths'.  
-
+  
 Select the zip-file according to your dynamo version!  
 Orchid_260_? &nbsp;&nbsp;&nbsp; (for the dynamo 2.6.x branch)  
 Orchid_230_? &nbsp;&nbsp;&nbsp; (for the dynamo 2.3.x branch)  
 Orchid_200_? &nbsp;&nbsp;&nbsp; (for the dynamo 2.0.x branch)  
 Orchid_130_? &nbsp;&nbsp;&nbsp; (for the dynamo 1.3.x branch. Note: the version is obsolete and will be deprecated by the release of Revit 2022!)  
-
+  
 The individual version is avalible both for the sandbox version and for the version used Inside revit.  
 ?_Revit &nbsp;&nbsp;&nbsp; (the Revit version)  
 ?_Core &nbsp;&nbsp;&nbsp; (the Sandbox version)  
@@ -69,5 +68,5 @@ All content in this repository is part of the Orchid package.
 [![license](https://i.creativecommons.org/l/by-nd/4.0/88x31.png)](http://creativecommons.org/licenses/by-nd/4.0/)  
   
 This work is licensed under the [Creative Commons Attribution-NoDerivatives 4.0 International](http://creativecommons.org/licenses/by-nd/4.0/) license (CC BY-ND 4.0).  
-
+  
 In short terms does the CC BY-ND license state: This license allows for redistribution, commercial and non-commercial, as long as it is passed along unchanged and in whole, with credit to the author.  

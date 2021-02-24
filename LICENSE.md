@@ -10,7 +10,6 @@ This work is licensed under the [Creative Commons Attribution-NoDerivatives 4.0 
   
 In short terms does the CC BY-ND license state: This license allows for redistribution, commercial and non-commercial, as long as it is passed along unchanged and in whole, with credit to the author.  
   
-  
 ### Third Party Licenses  
 Autodesk  
 https://www.autodesk.com/company/terms-of-use/en/general-terms  

@@ -1,4 +1,4 @@
-# Error handling
+# Error handling  
   
 If the package is placed in the correct default folder according to the Revit/Dynamo installation out of the box, then should Orchid also work straight out of the box. However, If the default package folder is moved due to other reasons locally, then is there a need to tweak the Orchid folder location afterward. Another key error is that users dont keep their Revit/Dynamo updated to the latest release/update and by not doing this might the default dynamo folder location be outdated!  
   
