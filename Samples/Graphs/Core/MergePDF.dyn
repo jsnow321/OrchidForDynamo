@@ -12,13 +12,13 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Common.Print.MergePDF@string[],string",
+      "FunctionSignature": "Orchid.Common.File.MergePDF@string[],string",
       "Id": "e6f6993e21bb406f97e691ff8208fc70",
       "Inputs": [
         {
           "Id": "dbf30536eaa24a4a8c201ae80e28799c",
           "Name": "documents",
-          "Description": "List of PDF documents to be merged\n\nstring[]",
+          "Description": "List of PDF documents to be merged.\n\nstring[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -38,7 +38,7 @@
         {
           "Id": "e2f3388bda9a4a8193f5bc008131dc7d",
           "Name": "watch",
-          "Description": "Add a watch node to verify the output",
+          "Description": "Add a watch node to verify the output.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -46,7 +46,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Merge list of PDF documents.\n\nPrint.MergePDF (documents: string[], filePath: string): string"
+      "Description": "Merge list of PDF documents.\n\nFile.MergePDF (documents: string[], filePath: string): string"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
@@ -91,13 +91,23 @@
     }
   ],
   "Dependencies": [],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Orchid",
+      "Version": "203.2.0.7778",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "e6f6993e21bb406f97e691ff8208fc70"
+      ]
+    }
+  ],
   "Bindings": [],
   "View": {
     "Dynamo": {
       "ScaleFactor": 1.0,
       "HasRunWithoutCrash": false,
       "IsVisibleInDynamoLibrary": true,
-      "Version": "2.0.3.8810",
+      "Version": "2.3.0.5885",
       "RunType": "Manual",
       "RunPeriod": "1000"
     },
@@ -116,7 +126,7 @@
     "NodeViews": [
       {
         "ShowGeometry": true,
-        "Name": "Print.MergePDF",
+        "Name": "File.MergePDF",
         "Id": "e6f6993e21bb406f97e691ff8208fc70",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
@@ -136,8 +146,8 @@
       }
     ],
     "Annotations": [],
-    "X": 254.820399582397,
-    "Y": 892.88886901446,
-    "Zoom": 0.934357541899441
+    "X": 429.904746641334,
+    "Y": 1096.2500061692192,
+    "Zoom": 1.6620111731843576
   }
 }

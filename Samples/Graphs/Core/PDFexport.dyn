@@ -1,0 +1,2818 @@
+{
+  "Uuid": "3c9d0464-8643-5ffe-96e5-ab1769818209",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "PDFexport",
+  "ElementResolver": {
+    "ResolutionMap": {
+      "FilePath": {
+        "Key": "DSCore.IO.FilePath",
+        "Value": "DSCoreNodes.dll"
+      },
+      "Directory": {
+        "Key": "DSCore.IO.Directory",
+        "Value": "DSCoreNodes.dll"
+      }
+    }
+  },
+  "Inputs": [
+    {
+      "Id": "ba632a67d5df4eafa1438da8cc4bbe60",
+      "Name": "Boolean",
+      "Type": "boolean",
+      "Value": "false",
+      "Description": "Selection between a true and false."
+    },
+    {
+      "Id": "d5c64737551b471188b1730e2312d1b9",
+      "Name": "String",
+      "Type": "string",
+      "Value": "testSetting",
+      "Description": "Creates a string."
+    },
+    {
+      "Id": "8a82c3b875ca4b24b31e360876f2c019",
+      "Name": "String",
+      "Type": "string",
+      "Value": "Default",
+      "Description": "Creates a string."
+    },
+    {
+      "Id": "52e4d2ca90124d3bac55fe21aa6d5790",
+      "Name": "String",
+      "Type": "string",
+      "Value": "testSetting",
+      "Description": "Creates a string."
+    },
+    {
+      "Id": "b701859899ac4eceb638ae37a25aba3b",
+      "Name": "String",
+      "Type": "string",
+      "Value": "testSetting",
+      "Description": "Creates a string."
+    },
+    {
+      "Id": "ce69fb9ba9d94496ae0e65a144535941",
+      "Name": "String",
+      "Type": "string",
+      "Value": "testSet",
+      "Description": "Creates a string."
+    },
+    {
+      "Id": "ee294b207805413f88e4aae88567c26f",
+      "Name": "Boolean",
+      "Type": "boolean",
+      "Value": "false",
+      "Description": "Selection between a true and false."
+    },
+    {
+      "Id": "9c13f07e36f74cf0934193fa10b722e7",
+      "Name": "Boolean",
+      "Type": "boolean",
+      "Value": "true",
+      "Description": "Selection between a true and false."
+    }
+  ],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
+      "NodeType": "BooleanInputNode",
+      "InputValue": false,
+      "Id": "ba632a67d5df4eafa1438da8cc4bbe60",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "4375f1cef335434fac0cf92bb1d958d2",
+          "Name": "",
+          "Description": "Boolean",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Selection between a true and false."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "[10,10];",
+      "Id": "57edb13f922646e18e7009b74b22f343",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "3422967d5917430d90e6d7a72a597e36",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "testSetting",
+      "Id": "d5c64737551b471188b1730e2312d1b9",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "997d0c79ee7c4cb4b7fd7d4336c6a6e5",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "Default",
+      "Id": "8a82c3b875ca4b24b31e360876f2c019",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "bbb33c69d6cd4b7d8df9a4395f7cf5bb",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "100;",
+      "Id": "13ad4faf1d7c4d5e8465a99a64ccf90e",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "f39edd7dfbb04f71858be46d93192bec",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Views.SheetSet.GetView@var",
+      "Id": "3353e45923984b27adac7c541ca04765",
+      "Inputs": [
+        {
+          "Id": "0c068d2e097f40079eb43c51656adfc6",
+          "Name": "viewSheetSet",
+          "Description": "ViewSheetSet as string or Dynamo type.\n\nvar",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "2f6011cac3c54cae865e6452f1a66d1f",
+          "Name": "View",
+          "Description": "View as Dynamo type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get View from sheet set.\n\nSheetSet.GetView (viewSheetSet: var): var[]..[]"
+    },
+    {
+      "ConcreteType": "Orchid.E.RevitProject.Views.SheetSet, OrchidRE",
+      "SelectedIndex": 0,
+      "SelectedString": "A3 set",
+      "NodeType": "ExtensionNode",
+      "Id": "a8df5467f92645319f0e502e105e0961",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "d88753089fe1443298aceb158bff5588",
+          "Name": "ViewSheetSet",
+          "Description": "The selected ViewSheetSet",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Dropdown for sheet set values"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "testSetting",
+      "Id": "52e4d2ca90124d3bac55fe21aa6d5790",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "a5b17ce89bef450b96e98d61083a46b4",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "Orchid.E.Common.Print.ZoomType, OrchidRE",
+      "SelectedIndex": 1,
+      "SelectedString": "Zoom",
+      "NodeType": "ExtensionNode",
+      "Id": "166ad22108514126b5ba03a140c1d9cb",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "35bb5412258a4c99bc8b881091880b4c",
+          "Name": "ZoomType",
+          "Description": "The selected ZoomType",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Dropdown for printer zoom type values"
+    },
+    {
+      "ConcreteType": "Orchid.E.Common.Print.PaperPlacement, OrchidRE",
+      "SelectedIndex": 1,
+      "SelectedString": "Lower Left",
+      "NodeType": "ExtensionNode",
+      "Id": "526ae8dd679e4753bc56de96be4ac3bb",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "d05598262c674be09046f5ee5b8f7ed7",
+          "Name": "PaperPlacement",
+          "Description": "The selected PaperPlacement",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Dropdown for paper placement values"
+    },
+    {
+      "ConcreteType": "Orchid.E.Common.Print.PageOrientation, OrchidRE",
+      "SelectedIndex": 0,
+      "SelectedString": "Portrait",
+      "NodeType": "ExtensionNode",
+      "Id": "b7c685577f4f4e75ad16ce32a4e3c562",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "fcf5fc5321db4aa39d4b9d5866170caf",
+          "Name": "PageOrientation",
+          "Description": "The selected PageOrientation",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Dropdown for printer page orientation values"
+    },
+    {
+      "ConcreteType": "Orchid.E.Common.Print.MarginType, OrchidRE",
+      "SelectedIndex": 2,
+      "SelectedString": "User defined",
+      "NodeType": "ExtensionNode",
+      "Id": "2138cfabaccc4835a0c656cb68e47dca",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "9af9d02d29b247fe962df38e0352aa76",
+          "Name": "MarginType",
+          "Description": "The selected MarginType",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Dropdown for printer margin type values"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "testSetting",
+      "Id": "b701859899ac4eceb638ae37a25aba3b",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "8a57044792eb41c588e2ab20a479f7e2",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "Orchid.E.Common.Print.PaperPlacement, OrchidRE",
+      "SelectedIndex": 0,
+      "SelectedString": "Center",
+      "NodeType": "ExtensionNode",
+      "Id": "40e4b7218c26400f9b82d4b1070509ca",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "c6559c5a391c4216951687d0558ce7d1",
+          "Name": "PaperPlacement",
+          "Description": "The selected PaperPlacement",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Dropdown for paper placement values"
+    },
+    {
+      "ConcreteType": "Orchid.E.Common.Print.ZoomType, OrchidRE",
+      "SelectedIndex": 0,
+      "SelectedString": "Fit To Page",
+      "NodeType": "ExtensionNode",
+      "Id": "4a3db8a9a9f04e0486b8cc6a84b3a646",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "ca511d4b94fb42c491b398b68e03b678",
+          "Name": "ZoomType",
+          "Description": "The selected ZoomType",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Dropdown for printer zoom type values"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Common.Document.ActiveView@Orchid.RevitProject.Common.Document",
+      "Id": "f0f783d58305424d95aec536fe7fb03e",
+      "Inputs": [
+        {
+          "Id": "274b0353253d4a16bc0286766407f66e",
+          "Name": "document",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "746c17c6a971494a934c59a9dcfbec97",
+          "Name": "View",
+          "Description": "The active view as Dynamo type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get the active view in document.\n\nDocument.ActiveView (document: Document = null): Element"
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.Categories, DSRevitNodesUI",
+      "SelectedIndex": 447,
+      "SelectedString": "OST_RampsAboveCut",
+      "NodeType": "ExtensionNode",
+      "Id": "24f2367a82e341a3ab0ec476c80db4dd",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "5b05451561b54b53be2758a8ff66074b",
+          "Name": "Category",
+          "Description": "The selected Category.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "All built-in categories."
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.ElementsOfCategory, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "Id": "665599e40e9044f58956efcd820642a4",
+      "Inputs": [
+        {
+          "Id": "b02667565be944e7a44711fa9280f26c",
+          "Name": "Category",
+          "Description": "The Category",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "603a9d4b5c0c44de9d9b95943398221f",
+          "Name": "Elements",
+          "Description": "An element type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Get all elements of the specified category from the model."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Views.SheetSet.Change@Revit.Elements.Element[],var",
+      "Id": "07b4adc8e48e41acaa23d159f097cbd7",
+      "Inputs": [
+        {
+          "Id": "12dd4981023a42ba96d9129c0262d3c4",
+          "Name": "view",
+          "Description": "View as Dynamo type.\n\nElement[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "56d9b0eeef3049bf9363be656e068e44",
+          "Name": "viewSheetSet",
+          "Description": "ViewSheetSet as string or Dynamo type.\n\nvar",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b924d9fdb8cf48c2b899b731c4c49202",
+          "Name": "ViewSheetSet",
+          "Description": "ViewSheetSet as Dynamo type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Change sheet set.\n\nSheetSet.Change (view: Element[], viewSheetSet: var): var[]..[]"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "testSet",
+      "Id": "ce69fb9ba9d94496ae0e65a144535941",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "615c0a028ff24677a9dc2900740d10e6",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Views.SheetSet.Create@Revit.Elements.Element[],string",
+      "Id": "a0d161c03a7847778946e4c7bd0cb61e",
+      "Inputs": [
+        {
+          "Id": "f7022b0f0bb14273847c8a51f67f31e2",
+          "Name": "view",
+          "Description": "View as Dynamo type.\n\nElement[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "92e31abfef334b5ab0d73077756ac214",
+          "Name": "name",
+          "Description": "Name for the ViewSheetSet.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b7a3d417b8bc4d5d9e756dcc0ae99f74",
+          "Name": "ViewSheetSet",
+          "Description": "ViewSheetSet as Dynamo type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Create sheet set.\n\nSheetSet.Create (view: Element[], name: string): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Views.SheetSet.Delete@var",
+      "Id": "2922b9f44bc847368bfede793bc6581c",
+      "Inputs": [
+        {
+          "Id": "8cd4cbcf83f44f9ab68d547855132fbb",
+          "Name": "viewSheetSet",
+          "Description": "ViewSheetSet as string or Dynamo type.\n\nvar",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "0635ebd1a73e4c3b88ab66e8baf28aad",
+          "Name": "void",
+          "Description": "void",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Delete sheet set.\n\nSheetSet.Delete (viewSheetSet: var): void"
+    },
+    {
+      "ConcreteType": "Orchid.E.RevitProject.Views.SheetSet, OrchidRE",
+      "SelectedIndex": 0,
+      "SelectedString": "A3 set",
+      "NodeType": "ExtensionNode",
+      "Id": "a6d47020a5984c52996501d65cf46de0",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "d64cb6c2be34495087afc93ae7d30ddd",
+          "Name": "ViewSheetSet",
+          "Description": "The selected ViewSheetSet",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Dropdown for sheet set values"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Views.SheetSet.GetView@var",
+      "Id": "ac0947e5f08f4a0083bad187bb14295f",
+      "Inputs": [
+        {
+          "Id": "050d23d64f1e488a9a16f62be5651a09",
+          "Name": "viewSheetSet",
+          "Description": "ViewSheetSet as string or Dynamo type.\n\nvar",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "e609b167e0174b25be21deb4890f26df",
+          "Name": "View",
+          "Description": "View as Dynamo type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get View from sheet set.\n\nSheetSet.GetView (viewSheetSet: var): var[]..[]"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
+      "NodeType": "BooleanInputNode",
+      "InputValue": false,
+      "Id": "ee294b207805413f88e4aae88567c26f",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "8bd78c22b38845dfa3e7c57ff4f7f652",
+          "Name": "",
+          "Description": "Boolean",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Selection between a true and false."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
+      "NodeType": "BooleanInputNode",
+      "InputValue": true,
+      "Id": "9c13f07e36f74cf0934193fa10b722e7",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "50f4478dfcc146e98c4db147dc09eecb",
+          "Name": "",
+          "Description": "Boolean",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Selection between a true and false."
+    },
+    {
+      "ConcreteType": "Orchid.E.Common.Print.ColorDepthType, OrchidRE",
+      "SelectedIndex": 1,
+      "SelectedString": "Gray Scale",
+      "NodeType": "ExtensionNode",
+      "Id": "99286c5ccaa54fb28621bc476b8467af",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "899964e9e4264bd1a187a455cf6d9812",
+          "Name": "ColorDepth",
+          "Description": "The selected ColorDepth",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Dropdown for appearance color values"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.DataStream.Await@var[]..[],var[]..[]",
+      "Id": "c1a50e7b100a4a9086c720eef124e804",
+      "Inputs": [
+        {
+          "Id": "8aecb2d2e768482b875e4a0411c8231d",
+          "Name": "pass",
+          "Description": "Data to pass.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "79664f95af8b4b9dbde009ee633d0b0e",
+          "Name": "waitFor",
+          "Description": "Data object to wait for.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "bcfadc4b402c4dfd82116b12fb948a02",
+          "Name": "pass",
+          "Description": "Passed data.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Await a data stream before passing another data stream.\n\nDataStream.Await (pass: var[]..[], waitFor: var[]..[]): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.Elements.Views.Sheet.SheetNumber",
+      "Id": "08172bbcea144cfa9e91463b3f656130",
+      "Inputs": [
+        {
+          "Id": "5a55021212004077ade455d03e718ecb",
+          "Name": "sheet",
+          "Description": "Revit.Elements.Views.Sheet",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "2f7eea74a0a94fd0a2ecb10067fdfcc6",
+          "Name": "string",
+          "Description": "string",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get the SheetNumber of the Sheet\n\nSheet.SheetNumber: string"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "a + \"\\\\\" + b;",
+      "Id": "2af5007aaeec4c4c80c9f281a2eaa88f",
+      "Inputs": [
+        {
+          "Id": "98c49d378402433e9c8fcb698d853ac8",
+          "Name": "a",
+          "Description": "a",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "2113761eabc94314b66c649bcc648afb",
+          "Name": "b",
+          "Description": "b",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "245a735b14cd4f16a21fb152b80c835a",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.Directory.Current",
+      "Id": "91651251378d42819a8c927948066997",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "2c83842d8e1e464ab10063c79317e451",
+          "Name": "directory",
+          "Description": "Directory.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get current directory.\n\nDirectory.Current: string"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "//input documents\n[\"%userprofile%\\\\Downloads\\\\PDF\\\\pdf1.pdf\",\n\"%userprofile%\\\\Downloads\\\\PDF\\\\pdf2.pdf\"];\n\n//output file path\n\"%userprofile%\\\\Downloads\\\\PDF\\\\result.pdf\";",
+      "Id": "9255e31dc39d4a669a0ebf12e0e4715c",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "24c3131bd46a4b90b0f86db05ac2ac90",
+          "Name": "",
+          "Description": "Value of expression at line 2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "cb7f221a80854544ba00d5696eb92a71",
+          "Name": "",
+          "Description": "Value of expression at line 6",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.File.MergePDF@string[],string",
+      "Id": "9961247d7fac41d8be00b88a88ce24b3",
+      "Inputs": [
+        {
+          "Id": "114df7f095864daca3440ac945ac7e0b",
+          "Name": "documents",
+          "Description": "List of PDF documents to be merged.\n\nstring[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "21aed9231425439f816f3f7150c13269",
+          "Name": "filePath",
+          "Description": "Give a valid path for the merged PDF output.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "bbbaeb0274d1435b9b2c5c1fb453b258",
+          "Name": "watch",
+          "Description": "Add a watch node to verify the output.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Merge list of PDF documents.\n\nFile.MergePDF (documents: string[], filePath: string): string"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.PDFexport.CreateSetting@string,string,string,string,string,double[],string,int",
+      "Id": "c1a065edbaf14504b1945bcb6e54f043",
+      "Inputs": [
+        {
+          "Id": "29a91d9f3f18413c80bd614160048271",
+          "Name": "name",
+          "Description": "name to create for the export setting.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "fe4ea4b3e03d4c559fe7e6991605560f",
+          "Name": "paperZize",
+          "Description": "Paper size as string. If value is not set is default paper size selected.\n\nstring\nDefault value : \"Default\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "51065abe682f4b4da41cc18421ff707f",
+          "Name": "pageOrientation",
+          "Description": "Page orientation as string.\n\nstring\nDefault value : \"Landscape\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "d053b329dbb64d76b5ae1d5d52b56a11",
+          "Name": "paperPlacement",
+          "Description": "Paper placement.\n\nstring\nDefault value : \"Margins\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "fa94113a7a11461e89e95593671a1542",
+          "Name": "marginType",
+          "Description": "Print margin type.\n\nstring\nDefault value : \"NoMargin\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "fc1479a86f3d4c068799c46b804def57",
+          "Name": "margin",
+          "Description": "Print margin value as double.\n\ndouble[]\nDefault value : [0, 0]",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "7e7d8b435ef24352a559c867087c7b30",
+          "Name": "zoomType",
+          "Description": "Zoom type as string.\n\nstring\nDefault value : \"Zoom\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "31b6a2c10e1144b58f848981c844d409",
+          "Name": "zoom",
+          "Description": "Zoom value as integer.\n\nint\nDefault value : 100",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "becc0faec88a4082ad51b3225f91b119",
+          "Name": "ExportSetting",
+          "Description": "PDF export setting.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Set pdf export setting. Note. If \"Default\" paper size is selected, then will no other options be set. The entire setting will be set as the builtin default option/setting!\n\nPDFexport.CreateSetting (name: string, paperZize: string = \"Default\", pageOrientation: string = \"Landscape\", paperPlacement: string = \"Margins\", marginType: string = \"NoMargin\", margin: double[] = [0, 0], zoomType: string = \"Zoom\", zoom: int = 100): Element"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.PDFexport.ByView@string[],bool,bool,Revit.Elements.Element[],var,string",
+      "Id": "e83d0c0260e447c284a0b698d232439c",
+      "Inputs": [
+        {
+          "Id": "ea1a21acc7054f32a2a9bf77817af6bd",
+          "Name": "fileName",
+          "Description": "Give a valid path and filename for the pdf export output.\n\nstring[]\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "9ea08017db45484db17d75506f8beaa0",
+          "Name": "combine",
+          "Description": "Combine into one file?\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "78fc4b687f394f99b89c208cfdf115be",
+          "Name": "forceNaming",
+          "Description": "Force file naming if output is not \"combined\"?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f826d099ec8949a8a391886e46037ea3",
+          "Name": "view",
+          "Description": "View to export as Dynamo type (default: Active View).\n\nElement[]\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "1bf4bddc62454086933d8ae3488d4cd3",
+          "Name": "exportSetting",
+          "Description": "PDF export setting as string or Dynamo type.\n\nvar\nDefault value : \"<in-session>\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f1ab803c12f0477c879bc0b1b6d9820a",
+          "Name": "exportQuality",
+          "Description": "Appearance: Export quality.\n\nstring\nDefault value : \"DPI600\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "89fa4163f5db461cb2b23800342f795f",
+          "Name": "void",
+          "Description": "void",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "PDF export by view. --> Note: If combined into one file is changed in this session, then the dynamo graph needs to be reloaded!\n\nPDFexport.ByView (fileName: string[] = null, combine: bool = false, forceNaming: bool = true, view: Element[] = null, exportSetting: var = \"<in-session>\", exportQuality: string = \"DPI600\"): void"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.PDFexport.ByViewSheetSet@string[],bool,bool,Revit.Elements.Element,var,string",
+      "Id": "96efcaa735de44ba98d3d2b48f8039c5",
+      "Inputs": [
+        {
+          "Id": "f2293f383f95432986c9e6e86f2a12da",
+          "Name": "fileName",
+          "Description": "Give a valid path and filename for the pdf export output.\n\nstring[]\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c00796f1cf294661942efecdfa0d886e",
+          "Name": "combine",
+          "Description": "Combine into one file?\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5c32d372d7da4eaa90d50908cfe027b2",
+          "Name": "forceNaming",
+          "Description": "Force file naming if output is not \"combined\"?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "a82b3c93a4e441c68660cceed3dbc506",
+          "Name": "viewSheetSet",
+          "Description": "ViewSheetSet to export as Dynamo type.\n\nElement",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "0b9fdf08bd0541afaa0ee46284632f96",
+          "Name": "exportSetting",
+          "Description": "PDF export setting as string or Dynamo type.\n\nvar\nDefault value : \"<in-session>\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f1d95122cef440a0a8bc19dc63f3bffd",
+          "Name": "exportQuality",
+          "Description": "Appearance: Export quality.\n\nstring\nDefault value : \"DPI600\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "93b574e80d284dc0b44d197b66573371",
+          "Name": "void",
+          "Description": "void",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "PDF export by view sheet set. --> Note: If combined into one file is changed in this session, then the dynamo graph needs to be reloaded!\n\nPDFexport.ByViewSheetSet (fileName: string[] = null, combine: bool = false, forceNaming: bool = true, viewSheetSet: Element, exportSetting: var = \"<in-session>\", exportQuality: string = \"DPI600\"): void"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.PDFexport.ChangeSetting@var,string,string,string,string,double[],string,int",
+      "Id": "01161ddeb39a4e42a3ca82bdef244a20",
+      "Inputs": [
+        {
+          "Id": "3e17b4f712dc439d83fcb76b7b52a36a",
+          "Name": "exportSetting",
+          "Description": "PDF export setting as string or Dynamo type.\n\nvar",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "aca12f5d4b5d43d2a8b25e3685f38314",
+          "Name": "paperZize",
+          "Description": "Paper size as string. If value is not set is default paper size selected.\n\nstring\nDefault value : \"Default\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "1b35aee729824eeaa17b77d0039cc99c",
+          "Name": "pageOrientation",
+          "Description": "Page orientation as string.\n\nstring\nDefault value : \"Auto\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "7ba96cbacdc64b4d89aca39e0874ce6e",
+          "Name": "paperPlacement",
+          "Description": "Paper placement.\n\nstring\nDefault value : \"Margins\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "dea077180d2e491b9e54282af4522137",
+          "Name": "marginType",
+          "Description": "Print margin type.\n\nstring\nDefault value : \"NoMargin\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "8adc2bfb70dc4d1bb5f2ef4e33430c9a",
+          "Name": "margin",
+          "Description": "Print margin value as double.\n\ndouble[]\nDefault value : [0, 0]",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ab5a1c004a24431d815e59bf8604461d",
+          "Name": "zoomType",
+          "Description": "Zoom type as string.\n\nstring\nDefault value : \"Zoom\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5a2261a9592048d9a095cc7121e2fdd9",
+          "Name": "zoom",
+          "Description": "Zoom value as integer.\n\nint\nDefault value : 100",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "ea3344fc3e7a483084d88eb39ae5c5dc",
+          "Name": "PrintSetting",
+          "Description": "PrintSetting.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Change pdf export setting. Note. If \"Default\" paper size is selected, then will no other options be set. The entire setting will be set as the builtin default option/setting!\n\nPDFexport.ChangeSetting (exportSetting: var, paperZize: string = \"Default\", pageOrientation: string = \"Auto\", paperPlacement: string = \"Margins\", marginType: string = \"NoMargin\", margin: double[] = [0, 0], zoomType: string = \"Zoom\", zoom: int = 100): Element"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.PDFexport.DeleteSetting@var",
+      "Id": "4a0cec620bf741b38486d3525d464977",
+      "Inputs": [
+        {
+          "Id": "c5143abe76824d4f9d946b7ed8c234ff",
+          "Name": "exportSetting",
+          "Description": "PDF export setting as string or Dynamo type.\n\nvar",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "6f5a112758854b00a03677aea6a83f05",
+          "Name": "void",
+          "Description": "void",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Delete pdf export setting.\n\nPDFexport.DeleteSetting (exportSetting: var): void"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.PDFexport.SetOptions@var,bool,bool,bool,bool,bool,bool,bool,bool,string,string",
+      "Id": "53acc9ef2205450bbe875f7e789376bd",
+      "Inputs": [
+        {
+          "Id": "63fe9b8fd8184e2baf3e6b1374093721",
+          "Name": "exportSetting",
+          "Description": "PDF export setting as string or Dynamo type.\n\nvar",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "aa595fee43494492b3514485cf5a8b1d",
+          "Name": "viewLinksinBlue",
+          "Description": "View links in blue? (Color prints only)\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c0d9239f8e0b4eae81fabb88dfb60827",
+          "Name": "hideReforWorkPlanes",
+          "Description": "Hide ref/work planes?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "4fc76742dbd045b58cbab65531e37673",
+          "Name": "hideUnreferencedViewTags",
+          "Description": "Hide unreferenced view tags?\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "fe713b19d2b04ef8ab358ed61b2997db",
+          "Name": "maskCoincidentLines",
+          "Description": "Region edges mask coincident lines?\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "7d65a374a3dd430f897744525b3aa257",
+          "Name": "hideScopeBoxes",
+          "Description": "Hide scope boxes?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3bd9f34c0de7403eb39ad800224a05d8",
+          "Name": "hideCropBoundaries",
+          "Description": "Hide crop boundaries?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "984ce4afc68a404089f9ed3f21ad64bc",
+          "Name": "replaceHalftoneWithThinLines",
+          "Description": "Replace halftone with thin lines?\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "a58385e9161e4315b0606d44e411f1ed",
+          "Name": "createOutputUsing",
+          "Description": "Create output using: Use vector (false) or raster (true) processing?\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3497ab49cd2f49fc92fb5dede114fd41",
+          "Name": "rasterQuality",
+          "Description": "Appearance: Raster quality.\n\nstring\nDefault value : \"High\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "473f535e81f841ea8c380443aa766e1d",
+          "Name": "colorDepth",
+          "Description": "Appearance: Colors.\n\nstring\nDefault value : \"Color\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "9d8cb1fed34a49aba1a198cd64ae6681",
+          "Name": "ExportSetting",
+          "Description": "PDF export setting.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Set pdf export options.\n\nPDFexport.SetOptions (exportSetting: var, viewLinksinBlue: bool = false, hideReforWorkPlanes: bool = true, hideUnreferencedViewTags: bool = false, maskCoincidentLines: bool = false, hideScopeBoxes: bool = true, hideCropBoundaries: bool = true, replaceHalftoneWithThinLines: bool = false, createOutputUsing: bool = false, rasterQuality: string = \"High\", colorDepth: string = \"Color\"): Element"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.PDFexport.CreateSetting@string,string,string,string,string,double[],string,int",
+      "Id": "167a4c5cc3834ddd93b62e14268b90f8",
+      "Inputs": [
+        {
+          "Id": "bea90ada92904671a599eabdcb75b90a",
+          "Name": "name",
+          "Description": "name to create for the export setting.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "65b376b4c9e147f583a9e47f14c5f173",
+          "Name": "paperZize",
+          "Description": "Paper size as string. If value is not set is default paper size selected.\n\nstring\nDefault value : \"Default\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "69f6c51d03364a31bf23a55293a8ef32",
+          "Name": "pageOrientation",
+          "Description": "Page orientation as string.\n\nstring\nDefault value : \"Landscape\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "594bd63786b1445ebbb8c28cd53d135b",
+          "Name": "paperPlacement",
+          "Description": "Paper placement.\n\nstring\nDefault value : \"Margins\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "aea273b17e064194970b6da1b8ac4e46",
+          "Name": "marginType",
+          "Description": "Print margin type.\n\nstring\nDefault value : \"NoMargin\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "93d6c210a38e4cb5b32ccb1c224191f1",
+          "Name": "margin",
+          "Description": "Print margin value as double.\n\ndouble[]\nDefault value : [0, 0]",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "1400358275774c55807df8e9d1d3ed1d",
+          "Name": "zoomType",
+          "Description": "Zoom type as string.\n\nstring\nDefault value : \"Zoom\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "2b3916bd23ef4a828db6ec4320800b0f",
+          "Name": "zoom",
+          "Description": "Zoom value as integer.\n\nint\nDefault value : 100",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "f0309a3a596f441fa5a6a60113a8d011",
+          "Name": "ExportSetting",
+          "Description": "PDF export setting.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Set pdf export setting. Note. If \"Default\" paper size is selected, then will no other options be set. The entire setting will be set as the builtin default option/setting!\n\nPDFexport.CreateSetting (name: string, paperZize: string = \"Default\", pageOrientation: string = \"Landscape\", paperPlacement: string = \"Margins\", marginType: string = \"NoMargin\", margin: double[] = [0, 0], zoomType: string = \"Zoom\", zoom: int = 100): Element"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.PDFexport.ByView@string[],bool,bool,Revit.Elements.Element[],var,string",
+      "Id": "8130eafe663b4bafbd61c5ede7090db8",
+      "Inputs": [
+        {
+          "Id": "5e05e3a398484edfb1eaf1b8adfb3774",
+          "Name": "fileName",
+          "Description": "Give a valid path and filename for the pdf export output.\n\nstring[]\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "d365fa07c0114eef8c0a534ef7745f7d",
+          "Name": "combine",
+          "Description": "Combine into one file?\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "050dbeab09b640429592ea4a082c2a57",
+          "Name": "forceNaming",
+          "Description": "Force file naming if output is not \"combined\"?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "4a09175368b6418a9b633ba8edac0fe2",
+          "Name": "view",
+          "Description": "View to export as Dynamo type (default: Active View).\n\nElement[]\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c6d61b795f754b4f94e02569dfbb6f3b",
+          "Name": "exportSetting",
+          "Description": "PDF export setting as string or Dynamo type.\n\nvar\nDefault value : \"<in-session>\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ae4a932b19b143558ba84e703d8040f4",
+          "Name": "exportQuality",
+          "Description": "Appearance: Export quality.\n\nstring\nDefault value : \"DPI600\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "d119334af6f14979b771f30c455d8f43",
+          "Name": "void",
+          "Description": "void",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "PDF export by view. --> Note: If combined into one file is changed in this session, then the dynamo graph needs to be reloaded!\n\nPDFexport.ByView (fileName: string[] = null, combine: bool = false, forceNaming: bool = true, view: Element[] = null, exportSetting: var = \"<in-session>\", exportQuality: string = \"DPI600\"): void"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.PDFexport.DeleteSetting@var",
+      "Id": "573fa7b237df4952a470e2032bc75d5b",
+      "Inputs": [
+        {
+          "Id": "62347eb79dc74658ab1ddb01d247a0a9",
+          "Name": "exportSetting",
+          "Description": "PDF export setting as string or Dynamo type.\n\nvar",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "81f8455197514449b3641e012e7b5a9a",
+          "Name": "void",
+          "Description": "void",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Delete pdf export setting.\n\nPDFexport.DeleteSetting (exportSetting: var): void"
+    },
+    {
+      "ConcreteType": "Orchid.E.Common.PDFexport.ExportQuality, OrchidRE",
+      "SelectedIndex": 2,
+      "SelectedString": "DPI300",
+      "NodeType": "ExtensionNode",
+      "Id": "b568be81b96f4a0391c6cd1c607d2468",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "a95fc8db79b74b83b7e4d0710d5258de",
+          "Name": "ExportQuality",
+          "Description": "The selected ExportQuality",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Dropdown for export quality values"
+    },
+    {
+      "ConcreteType": "Orchid.E.Common.Print.RasterQuality, OrchidRE",
+      "SelectedIndex": 1,
+      "SelectedString": "Medium",
+      "NodeType": "ExtensionNode",
+      "Id": "6fe42cec965b4ac3aaa41bcd15775e3c",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "97d72c1bcb654f7da13daa5a94dd39eb",
+          "Name": "RasterQuality",
+          "Description": "The selected RasterQuality",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Dropdown for appearance raster quality values"
+    },
+    {
+      "ConcreteType": "Orchid.E.Common.PDFexport.Setting, OrchidRE",
+      "SelectedIndex": 0,
+      "SelectedString": "Default",
+      "NodeType": "ExtensionNode",
+      "Id": "7538d24b40dd48d29fc2e62d1bb4b03f",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "1b0ec4a7704442b589311251a7cfab3d",
+          "Name": "ExportSetting",
+          "Description": "The selected ExportSetting",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Dropdown for export setting(s)"
+    },
+    {
+      "ConcreteType": "Orchid.E.Common.PDFexport.Setting, OrchidRE",
+      "SelectedIndex": 1,
+      "SelectedString": "testSetting",
+      "NodeType": "ExtensionNode",
+      "Id": "ca8ef10b2afd442b931d9b607d395dd0",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "8f4a3f6862d64aa384ef59e38b4fa238",
+          "Name": "ExportSetting",
+          "Description": "The selected ExportSetting",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Dropdown for export setting(s)"
+    },
+    {
+      "ConcreteType": "Orchid.E.Common.PDFexport.PaperSize, OrchidRE",
+      "SelectedIndex": 2,
+      "SelectedString": "ISO A3 : 297 x 420 mm",
+      "NodeType": "ExtensionNode",
+      "Id": "b692871bb78a4d0bbc41e08bc8c96b08",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "836763b3d436412c88f0d024b3036384",
+          "Name": "PaperFormat",
+          "Description": "The selected PaperFormat",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Dropdown for paper size values"
+    },
+    {
+      "ConcreteType": "Orchid.E.Common.PDFexport.PaperSize, OrchidRE",
+      "SelectedIndex": 0,
+      "SelectedString": "<Use Sheet Size>",
+      "NodeType": "ExtensionNode",
+      "Id": "6a736aca92904fadb811d8622f8ddddf",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "f7ff40d63f88461ea6452939a81c06e9",
+          "Name": "PaperFormat",
+          "Description": "The selected PaperFormat",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Dropdown for paper size values"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.PDFexport.PaperSize",
+      "Id": "9392a9bcf3dc40e59d7a23a5be05ccc4",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "b40afbd10f4748d2833160a5875e59d0",
+          "Name": "PaperSize",
+          "Description": "Paper sizes as string values.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get PDF export paper sizes.\n\nPDFexport.PaperSize ( ): string[]"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "eb95167f64d1414093ee2a7eec44114b",
+      "Inputs": [
+        {
+          "Id": "60073ee69d444f789c7891ab5da34862",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "f326585da0304ef6b57a6d3ad486eb4c",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "4375f1cef335434fac0cf92bb1d958d2",
+      "End": "9ea08017db45484db17d75506f8beaa0",
+      "Id": "1627338690c645a5be35a96339a6667d"
+    },
+    {
+      "Start": "4375f1cef335434fac0cf92bb1d958d2",
+      "End": "c00796f1cf294661942efecdfa0d886e",
+      "Id": "79ffdc5160dc4c27a49b573f97f5d589"
+    },
+    {
+      "Start": "3422967d5917430d90e6d7a72a597e36",
+      "End": "8adc2bfb70dc4d1bb5f2ef4e33430c9a",
+      "Id": "48bfe5e0cc81491386a62935f335003d"
+    },
+    {
+      "Start": "997d0c79ee7c4cb4b7fd7d4336c6a6e5",
+      "End": "29a91d9f3f18413c80bd614160048271",
+      "Id": "03854048379146a8bf44412ce766c2de"
+    },
+    {
+      "Start": "f39edd7dfbb04f71858be46d93192bec",
+      "End": "5a2261a9592048d9a095cc7121e2fdd9",
+      "Id": "5bbe2879f98b4654bc8883995a6c3e6d"
+    },
+    {
+      "Start": "2f6011cac3c54cae865e6452f1a66d1f",
+      "End": "5a55021212004077ade455d03e718ecb",
+      "Id": "e8eb6afe8622451fae4f48bf08d02121"
+    },
+    {
+      "Start": "2f6011cac3c54cae865e6452f1a66d1f",
+      "End": "f826d099ec8949a8a391886e46037ea3",
+      "Id": "583ea53ce85c4a889af701e515e891a3"
+    },
+    {
+      "Start": "d88753089fe1443298aceb158bff5588",
+      "End": "0c068d2e097f40079eb43c51656adfc6",
+      "Id": "f2e53a866a6f4d2393cd724d55ebd774"
+    },
+    {
+      "Start": "d88753089fe1443298aceb158bff5588",
+      "End": "a82b3c93a4e441c68660cceed3dbc506",
+      "Id": "1fbc1df194f643fda5b42ea4f8421bb2"
+    },
+    {
+      "Start": "a5b17ce89bef450b96e98d61083a46b4",
+      "End": "c5143abe76824d4f9d946b7ed8c234ff",
+      "Id": "659a669051f64598a4e2467e10899abc"
+    },
+    {
+      "Start": "35bb5412258a4c99bc8b881091880b4c",
+      "End": "ab5a1c004a24431d815e59bf8604461d",
+      "Id": "6163eb16b19d47878947a7f3abd0f616"
+    },
+    {
+      "Start": "d05598262c674be09046f5ee5b8f7ed7",
+      "End": "7ba96cbacdc64b4d89aca39e0874ce6e",
+      "Id": "d4b142aabfc445e1ac3238d24e89e7ad"
+    },
+    {
+      "Start": "fcf5fc5321db4aa39d4b9d5866170caf",
+      "End": "1b35aee729824eeaa17b77d0039cc99c",
+      "Id": "1f8e49ef9a6c40f3871514aa8c8484aa"
+    },
+    {
+      "Start": "9af9d02d29b247fe962df38e0352aa76",
+      "End": "dea077180d2e491b9e54282af4522137",
+      "Id": "7b2d96093bca456695e4a43d7b422b78"
+    },
+    {
+      "Start": "8a57044792eb41c588e2ab20a479f7e2",
+      "End": "bea90ada92904671a599eabdcb75b90a",
+      "Id": "5cc42a3bdb43458188d5937accb77c73"
+    },
+    {
+      "Start": "c6559c5a391c4216951687d0558ce7d1",
+      "End": "594bd63786b1445ebbb8c28cd53d135b",
+      "Id": "8d8f23c9178c40cface51487939a4007"
+    },
+    {
+      "Start": "ca511d4b94fb42c491b398b68e03b678",
+      "End": "1400358275774c55807df8e9d1d3ed1d",
+      "Id": "f72b1e2f817a4dd8a274fbf89e614e54"
+    },
+    {
+      "Start": "746c17c6a971494a934c59a9dcfbec97",
+      "End": "4a09175368b6418a9b633ba8edac0fe2",
+      "Id": "25b5db3ead5241438945e2cbbc2e0f2a"
+    },
+    {
+      "Start": "5b05451561b54b53be2758a8ff66074b",
+      "End": "b02667565be944e7a44711fa9280f26c",
+      "Id": "576d66514f3f445d9ef854fb7dba74f5"
+    },
+    {
+      "Start": "603a9d4b5c0c44de9d9b95943398221f",
+      "End": "f7022b0f0bb14273847c8a51f67f31e2",
+      "Id": "460ccb4c018340e980e5f0865228c77a"
+    },
+    {
+      "Start": "615c0a028ff24677a9dc2900740d10e6",
+      "End": "92e31abfef334b5ab0d73077756ac214",
+      "Id": "5d609edc66bb4f3890f774223a353de9"
+    },
+    {
+      "Start": "b7a3d417b8bc4d5d9e756dcc0ae99f74",
+      "End": "8cd4cbcf83f44f9ab68d547855132fbb",
+      "Id": "f1dbcd6fbc1445018f45edadc1412434"
+    },
+    {
+      "Start": "b7a3d417b8bc4d5d9e756dcc0ae99f74",
+      "End": "050d23d64f1e488a9a16f62be5651a09",
+      "Id": "27f6875e13e243389478c761c35145eb"
+    },
+    {
+      "Start": "d64cb6c2be34495087afc93ae7d30ddd",
+      "End": "56d9b0eeef3049bf9363be656e068e44",
+      "Id": "d98e15c6af9c4f8c92df0169dd331327"
+    },
+    {
+      "Start": "e609b167e0174b25be21deb4890f26df",
+      "End": "12dd4981023a42ba96d9129c0262d3c4",
+      "Id": "ffa70cec7ab2457f90ed8b624969538d"
+    },
+    {
+      "Start": "8bd78c22b38845dfa3e7c57ff4f7f652",
+      "End": "c0d9239f8e0b4eae81fabb88dfb60827",
+      "Id": "b71a9aa200cf4f6085ea5e0566401482"
+    },
+    {
+      "Start": "8bd78c22b38845dfa3e7c57ff4f7f652",
+      "End": "7d65a374a3dd430f897744525b3aa257",
+      "Id": "6ec6fae982b447029fbfbbeac5cffe57"
+    },
+    {
+      "Start": "8bd78c22b38845dfa3e7c57ff4f7f652",
+      "End": "3bd9f34c0de7403eb39ad800224a05d8",
+      "Id": "7a24f0eed0764d6897f1b55ce522ef44"
+    },
+    {
+      "Start": "50f4478dfcc146e98c4db147dc09eecb",
+      "End": "984ce4afc68a404089f9ed3f21ad64bc",
+      "Id": "711109e357fa4c9f9730f8245b366be6"
+    },
+    {
+      "Start": "50f4478dfcc146e98c4db147dc09eecb",
+      "End": "fe713b19d2b04ef8ab358ed61b2997db",
+      "Id": "bc055494fe134bc8b8da7fa3b35c5c93"
+    },
+    {
+      "Start": "50f4478dfcc146e98c4db147dc09eecb",
+      "End": "4fc76742dbd045b58cbab65531e37673",
+      "Id": "c59a1be480d745bc88559559f73ab63f"
+    },
+    {
+      "Start": "50f4478dfcc146e98c4db147dc09eecb",
+      "End": "aa595fee43494492b3514485cf5a8b1d",
+      "Id": "857f20e92bf240e18ba3b050362b64a8"
+    },
+    {
+      "Start": "50f4478dfcc146e98c4db147dc09eecb",
+      "End": "a58385e9161e4315b0606d44e411f1ed",
+      "Id": "77eae6e1c63a4557bd7312da39ac77bb"
+    },
+    {
+      "Start": "899964e9e4264bd1a187a455cf6d9812",
+      "End": "473f535e81f841ea8c380443aa766e1d",
+      "Id": "61c5cc1591704dc389e26aa9aad4062d"
+    },
+    {
+      "Start": "bcfadc4b402c4dfd82116b12fb948a02",
+      "End": "62347eb79dc74658ab1ddb01d247a0a9",
+      "Id": "fedb508ec3c148eeaedb23a68e4d1ccb"
+    },
+    {
+      "Start": "2f7eea74a0a94fd0a2ecb10067fdfcc6",
+      "End": "2113761eabc94314b66c649bcc648afb",
+      "Id": "ad019283ea9b4f73bba47e07aaa28573"
+    },
+    {
+      "Start": "245a735b14cd4f16a21fb152b80c835a",
+      "End": "ea1a21acc7054f32a2a9bf77817af6bd",
+      "Id": "e29299b11962457c8338e2d4fef3b5f0"
+    },
+    {
+      "Start": "2c83842d8e1e464ab10063c79317e451",
+      "End": "98c49d378402433e9c8fcb698d853ac8",
+      "Id": "b136c3cdc1db4099b97e52f47acd536f"
+    },
+    {
+      "Start": "24c3131bd46a4b90b0f86db05ac2ac90",
+      "End": "114df7f095864daca3440ac945ac7e0b",
+      "Id": "6f7894960d4a482dacef7218d6c506e7"
+    },
+    {
+      "Start": "cb7f221a80854544ba00d5696eb92a71",
+      "End": "21aed9231425439f816f3f7150c13269",
+      "Id": "0f8f06f32ccf4b7784aa41993a0ef452"
+    },
+    {
+      "Start": "becc0faec88a4082ad51b3225f91b119",
+      "End": "3e17b4f712dc439d83fcb76b7b52a36a",
+      "Id": "5db6596d58634da2bd14f20f947b3b1f"
+    },
+    {
+      "Start": "f0309a3a596f441fa5a6a60113a8d011",
+      "End": "8aecb2d2e768482b875e4a0411c8231d",
+      "Id": "3c41a14fbde0472e9e68676f8d727c89"
+    },
+    {
+      "Start": "f0309a3a596f441fa5a6a60113a8d011",
+      "End": "63fe9b8fd8184e2baf3e6b1374093721",
+      "Id": "5a6567da32ce4a55bad3286ef08b16cb"
+    },
+    {
+      "Start": "f0309a3a596f441fa5a6a60113a8d011",
+      "End": "c6d61b795f754b4f94e02569dfbb6f3b",
+      "Id": "06e4254db71241dd8f1ec0c5e580de36"
+    },
+    {
+      "Start": "d119334af6f14979b771f30c455d8f43",
+      "End": "79664f95af8b4b9dbde009ee633d0b0e",
+      "Id": "cb30e4d762ef4f74aa73d47f7f49e6cb"
+    },
+    {
+      "Start": "97d72c1bcb654f7da13daa5a94dd39eb",
+      "End": "3497ab49cd2f49fc92fb5dede114fd41",
+      "Id": "c5aa744ff27b47ba8665414002594d85"
+    },
+    {
+      "Start": "836763b3d436412c88f0d024b3036384",
+      "End": "aca12f5d4b5d43d2a8b25e3685f38314",
+      "Id": "7a53509273914c79877b42c14e307aea"
+    },
+    {
+      "Start": "f7ff40d63f88461ea6452939a81c06e9",
+      "End": "65b376b4c9e147f583a9e47f14c5f173",
+      "Id": "5ec612a96edd40d8b2aa3c51673adf53"
+    },
+    {
+      "Start": "b40afbd10f4748d2833160a5875e59d0",
+      "End": "60073ee69d444f789c7891ab5da34862",
+      "Id": "55a4a208261a43cd9b35652c4d3e9bbe"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Orchid",
+      "Version": "210.0.0.7778",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "3353e45923984b27adac7c541ca04765",
+        "a8df5467f92645319f0e502e105e0961",
+        "166ad22108514126b5ba03a140c1d9cb",
+        "526ae8dd679e4753bc56de96be4ac3bb",
+        "b7c685577f4f4e75ad16ce32a4e3c562",
+        "2138cfabaccc4835a0c656cb68e47dca",
+        "40e4b7218c26400f9b82d4b1070509ca",
+        "4a3db8a9a9f04e0486b8cc6a84b3a646",
+        "f0f783d58305424d95aec536fe7fb03e",
+        "07b4adc8e48e41acaa23d159f097cbd7",
+        "a0d161c03a7847778946e4c7bd0cb61e",
+        "2922b9f44bc847368bfede793bc6581c",
+        "a6d47020a5984c52996501d65cf46de0",
+        "ac0947e5f08f4a0083bad187bb14295f",
+        "99286c5ccaa54fb28621bc476b8467af",
+        "c1a50e7b100a4a9086c720eef124e804",
+        "91651251378d42819a8c927948066997",
+        "9961247d7fac41d8be00b88a88ce24b3",
+        "c1a065edbaf14504b1945bcb6e54f043",
+        "e83d0c0260e447c284a0b698d232439c",
+        "96efcaa735de44ba98d3d2b48f8039c5",
+        "01161ddeb39a4e42a3ca82bdef244a20",
+        "4a0cec620bf741b38486d3525d464977",
+        "53acc9ef2205450bbe875f7e789376bd",
+        "167a4c5cc3834ddd93b62e14268b90f8",
+        "8130eafe663b4bafbd61c5ede7090db8",
+        "573fa7b237df4952a470e2032bc75d5b",
+        "b568be81b96f4a0391c6cd1c607d2468",
+        "6fe42cec965b4ac3aaa41bcd15775e3c",
+        "7538d24b40dd48d29fc2e62d1bb4b03f",
+        "ca8ef10b2afd442b931d9b607d395dd0",
+        "b692871bb78a4d0bbc41e08bc8c96b08",
+        "6a736aca92904fadb811d8622f8ddddf",
+        "9392a9bcf3dc40e59d7a23a5be05ccc4"
+      ]
+    }
+  ],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.10.1.3976",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Boolean",
+        "Id": "ba632a67d5df4eafa1438da8cc4bbe60",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1354.7595036512148,
+        "Y": -112.00821254608292
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "57edb13f922646e18e7009b74b22f343",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 30.513644947301344,
+        "Y": 382.83283386870579
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String",
+        "Id": "d5c64737551b471188b1730e2312d1b9",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 56.513644947301344,
+        "Y": -154.03219188008134
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String",
+        "Id": "8a82c3b875ca4b24b31e360876f2c019",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1418.14407247637,
+        "Y": 637.24370986104543
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "13ad4faf1d7c4d5e8465a99a64ccf90e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 62.513644947301344,
+        "Y": 607.5788441682206
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "SheetSet.GetView",
+        "Id": "3353e45923984b27adac7c541ca04765",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1262.14407247637,
+        "Y": 419.653230457512
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Sheet Set",
+        "Id": "a8df5467f92645319f0e502e105e0961",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 989.06026579171953,
+        "Y": 345.53074256655231
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String",
+        "Id": "52e4d2ca90124d3bac55fe21aa6d5790",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 515.70792830537755,
+        "Y": 628.90522207930985
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Print ZoomType",
+        "Id": "166ad22108514126b5ba03a140c1d9cb",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -28.486355052698656,
+        "Y": 495.20583901846322
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Print PaperPlacement",
+        "Id": "526ae8dd679e4753bc56de96be4ac3bb",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -63.486355052698656,
+        "Y": 158.08682356919093
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Print PageOrientation",
+        "Id": "b7c685577f4f4e75ad16ce32a4e3c562",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -63.486355052698656,
+        "Y": 45.713818419433494
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Print MarginType",
+        "Id": "2138cfabaccc4835a0c656cb68e47dca",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -36.486355052698656,
+        "Y": 270.45982871894836
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String",
+        "Id": "b701859899ac4eceb638ae37a25aba3b",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -90.099869048699532,
+        "Y": 1031.5485380127134
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Print PaperPlacement",
+        "Id": "40e4b7218c26400f9b82d4b1070509ca",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -90.099869048699532,
+        "Y": 1225.1489974177134
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Print ZoomType",
+        "Id": "4a3db8a9a9f04e0486b8cc6a84b3a646",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -90.099869048699532,
+        "Y": 1335.3154867905332
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Document.ActiveView",
+        "Id": "f0f783d58305424d95aec536fe7fb03e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 302.42734566929084,
+        "Y": 955.59322111812855
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Categories",
+        "Id": "24f2367a82e341a3ab0ec476c80db4dd",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": true,
+        "X": 27.839527254886207,
+        "Y": -665.92550893378257
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "All Elements of Category",
+        "Id": "665599e40e9044f58956efcd820642a4",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 377.5203649985051,
+        "Y": -663.4607674800701
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "SheetSet.Change",
+        "Id": "07b4adc8e48e41acaa23d159f097cbd7",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1207.9710587562829,
+        "Y": -665.4468654495621
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String",
+        "Id": "ce69fb9ba9d94496ae0e65a144535941",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 482.60250356899303,
+        "Y": -551.51453929585011
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "SheetSet.Create",
+        "Id": "a0d161c03a7847778946e4c7bd0cb61e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 612.01521230267508,
+        "Y": -664.861030705823
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "SheetSet.Delete",
+        "Id": "2922b9f44bc847368bfede793bc6581c",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 612.51902224160312,
+        "Y": -501.40011729866512
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Sheet Set",
+        "Id": "a6d47020a5984c52996501d65cf46de0",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 947.20516285569408,
+        "Y": -540.66004176620709
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "SheetSet.GetView",
+        "Id": "ac0947e5f08f4a0083bad187bb14295f",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 913.99313552948013,
+        "Y": -665.671080152804
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Boolean",
+        "Id": "ee294b207805413f88e4aae88567c26f",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 410.27024795381158,
+        "Y": 1639.089250385221
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Boolean",
+        "Id": "9c13f07e36f74cf0934193fa10b722e7",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 410.27024795381158,
+        "Y": 1553.7559170518878
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Print ColorDepth",
+        "Id": "99286c5ccaa54fb28621bc476b8467af",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 410.27024795381158,
+        "Y": 1834.7559170518875
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "DataStream.Await",
+        "Id": "c1a50e7b100a4a9086c720eef124e804",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 939.51351702733632,
+        "Y": 1069.9969631865581
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Sheet.SheetNumber",
+        "Id": "08172bbcea144cfa9e91463b3f656130",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1025.7595036512148,
+        "Y": -172.79493861813211
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "2af5007aaeec4c4c80c9f281a2eaa88f",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1311.7595036512148,
+        "Y": -232.15493861813206
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Directory.Current",
+        "Id": "91651251378d42819a8c927948066997",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1025.7595036512148,
+        "Y": -282.36827195146543
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "9255e31dc39d4a669a0ebf12e0e4715c",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1310.14159081052,
+        "Y": 1645.73236493684
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "File.MergePDF",
+        "Id": "9961247d7fac41d8be00b88a88ce24b3",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": true,
+        "X": 1803.14159081052,
+        "Y": 1681.2390316035
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "PDFexport.CreateSetting",
+        "Id": "c1a065edbaf14504b1945bcb6e54f043",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 319.82154694194537,
+        "Y": -177.87285190165767
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "PDFexport.ByView",
+        "Id": "e83d0c0260e447c284a0b698d232439c",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1659.6078972385533,
+        "Y": -138.00980577400568
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "PDFexport.ByViewSheetSet",
+        "Id": "96efcaa735de44ba98d3d2b48f8039c5",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": true,
+        "X": 1659.6078972385533,
+        "Y": 267.25229446092624
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "PDFexport.ChangeSetting",
+        "Id": "01161ddeb39a4e42a3ca82bdef244a20",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 319.82154694194537,
+        "Y": 135.26307543606765
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "PDFexport.DeleteSetting",
+        "Id": "4a0cec620bf741b38486d3525d464977",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": true,
+        "X": 662.61767373709961,
+        "Y": 525.77324812094753
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "PDFexport.SetOptions",
+        "Id": "53acc9ef2205450bbe875f7e789376bd",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": true,
+        "X": 718.15844717829941,
+        "Y": 1563.2888261812811
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "PDFexport.CreateSetting",
+        "Id": "167a4c5cc3834ddd93b62e14268b90f8",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 212.42734566929084,
+        "Y": 1069.9969631865581
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "PDFexport.ByView",
+        "Id": "8130eafe663b4bafbd61c5ede7090db8",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 616.1396512071226,
+        "Y": 856.21082197211615
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "PDFexport.DeleteSetting",
+        "Id": "573fa7b237df4952a470e2032bc75d5b",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1202.776205900866,
+        "Y": 1069.9969631865581
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "PDFexport Quality",
+        "Id": "b568be81b96f4a0391c6cd1c607d2468",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1294.7595036512148,
+        "Y": 126.90029842193138
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Print RasterQuality",
+        "Id": "6fe42cec965b4ac3aaa41bcd15775e3c",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 410.27024795381158,
+        "Y": 1724.4225837185543
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Export Setting",
+        "Id": "7538d24b40dd48d29fc2e62d1bb4b03f",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1296.14407247637,
+        "Y": 528.151997512166
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Export Setting",
+        "Id": "ca8ef10b2afd442b931d9b607d395dd0",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 329.791861216479,
+        "Y": 525.77324812094753
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "PDFexport PaperSizes",
+        "Id": "b692871bb78a4d0bbc41e08bc8c96b08",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -90.486355052698656,
+        "Y": -66.659186730323924
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "PDFexport PaperSizes",
+        "Id": "6a736aca92904fadb811d8622f8ddddf",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -90.099869048699532,
+        "Y": 1117.3086998821277
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "PDFexport.PaperSize",
+        "Id": "9392a9bcf3dc40e59d7a23a5be05ccc4",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1529.9861933828354,
+        "Y": 853.007477169806
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "eb95167f64d1414093ee2a7eec44114b",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1731.3017842758431,
+        "Y": 853.007477169806
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "8d958899bbb64872b29fc3ee073bac75",
+        "Title": "",
+        "Nodes": [
+          "57edb13f922646e18e7009b74b22f343",
+          "13ad4faf1d7c4d5e8465a99a64ccf90e",
+          "166ad22108514126b5ba03a140c1d9cb",
+          "2138cfabaccc4835a0c656cb68e47dca",
+          "526ae8dd679e4753bc56de96be4ac3bb",
+          "b7c685577f4f4e75ad16ce32a4e3c562",
+          "d5c64737551b471188b1730e2312d1b9",
+          "b692871bb78a4d0bbc41e08bc8c96b08"
+        ],
+        "Left": -100.48635505269866,
+        "Top": -200.03219188008134,
+        "Width": 258.0,
+        "Height": 900.61103604830191,
+        "FontSize": 30.0,
+        "InitialTop": -154.03219188008134,
+        "InitialHeight": 906.61103604830191,
+        "TextblockHeight": 36.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "7dab551e9fb549c8833f61f7db47197b",
+        "Title": "",
+        "Nodes": [
+          "8a82c3b875ca4b24b31e360876f2c019",
+          "3353e45923984b27adac7c541ca04765",
+          "a8df5467f92645319f0e502e105e0961",
+          "7538d24b40dd48d29fc2e62d1bb4b03f",
+          "c2149e24db224a6a9297c3e438278e0b"
+        ],
+        "Left": 979.06026579171953,
+        "Top": 299.53074256655231,
+        "Width": 521.08380668465043,
+        "Height": 420.1848438765598,
+        "FontSize": 30.0,
+        "InitialTop": 345.53074256655231,
+        "InitialHeight": 441.1848438765598,
+        "TextblockHeight": 36.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "70619d3469494d32a6156c448e724e15",
+        "Title": "Remove print setting",
+        "Nodes": [
+          "52e4d2ca90124d3bac55fe21aa6d5790",
+          "4a0cec620bf741b38486d3525d464977",
+          "ca8ef10b2afd442b931d9b607d395dd0",
+          "d4bf1839129f4262a2406a619841b313"
+        ],
+        "Left": 319.791861216479,
+        "Top": 479.77324812094753,
+        "Width": 579.82581252062062,
+        "Height": 223.98954534963605,
+        "FontSize": 30.0,
+        "InitialTop": 525.77324812094753,
+        "InitialHeight": 248.13197395836232,
+        "TextblockHeight": 36.0,
+        "Background": "#FFFFB8D8"
+      },
+      {
+        "Id": "30e3f35803244f9fb09442befb241a94",
+        "Title": "Print current view (center and fit to page)",
+        "Nodes": [
+          "f0f783d58305424d95aec536fe7fb03e",
+          "4a3db8a9a9f04e0486b8cc6a84b3a646",
+          "40e4b7218c26400f9b82d4b1070509ca",
+          "b701859899ac4eceb638ae37a25aba3b",
+          "c1a50e7b100a4a9086c720eef124e804",
+          "8130eafe663b4bafbd61c5ede7090db8",
+          "167a4c5cc3834ddd93b62e14268b90f8",
+          "573fa7b237df4952a470e2032bc75d5b",
+          "6a736aca92904fadb811d8622f8ddddf",
+          "df4734edd0494925b82b8b391713cb55"
+        ],
+        "Left": -100.09986904869953,
+        "Top": 810.21082197211615,
+        "Width": 1539.8760749495655,
+        "Height": 618.10466481841706,
+        "FontSize": 30.0,
+        "InitialTop": 856.21082197211615,
+        "InitialHeight": 633.89819618077479,
+        "TextblockHeight": 36.0,
+        "Background": "#FFA4E1FF"
+      },
+      {
+        "Id": "fd8235020efa46a19730be8c064e3ec1",
+        "Title": "SheetSet",
+        "Nodes": [
+          "24f2367a82e341a3ab0ec476c80db4dd",
+          "665599e40e9044f58956efcd820642a4",
+          "07b4adc8e48e41acaa23d159f097cbd7",
+          "ce69fb9ba9d94496ae0e65a144535941",
+          "a0d161c03a7847778946e4c7bd0cb61e",
+          "2922b9f44bc847368bfede793bc6581c",
+          "a6d47020a5984c52996501d65cf46de0",
+          "ac0947e5f08f4a0083bad187bb14295f"
+        ],
+        "Left": 17.839527254886207,
+        "Top": -711.92550893378257,
+        "Width": 1482.1315315013967,
+        "Height": 303.52539163511744,
+        "FontSize": 30.0,
+        "InitialTop": -665.92550893378257,
+        "InitialHeight": 309.52539163511744,
+        "TextblockHeight": 36.0,
+        "Background": "#FFA4E1FF"
+      },
+      {
+        "Id": "4cf1bd5fd39f4324b1e9bd8d6ec4b6c5",
+        "Title": "Print options there are rarely set",
+        "Nodes": [
+          "ee294b207805413f88e4aae88567c26f",
+          "9c13f07e36f74cf0934193fa10b722e7",
+          "99286c5ccaa54fb28621bc476b8467af",
+          "53acc9ef2205450bbe875f7e789376bd",
+          "6fe42cec965b4ac3aaa41bcd15775e3c"
+        ],
+        "Left": 400.27024795381158,
+        "Top": 1507.7559170518878,
+        "Width": 699.88819922448783,
+        "Height": 419.99999999999977,
+        "FontSize": 30.0,
+        "InitialTop": 1553.7559170518878,
+        "InitialHeight": 425.99999999999977,
+        "TextblockHeight": 36.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "8a890be2e7c742e19aa423c23eaced2e",
+        "Title": "filePath --> file name incl. path",
+        "Nodes": [
+          "08172bbcea144cfa9e91463b3f656130",
+          "2af5007aaeec4c4c80c9f281a2eaa88f",
+          "91651251378d42819a8c927948066997",
+          "ba632a67d5df4eafa1438da8cc4bbe60",
+          "b568be81b96f4a0391c6cd1c607d2468"
+        ],
+        "Left": 1015.7595036512148,
+        "Top": -328.36827195146543,
+        "Width": 484.0,
+        "Height": 548.26857037339687,
+        "FontSize": 30.0,
+        "InitialTop": -282.36827195146543,
+        "InitialHeight": 554.26857037339687,
+        "TextblockHeight": 36.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "1304b6e698f249b9b91f1a54148141a5",
+        "Title": "Merge PDF files",
+        "Nodes": [
+          "9255e31dc39d4a669a0ebf12e0e4715c",
+          "9961247d7fac41d8be00b88a88ce24b3"
+        ],
+        "Left": 1300.14159081052,
+        "Top": 1599.73236493684,
+        "Width": 736.0,
+        "Height": 218.0,
+        "FontSize": 30.0,
+        "InitialTop": 1645.73236493684,
+        "InitialHeight": 180.50666666666007,
+        "TextblockHeight": 36.0,
+        "Background": "#FFBB87C6"
+      },
+      {
+        "Id": "ae788dfe7f5940998f50b0f394f4df0d",
+        "Title": "",
+        "Nodes": [
+          "9392a9bcf3dc40e59d7a23a5be05ccc4",
+          "eb95167f64d1414093ee2a7eec44114b"
+        ],
+        "Left": 1519.9861933828354,
+        "Top": 800.007477169806,
+        "Width": 363.31559089300777,
+        "Height": 431.0,
+        "FontSize": 36.0,
+        "InitialTop": 853.007477169806,
+        "InitialHeight": 145.0,
+        "TextblockHeight": 43.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "c2149e24db224a6a9297c3e438278e0b",
+        "Title": "Export Setting may be set\r\nboth as an element and\r\nas a string",
+        "Nodes": [],
+        "Left": 1237.1052558620383,
+        "Top": 641.7155864431121,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "d4bf1839129f4262a2406a619841b313",
+        "Title": "Export Setting may be set\r\nboth as an element and\r\nas a string",
+        "Nodes": [],
+        "Left": 329.791861216479,
+        "Top": 625.76279347058357,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "df4734edd0494925b82b8b391713cb55",
+        "Title": "if export options there are rarely set need to be included, then connect:\r\n\"Export.SetOptions\" output ExportSetting to \"Export.ByView\" input exportSetting!",
+        "Nodes": [],
+        "Left": 618.63764854577846,
+        "Top": 1180.3532138600849,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": 185.26124942314846,
+    "Y": 324.65485656221125,
+    "Zoom": 0.44247419960527556
+  }
+}

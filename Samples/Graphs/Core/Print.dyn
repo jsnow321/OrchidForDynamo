@@ -265,7 +265,7 @@
         {
           "Id": "5814afc54daa478c8a46813cb3c0471f",
           "Name": "printer",
-          "Description": "Printer name as string. If value is not set is default printer selected\n\nstring\nDefault value : \"default\"",
+          "Description": "Printer name as string. If value is not set is default printer selected.\n\nstring\nDefault value : \"default\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -274,7 +274,7 @@
         {
           "Id": "d86c0853d19343b1be78bf1d3d70eb57",
           "Name": "printSetting",
-          "Description": "printer setting as string or Revit Element\n\nvar",
+          "Description": "printer setting as string or Dynamo type.\n\nvar",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -283,7 +283,7 @@
         {
           "Id": "e88132066f4c44ea8f45237c5efdf820",
           "Name": "paperZize",
-          "Description": "Paper size as string. If value is not set is default paper size selected\n\nstring\nDefault value : \"default\"",
+          "Description": "Paper size as string. If value is not set is default paper size selected.\n\nstring\nDefault value : \"default\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -301,7 +301,7 @@
         {
           "Id": "cc9fb813aa3e47b0b609a0260f2774b3",
           "Name": "paperPlacement",
-          "Description": "Paper placement\n\nstring\nDefault value : \"Margins\"",
+          "Description": "Paper placement.\n\nstring\nDefault value : \"Margins\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -310,7 +310,7 @@
         {
           "Id": "61ff8d0fd4c744759c64fc8cf2fc3b26",
           "Name": "marginType",
-          "Description": "Print margin type\n\nstring\nDefault value : \"NoMargin\"",
+          "Description": "Print margin type.\n\nstring\nDefault value : \"NoMargin\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -319,7 +319,7 @@
         {
           "Id": "6f2bf04b4c34434ba3c89ebc12f0c13c",
           "Name": "margin",
-          "Description": "Print margin value as double\n\ndouble[]\nDefault value : [0, 0]",
+          "Description": "Print margin value as double.\n\ndouble[]\nDefault value : [0, 0]",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -328,7 +328,7 @@
         {
           "Id": "74710bc4310f48b89b91af97955181f8",
           "Name": "zoomType",
-          "Description": "Zoom type as string\n\nstring\nDefault value : \"Zoom\"",
+          "Description": "Zoom type as string.\n\nstring\nDefault value : \"Zoom\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -337,7 +337,7 @@
         {
           "Id": "417b6b41bf104e6c8764b1aa29f42ab0",
           "Name": "zoom",
-          "Description": "Zoom value as integer\n\nint\nDefault value : 100",
+          "Description": "Zoom value as integer.\n\nint\nDefault value : 100",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -348,7 +348,7 @@
         {
           "Id": "a316db321d2b4e9da8e0767992959a24",
           "Name": "PrintSetting",
-          "Description": "PrintSetting",
+          "Description": "Print setting.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -356,7 +356,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Change print setting\n\nPrint.ChangeSetting (printer: string = \"default\", printSetting: var, paperZize: string = \"default\", pageOrientation: string = \"Landscape\", paperPlacement: string = \"Margins\", marginType: string = \"NoMargin\", margin: double[] = [0, 0], zoomType: string = \"Zoom\", zoom: int = 100): Element"
+      "Description": "Change print setting.\n\nPrint.ChangeSetting (printer: string = \"default\", printSetting: var, paperZize: string = \"default\", pageOrientation: string = \"Landscape\", paperPlacement: string = \"Margins\", marginType: string = \"NoMargin\", margin: double[] = [0, 0], zoomType: string = \"Zoom\", zoom: int = 100): Element"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -367,7 +367,7 @@
         {
           "Id": "0c068d2e097f40079eb43c51656adfc6",
           "Name": "viewSheetSet",
-          "Description": "ViewSheetSet as string or Dynamo type\n\nvar",
+          "Description": "ViewSheetSet as string or Dynamo type.\n\nvar",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -378,7 +378,7 @@
         {
           "Id": "2f6011cac3c54cae865e6452f1a66d1f",
           "Name": "View",
-          "Description": "View as Dynamo type",
+          "Description": "View as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -386,7 +386,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get View from sheet set\n\nSheetSet.GetView (viewSheetSet: var): var[]..[]"
+      "Description": "Get View from sheet set.\n\nSheetSet.GetView (viewSheetSet: var): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -397,7 +397,7 @@
         {
           "Id": "5846c629ac8d4c809a5c70a356725c59",
           "Name": "printer",
-          "Description": "Printer name as string. If value is not set is default printer selected\n\nstring\nDefault value : \"default\"",
+          "Description": "Printer name as string. If value is not set is default printer selected.\n\nstring\nDefault value : \"default\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -406,7 +406,7 @@
         {
           "Id": "a461b645128945a89cf34874f074b21b",
           "Name": "combine",
-          "Description": "Combine into one file (Print to file must be set to true).\n\nbool\nDefault value : false",
+          "Description": "Combine into one file? (Print to file must be set to true)\n\nbool\nDefault value : false",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -415,7 +415,7 @@
         {
           "Id": "8433c132d30941cebf0736c517d6f0f3",
           "Name": "file",
-          "Description": "Print to file as boolean\n\nbool\nDefault value : false",
+          "Description": "Print to file?\n\nbool\nDefault value : false",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -423,7 +423,7 @@
         },
         {
           "Id": "c84683e6a4614161a88123ed8d3d1b5b",
-          "Name": "filePath",
+          "Name": "fileName",
           "Description": "Give a valid path and filename for the print output. If value is not set is the user asked later!\n\nstring[]\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
@@ -433,7 +433,7 @@
         {
           "Id": "25a7bb04989f4d0bbe3b238d5245745b",
           "Name": "viewSheetSet",
-          "Description": "ViewSheetSet to print as Revit Element\n\nElement",
+          "Description": "ViewSheetSet to print as Dynamo type.\n\nElement",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -442,7 +442,7 @@
         {
           "Id": "fb5816f18d74481a86853f6a7778b036",
           "Name": "printSetting",
-          "Description": "Printer setting as string or Revit Element\n\nvar\nDefault value : \"<in-session>\"",
+          "Description": "Printer setting as string or Dynamo type.\n\nvar\nDefault value : \"<in-session>\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -461,7 +461,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Print by view sheet set. --> Note: If combined into one file is changed in this session, then the dynamo graph needs to be reloaded! Furthermore, if print to file is selected, then please check windows printer settings to verify if print to file is supported! Adobe PDF is NOT preset to do this!\n\nPrint.ByViewSheetSet (printer: string = \"default\", combine: bool = false, file: bool = false, filePath: string[] = null, viewSheetSet: Element, printSetting: var = \"<in-session>\"): void"
+      "Description": "Print by view sheet set. --> Note: If combined into one file is changed in this session, then the dynamo graph needs to be reloaded! Furthermore, if print to file is selected, then please check windows printer settings to verify if print to file is supported! Adobe PDF is NOT preset to do this!\n\nPrint.ByViewSheetSet (printer: string = \"default\", combine: bool = false, file: bool = false, fileName: string[] = null, viewSheetSet: Element, printSetting: var = \"<in-session>\"): void"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -472,7 +472,7 @@
         {
           "Id": "0f364652328e4ed3875f90c92ea10fc5",
           "Name": "printer",
-          "Description": "Printer name as string. If value is not set is default printer selected\n\nstring\nDefault value : \"default\"",
+          "Description": "Printer name as string. If value is not set is default printer selected.\n\nstring\nDefault value : \"default\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -481,7 +481,7 @@
         {
           "Id": "09065317d837487cbf76adaede82e53d",
           "Name": "combine",
-          "Description": "Combine into one file (Print to file must be set to true).\n\nbool\nDefault value : false",
+          "Description": "Combine into one file? (Print to file must be set to true)\n\nbool\nDefault value : false",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -490,7 +490,7 @@
         {
           "Id": "b7007d4f6b6249b68999ec9400157a7a",
           "Name": "file",
-          "Description": "Print to file as boolean\n\nbool\nDefault value : false",
+          "Description": "Print to file?\n\nbool\nDefault value : false",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -498,7 +498,7 @@
         },
         {
           "Id": "0f8d3abe9ed84d558f938fe2d74bddfc",
-          "Name": "filePath",
+          "Name": "fileName",
           "Description": "Give a valid path and filename for the print output. If value is not set is the user asked later!\n\nstring[]\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
@@ -508,7 +508,7 @@
         {
           "Id": "a0da7ef4a59e47d1ad14c6d50ffde833",
           "Name": "printRange",
-          "Description": "Print range as string\n\nstring\nDefault value : \"Select\"",
+          "Description": "Print range as string.\n\nstring\nDefault value : \"Select\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -517,7 +517,7 @@
         {
           "Id": "f13f24fc632b4d90a04e8f6d7315d100",
           "Name": "view",
-          "Description": "View to print as Revit Element (default: Active View)\n\nElement[]\nDefault value : null",
+          "Description": "View to print as Dynamo type (default: Active View).\n\nElement[]\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -526,7 +526,7 @@
         {
           "Id": "466d7b94754e42dd828d88d4a6a23441",
           "Name": "printSetting",
-          "Description": "Printer setting as string or Revit Element\n\nvar\nDefault value : \"<in-session>\"",
+          "Description": "Printer setting as string or Dynamo type.\n\nvar\nDefault value : \"<in-session>\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -545,11 +545,12 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Print by view. --> Note: If combined into one file is changed in this session, then the dynamo graph needs to be reloaded! Furthermore, if print to file is selected, then please check windows printer settings to verify if print to file is supported! Adobe PDF is NOT preset to do this!\n\nPrint.ByView (printer: string = \"default\", combine: bool = false, file: bool = false, filePath: string[] = null, printRange: string = \"Select\", view: Element[] = null, printSetting: var = \"<in-session>\"): void"
+      "Description": "Print by view. --> Note: If combined into one file is changed in this session, then the dynamo graph needs to be reloaded! Furthermore, if print to file is selected, then please check windows printer settings to verify if print to file is supported! Adobe PDF is NOT preset to do this!\n\nPrint.ByView (printer: string = \"default\", combine: bool = false, file: bool = false, fileName: string[] = null, printRange: string = \"Select\", view: Element[] = null, printSetting: var = \"<in-session>\"): void"
     },
     {
       "ConcreteType": "Orchid.E.RevitProject.Views.SheetSet, OrchidRE",
       "SelectedIndex": 0,
+      "SelectedString": "A3 set",
       "NodeType": "ExtensionNode",
       "Id": "a8df5467f92645319f0e502e105e0961",
       "Inputs": [],
@@ -570,6 +571,7 @@
     {
       "ConcreteType": "Orchid.E.Common.Print.Range, OrchidRE",
       "SelectedIndex": 2,
+      "SelectedString": "Selected views/sheets",
       "NodeType": "ExtensionNode",
       "Id": "cea555482922488ab0b472589631dbb1",
       "Inputs": [],
@@ -590,6 +592,7 @@
     {
       "ConcreteType": "Orchid.E.Common.Print.Setting, OrchidRE",
       "SelectedIndex": 0,
+      "SelectedString": "Default",
       "NodeType": "ExtensionNode",
       "Id": "24cd6097de0c45f899068851d3232672",
       "Inputs": [],
@@ -610,6 +613,7 @@
     {
       "ConcreteType": "Orchid.E.Common.Print.Printer, OrchidRE",
       "SelectedIndex": 3,
+      "SelectedString": "Microsoft Print to PDF",
       "NodeType": "ExtensionNode",
       "Id": "c3ce2d2d68514f74b862d00d9d721e1a",
       "Inputs": [],
@@ -630,6 +634,7 @@
     {
       "ConcreteType": "Orchid.E.Common.Print.Printer, OrchidRE",
       "SelectedIndex": 3,
+      "SelectedString": "Microsoft Print to PDF",
       "NodeType": "ExtensionNode",
       "Id": "56498ea8d1e3429293b0ceb49878258d",
       "Inputs": [],
@@ -670,6 +675,7 @@
     {
       "ConcreteType": "Orchid.E.Common.Print.Setting, OrchidRE",
       "SelectedIndex": 0,
+      "SelectedString": "Default",
       "NodeType": "ExtensionNode",
       "Id": "de8a339f5a704a818e5ce06b46ae1c85",
       "Inputs": [],
@@ -690,6 +696,7 @@
     {
       "ConcreteType": "Orchid.E.Common.Print.ZoomType, OrchidRE",
       "SelectedIndex": 1,
+      "SelectedString": "Zoom",
       "NodeType": "ExtensionNode",
       "Id": "166ad22108514126b5ba03a140c1d9cb",
       "Inputs": [],
@@ -710,6 +717,7 @@
     {
       "ConcreteType": "Orchid.E.Common.Print.PaperPlacement, OrchidRE",
       "SelectedIndex": 1,
+      "SelectedString": "Offset from corner",
       "NodeType": "ExtensionNode",
       "Id": "526ae8dd679e4753bc56de96be4ac3bb",
       "Inputs": [],
@@ -729,7 +737,8 @@
     },
     {
       "ConcreteType": "Orchid.E.Common.Print.PaperSize, OrchidRE",
-      "SelectedIndex": -1,
+      "SelectedIndex": 0,
+      "SelectedString": "A3",
       "NodeType": "ExtensionNode",
       "Id": "4824b2ac7a934f9980c04337cb7580d5",
       "Inputs": [
@@ -760,6 +769,7 @@
     {
       "ConcreteType": "Orchid.E.Common.Print.PageOrientation, OrchidRE",
       "SelectedIndex": 0,
+      "SelectedString": "Portrait",
       "NodeType": "ExtensionNode",
       "Id": "b7c685577f4f4e75ad16ce32a4e3c562",
       "Inputs": [],
@@ -780,6 +790,7 @@
     {
       "ConcreteType": "Orchid.E.Common.Print.MarginType, OrchidRE",
       "SelectedIndex": 2,
+      "SelectedString": "User defined",
       "NodeType": "ExtensionNode",
       "Id": "2138cfabaccc4835a0c656cb68e47dca",
       "Inputs": [],
@@ -806,7 +817,7 @@
         {
           "Id": "77a028c69a3243cdb9a09664499501f6",
           "Name": "printSetting",
-          "Description": "printer setting as string or Revit Element\n\nvar",
+          "Description": "printer setting as string or Dynamo type.\n\nvar",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -825,7 +836,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Delete print setting\n\nPrint.DeleteSetting (printSetting: var): void"
+      "Description": "Delete print setting.\n\nPrint.DeleteSetting (printSetting: var): void"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -836,7 +847,7 @@
         {
           "Id": "2e5969de36cb4f5395defc2627d2c678",
           "Name": "printer",
-          "Description": "Printer name as string. If value is not set is default printer selected\n\nstring\nDefault value : \"default\"",
+          "Description": "Printer name as string. If value is not set is default printer selected.\n\nstring\nDefault value : \"default\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -845,7 +856,7 @@
         {
           "Id": "0be8f7b47d55432584c81467f6557d64",
           "Name": "name",
-          "Description": "name to create for the print setting\n\nstring",
+          "Description": "name to create for the print setting.\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -854,7 +865,7 @@
         {
           "Id": "18f5166d626743b8827afa08f0b819cc",
           "Name": "paperZize",
-          "Description": "Paper size as string. If value is not set is default paper size selected\n\nstring\nDefault value : \"default\"",
+          "Description": "Paper size as string. If value is not set is default paper size selected.\n\nstring\nDefault value : \"default\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -872,7 +883,7 @@
         {
           "Id": "96bcd26ddf45477b9290e1968b53363c",
           "Name": "paperPlacement",
-          "Description": "Paper placement\n\nstring\nDefault value : \"Margins\"",
+          "Description": "Paper placement.\n\nstring\nDefault value : \"Margins\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -881,7 +892,7 @@
         {
           "Id": "fa8b823a033e4d5a932c1f1940fa01f7",
           "Name": "marginType",
-          "Description": "Print margin type\n\nstring\nDefault value : \"NoMargin\"",
+          "Description": "Print margin type.\n\nstring\nDefault value : \"NoMargin\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -890,7 +901,7 @@
         {
           "Id": "4b5d8d1aa0ff4ab2bf9209745a6b4106",
           "Name": "margin",
-          "Description": "Print margin value as double\n\ndouble[]\nDefault value : [0, 0]",
+          "Description": "Print margin value as double.\n\ndouble[]\nDefault value : [0, 0]",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -899,7 +910,7 @@
         {
           "Id": "6a2691820fca405193cf7a563a3f0a66",
           "Name": "zoomType",
-          "Description": "Zoom type as string\n\nstring\nDefault value : \"Zoom\"",
+          "Description": "Zoom type as string.\n\nstring\nDefault value : \"Zoom\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -908,7 +919,7 @@
         {
           "Id": "4acc802db0004d27abfac6b78f83bcf4",
           "Name": "zoom",
-          "Description": "Zoom value as integer\n\nint\nDefault value : 100",
+          "Description": "Zoom value as integer.\n\nint\nDefault value : 100",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -919,7 +930,7 @@
         {
           "Id": "fb057707610c4a4e948d32d69593dfe3",
           "Name": "PrintSetting",
-          "Description": "PrintSetting",
+          "Description": "Print setting.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -927,7 +938,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Set print setting\n\nPrint.CreateSetting (printer: string = \"default\", name: string, paperZize: string = \"default\", pageOrientation: string = \"Landscape\", paperPlacement: string = \"Margins\", marginType: string = \"NoMargin\", margin: double[] = [0, 0], zoomType: string = \"Zoom\", zoom: int = 100): Element"
+      "Description": "Set print setting.\n\nPrint.CreateSetting (printer: string = \"default\", name: string, paperZize: string = \"default\", pageOrientation: string = \"Landscape\", paperPlacement: string = \"Margins\", marginType: string = \"NoMargin\", margin: double[] = [0, 0], zoomType: string = \"Zoom\", zoom: int = 100): Element"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -938,7 +949,7 @@
         {
           "Id": "5cb119c46afa4b36ac7e87f94f985a6e",
           "Name": "printer",
-          "Description": "Printer name as string. If value is not set is default printer selected\n\nstring\nDefault value : \"default\"",
+          "Description": "Printer name as string. If value is not set is default printer selected.\n\nstring\nDefault value : \"default\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -947,7 +958,7 @@
         {
           "Id": "381cbd2830ce451cb5e41dd80a56e0dc",
           "Name": "name",
-          "Description": "name to create for the print setting\n\nstring",
+          "Description": "name to create for the print setting.\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -956,7 +967,7 @@
         {
           "Id": "9db8fa2918b64cc29943f10aa6949374",
           "Name": "paperZize",
-          "Description": "Paper size as string. If value is not set is default paper size selected\n\nstring\nDefault value : \"default\"",
+          "Description": "Paper size as string. If value is not set is default paper size selected.\n\nstring\nDefault value : \"default\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -974,7 +985,7 @@
         {
           "Id": "126544e945ea484baab5dc8c4fe81d61",
           "Name": "paperPlacement",
-          "Description": "Paper placement\n\nstring\nDefault value : \"Margins\"",
+          "Description": "Paper placement.\n\nstring\nDefault value : \"Margins\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -983,7 +994,7 @@
         {
           "Id": "d07d1cee20d44256a4f933a0edb22490",
           "Name": "marginType",
-          "Description": "Print margin type\n\nstring\nDefault value : \"NoMargin\"",
+          "Description": "Print margin type.\n\nstring\nDefault value : \"NoMargin\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -992,7 +1003,7 @@
         {
           "Id": "94bc90da063641fc8d9c57344ac866aa",
           "Name": "margin",
-          "Description": "Print margin value as double\n\ndouble[]\nDefault value : [0, 0]",
+          "Description": "Print margin value as double.\n\ndouble[]\nDefault value : [0, 0]",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1001,7 +1012,7 @@
         {
           "Id": "9ccacd9e739c455fa8dbf116fa4ddf0b",
           "Name": "zoomType",
-          "Description": "Zoom type as string\n\nstring\nDefault value : \"Zoom\"",
+          "Description": "Zoom type as string.\n\nstring\nDefault value : \"Zoom\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1010,7 +1021,7 @@
         {
           "Id": "6156c90688b641568b7bf27f440ec772",
           "Name": "zoom",
-          "Description": "Zoom value as integer\n\nint\nDefault value : 100",
+          "Description": "Zoom value as integer.\n\nint\nDefault value : 100",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1021,7 +1032,7 @@
         {
           "Id": "1d1cafb3b3564270860cb6b6e6c0afb8",
           "Name": "PrintSetting",
-          "Description": "PrintSetting",
+          "Description": "Print setting.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1029,7 +1040,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Set print setting\n\nPrint.CreateSetting (printer: string = \"default\", name: string, paperZize: string = \"default\", pageOrientation: string = \"Landscape\", paperPlacement: string = \"Margins\", marginType: string = \"NoMargin\", margin: double[] = [0, 0], zoomType: string = \"Zoom\", zoom: int = 100): Element"
+      "Description": "Set print setting.\n\nPrint.CreateSetting (printer: string = \"default\", name: string, paperZize: string = \"default\", pageOrientation: string = \"Landscape\", paperPlacement: string = \"Margins\", marginType: string = \"NoMargin\", margin: double[] = [0, 0], zoomType: string = \"Zoom\", zoom: int = 100): Element"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -1040,7 +1051,7 @@
         {
           "Id": "7be9a2f22b5d45eca3c74e02545a4912",
           "Name": "printSetting",
-          "Description": "printer setting as string or Revit Element\n\nvar",
+          "Description": "printer setting as string or Dynamo type.\n\nvar",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1059,7 +1070,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Delete print setting\n\nPrint.DeleteSetting (printSetting: var): void"
+      "Description": "Delete print setting.\n\nPrint.DeleteSetting (printSetting: var): void"
     },
     {
       "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
@@ -1083,7 +1094,8 @@
     },
     {
       "ConcreteType": "Orchid.E.Common.Print.PaperSize, OrchidRE",
-      "SelectedIndex": -1,
+      "SelectedIndex": 0,
+      "SelectedString": "A3",
       "NodeType": "ExtensionNode",
       "Id": "ad04414395f6483d9d28a6b53442e180",
       "Inputs": [
@@ -1114,6 +1126,7 @@
     {
       "ConcreteType": "Orchid.E.Common.Print.PaperPlacement, OrchidRE",
       "SelectedIndex": 0,
+      "SelectedString": "Center",
       "NodeType": "ExtensionNode",
       "Id": "40e4b7218c26400f9b82d4b1070509ca",
       "Inputs": [],
@@ -1134,6 +1147,7 @@
     {
       "ConcreteType": "Orchid.E.Common.Print.ZoomType, OrchidRE",
       "SelectedIndex": 0,
+      "SelectedString": "Fit To Page",
       "NodeType": "ExtensionNode",
       "Id": "4a3db8a9a9f04e0486b8cc6a84b3a646",
       "Inputs": [],
@@ -1154,6 +1168,7 @@
     {
       "ConcreteType": "Orchid.E.Common.Print.Printer, OrchidRE",
       "SelectedIndex": 3,
+      "SelectedString": "Microsoft Print to PDF",
       "NodeType": "ExtensionNode",
       "Id": "e0c851f818894def8b3c31a69ea1e482",
       "Inputs": [],
@@ -1174,6 +1189,7 @@
     {
       "ConcreteType": "Orchid.E.Common.Print.Range, OrchidRE",
       "SelectedIndex": 0,
+      "SelectedString": "Current window",
       "NodeType": "ExtensionNode",
       "Id": "c9bd87735cf045019796380eeb34ece3",
       "Inputs": [],
@@ -1200,7 +1216,7 @@
         {
           "Id": "f7ea931e9356459292341311091280db",
           "Name": "printer",
-          "Description": "Printer name as string. If value is not set is default printer selected\n\nstring\nDefault value : \"default\"",
+          "Description": "Printer name as string. If value is not set is default printer selected.\n\nstring\nDefault value : \"default\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1209,7 +1225,7 @@
         {
           "Id": "c63b09d5c98f4b0988c648a81cc403e5",
           "Name": "combine",
-          "Description": "Combine into one file (Print to file must be set to true).\n\nbool\nDefault value : false",
+          "Description": "Combine into one file? (Print to file must be set to true)\n\nbool\nDefault value : false",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1218,7 +1234,7 @@
         {
           "Id": "20a940e105b44f79b4cd61538eb70f01",
           "Name": "file",
-          "Description": "Print to file as boolean\n\nbool\nDefault value : false",
+          "Description": "Print to file?\n\nbool\nDefault value : false",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1226,7 +1242,7 @@
         },
         {
           "Id": "36a6a71ee0764e9dbb0beaf8ac3b2b0d",
-          "Name": "filePath",
+          "Name": "fileName",
           "Description": "Give a valid path and filename for the print output. If value is not set is the user asked later!\n\nstring[]\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
@@ -1236,7 +1252,7 @@
         {
           "Id": "8cb50f311eac484292dd4096b81c29d2",
           "Name": "printRange",
-          "Description": "Print range as string\n\nstring\nDefault value : \"Select\"",
+          "Description": "Print range as string.\n\nstring\nDefault value : \"Select\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1245,7 +1261,7 @@
         {
           "Id": "b31d44421dfd43b8ac5b134d3e405e75",
           "Name": "view",
-          "Description": "View to print as Revit Element (default: Active View)\n\nElement[]\nDefault value : null",
+          "Description": "View to print as Dynamo type (default: Active View).\n\nElement[]\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1254,7 +1270,7 @@
         {
           "Id": "871196c5356b441da2390de4ebf31e92",
           "Name": "printSetting",
-          "Description": "Printer setting as string or Revit Element\n\nvar\nDefault value : \"<in-session>\"",
+          "Description": "Printer setting as string or Dynamo type.\n\nvar\nDefault value : \"<in-session>\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1273,18 +1289,18 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Print by view. --> Note: If combined into one file is changed in this session, then the dynamo graph needs to be reloaded! Furthermore, if print to file is selected, then please check windows printer settings to verify if print to file is supported! Adobe PDF is NOT preset to do this!\n\nPrint.ByView (printer: string = \"default\", combine: bool = false, file: bool = false, filePath: string[] = null, printRange: string = \"Select\", view: Element[] = null, printSetting: var = \"<in-session>\"): void"
+      "Description": "Print by view. --> Note: If combined into one file is changed in this session, then the dynamo graph needs to be reloaded! Furthermore, if print to file is selected, then please check windows printer settings to verify if print to file is supported! Adobe PDF is NOT preset to do this!\n\nPrint.ByView (printer: string = \"default\", combine: bool = false, file: bool = false, fileName: string[] = null, printRange: string = \"Select\", view: Element[] = null, printSetting: var = \"<in-session>\"): void"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.Document.ActiveView@var",
+      "FunctionSignature": "Orchid.RevitProject.Common.Document.ActiveView@Orchid.RevitProject.Common.Document",
       "Id": "f0f783d58305424d95aec536fe7fb03e",
       "Inputs": [
         {
           "Id": "274b0353253d4a16bc0286766407f66e",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nvar\nDefault value : null",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1295,7 +1311,7 @@
         {
           "Id": "746c17c6a971494a934c59a9dcfbec97",
           "Name": "View",
-          "Description": "The active view as Dynamo type",
+          "Description": "The active view as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1303,11 +1319,12 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get the active view in document\n\nDocument.ActiveView (document: var = null): Element"
+      "Description": "Get the active view in document.\n\nDocument.ActiveView (document: Document = null): Element"
     },
     {
       "ConcreteType": "DSRevitNodesUI.Categories, DSRevitNodesUI",
       "SelectedIndex": 447,
+      "SelectedString": "OST_ShaftOpening",
       "NodeType": "ExtensionNode",
       "Id": "24f2367a82e341a3ab0ec476c80db4dd",
       "Inputs": [],
@@ -1363,7 +1380,7 @@
         {
           "Id": "12dd4981023a42ba96d9129c0262d3c4",
           "Name": "view",
-          "Description": "View as Dynamo type\n\nElement[]",
+          "Description": "View as Dynamo type.\n\nElement[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1372,7 +1389,7 @@
         {
           "Id": "56d9b0eeef3049bf9363be656e068e44",
           "Name": "viewSheetSet",
-          "Description": "ViewSheetSet as string or Dynamo type\n\nvar",
+          "Description": "ViewSheetSet as string or Dynamo type.\n\nvar",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1383,7 +1400,7 @@
         {
           "Id": "b924d9fdb8cf48c2b899b731c4c49202",
           "Name": "ViewSheetSet",
-          "Description": "ViewSheetSet as Dynamo type",
+          "Description": "ViewSheetSet as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1391,7 +1408,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Change sheet set\n\nSheetSet.Change (view: Element[], viewSheetSet: var): var[]..[]"
+      "Description": "Change sheet set.\n\nSheetSet.Change (view: Element[], viewSheetSet: var): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
@@ -1422,7 +1439,7 @@
         {
           "Id": "f7022b0f0bb14273847c8a51f67f31e2",
           "Name": "view",
-          "Description": "View as Dynamo type\n\nElement[]",
+          "Description": "View as Dynamo type.\n\nElement[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1431,7 +1448,7 @@
         {
           "Id": "92e31abfef334b5ab0d73077756ac214",
           "Name": "name",
-          "Description": "Name for the ViewSheetSet\n\nstring",
+          "Description": "Name for the ViewSheetSet.\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1442,7 +1459,7 @@
         {
           "Id": "b7a3d417b8bc4d5d9e756dcc0ae99f74",
           "Name": "ViewSheetSet",
-          "Description": "ViewSheetSet as Dynamo type",
+          "Description": "ViewSheetSet as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1450,7 +1467,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Create sheet set\n\nSheetSet.Create (view: Element[], name: string): var[]..[]"
+      "Description": "Create sheet set.\n\nSheetSet.Create (view: Element[], name: string): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -1461,7 +1478,7 @@
         {
           "Id": "8cd4cbcf83f44f9ab68d547855132fbb",
           "Name": "viewSheetSet",
-          "Description": "ViewSheetSet as string or Dynamo type\n\nvar",
+          "Description": "ViewSheetSet as string or Dynamo type.\n\nvar",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1480,11 +1497,12 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Delete sheet set\n\nSheetSet.Delete (viewSheetSet: var): void"
+      "Description": "Delete sheet set.\n\nSheetSet.Delete (viewSheetSet: var): void"
     },
     {
       "ConcreteType": "Orchid.E.RevitProject.Views.SheetSet, OrchidRE",
       "SelectedIndex": 0,
+      "SelectedString": "A3 set",
       "NodeType": "ExtensionNode",
       "Id": "a6d47020a5984c52996501d65cf46de0",
       "Inputs": [],
@@ -1511,7 +1529,7 @@
         {
           "Id": "050d23d64f1e488a9a16f62be5651a09",
           "Name": "viewSheetSet",
-          "Description": "ViewSheetSet as string or Dynamo type\n\nvar",
+          "Description": "ViewSheetSet as string or Dynamo type.\n\nvar",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1522,7 +1540,7 @@
         {
           "Id": "e609b167e0174b25be21deb4890f26df",
           "Name": "View",
-          "Description": "View as Dynamo type",
+          "Description": "View as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1530,7 +1548,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get View from sheet set\n\nSheetSet.GetView (viewSheetSet: var): var[]..[]"
+      "Description": "Get View from sheet set.\n\nSheetSet.GetView (viewSheetSet: var): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -1541,7 +1559,7 @@
         {
           "Id": "76f11d880426414facc367f9878b0877",
           "Name": "printSetting",
-          "Description": "printer setting as string or Revit Element\n\nvar",
+          "Description": "printer setting as string or Dynamo type.\n\nvar",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1550,7 +1568,7 @@
         {
           "Id": "bcd367471e72400aa1d9454296a44a06",
           "Name": "viewLinksinBlue",
-          "Description": "View links in blue (Color prints only)\n\nbool\nDefault value : false",
+          "Description": "View links in blue? (Color prints only)\n\nbool\nDefault value : false",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1559,7 +1577,7 @@
         {
           "Id": "cfd3fa85643f4ffe8bc1b83a47986d96",
           "Name": "hideReforWorkPlanes",
-          "Description": "Hide ref/work planes\n\nbool\nDefault value : true",
+          "Description": "Hide ref/work planes?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1568,7 +1586,7 @@
         {
           "Id": "92483d3b29004b09ab883ec8eceb931b",
           "Name": "hideUnreferencedViewTags",
-          "Description": "Hide unreferenced view tags\n\nbool\nDefault value : false",
+          "Description": "Hide unreferenced view tags?\n\nbool\nDefault value : false",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1577,7 +1595,7 @@
         {
           "Id": "8689036d14ee40a5960667f48953ac25",
           "Name": "maskCoincidentLines",
-          "Description": "Region edges mask coincident lines\n\nbool\nDefault value : false",
+          "Description": "Region edges mask coincident lines?\n\nbool\nDefault value : false",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1586,7 +1604,7 @@
         {
           "Id": "87ee19e05fb74ca69c9448e9b9477b47",
           "Name": "hideScopeBoxes",
-          "Description": "Hide scope boxes\n\nbool\nDefault value : true",
+          "Description": "Hide scope boxes?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1595,7 +1613,7 @@
         {
           "Id": "d91090a54ed244bdbc911fec8c637b75",
           "Name": "hideCropBoundaries",
-          "Description": "Hide crop boundaries\n\nbool\nDefault value : true",
+          "Description": "Hide crop boundaries?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1604,7 +1622,7 @@
         {
           "Id": "42f4740f3ed64e49ac2da6337bc42aab",
           "Name": "replaceHalftoneWithThinLines",
-          "Description": "Replace halftone with thin lines\n\nbool\nDefault value : false",
+          "Description": "Replace halftone with thin lines?\n\nbool\nDefault value : false",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1613,7 +1631,7 @@
         {
           "Id": "931c4ac777584f118a96d99a77c65172",
           "Name": "hiddenLineViews",
-          "Description": "Hidden line views: Remove lines using vector or raster\n\nstring\nDefault value : \"VectorProcessing\"",
+          "Description": "Hidden line views: Remove lines using vector or raster.\n\nstring\nDefault value : \"VectorProcessing\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1622,7 +1640,7 @@
         {
           "Id": "fa1cf49f24aa4397ad2c1f21ef2b32a2",
           "Name": "rasterQuality",
-          "Description": "Appearance: Raster quality\n\nstring\nDefault value : \"High\"",
+          "Description": "Appearance: Raster quality.\n\nstring\nDefault value : \"High\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1631,7 +1649,7 @@
         {
           "Id": "c135533f2ec9446bbd1f147575782b1c",
           "Name": "colorDepth",
-          "Description": "Appearance: Colors\n\nstring\nDefault value : \"Color\"",
+          "Description": "Appearance: Colors.\n\nstring\nDefault value : \"Color\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1642,7 +1660,7 @@
         {
           "Id": "7ad65ce187b64627849e60b051087c6b",
           "Name": "PrintSetting",
-          "Description": "PrintSetting",
+          "Description": "Print setting.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1650,7 +1668,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Set printer options\n\nPrint.SetOptions (printSetting: var, viewLinksinBlue: bool = false, hideReforWorkPlanes: bool = true, hideUnreferencedViewTags: bool = false, maskCoincidentLines: bool = false, hideScopeBoxes: bool = true, hideCropBoundaries: bool = true, replaceHalftoneWithThinLines: bool = false, hiddenLineViews: string = \"VectorProcessing\", rasterQuality: string = \"High\", colorDepth: string = \"Color\"): Element"
+      "Description": "Set printer options.\n\nPrint.SetOptions (printSetting: var, viewLinksinBlue: bool = false, hideReforWorkPlanes: bool = true, hideUnreferencedViewTags: bool = false, maskCoincidentLines: bool = false, hideScopeBoxes: bool = true, hideCropBoundaries: bool = true, replaceHalftoneWithThinLines: bool = false, hiddenLineViews: string = \"VectorProcessing\", rasterQuality: string = \"High\", colorDepth: string = \"Color\"): Element"
     },
     {
       "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
@@ -1695,6 +1713,7 @@
     {
       "ConcreteType": "Orchid.E.Common.Print.ColorDepthType, OrchidRE",
       "SelectedIndex": 1,
+      "SelectedString": "Gray Scale",
       "NodeType": "ExtensionNode",
       "Id": "99286c5ccaa54fb28621bc476b8467af",
       "Inputs": [],
@@ -1715,6 +1734,7 @@
     {
       "ConcreteType": "Orchid.E.Common.Print.HiddenLineViewsType, OrchidRE",
       "SelectedIndex": 0,
+      "SelectedString": "Vector Processing",
       "NodeType": "ExtensionNode",
       "Id": "11a587c93b4f469597aa9d75f010cfb3",
       "Inputs": [],
@@ -1733,8 +1753,9 @@
       "Description": "Dropdown for hidden line views remove lines using vector or rastervalues"
     },
     {
-      "ConcreteType": "Orchid.E.Common.Print.RasterQualityType, OrchidRE",
+      "ConcreteType": "Orchid.E.Common.Print.RasterQuality, OrchidRE",
       "SelectedIndex": 1,
+      "SelectedString": "Medium",
       "NodeType": "ExtensionNode",
       "Id": "463bbd6fa7414317b9a7c02b9442eacf",
       "Inputs": [],
@@ -1761,7 +1782,7 @@
         {
           "Id": "8aecb2d2e768482b875e4a0411c8231d",
           "Name": "pass",
-          "Description": "Data to pass\n\nvar[]..[]",
+          "Description": "Data to pass.\n\nvar[]..[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1770,7 +1791,7 @@
         {
           "Id": "79664f95af8b4b9dbde009ee633d0b0e",
           "Name": "waitFor",
-          "Description": "Data object to wait for\n\nvar[]..[]",
+          "Description": "Data object to wait for.\n\nvar[]..[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1781,7 +1802,7 @@
         {
           "Id": "bcfadc4b402c4dfd82116b12fb948a02",
           "Name": "pass",
-          "Description": "Passed data",
+          "Description": "Passed data.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1789,7 +1810,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Await a data stream before passing another data stream\n\nDataStream.Await (pass: var[]..[], waitFor: var[]..[]): var[]..[]"
+      "Description": "Await a data stream before passing another data stream.\n\nDataStream.Await (pass: var[]..[], waitFor: var[]..[]): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
@@ -1899,7 +1920,7 @@
         {
           "Id": "2c83842d8e1e464ab10063c79317e451",
           "Name": "directory",
-          "Description": "Directory",
+          "Description": "Directory.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1907,7 +1928,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get current directory\n\nDirectory.Current: string"
+      "Description": "Get current directory.\n\nDirectory.Current: string"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
@@ -1941,13 +1962,13 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Common.Print.MergePDF@string[],string",
+      "FunctionSignature": "Orchid.Common.File.MergePDF@string[],string",
       "Id": "9961247d7fac41d8be00b88a88ce24b3",
       "Inputs": [
         {
           "Id": "114df7f095864daca3440ac945ac7e0b",
           "Name": "documents",
-          "Description": "List of PDF documents to be merged\n\nstring[]",
+          "Description": "List of PDF documents to be merged.\n\nstring[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1967,7 +1988,7 @@
         {
           "Id": "bbbaeb0274d1435b9b2c5c1fb453b258",
           "Name": "watch",
-          "Description": "Add a watch node to verify the output",
+          "Description": "Add a watch node to verify the output.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1975,7 +1996,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Merge list of PDF documents.\n\nPrint.MergePDF (documents: string[], filePath: string): string"
+      "Description": "Merge list of PDF documents.\n\nFile.MergePDF (documents: string[], filePath: string): string"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -1986,7 +2007,7 @@
         {
           "Id": "d370bfaf88614243975f1804f12ac060",
           "Name": "printer",
-          "Description": "Printer name as string. If value is not set is default printer selected\n\nstring\nDefault value : \"default\"",
+          "Description": "Printer name as string. If value is not set is default printer selected.\n\nstring\nDefault value : \"default\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1997,7 +2018,7 @@
         {
           "Id": "605cad9dab844731b428b4547104a334",
           "Name": "PaperSize",
-          "Description": "Paper sizes as string values",
+          "Description": "Paper sizes as string values.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -2005,7 +2026,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get printer paper sizes\n\nPrint.PaperSize (printer: string = \"default\"): var[]..[]"
+      "Description": "Get printer paper sizes.\n\nPrint.PaperSize (printer: string = \"default\"): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -2059,6 +2080,11 @@
       "Id": "e4987511a27d4b30b2dc5b8a6613ed9e"
     },
     {
+      "Start": "bbb33c69d6cd4b7d8df9a4395f7cf5bb",
+      "End": "fb5816f18d74481a86853f6a7778b036",
+      "Id": "140dce3b0c0b406c99a6cef1cca467a4"
+    },
+    {
       "Start": "2f6011cac3c54cae865e6452f1a66d1f",
       "End": "f13f24fc632b4d90a04e8f6d7315d100",
       "Id": "f77ff335f4ce4b86aed779c202bfd069"
@@ -2077,16 +2103,6 @@
       "Start": "d88753089fe1443298aceb158bff5588",
       "End": "25a7bb04989f4d0bbe3b238d5245745b",
       "Id": "bc787dba5eeb47adbd82efc9762506ef"
-    },
-    {
-      "Start": "79f2487c90774331838be5f0497962a5",
-      "End": "fb5816f18d74481a86853f6a7778b036",
-      "Id": "da25a02131f847398ed966761bb8ef69"
-    },
-    {
-      "Start": "79f2487c90774331838be5f0497962a5",
-      "End": "466d7b94754e42dd828d88d4a6a23441",
-      "Id": "c809f82854834737abd0dee8f7c6001b"
     },
     {
       "Start": "9e3bd14c5faf42a79a882615b2d8480f",
@@ -2340,13 +2356,61 @@
     }
   ],
   "Dependencies": [],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Orchid",
+      "Version": "203.2.0.7778",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "f0b4ccfb62744bbf9723bdecb3c7cfdf",
+        "3353e45923984b27adac7c541ca04765",
+        "6f02fe2996e4460c9c7514204ce8a89e",
+        "edf819407f9144b08deb5930cf98d5d0",
+        "a8df5467f92645319f0e502e105e0961",
+        "cea555482922488ab0b472589631dbb1",
+        "24cd6097de0c45f899068851d3232672",
+        "c3ce2d2d68514f74b862d00d9d721e1a",
+        "56498ea8d1e3429293b0ceb49878258d",
+        "de8a339f5a704a818e5ce06b46ae1c85",
+        "166ad22108514126b5ba03a140c1d9cb",
+        "526ae8dd679e4753bc56de96be4ac3bb",
+        "4824b2ac7a934f9980c04337cb7580d5",
+        "b7c685577f4f4e75ad16ce32a4e3c562",
+        "2138cfabaccc4835a0c656cb68e47dca",
+        "52f5fb01801e4f24ad8feb7405317109",
+        "be8f291b0168472e8d1a37def8e86a08",
+        "335498d2a1a348bdaf994bb418b4cb4c",
+        "df136761d63840648274d4c52b3cf9a0",
+        "ad04414395f6483d9d28a6b53442e180",
+        "40e4b7218c26400f9b82d4b1070509ca",
+        "4a3db8a9a9f04e0486b8cc6a84b3a646",
+        "e0c851f818894def8b3c31a69ea1e482",
+        "c9bd87735cf045019796380eeb34ece3",
+        "305ddf589b8e49d788c264c7c55e06d9",
+        "f0f783d58305424d95aec536fe7fb03e",
+        "07b4adc8e48e41acaa23d159f097cbd7",
+        "a0d161c03a7847778946e4c7bd0cb61e",
+        "2922b9f44bc847368bfede793bc6581c",
+        "a6d47020a5984c52996501d65cf46de0",
+        "ac0947e5f08f4a0083bad187bb14295f",
+        "63635c834d65440d91f11672082770b1",
+        "99286c5ccaa54fb28621bc476b8467af",
+        "11a587c93b4f469597aa9d75f010cfb3",
+        "463bbd6fa7414317b9a7c02b9442eacf",
+        "c1a50e7b100a4a9086c720eef124e804",
+        "91651251378d42819a8c927948066997",
+        "9961247d7fac41d8be00b88a88ce24b3",
+        "bdedb4c0afb04380acf146daeb0290dc"
+      ]
+    }
+  ],
   "Bindings": [],
   "View": {
     "Dynamo": {
       "ScaleFactor": 1.0,
-      "HasRunWithoutCrash": false,
+      "HasRunWithoutCrash": true,
       "IsVisibleInDynamoLibrary": true,
-      "Version": "2.0.4.12684",
+      "Version": "2.3.0.5885",
       "RunType": "Manual",
       "RunPeriod": "1000"
     },
@@ -2370,8 +2434,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1284.87172230766,
-        "Y": -471.169002884061
+        "X": 1355.043640975455,
+        "Y": -493.25032834755507
       },
       {
         "ShowGeometry": true,
@@ -2390,8 +2454,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -4.59522584198896,
-        "Y": 387.819558070775
+        "X": 57.919310130499227,
+        "Y": 386.15402726062177
       },
       {
         "ShowGeometry": true,
@@ -2400,8 +2464,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1284.87172230766,
-        "Y": -386.192606537364
+        "X": 1355.043640975455,
+        "Y": -408.27393200085805
       },
       {
         "ShowGeometry": true,
@@ -2410,8 +2474,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -114.684747439804,
-        "Y": -252.290440012481
+        "X": -90.3743437937031,
+        "Y": -248.3093246534043
       },
       {
         "ShowGeometry": true,
@@ -2420,8 +2484,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1418.88275763663,
-        "Y": 672.510563932905
+        "X": 1417.6311769175045,
+        "Y": 632.14245665845237
       },
       {
         "ShowGeometry": true,
@@ -2430,8 +2494,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 12.404774158011,
-        "Y": 608.363812558746
+        "X": 74.919310130499227,
+        "Y": 606.69828174859276
       },
       {
         "ShowGeometry": true,
@@ -2440,8 +2504,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 301.146542231111,
-        "Y": 95.6800277329123
+        "X": 299.94029297953142,
+        "Y": 98.546731534645289
       },
       {
         "ShowGeometry": true,
@@ -2450,8 +2514,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1262.88275763663,
-        "Y": 294.276418551936
+        "X": 1263.6490882757205,
+        "Y": 415.45440060795181
       },
       {
         "ShowGeometry": true,
@@ -2459,7 +2523,7 @@
         "Id": "6f02fe2996e4460c9c7514204ce8a89e",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Excluded": false,
+        "Excluded": true,
         "X": 1798.73288762814,
         "Y": 120.142162331353
       },
@@ -2470,8 +2534,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1801.07256406097,
-        "Y": -204.655638568407
+        "X": 1798.73288762814,
+        "Y": -196.34667652722831
       },
       {
         "ShowGeometry": true,
@@ -2480,8 +2544,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 989.79895095198,
-        "Y": 225.218340202225
+        "X": 990.56528159107052,
+        "Y": 346.39632225824084
       },
       {
         "ShowGeometry": true,
@@ -2490,8 +2554,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1261.88275763663,
-        "Y": 449.823600774274
+        "X": 1260.9541961332814,
+        "Y": 127.15841403725045
       },
       {
         "ShowGeometry": true,
@@ -2500,8 +2564,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1307.88275763663,
-        "Y": 558.213084708702
+        "X": 1306.7678652529994,
+        "Y": 523.79842863320209
       },
       {
         "ShowGeometry": true,
@@ -2510,8 +2574,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1285.77186661534,
-        "Y": -588.003133904853
+        "X": 1285.043640975455,
+        "Y": -610.0844593683471
       },
       {
         "ShowGeometry": true,
@@ -2520,8 +2584,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -114.165062613665,
-        "Y": -363.933891953061
+        "X": -89.8546589675641,
+        "Y": -359.95277659398425
       },
       {
         "ShowGeometry": true,
@@ -2550,8 +2614,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -84.595225841989,
-        "Y": 498.282036812566
+        "X": -22.080689869500759,
+        "Y": 496.61650600241279
       },
       {
         "ShowGeometry": true,
@@ -2560,8 +2624,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -119.595225841989,
-        "Y": 163.182731961656
+        "X": -90.080689869500759,
+        "Y": 161.51720115150283
       },
       {
         "ShowGeometry": true,
@@ -2570,8 +2634,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -86.595225841989,
-        "Y": -59.8382024436272
+        "X": -37.080689869500759,
+        "Y": -54.387721168288522
       },
       {
         "ShowGeometry": true,
@@ -2580,8 +2644,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -119.595225841989,
-        "Y": 50.9883706908896
+        "X": -57.080689869500759,
+        "Y": 49.32283988073641
       },
       {
         "ShowGeometry": true,
@@ -2590,8 +2654,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -92.595225841989,
-        "Y": 275.882130890987
+        "X": -30.080689869500759,
+        "Y": 274.21660008083381
       },
       {
         "ShowGeometry": true,
@@ -2610,8 +2674,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 299.763633739878,
-        "Y": -277.439772288409
+        "X": 299.94029297953142,
+        "Y": -274.57306848667605
       },
       {
         "ShowGeometry": true,
@@ -2620,8 +2684,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 292.875308965882,
-        "Y": 1142.83535323916
+        "X": 193.73999215320222,
+        "Y": 1142.6097916350582
       },
       {
         "ShowGeometry": true,
@@ -2630,8 +2694,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1400.04846695635,
-        "Y": 1145.31407938537
+        "X": 1274.0760775226111,
+        "Y": 1142.6097916350582
       },
       {
         "ShowGeometry": true,
@@ -2640,8 +2704,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 63.6249577516121,
-        "Y": 1053.81061864764
+        "X": -35.510359061067732,
+        "Y": 1053.5850570435382
       },
       {
         "ShowGeometry": true,
@@ -2650,8 +2714,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 9.45328492753515,
-        "Y": 1137.02351833566
+        "X": -89.682031885144681,
+        "Y": 1136.7979567315579
       },
       {
         "ShowGeometry": true,
@@ -2660,8 +2724,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 9.45328492753515,
-        "Y": 1247.41107805264
+        "X": -89.682031885144681,
+        "Y": 1247.1855164485382
       },
       {
         "ShowGeometry": true,
@@ -2670,8 +2734,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 9.45328492753515,
-        "Y": 1357.57756742546
+        "X": -89.682031885144681,
+        "Y": 1357.352005821358
       },
       {
         "ShowGeometry": true,
@@ -2680,8 +2744,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 9.45328492753515,
-        "Y": 866.47835893447
+        "X": -89.682031885144681,
+        "Y": 866.25279733036791
       },
       {
         "ShowGeometry": true,
@@ -2690,8 +2754,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 404.046512980145,
-        "Y": 935.323856909065
+        "X": 304.91119616746516,
+        "Y": 935.0982953049629
       },
       {
         "ShowGeometry": true,
@@ -2700,8 +2764,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 801.565006228343,
-        "Y": 868.955910762904
+        "X": 702.42968941566323,
+        "Y": 868.73034915880191
       },
       {
         "ShowGeometry": true,
@@ -2710,8 +2774,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 374.353447015158,
-        "Y": 1041.6932588177
+        "X": 275.21813020247816,
+        "Y": 1041.4676972135981
       },
       {
         "ShowGeometry": true,
@@ -2720,8 +2784,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": true,
-        "X": 147.620506121267,
-        "Y": -954.490749614527
+        "X": 145.98933221979109,
+        "Y": -989.83285081316785
       },
       {
         "ShowGeometry": true,
@@ -2730,8 +2794,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 379.247843972042,
-        "Y": -955.472825675934
+        "X": 377.61667007056622,
+        "Y": -990.81492687457489
       },
       {
         "ShowGeometry": true,
@@ -2740,8 +2804,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1209.69853772982,
-        "Y": -957.458923645426
+        "X": 1208.067363828344,
+        "Y": -992.80102484406689
       },
       {
         "ShowGeometry": true,
@@ -2750,8 +2814,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 484.32998254253,
-        "Y": -843.526597491714
+        "X": 482.69880864105403,
+        "Y": -878.8686986903549
       },
       {
         "ShowGeometry": true,
@@ -2760,8 +2824,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 613.742691276212,
-        "Y": -956.873088901687
+        "X": 612.11151737473608,
+        "Y": -992.21519010032785
       },
       {
         "ShowGeometry": true,
@@ -2770,8 +2834,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 614.24650121514,
-        "Y": -793.412175494529
+        "X": 612.61532731366412,
+        "Y": -828.75427669316991
       },
       {
         "ShowGeometry": true,
@@ -2780,8 +2844,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 948.932641829231,
-        "Y": -832.672099962071
+        "X": 947.30146792775508,
+        "Y": -868.01420116071188
       },
       {
         "ShowGeometry": true,
@@ -2790,8 +2854,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 915.720614503017,
-        "Y": -957.683138348668
+        "X": 914.08944060154113,
+        "Y": -993.02523954730884
       },
       {
         "ShowGeometry": true,
@@ -2800,8 +2864,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": true,
-        "X": 688.838362933359,
-        "Y": 1575.40926483906
+        "X": 690.25407511180629,
+        "Y": 1574.7014087498364
       },
       {
         "ShowGeometry": true,
@@ -2810,8 +2874,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 348.838362933359,
-        "Y": 1661.40926483906
+        "X": 350.25407511180629,
+        "Y": 1660.7014087498364
       },
       {
         "ShowGeometry": true,
@@ -2820,8 +2884,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 348.838362933359,
-        "Y": 1578.40926483906
+        "X": 350.25407511180629,
+        "Y": 1577.7014087498364
       },
       {
         "ShowGeometry": true,
@@ -2830,8 +2894,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 348.838362933359,
-        "Y": 1961.40926483906
+        "X": 350.25407511180629,
+        "Y": 1960.7014087498364
       },
       {
         "ShowGeometry": true,
@@ -2840,8 +2904,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 348.838362933359,
-        "Y": 1745.40926483906
+        "X": 350.25407511180629,
+        "Y": 1744.7014087498364
       },
       {
         "ShowGeometry": true,
@@ -2850,8 +2914,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 348.838362933359,
-        "Y": 1853.40926483906
+        "X": 350.25407511180629,
+        "Y": 1852.7014087498364
       },
       {
         "ShowGeometry": true,
@@ -2860,8 +2924,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1148.62115521952,
-        "Y": 1145.3977476688
+        "X": 1022.6487657857808,
+        "Y": 1142.6097916350582
       },
       {
         "ShowGeometry": true,
@@ -2870,8 +2934,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1202.44214235839,
-        "Y": -80.6414114866586
+        "X": 1201.3194735476313,
+        "Y": -100.81630280730313
       },
       {
         "ShowGeometry": true,
@@ -2880,8 +2944,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1085.44214235839,
-        "Y": 7.93497239839991
+        "X": 1084.3194735476313,
+        "Y": -12.239918922244627
       },
       {
         "ShowGeometry": true,
@@ -2890,8 +2954,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1359.07686494404,
-        "Y": -94.2203113016951
+        "X": 1357.9541961332814,
+        "Y": -114.39520262233965
       },
       {
         "ShowGeometry": true,
@@ -2900,8 +2964,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1151.44214235839,
-        "Y": -194.217795371717
+        "X": 1150.3194735476313,
+        "Y": -214.39268669236151
       },
       {
         "ShowGeometry": true,
@@ -2915,7 +2979,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Print.MergePDF",
+        "Name": "File.MergePDF",
         "Id": "9961247d7fac41d8be00b88a88ce24b3",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
@@ -2930,8 +2994,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 310.02133867259829,
-        "Y": -566.67966143112085
+        "X": 310.4637846702372,
+        "Y": -602.77738273769558
       },
       {
         "ShowGeometry": true,
@@ -2940,8 +3004,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 630.02133867259829,
-        "Y": -566.67966143112085
+        "X": 630.46378467023715,
+        "Y": -602.77738273769558
       }
     ],
     "Annotations": [
@@ -2957,12 +3021,12 @@
           "b7c685577f4f4e75ad16ce32a4e3c562",
           "4824b2ac7a934f9980c04337cb7580d5"
         ],
-        "Left": -129.59522584198902,
-        "Top": -105.83820244362721,
+        "Left": -100.08068986950076,
+        "Top": -100.38772116828852,
         "Width": 264.0,
-        "Height": 807.20201500237317,
+        "Height": 800.08600291688128,
         "FontSize": 30.0,
-        "InitialTop": -59.8382024436272,
+        "InitialTop": -54.387721168288522,
         "InitialHeight": 813.20201500237317,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
@@ -2974,17 +3038,15 @@
           "8a82c3b875ca4b24b31e360876f2c019",
           "3353e45923984b27adac7c541ca04765",
           "24cd6097de0c45f899068851d3232672",
-          "cea555482922488ab0b472589631dbb1",
           "a8df5467f92645319f0e502e105e0961",
-          "9b8712034215454b95e4e28977391387",
           "c2149e24db224a6a9297c3e438278e0b"
         ],
-        "Left": 979.79895095198,
-        "Top": 179.218340202225,
-        "Width": 521.08380668465,
-        "Height": 561.29222373068,
+        "Left": 980.56528159107052,
+        "Top": 300.39632225824084,
+        "Width": 519.065895326434,
+        "Height": 399.74613440021153,
         "FontSize": 30.0,
-        "InitialTop": 225.218340202225,
+        "InitialTop": 346.39632225824084,
         "InitialHeight": 592.29222373068,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
@@ -2997,12 +3059,12 @@
           "9f28ef241ceb415c9417e48841104568",
           "c3ce2d2d68514f74b862d00d9d721e1a"
         ],
-        "Left": 1274.87172230766,
-        "Top": -634.003133904853,
-        "Width": 225.90014430767997,
+        "Left": 1275.043640975455,
+        "Top": -656.0844593683471,
+        "Width": 225.0,
         "Height": 315.81052736748904,
         "FontSize": 30.0,
-        "InitialTop": -588.003133904853,
+        "InitialTop": -610.0844593683471,
         "InitialHeight": 346.81052736748904,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
@@ -3014,12 +3076,12 @@
           "d5c64737551b471188b1730e2312d1b9",
           "56498ea8d1e3429293b0ceb49878258d"
         ],
-        "Left": -124.684747439804,
-        "Top": -409.933891953061,
+        "Left": -100.3743437937031,
+        "Top": -405.95277659398425,
         "Width": 225.51968482613898,
-        "Height": 225.64345194057998,
+        "Height": 225.64345194057995,
         "FontSize": 30.0,
-        "InitialTop": -363.933891953061,
+        "InitialTop": -359.95277659398425,
         "InitialHeight": 256.64345194058,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
@@ -3060,12 +3122,12 @@
           "c1a50e7b100a4a9086c720eef124e804",
           "df4734edd0494925b82b8b391713cb55"
         ],
-        "Left": -0.54671507246485085,
-        "Top": 820.47835893447,
-        "Width": 1626.5951820288149,
+        "Left": -99.682031885144681,
+        "Top": 820.25279733036791,
+        "Width": 1599.7581094077557,
         "Height": 630.09920849099012,
         "FontSize": 30.0,
-        "InitialTop": 866.47835893447,
+        "InitialTop": 866.25279733036791,
         "InitialHeight": 636.09920849099012,
         "TextblockHeight": 36.0,
         "Background": "#FFA4E1FF"
@@ -3083,12 +3145,12 @@
           "a6d47020a5984c52996501d65cf46de0",
           "ac0947e5f08f4a0083bad187bb14295f"
         ],
-        "Left": 137.620506121267,
-        "Top": -1003.683138348668,
+        "Left": 135.98933221979109,
+        "Top": -1039.025239547309,
         "Width": 1364.0780316085529,
-        "Height": 303.27096285413893,
+        "Height": 303.27096285413904,
         "FontSize": 30.0,
-        "InitialTop": -957.683138348668,
+        "InitialTop": -993.02523954730884,
         "InitialHeight": 309.27096285413893,
         "TextblockHeight": 36.0,
         "Background": "#FFA4E1FF"
@@ -3104,12 +3166,12 @@
           "11a587c93b4f469597aa9d75f010cfb3",
           "463bbd6fa7414317b9a7c02b9442eacf"
         ],
-        "Left": 338.838362933359,
-        "Top": 1529.40926483906,
+        "Left": 340.25407511180629,
+        "Top": 1528.7014087498364,
         "Width": 733.0,
         "Height": 525.0,
         "FontSize": 30.0,
-        "InitialTop": 1575.40926483906,
+        "InitialTop": 1574.7014087498364,
         "InitialHeight": 531.0,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
@@ -3121,14 +3183,16 @@
           "bb8141bf0f344881b2a9d584dd5254db",
           "08172bbcea144cfa9e91463b3f656130",
           "2af5007aaeec4c4c80c9f281a2eaa88f",
-          "91651251378d42819a8c927948066997"
+          "91651251378d42819a8c927948066997",
+          "cea555482922488ab0b472589631dbb1",
+          "9b8712034215454b95e4e28977391387"
         ],
-        "Left": 1075.44214235839,
-        "Top": -240.217795371717,
+        "Left": 1074.3194735476313,
+        "Top": -260.39268669236151,
         "Width": 425.63472258565,
-        "Height": 341.1527677701169,
+        "Height": 480.55110072961196,
         "FontSize": 30.0,
-        "InitialTop": -194.217795371717,
+        "InitialTop": -214.39268669236151,
         "InitialHeight": 347.1527677701169,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
@@ -3157,13 +3221,13 @@
           "bdedb4c0afb04380acf146daeb0290dc",
           "f013c86b21e046b186ff3c67f31bf6b9"
         ],
-        "Left": 300.02133867259829,
-        "Top": -619.67966143112085,
-        "Width": 418.0,
-        "Height": 147.0,
+        "Left": 300.4637846702372,
+        "Top": -655.77738273769558,
+        "Width": 477.99999999999994,
+        "Height": 337.0,
         "FontSize": 36.0,
-        "InitialTop": -566.67966143112085,
-        "InitialHeight": 123.0,
+        "InitialTop": -602.77738273769558,
+        "InitialHeight": 145.0,
         "TextblockHeight": 43.0,
         "Background": "#FFC1D676"
       },
@@ -3171,8 +3235,8 @@
         "Id": "9b8712034215454b95e4e28977391387",
         "Title": "Set to \"Select\" to print the selected views",
         "Nodes": [],
-        "Left": 1253.88275763663,
-        "Top": 410.046767191256,
+        "Left": 1252.9541961332814,
+        "Top": 87.381580454232449,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -3185,8 +3249,8 @@
         "Id": "c2149e24db224a6a9297c3e438278e0b",
         "Title": "Print Setting may be set\r\nboth as an element and\r\nas a string",
         "Nodes": [],
-        "Left": 1137.45630010526,
-        "Top": 630.073833200084,
+        "Left": 1117.4211626301912,
+        "Top": 592.47626351658437,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -3213,8 +3277,8 @@
         "Id": "df4734edd0494925b82b8b391713cb55",
         "Title": "if print options there are rarely set need to be included, then connect:\r\n\"Print.SetOptions\" output Printsetting to \"Print.ByView\" input printSetting!",
         "Nodes": [],
-        "Left": 719.081750750837,
-        "Top": 1294.11593903577,
+        "Left": 629.02664381865839,
+        "Top": 1255.4638287212852,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -3224,8 +3288,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": 267.59427866926256,
-    "Y": 290.10345019281914,
-    "Zoom": 0.27159656443499175
+    "X": 390.98856746199368,
+    "Y": 270.09008232883264,
+    "Zoom": 0.24177641490591181
   }
 }
