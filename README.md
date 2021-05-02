@@ -4,7 +4,7 @@
 ![maintained](https://img.shields.io/maintenance/yes/2021)
 ![commit](https://img.shields.io/github/last-commit/erfajo/orchidfordynamo)
 [![license](https://img.shields.io/badge/License-CC%20BY--ND%204.0-brightgreen)](http://creativecommons.org/licenses/by-nd/4.0/)  
-Orchid is a solution designed for use in the [Dynamo](http://dynamobim.org) environment. The solution is designed to support practical, technical, logical, and mathematical issues. In particular, is some solutions designed to handle nD-list issues. In addition, are solutions for applications included that not necessarily are Autodesk products.  
+Orchid is a solution designed for use in the [Dynamo](http://dynamobim.org) environment. The solution is designed to support practical, technical, geometrical, logical, and mathematical issues. The solution contains functions to solve data handling in Revit projects, Revit families, and materials in Revit. Besides this, also functions to solve common data handling like geometry, printing, exporting, and system actions. Orchid is among the largest and most coherent solutions besides what Autodesk releases for Dynamo.  
   
 **Software environment:**  
 Built for Dynamo 2.10 (Revit 2022), Dynamo 2.6 (Revit 2021), 2.3 (Revit 2020), and 2.0 (Revit 2019, 2018).  

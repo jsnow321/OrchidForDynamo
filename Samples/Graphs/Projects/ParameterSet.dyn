@@ -1,0 +1,1416 @@
+{
+  "Uuid": "3c9d0464-8643-5ffe-96e5-ab1769818209",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "ParameterGetSet",
+  "ElementResolver": {
+    "ResolutionMap": {
+      "List": {
+        "Key": "DSCore.List",
+        "Value": "DSCoreNodes.dll"
+      },
+      "List.Map": {
+        "Key": "DSCore.List",
+        "Value": "DSCoreNodes.dll"
+      },
+      "List.Deconstruct": {
+        "Key": "DSCore.List",
+        "Value": "DSCoreNodes.dll"
+      },
+      "Point.Z": {
+        "Key": "Autodesk.DesignScript.Geometry.Point",
+        "Value": "ProtoGeometry.dll"
+      },
+      "Category": {
+        "Key": "Revit.Elements.Category",
+        "Value": "RevitNodes.dll"
+      },
+      "Category.ByName": {
+        "Key": "Revit.Elements.Category",
+        "Value": "RevitNodes.dll"
+      }
+    }
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "//Parameter name\n[\"Creator Name\",\n\"Creator Organization\",\n\"Creator Build\"];\n//SP Parameter group\n\"Sheet & Project\";\n//Parameter group\n\"PG_ADSK_MODEL_PROPERTIES\";\n//Instances\ntrue;\n//Vary Between Groups\ntrue;\n//Category\n\"Doors\";",
+      "Id": "6bd90cfec17b4848b56b102d31814034",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "75f2a782b2eb443d84c271593f05ee82",
+          "Name": "",
+          "Description": "Value of expression at line 2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c30739de9f98428b86dee89aa3e7adae",
+          "Name": "",
+          "Description": "Value of expression at line 6",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "9e7988dcbbfa4a02bc0c79479bfc99c8",
+          "Name": "",
+          "Description": "Value of expression at line 8",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "353692bb789d453da4c1d5aebcd7c58b",
+          "Name": "",
+          "Description": "Value of expression at line 10",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "910ceb95ce3e4db7b25e613d3c3055f5",
+          "Name": "",
+          "Description": "Value of expression at line 12",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "9bfcbae69aff4588ab3a636a01a5e96c",
+          "Name": "",
+          "Description": "Value of expression at line 14",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.Elements.Category.ByName@string",
+      "Id": "20350135824849e8882ae7a04933ede5",
+      "Inputs": [
+        {
+          "Id": "1309b81dadf342c4959ce7dd6dc3cd65",
+          "Name": "name",
+          "Description": "The built in category name.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "77318a6a31084475a60617cf3a5dd8fa",
+          "Name": "Category",
+          "Description": "Category",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Gets a Revit category by the built-in category name.\n\nCategory.ByName (name: string): Category"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Parameters.Parameter.Create@string[],string,string,string,bool,bool,Revit.Elements.Category[]",
+      "Id": "283d1c24d5244027a8a44f84b8976a33",
+      "Inputs": [
+        {
+          "Id": "cefbf2af949d45a88130cea307c33d4e",
+          "Name": "parameterName",
+          "Description": "The name of the parameter to add (create).\n\nstring[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5a31dba0fc494d8eb49cca2d484d024f",
+          "Name": "type",
+          "Description": "BuiltIn Parameter Type.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "35aecdab730d4680986cd7b171b7fbf8",
+          "Name": "group",
+          "Description": "BuiltIn Parameter Group.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "9cbdc75054e64999a2e57cfa8eabe4d8",
+          "Name": "tooltip",
+          "Description": "Tooltip for the parameter.\n\nstring\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "a139c977765b4dea95f5c288ea01a2cb",
+          "Name": "instance",
+          "Description": "Is instance parameter?, otherwise it's a type parameter!\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3bb1a49b678143f3bfb8900e9ca0fac6",
+          "Name": "vary",
+          "Description": "Vary parameter between groups?\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "0df3a0d5e1f84785bf9fd5a4204f5a8a",
+          "Name": "category",
+          "Description": "Category(ies) the parameter applies to, If no category is supplied, all possible categories are selected.\n\nCategory[]\nDefault value : null (disabled)",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "bca4f6cc61ac4952978787a3460579b3",
+          "Name": "Parameter",
+          "Description": "Parameter as Dynamo type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Create project parameter by name. Note: Due to the Revit API does not allow adding internal parameters, parameters are added as external parameters in the same way as shared parameters. Therefore, parameters cannot be associated with other <Family Type> and will appear as shared parameters that are not stored in your regular parameter file. This includes if the parameter exists is the category binding being updated!\n\nParameter.Create (parameterName: string[], type: string, group: string, tooltip: string = null, instance: bool = false, vary: bool = false, category: Category[] = null): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Parameters.SharedParameter.Add@string[],string,string,bool,bool,Revit.Elements.Category[]",
+      "Id": "3c3bf82aa8414eefb3f8ad9366926cac",
+      "Inputs": [
+        {
+          "Id": "b48da435e4824b778c40153f89cb9687",
+          "Name": "parameterName",
+          "Description": "The name of the parameter to add.\n\nstring[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f0ab8b26563747e098c867ea9a077200",
+          "Name": "groupName",
+          "Description": "The name of the group where the parameter belong to.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "d428fbaf1ea84f64aeee8c33f013eabe",
+          "Name": "group",
+          "Description": "BuiltIn Parameter Group.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "694c484372fb4f41818f29a622ad92b1",
+          "Name": "instance",
+          "Description": "Is instance parameter? Otherwise it's a type parameter!\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "76ee03c872fc4919802c8bdc4a9b6254",
+          "Name": "vary",
+          "Description": "Vary parameter between groups?\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5a54206b0ccd452cbd3696d6d32a9b4b",
+          "Name": "category",
+          "Description": "Category(ies) the parameter applies to. If no category is supplied, all possible categories are selected.\n\nCategory[]\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "a5f1c4e39d1845ccadd14c00953e91f9",
+          "Name": "Parameter",
+          "Description": "Parameter as Dynamo type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Add shared parameter by name, from current loaded shared parameter file. Note: If the parameter exists is the category binding being updated, and tooltip is being added if exsist!\n\nSharedParameter.Add (parameterName: string[], groupName: string, group: string, instance: bool = false, vary: bool = false, category: Category[] = null): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "//Parameter name\n[\"test1\",\"test2\"];\n//Parameter type\n\"Text\";\n//Parameter group\n\"PG_IDENTITY_DATA\";\n//Tooltip\n\"Some tooltip\";\n//Instances\ntrue;\n//Vary Between Groups\ntrue;\n//Category\n[\"Walls\",\"Windows\"];",
+      "Id": "41e680cebcf24f9291818ecbd831b2db",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "9d32a602001f40c98752d406433959e1",
+          "Name": "",
+          "Description": "Value of expression at line 2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "bb35d7ba0ab546bd865fa997f07624e3",
+          "Name": "",
+          "Description": "Value of expression at line 4",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "e2b929956c2246c3b7bc89c0e3a8e39c",
+          "Name": "",
+          "Description": "Value of expression at line 6",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ba35c56b424c4abda527fad25bb3e576",
+          "Name": "",
+          "Description": "Value of expression at line 8",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f3c770a27da3406db23f818d209a964a",
+          "Name": "",
+          "Description": "Value of expression at line 10",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f6bd9f5d12c747a180b1bc866eafed4a",
+          "Name": "",
+          "Description": "Value of expression at line 12",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "95bbd161ebde45a2a094ddc03b76512c",
+          "Name": "",
+          "Description": "Value of expression at line 14",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.Elements.Category.ByName@string",
+      "Id": "a2672a188b2f47f597eeaccd8b80e01c",
+      "Inputs": [
+        {
+          "Id": "35e53ad8f54c4b28a172b58d2429f4b9",
+          "Name": "name",
+          "Description": "The built in category name.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "c47e180112d9468a9df71a62e371a81f",
+          "Name": "Category",
+          "Description": "Category",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Gets a Revit category by the built-in category name.\n\nCategory.ByName (name: string): Category"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "[\"Creator Build\",\n\"test2\"];",
+      "Id": "085236aed1484b09b43b23ddfc6f5111",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "38709ff1b241449a90d4fef5e6957ecb",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.Elements.Category.ByName@string",
+      "Id": "36629d9b5fdc4d399d705162e64ef6f9",
+      "Inputs": [
+        {
+          "Id": "2268ed32f43f47488be0444bfdae46bf",
+          "Name": "name",
+          "Description": "The built in category name.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "49a3cafbfb3c4bfaa5fa73673ba7bfd4",
+          "Name": "Category",
+          "Description": "Category",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Gets a Revit category by the built-in category name.\n\nCategory.ByName (name: string): Category"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "// Parameter name\n// Note: a project parameter created inside\n// Revit can't be changed! Only user-defined\n// parameters created from Dynamo and shared\n// parameters can be changed!\n\n// test, shared parameter;\n\"Creator Name\";\n// test, created from Dynamo;\n\"test1\";\n// test, created inside Revit;\n\"ChangeCategory\";\n\n//Instances\ntrue;\n//Category\n[\"Doors\", \"Entourage\", \"Floors\"];",
+      "Id": "e1abafe7d80442329573a8ddfb13ee2e",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "99257d3dfd80478c9a447da88a14f7f0",
+          "Name": "",
+          "Description": "Value of expression at line 8",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "40f48e6adce744c89b80c0a9cc564924",
+          "Name": "",
+          "Description": "Value of expression at line 10",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "85fcfb38bda74894a9083b6f23f21d7b",
+          "Name": "",
+          "Description": "Value of expression at line 12",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "32f9b334947c46ab98326f5ad83ac222",
+          "Name": "",
+          "Description": "Value of expression at line 15",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b0169df6957f427eb3ef16231423bff2",
+          "Name": "",
+          "Description": "Value of expression at line 17",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Parameters.Parameter.ChangeCategory@string,bool,Revit.Elements.Category[]",
+      "Id": "715672773d5849fca95ba56c27e0c3df",
+      "Inputs": [
+        {
+          "Id": "cc61ae9b27f149b09064b468d4f80ac5",
+          "Name": "parameterName",
+          "Description": "The name of the user-defined parameter to change.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "d346b503b6bd40bba1eb080ae0b48497",
+          "Name": "instance",
+          "Description": "Is instance parameter?, otherwise it's a type parameter!\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "9cd94a6a940242b48b3dfe1b8871ee1c",
+          "Name": "category",
+          "Description": "Category(ies) to change the parameter binding to.\n\nCategory[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "d1631b3514464777b95a659b4b7696ab",
+          "Name": "Parameter",
+          "Description": "User-defined parameter as Dynamo type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Change category binding for parameter by name in the project. Note: If the project parameter is created inside Revit, then is it impossible to update/change any category!\n\nParameter.ChangeCategory (parameterName: string, instance: bool = false, category: Category[]): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Parameters.Parameter.Delete@string",
+      "Id": "5111a62e51594b6e80ecaea296d1fc1e",
+      "Inputs": [
+        {
+          "Id": "44f40e7bcca247da85bdf1468b9730d1",
+          "Name": "parameterName",
+          "Description": "The name of the user-defined parameter to delete.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "c76c757b483b42b6a3082525935548ea",
+          "Name": "void",
+          "Description": "void",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Delete parameter by name in the project. Note: This function handles only User-defined parameters, such as project, shared, and global parameters.\n\nParameter.Delete (parameterName: string): void"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.Elements.Category.ByName@string",
+      "Id": "d38006f7ce6a4838873d7f26362b9dd2",
+      "Inputs": [
+        {
+          "Id": "4271c6798590433986794761f0aad3a7",
+          "Name": "name",
+          "Description": "The built in category name.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "d0be906d1456485c8be5da87b5348f46",
+          "Name": "Category",
+          "Description": "Category",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Gets a Revit category by the built-in category name.\n\nCategory.ByName (name: string): Category"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "//Parameter name\n\"Dynamo test parameter\";\n//SP Parameter group\n\"Dynamo test group\";\n//SP Parameter type\n\"Text\";\n//Parameter group\n\"PG_ADSK_MODEL_PROPERTIES\";\n//Tooltip\n\"Some tooltip\";\n//Instances\ntrue;\n//Vary Between Groups\ntrue;\n//Category\n\"Doors\";",
+      "Id": "951adb887e494f2eb58795bd69ace20c",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "f527e6f1b8e444a5a9b203159957cf13",
+          "Name": "",
+          "Description": "Value of expression at line 2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f048bc25fbe542769b4414bb9fcf5a29",
+          "Name": "",
+          "Description": "Value of expression at line 4",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "4bb5541a235c44d2a129d76867a9b2b4",
+          "Name": "",
+          "Description": "Value of expression at line 6",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "01327a585275414095428921d52529e1",
+          "Name": "",
+          "Description": "Value of expression at line 8",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "2dd5a73288be4f4aa1e1029b107d44ff",
+          "Name": "",
+          "Description": "Value of expression at line 10",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "2e6e79c4d1c84eb8afccc6a3f1a9a194",
+          "Name": "",
+          "Description": "Value of expression at line 12",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "1f5bbd740037476e93785404c5fdd0e4",
+          "Name": "",
+          "Description": "Value of expression at line 14",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "599da77dfac64344ad50dc96c2b4a02b",
+          "Name": "",
+          "Description": "Value of expression at line 16",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Parameters.SharedParameter.Create@string[],string,string,string,string,bool,bool,Revit.Elements.Category[]",
+      "Id": "9f1cee97322849969a353f3a34565aec",
+      "Inputs": [
+        {
+          "Id": "d95ffc880fbc4f6cae12110b4f44a543",
+          "Name": "parameterName",
+          "Description": "The name of the parameter to create.\n\nstring[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "4ed8aa66954948f98a9ef6df5c8926bb",
+          "Name": "groupName",
+          "Description": "The name of the group where the parameter belong to.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "51df7efe18544d40b0b3f883019a5548",
+          "Name": "type",
+          "Description": "BuiltIn Parameter Type.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "0b5803c2744e40d1ace37e4e3e7c76ff",
+          "Name": "group",
+          "Description": "BuiltIn Parameter Group.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "40a1ebe59d234a3db63aa082612741e2",
+          "Name": "tooltip",
+          "Description": "Tooltip for the parameter.\n\nstring\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ed0325a8243e44c5b70f6f1b60ae7e96",
+          "Name": "instance",
+          "Description": "Is instance parameter? Otherwise it's a type parameter!\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5dd76e8fe2f348adbb3b12f7f899ef90",
+          "Name": "vary",
+          "Description": "Vary parameter between groups?\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "35f7fa1746cf47d89f90238caf220efa",
+          "Name": "category",
+          "Description": "Category(ies) the parameter applies to. If no category is supplied, all possible categories are selected.\n\nCategory[]\nDefault value : null (disabled)",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "562644c258204c7cb30e17aa51f0af86",
+          "Name": "Parameter",
+          "Description": "Parameter as Dynamo type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Create shared parameter by name in the project. If the parameter not exists in the shared parameter file is it being created. Note: If the parameter exists is the category binding being updated!\n\nSharedParameter.Create (parameterName: string[], groupName: string, type: string, group: string, tooltip: string = null, instance: bool = false, vary: bool = false, category: Category[] = null): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Parameters.SharedParameter.Add@string[],string,string,bool,bool,Revit.Elements.Category[]",
+      "Id": "edd52ff3ee69405697dc6f25e0174260",
+      "Inputs": [
+        {
+          "Id": "7adfb475e76145e490de87a3d9160124",
+          "Name": "parameterName",
+          "Description": "The name of the parameter to add.\n\nstring[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "1c34e39926a14fb39e621130fc797294",
+          "Name": "groupName",
+          "Description": "The name of the group where the parameter belong to.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5189f0da46b64ff9b499aeef50cb7803",
+          "Name": "group",
+          "Description": "BuiltIn Parameter Group.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "14953ffb247a436d8270ac2e52d53fdf",
+          "Name": "instance",
+          "Description": "Is instance parameter? Otherwise it's a type parameter!\n\nbool\nDefault value : false (disabled)",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "65bd1657f75c4841b38424c8ea964c66",
+          "Name": "vary",
+          "Description": "Vary parameter between groups?\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "e64561b0dba444bbb9b056fbb57e47b0",
+          "Name": "category",
+          "Description": "Category(ies) the parameter applies to. If no category is supplied, all possible categories are selected.\n\nCategory[]\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "a38fc77088954010bd5fe4be3a207404",
+          "Name": "Parameter",
+          "Description": "Parameter as Dynamo type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Add shared parameter by name, from current loaded shared parameter file. Note: If the parameter exists is the category binding being updated, and tooltip is being added if exsist!\n\nSharedParameter.Add (parameterName: string[], groupName: string, group: string, instance: bool = false, vary: bool = false, category: Category[] = null): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Parameters.Parameter.ByName@string",
+      "Id": "b4d5ab904d20416b9499ef3fc089a27d",
+      "Inputs": [
+        {
+          "Id": "dcd156e2efba4e9f9d50441b8ddddcd2",
+          "Name": "parameterName",
+          "Description": "Name of the User-defined parameter.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "bda4355496b842cfab7bb5db8c5431fb",
+          "Name": "Parameter",
+          "Description": "User-defined parameter as Dynamo type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get parameter by name. Note: This function handles only User-defined parameters, such as project, shared, and global parameters.\n\nParameter.ByName (parameterName: string): Element"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Parameters.Parameter.ChangeCategory@Revit.Elements.Element,bool,Revit.Elements.Category[]",
+      "Id": "4e5962e509ed46c08f845a37aa728106",
+      "Inputs": [
+        {
+          "Id": "39596f35d73d41469f5ed0b32869c909",
+          "Name": "parameter",
+          "Description": "Element",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "a3cf9ac82b614fd8a2cc0e256238c578",
+          "Name": "instance",
+          "Description": "Is instance parameter?, otherwise it's a type parameter!\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c36f82b3dc1e43fb8790306a5e4c654d",
+          "Name": "category",
+          "Description": "Category(ies) to change the parameter binding to.\n\nCategory[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "3430602280f344a7b5b04d306b982c0e",
+          "Name": "Parameter",
+          "Description": "User-defined parameter as Dynamo type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Change category binding for parameter by name in the project. Note: If the project parameter is created inside Revit, then is it impossible to update/change any category!\n\nParameter.ChangeCategory (parameter: Element, instance: bool = false, category: Category[]): var[]..[]"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "75f2a782b2eb443d84c271593f05ee82",
+      "End": "b48da435e4824b778c40153f89cb9687",
+      "Id": "e45b5f2aee474597972809c3ee2b6883"
+    },
+    {
+      "Start": "c30739de9f98428b86dee89aa3e7adae",
+      "End": "f0ab8b26563747e098c867ea9a077200",
+      "Id": "4c9b57ccc14e485aacdb4ce0673c3ae0"
+    },
+    {
+      "Start": "9e7988dcbbfa4a02bc0c79479bfc99c8",
+      "End": "d428fbaf1ea84f64aeee8c33f013eabe",
+      "Id": "96406b568e5949e28307446602705b0e"
+    },
+    {
+      "Start": "9bfcbae69aff4588ab3a636a01a5e96c",
+      "End": "1309b81dadf342c4959ce7dd6dc3cd65",
+      "Id": "36e9af5d85174a8d909707f927226841"
+    },
+    {
+      "Start": "77318a6a31084475a60617cf3a5dd8fa",
+      "End": "5a54206b0ccd452cbd3696d6d32a9b4b",
+      "Id": "327f755771e949fdb62cfa1110d59c69"
+    },
+    {
+      "Start": "9d32a602001f40c98752d406433959e1",
+      "End": "cefbf2af949d45a88130cea307c33d4e",
+      "Id": "60d36d2e5bb64f7ca8fe8abbd9469af3"
+    },
+    {
+      "Start": "bb35d7ba0ab546bd865fa997f07624e3",
+      "End": "5a31dba0fc494d8eb49cca2d484d024f",
+      "Id": "2bcf9e20d40a4263a65a866c2f413978"
+    },
+    {
+      "Start": "e2b929956c2246c3b7bc89c0e3a8e39c",
+      "End": "35aecdab730d4680986cd7b171b7fbf8",
+      "Id": "6cdc62db89224c3f80faf89cea22efb5"
+    },
+    {
+      "Start": "ba35c56b424c4abda527fad25bb3e576",
+      "End": "9cbdc75054e64999a2e57cfa8eabe4d8",
+      "Id": "f750da5f90e24d3690a189a4bc7c85a3"
+    },
+    {
+      "Start": "f3c770a27da3406db23f818d209a964a",
+      "End": "a139c977765b4dea95f5c288ea01a2cb",
+      "Id": "84986d271ac94bc9969589ae65e81550"
+    },
+    {
+      "Start": "f6bd9f5d12c747a180b1bc866eafed4a",
+      "End": "3bb1a49b678143f3bfb8900e9ca0fac6",
+      "Id": "a4aaf0c1ba944afc8f5bb97a23ec265f"
+    },
+    {
+      "Start": "95bbd161ebde45a2a094ddc03b76512c",
+      "End": "35e53ad8f54c4b28a172b58d2429f4b9",
+      "Id": "e00b534fe8e449a8a6a80efa9bf9cc79"
+    },
+    {
+      "Start": "c47e180112d9468a9df71a62e371a81f",
+      "End": "0df3a0d5e1f84785bf9fd5a4204f5a8a",
+      "Id": "c721b856847b4510b83b758309b47915"
+    },
+    {
+      "Start": "38709ff1b241449a90d4fef5e6957ecb",
+      "End": "44f40e7bcca247da85bdf1468b9730d1",
+      "Id": "7afadf5fb68b4ceb83cfd84622c46d51"
+    },
+    {
+      "Start": "49a3cafbfb3c4bfaa5fa73673ba7bfd4",
+      "End": "9cd94a6a940242b48b3dfe1b8871ee1c",
+      "Id": "398914c133f64d16ae1e2c221f6f5aa8"
+    },
+    {
+      "Start": "49a3cafbfb3c4bfaa5fa73673ba7bfd4",
+      "End": "c36f82b3dc1e43fb8790306a5e4c654d",
+      "Id": "dfb2e79c66dd49dcb059d8284fcfacda"
+    },
+    {
+      "Start": "99257d3dfd80478c9a447da88a14f7f0",
+      "End": "cc61ae9b27f149b09064b468d4f80ac5",
+      "Id": "dcfe4749769440f991e81930a85ccbf0"
+    },
+    {
+      "Start": "99257d3dfd80478c9a447da88a14f7f0",
+      "End": "dcd156e2efba4e9f9d50441b8ddddcd2",
+      "Id": "e5918cfe24834bd6876133bab19c287c"
+    },
+    {
+      "Start": "b0169df6957f427eb3ef16231423bff2",
+      "End": "2268ed32f43f47488be0444bfdae46bf",
+      "Id": "ab67a0cc5d3f4a94a39d366110c7ae69"
+    },
+    {
+      "Start": "d0be906d1456485c8be5da87b5348f46",
+      "End": "35f7fa1746cf47d89f90238caf220efa",
+      "Id": "579b953efc244da2b35bf097b44fd480"
+    },
+    {
+      "Start": "d0be906d1456485c8be5da87b5348f46",
+      "End": "e64561b0dba444bbb9b056fbb57e47b0",
+      "Id": "f3b7571fd3254cbfb656af9e13c41f9e"
+    },
+    {
+      "Start": "f527e6f1b8e444a5a9b203159957cf13",
+      "End": "d95ffc880fbc4f6cae12110b4f44a543",
+      "Id": "488eefdccdf940c3bd4927853b8e5333"
+    },
+    {
+      "Start": "f527e6f1b8e444a5a9b203159957cf13",
+      "End": "7adfb475e76145e490de87a3d9160124",
+      "Id": "756d8ea0173a45e8ad9eeea1d00e5891"
+    },
+    {
+      "Start": "f048bc25fbe542769b4414bb9fcf5a29",
+      "End": "4ed8aa66954948f98a9ef6df5c8926bb",
+      "Id": "9059dbff4773445297824c5d8102aa3a"
+    },
+    {
+      "Start": "f048bc25fbe542769b4414bb9fcf5a29",
+      "End": "1c34e39926a14fb39e621130fc797294",
+      "Id": "7d17685e47404818b515ae9d8d35b1c8"
+    },
+    {
+      "Start": "4bb5541a235c44d2a129d76867a9b2b4",
+      "End": "51df7efe18544d40b0b3f883019a5548",
+      "Id": "a61f22b864d847c5982aa2c831514e0a"
+    },
+    {
+      "Start": "01327a585275414095428921d52529e1",
+      "End": "0b5803c2744e40d1ace37e4e3e7c76ff",
+      "Id": "e015a3d5788e4fa8872a512788a2e6d2"
+    },
+    {
+      "Start": "01327a585275414095428921d52529e1",
+      "End": "5189f0da46b64ff9b499aeef50cb7803",
+      "Id": "301020ddb22c4c4c8e13382c308509df"
+    },
+    {
+      "Start": "2dd5a73288be4f4aa1e1029b107d44ff",
+      "End": "40a1ebe59d234a3db63aa082612741e2",
+      "Id": "ffcc93b96c1a45e3af76c5d804290cf0"
+    },
+    {
+      "Start": "2e6e79c4d1c84eb8afccc6a3f1a9a194",
+      "End": "14953ffb247a436d8270ac2e52d53fdf",
+      "Id": "5522f4f77b34424fbedb7b27348ed8f0"
+    },
+    {
+      "Start": "1f5bbd740037476e93785404c5fdd0e4",
+      "End": "65bd1657f75c4841b38424c8ea964c66",
+      "Id": "54edf2a5f0384ca6a7c4c162cdb1f92a"
+    },
+    {
+      "Start": "599da77dfac64344ad50dc96c2b4a02b",
+      "End": "4271c6798590433986794761f0aad3a7",
+      "Id": "bd68d008a516409fa88df6af43a90d71"
+    },
+    {
+      "Start": "bda4355496b842cfab7bb5db8c5431fb",
+      "End": "39596f35d73d41469f5ed0b32869c909",
+      "Id": "b0a7fa9faca64eeb8e194a5e6c8bd8e3"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Orchid",
+      "Version": "203.2.0.7786",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "283d1c24d5244027a8a44f84b8976a33",
+        "3c3bf82aa8414eefb3f8ad9366926cac",
+        "715672773d5849fca95ba56c27e0c3df",
+        "5111a62e51594b6e80ecaea296d1fc1e",
+        "9f1cee97322849969a353f3a34565aec",
+        "edd52ff3ee69405697dc6f25e0174260",
+        "b4d5ab904d20416b9499ef3fc089a27d",
+        "4e5962e509ed46c08f845a37aa728106"
+      ]
+    }
+  ],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.3.0.5885",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": 14.049280166625977,
+      "EyeY": 19.049280166625977,
+      "EyeZ": 14.049280166625977,
+      "LookX": -14.049280166625977,
+      "LookY": -14.049280166625977,
+      "LookZ": -14.049280166625977,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "6bd90cfec17b4848b56b102d31814034",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 30.052841735123877,
+        "Y": 45.645924906883138
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Category.ByName",
+        "Id": "20350135824849e8882ae7a04933ede5",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 354.35664863797871,
+        "Y": 347.22596454164022
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Parameter.Create",
+        "Id": "283d1c24d5244027a8a44f84b8976a33",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -357.797765673634,
+        "Y": 75.1215620667347
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "SharedParameter.Add",
+        "Id": "3c3bf82aa8414eefb3f8ad9366926cac",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 662.53823568880182,
+        "Y": 84.899431726311164
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "41e680cebcf24f9291818ecbd831b2db",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -990.392544516912,
+        "Y": 46.0225406709548
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Category.ByName",
+        "Id": "a2672a188b2f47f597eeaccd8b80e01c",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -665.979352724457,
+        "Y": 306.463903838311
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "085236aed1484b09b43b23ddfc6f5111",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1049.580523623659,
+        "Y": -182.32333077610068
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Category.ByName",
+        "Id": "36629d9b5fdc4d399d705162e64ef6f9",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1519.3847583996483,
+        "Y": 962.06742267935385
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "e1abafe7d80442329573a8ddfb13ee2e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1049.7731646859127,
+        "Y": 726.168836106554
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Parameter.ChangeCategory",
+        "Id": "715672773d5849fca95ba56c27e0c3df",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1905.6689687444498,
+        "Y": 844.9841320606331
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Parameter.Delete",
+        "Id": "5111a62e51594b6e80ecaea296d1fc1e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": true,
+        "X": 1278.5148160722401,
+        "Y": -186.65305499924037
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Category.ByName",
+        "Id": "d38006f7ce6a4838873d7f26362b9dd2",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1373.8029241317304,
+        "Y": 506.67825293856578
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "951adb887e494f2eb58795bd69ace20c",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1050.0870328327373,
+        "Y": 112.89495713118575
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "SharedParameter.Create",
+        "Id": "9f1cee97322849969a353f3a34565aec",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": true,
+        "X": 1681.9845111825534,
+        "Y": 45.97389294097573
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "SharedParameter.Add",
+        "Id": "edd52ff3ee69405697dc6f25e0174260",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": true,
+        "X": 1681.9845111825534,
+        "Y": 335.97389294097576
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Parameter.ByName",
+        "Id": "b4d5ab904d20416b9499ef3fc089a27d",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1519.3847583996483,
+        "Y": 1067.8780011144668
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Parameter.ChangeCategory",
+        "Id": "4e5962e509ed46c08f845a37aa728106",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": true,
+        "X": 1905.9189687444498,
+        "Y": 1015.8780011144668
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "6fcef93e5f7f41eda9df0f769f5c85db",
+        "Title": "Add shared parameter",
+        "Nodes": [
+          "3c3bf82aa8414eefb3f8ad9366926cac",
+          "20350135824849e8882ae7a04933ede5",
+          "6bd90cfec17b4848b56b102d31814034"
+        ],
+        "Left": 20.052841735123877,
+        "Top": -0.35407509311686169,
+        "Width": 936.48539395367789,
+        "Height": 440.5800396347571,
+        "FontSize": 30.0,
+        "InitialTop": 45.645924906883138,
+        "InitialHeight": 446.5800396347571,
+        "TextblockHeight": 36.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "d303d93937014f21b4cd95a11c8b8d91",
+        "Title": "Add project parameter",
+        "Nodes": [
+          "283d1c24d5244027a8a44f84b8976a33",
+          "a2672a188b2f47f597eeaccd8b80e01c",
+          "41e680cebcf24f9291818ecbd831b2db"
+        ],
+        "Left": -1000.392544516912,
+        "Top": 0.022540670954796838,
+        "Width": 936.594778843278,
+        "Height": 399.4413631673562,
+        "FontSize": 30.0,
+        "InitialTop": 46.0225406709548,
+        "InitialHeight": 405.4413631673562,
+        "TextblockHeight": 36.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "c6ec7e3bb8044ec0892bfc35af32eddc",
+        "Title": "Delete parameter",
+        "Nodes": [
+          "085236aed1484b09b43b23ddfc6f5111",
+          "5111a62e51594b6e80ecaea296d1fc1e"
+        ],
+        "Left": 1039.580523623659,
+        "Top": -232.65305499924037,
+        "Width": 494.93429244858112,
+        "Height": 152.32972422313969,
+        "FontSize": 30.0,
+        "InitialTop": -186.65305499924037,
+        "InitialHeight": 149.32972422313969,
+        "TextblockHeight": 36.0,
+        "Background": "#FFFFB8D8"
+      },
+      {
+        "Id": "d36a2a8897fe4ce9bddc605181fd8f62",
+        "Title": "Change parameter and category binding in the project",
+        "Nodes": [
+          "36629d9b5fdc4d399d705162e64ef6f9",
+          "e1abafe7d80442329573a8ddfb13ee2e",
+          "715672773d5849fca95ba56c27e0c3df",
+          "4e5962e509ed46c08f845a37aa728106",
+          "b4d5ab904d20416b9499ef3fc089a27d"
+        ],
+        "Left": 1039.7731646859127,
+        "Top": 680.168836106554,
+        "Width": 1159.8958040585371,
+        "Height": 480.70916500791282,
+        "FontSize": 30.0,
+        "InitialTop": 726.168836106554,
+        "InitialHeight": 486.70916500791282,
+        "TextblockHeight": 36.0,
+        "Background": "#FFA4E1FF"
+      },
+      {
+        "Id": "30a18c45b9134e9f87e3e2d207404f54",
+        "Title": "Create shared parameter",
+        "Nodes": [
+          "d38006f7ce6a4838873d7f26362b9dd2",
+          "951adb887e494f2eb58795bd69ace20c",
+          "9f1cee97322849969a353f3a34565aec",
+          "edd52ff3ee69405697dc6f25e0174260"
+        ],
+        "Left": 1040.0870328327373,
+        "Top": -0.026107059024269574,
+        "Width": 935.89747834981608,
+        "Height": 599.70435999759,
+        "FontSize": 30.0,
+        "InitialTop": 45.97389294097573,
+        "InitialHeight": 605.70435999759,
+        "TextblockHeight": 36.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": 397.80848112429015,
+    "Y": 494.3832156802722,
+    "Zoom": 0.37137646396934221
+  }
+}

@@ -3,6 +3,9 @@ The major number follows the Dynamo version, 206.x.x is usable in Dynamo +2.6.x.
   
 ### History of Orchid for Dynamo 2.5.x and 2.6.x  
   
+206.3.0  
+- Nodes for (MEP) System is extended with many functions, Nodes for Reference and Assembly is added.  
+  
 206.2.0  
 - Version number changed from 260 to 206 to support two-digit Dynamo minor versioning. By this the Dynamo build number has been deprecated in the version number. Before 260 = 2.6.0, now 206 = 2.6.x.  
   

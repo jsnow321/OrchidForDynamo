@@ -1,0 +1,353 @@
+{
+  "Uuid": "3c9d0464-8643-5ffe-96e5-ab1769818209",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "ChangeMEPSystemClass",
+  "ElementResolver": {
+    "ResolutionMap": {
+      "List": {
+        "Key": "DSCore.List",
+        "Value": "DSCoreNodes.dll"
+      },
+      "List.Map": {
+        "Key": "DSCore.List",
+        "Value": "DSCoreNodes.dll"
+      },
+      "List.Deconstruct": {
+        "Key": "DSCore.List",
+        "Value": "DSCoreNodes.dll"
+      },
+      "Point.Z": {
+        "Key": "Autodesk.DesignScript.Geometry.Point",
+        "Value": "ProtoGeometry.dll"
+      },
+      "Category": {
+        "Key": "Revit.Elements.Category",
+        "Value": "RevitNodes.dll"
+      },
+      "Category.ByName": {
+        "Key": "Revit.Elements.Category",
+        "Value": "RevitNodes.dll"
+      },
+      "Vector": {
+        "Key": "Autodesk.DesignScript.Geometry.Vector",
+        "Value": "ProtoGeometry.dll"
+      },
+      "SpatialElement": {
+        "Key": "Orchid.RevitProject.Elements.SpatialElement",
+        "Value": "OrchidRB.dll"
+      },
+      "DesignScript.Dictionary": {
+        "Key": "DesignScript.Builtin.Dictionary",
+        "Value": "DesignScriptBuiltin.dll"
+      },
+      "DesignScript.Builtin.Dictionary": {
+        "Key": "DesignScript.Builtin.Dictionary",
+        "Value": "DesignScriptBuiltin.dll"
+      }
+    }
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Systems.MEPSystemType.ByName@string",
+      "Id": "b4dfe8d962844d9d88e281687b049714",
+      "Inputs": [
+        {
+          "Id": "84148c2217fd4201a889707efc844baf",
+          "Name": "name",
+          "Description": "Name as string value.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "e130633dd8e04ad99dc56423090787fb",
+          "Name": "SystemType",
+          "Description": "MEP SystemType as Dynamo type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get SystemType by name in document.\n\nMEPSystemType.ByName (name: string): Element"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Systems.MEPSystem.ByName@string",
+      "Id": "f1e83477706d4ae99f6a28692513d42b",
+      "Inputs": [
+        {
+          "Id": "3769ed999f1544049631c0bdbf355037",
+          "Name": "name",
+          "Description": "Name as string value.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "a6a3705f7eb7470db90384b906c036ad",
+          "Name": "System",
+          "Description": "MEP System as Dynamo type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get MEP System by name in document.\n\nMEPSystem.ByName (name: string): Element"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "[\"Kølevand, 30% propylene gylkol, Frem\",\n\"Kølevand, 30% propylene gylkol, Retur\"];\n[\"Cooling Supply\",\"Cooling Return\"];",
+      "Id": "096b5735de8549ab8c66302b73fb8954",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "b7357216026e4566a127a1a1dca2a956",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "0416550903364f4ca33b168969ef93d2",
+          "Name": "",
+          "Description": "Value of expression at line 3",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Systems.Piping.Pipe@Revit.Elements.Element",
+      "Id": "53d953cea242477498b97a390e7b7c76",
+      "Inputs": [
+        {
+          "Id": "1702b6dfa37b48cd8a2ff18f2a3e3e4f",
+          "Name": "pipingSystem",
+          "Description": "PipingSystem as Dynamo type.\n\nElement",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "9d9ec819f743417c95e11c6964babd24",
+          "Name": "Element",
+          "Description": "Element as Dynamo type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get pipes in the PipingSystem.\n\nPiping.Pipe (pipingSystem: Element): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Systems.Networks.Pipe.SetSystemType@Revit.Elements.Element[],Revit.Elements.Element",
+      "Id": "6c1ae4ec71504d18a209543920b4247d",
+      "Inputs": [
+        {
+          "Id": "01d097e848fa4355830e8026a1094770",
+          "Name": "element",
+          "Description": "Element as Dynamo type.\n\nElement[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "549abd522a6a4ec4a9593e17d741e066",
+          "Name": "systemType",
+          "Description": "Piping SystemType as Dynamo type.\n\nElement",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "ac56fc4735874fadb11226e4e81061a9",
+          "Name": "Element",
+          "Description": "Element as Dynamo type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Set pipe element system type.\n\nPipe.SetSystemType (element: Element[], systemType: Element): var[]..[]"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "e130633dd8e04ad99dc56423090787fb",
+      "End": "549abd522a6a4ec4a9593e17d741e066",
+      "Id": "e705ef7864ed416aae859b6dcbfcd8cd"
+    },
+    {
+      "Start": "a6a3705f7eb7470db90384b906c036ad",
+      "End": "1702b6dfa37b48cd8a2ff18f2a3e3e4f",
+      "Id": "230501fbf375444e855f2fc7a203207d"
+    },
+    {
+      "Start": "b7357216026e4566a127a1a1dca2a956",
+      "End": "3769ed999f1544049631c0bdbf355037",
+      "Id": "8e5d175b966740d59faf200b2164bd57"
+    },
+    {
+      "Start": "0416550903364f4ca33b168969ef93d2",
+      "End": "84148c2217fd4201a889707efc844baf",
+      "Id": "96bf6a0e70ca40b7949cd897d817a332"
+    },
+    {
+      "Start": "9d9ec819f743417c95e11c6964babd24",
+      "End": "01d097e848fa4355830e8026a1094770",
+      "Id": "422161c5756348b8947e1a78ab6ad395"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Orchid",
+      "Version": "203.2.0.7789",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "b4dfe8d962844d9d88e281687b049714",
+        "f1e83477706d4ae99f6a28692513d42b",
+        "53d953cea242477498b97a390e7b7c76",
+        "6c1ae4ec71504d18a209543920b4247d"
+      ]
+    }
+  ],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.3.0.5885",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": 10435.892305528272,
+      "EyeY": 6029.5223054932276,
+      "EyeZ": 315.19792317554675,
+      "LookX": -5591.87084473233,
+      "LookY": -5591.8708447323288,
+      "LookZ": -5591.8708447323288,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "MEPSystemType.ByName",
+        "Id": "b4dfe8d962844d9d88e281687b049714",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1676.4888427591729,
+        "Y": 1607.3088874510063
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "MEPSystem.ByName",
+        "Id": "f1e83477706d4ae99f6a28692513d42b",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1378.4888427591729,
+        "Y": 1499.3088874510063
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "096b5735de8549ab8c66302b73fb8954",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 910.48884275917294,
+        "Y": 1539.9488874510064
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Piping.Pipe",
+        "Id": "53d953cea242477498b97a390e7b7c76",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1676.4888427591729,
+        "Y": 1499.3088874510063
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Pipe.SetSystemType",
+        "Id": "6c1ae4ec71504d18a209543920b4247d",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2026.4888427591729,
+        "Y": 1540.3088874510063
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "5eac6ec1e7f64426a043c2931e61fa29",
+        "Title": "<Click here to edit the group title>",
+        "Nodes": [
+          "b4dfe8d962844d9d88e281687b049714",
+          "f1e83477706d4ae99f6a28692513d42b",
+          "096b5735de8549ab8c66302b73fb8954",
+          "53d953cea242477498b97a390e7b7c76",
+          "6c1ae4ec71504d18a209543920b4247d"
+        ],
+        "Left": 900.48884275917294,
+        "Top": 1446.3088874510063,
+        "Width": 1377.0,
+        "Height": 254.0,
+        "FontSize": 36.0,
+        "InitialTop": 1499.3088874510063,
+        "InitialHeight": 253.0,
+        "TextblockHeight": 43.0,
+        "Background": "#FFA4E1FF"
+      }
+    ],
+    "X": -782.52909991257059,
+    "Y": -831.99194009076507,
+    "Zoom": 0.89240972733971979
+  }
+}
