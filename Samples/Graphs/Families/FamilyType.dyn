@@ -25,12 +25,12 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
       "NodeType": "CodeBlockNode",
-      "Code": "//Parameter name\n[\"Test\",\"something\"];\n//Parameter type\n\"Text\";\n//\"Length\";\n//Parameter group\n\"PG_ADSK_MODEL_PROPERTIES\";\n//Tooltip\n\"Owner value\";\n//Instances\nfalse;\n//Reporting\ntrue;",
+      "Code": "//Parameter name\n[\"Test\",\"something\"];\n//Parameter type\n\"Text\";\n//\"Length\";\n//Parameter group\n\"PG_ADSK_MODEL_PROPERTIES\";\n//Tooltip\n\"Owner value\";\n//Instances\ntrue;\n//Reporting\ntrue;\n//Condense output\nfalse;",
       "Id": "a4d4165e1e70456ea7927c360f37230a",
       "Inputs": [],
       "Outputs": [
         {
-          "Id": "1c24cbd586bf488ab08e53836dd573a1",
+          "Id": "724d22f9ec48421a85873a1c4099c76c",
           "Name": "",
           "Description": "Value of expression at line 2",
           "UsingDefaultValue": false,
@@ -39,7 +39,7 @@
           "KeepListStructure": false
         },
         {
-          "Id": "19596b17f7d141b0ac6040271895bf12",
+          "Id": "db21fa1338db40d78b4e1d679d3aecdd",
           "Name": "",
           "Description": "Value of expression at line 4",
           "UsingDefaultValue": false,
@@ -48,7 +48,7 @@
           "KeepListStructure": false
         },
         {
-          "Id": "111cba40bd3145c5a15af4acb5451e54",
+          "Id": "bf6d458becee49658827d23cab03c207",
           "Name": "",
           "Description": "Value of expression at line 7",
           "UsingDefaultValue": false,
@@ -57,7 +57,7 @@
           "KeepListStructure": false
         },
         {
-          "Id": "cfa1ad62f0e74a4985d3e8e9f5646574",
+          "Id": "ff14ac1805ef4f82bdfb0439d6135a5a",
           "Name": "",
           "Description": "Value of expression at line 9",
           "UsingDefaultValue": false,
@@ -66,7 +66,7 @@
           "KeepListStructure": false
         },
         {
-          "Id": "1d50a19fbb684047988ce7e723ef1a9b",
+          "Id": "22424c7d20e34251bf02391e279ba741",
           "Name": "",
           "Description": "Value of expression at line 11",
           "UsingDefaultValue": false,
@@ -75,9 +75,18 @@
           "KeepListStructure": false
         },
         {
-          "Id": "960c2e444c6b44daa5845cb88b7886d2",
+          "Id": "4ee4bc8ba586443688c64b08d77f2f6b",
           "Name": "",
           "Description": "Value of expression at line 13",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "66022cf154ea4edfa1e3d44741c82b05",
+          "Name": "",
+          "Description": "Value of expression at line 15",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -186,7 +195,7 @@
         {
           "Id": "c53dfaf4100c4a24837560ad56ccd5c6",
           "Name": "Document",
-          "Description": "Document as Orchid type",
+          "Description": "Document as Orchid type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -194,18 +203,18 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get current document\n\nDocument.Current: var"
+      "Description": "Get current document.\n\nDocument.Current: Document"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitFamily.FamilyType.Create@var,string",
+      "FunctionSignature": "Orchid.RevitFamily.FamilyType.Create@Orchid.RevitProject.Common.Document,string",
       "Id": "433493a4de38436695e89c0eb581430b",
       "Inputs": [
         {
           "Id": "3d23c1273fd0432ab7c22301bad5e81f",
           "Name": "familyDocument",
-          "Description": "Family document (rfa) as Orchid document\n\nvar\nDefault value : null",
+          "Description": "Family document (rfa) as Orchid document.\n\nDocument\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -214,7 +223,7 @@
         {
           "Id": "2c7038a4adc24e8a8116b0bdbce9a945",
           "Name": "name",
-          "Description": "The family type name\n\nstring\nDefault value : null",
+          "Description": "The family type name.\n\nstring\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -225,7 +234,7 @@
         {
           "Id": "c5ced3e28dfb4c91adb0f77745ad6bd4",
           "Name": "FamilyType",
-          "Description": "FamilyType as Orchid type",
+          "Description": "FamilyType as Orchid type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -233,18 +242,18 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Create family type by name. NOTE: If no input to name is provided (default as null), then a default family type will be created named as the familyDocument. NOTE: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.Create (familyDocument: var = null, name: string = null): var[]..[]"
+      "Description": "Create family type by name. Note: If no input to name is provided (default as null), then a default family type will be created named as the familyDocument. Note: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.Create (familyDocument: Document = null, name: string = null): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitFamily.Parameter.Create@var,string[],string,string,string,bool,bool",
+      "FunctionSignature": "Orchid.RevitFamily.Parameter.Create@Orchid.RevitProject.Common.Document,string[],string,string,string,bool,bool,bool",
       "Id": "06c2d83eae3241749a7aa9d7765d6c24",
       "Inputs": [
         {
           "Id": "0bbec5cf1a9e44e1a5fa84b5db743946",
           "Name": "familyDocument",
-          "Description": "Family document (rfa) as Orchid document\n\nvar\nDefault value : null",
+          "Description": "Family document (rfa) as Orchid document.\n\nDocument\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -253,7 +262,7 @@
         {
           "Id": "2f9a9c7197874cc29e145b6b384650d3",
           "Name": "parameterName",
-          "Description": "The name of the parameter to add (create)\n\nstring[]",
+          "Description": "The name of the parameter to add (create).\n\nstring[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -262,7 +271,7 @@
         {
           "Id": "0401b2dfdf804e419f1d36ea93bed265",
           "Name": "type",
-          "Description": "BuiltIn Parameter Type\n\nstring",
+          "Description": "BuiltIn Parameter Type.\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -271,7 +280,7 @@
         {
           "Id": "d6783b16d0f84d199a8522fb51331c98",
           "Name": "group",
-          "Description": "BuiltIn Parameter Group\n\nstring",
+          "Description": "BuiltIn Parameter Group.\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -280,7 +289,7 @@
         {
           "Id": "cc5cbc70ec36445aa9a323cb1f3263c6",
           "Name": "tooltip",
-          "Description": "Tooltip for the parameter\n\nstring\nDefault value : null",
+          "Description": "Tooltip for the parameter.\n\nstring\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -303,13 +312,22 @@
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
+        },
+        {
+          "Id": "3c65908cd8a245a7b2a48aa8ce064993",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
         }
       ],
       "Outputs": [
         {
           "Id": "2c53f28b221645f7a82d9e25fb37eaed",
           "Name": "Parameter",
-          "Description": "Parameter as Orchid type",
+          "Description": "Parameter as Orchid type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -317,18 +335,18 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Create family parameter by name and by type.\n\nParameter.Create (familyDocument: var = null, parameterName: string[], type: string, group: string, tooltip: string = null, instance: bool = false, reporting: bool = false): var[]..[]"
+      "Description": "Create family parameter by name and by type.\n\nParameter.Create (familyDocument: Document = null, parameterName: string[], type: string, group: string, tooltip: string = null, instance: bool = false, reporting: bool = false, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitFamily.Parameter.Delete@var,string",
+      "FunctionSignature": "Orchid.RevitFamily.Parameter.Delete@Orchid.RevitProject.Common.Document,string",
       "Id": "d281de87d63d4fd7b06bf13daf13b850",
       "Inputs": [
         {
           "Id": "c876b866a9c441efbc1af0366a1f29fd",
           "Name": "familyDocument",
-          "Description": "Family document (rfa) as Orchid document\n\nvar\nDefault value : null",
+          "Description": "Family document (rfa) as Orchid document.\n\nDocument\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -337,7 +355,7 @@
         {
           "Id": "d3101607ad724c228a22c9dc707c8987",
           "Name": "parameterName",
-          "Description": "The name of the parameter to delete\n\nstring",
+          "Description": "The name of the parameter to delete.\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -348,7 +366,7 @@
         {
           "Id": "dc71f867eecd49cbaf5e4cb869c7559d",
           "Name": "boolean",
-          "Description": "bool value if parameter is deleted",
+          "Description": "Boolean value if parameter is deleted.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -356,18 +374,18 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Delete family parameter by parameter name\n\nParameter.Delete (familyDocument: var = null, parameterName: string): bool"
+      "Description": "Delete family parameter by parameter name.\n\nParameter.Delete (familyDocument: Document = null, parameterName: string): bool"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitFamily.FamilyType.Delete@var,var",
+      "FunctionSignature": "Orchid.RevitFamily.FamilyType.Delete@Orchid.RevitProject.Common.Document,Orchid.RevitFamily.FamilyType",
       "Id": "dea64820d4a4485089953b86b6a8a87a",
       "Inputs": [
         {
           "Id": "511a38ab38174aa0aab32a66fe2bd197",
           "Name": "familyDocument",
-          "Description": "Family document (rfa) as Orchid document\n\nvar\nDefault value : null",
+          "Description": "Family document (rfa) as Orchid document.\n\nDocument\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -376,7 +394,7 @@
         {
           "Id": "171a108b3cd44687a0a690c9eabd605a",
           "Name": "familyType",
-          "Description": "FamilyType as string or Revit type\n\nvar\nDefault value : null",
+          "Description": "FamilyType as string or Revit type.\n\nFamilyType\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -387,7 +405,7 @@
         {
           "Id": "5f7ff4eb71b8462995fb0f65b1cbf0ce",
           "Name": "boolean",
-          "Description": "bool value if family type is deleted (if family type existed)",
+          "Description": "Boolean value if family type is deleted (if family type existed).",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -395,18 +413,18 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Delete family type by name. NOTE: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.Delete (familyDocument: var = null, familyType: var = null): var[]..[]"
+      "Description": "Delete family type by name. Note: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.Delete (familyDocument: Document = null, familyType: FamilyType = null): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitFamily.FamilyType.Rename@var,string[],string[]",
+      "FunctionSignature": "Orchid.RevitFamily.FamilyType.Rename@Orchid.RevitProject.Common.Document,string[],string[],bool",
       "Id": "cd88b9263f584bf4a098bd26e023fd08",
       "Inputs": [
         {
           "Id": "be7684d2b7f14b14b7f92a8cedd0216b",
           "Name": "familyDocument",
-          "Description": "Family document (rfa) as Orchid document\n\nvar\nDefault value : null",
+          "Description": "Family document (rfa) as Orchid document.\n\nDocument\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -415,7 +433,7 @@
         {
           "Id": "e9b07d49c8e1448a9ef3febe675e5676",
           "Name": "sourceName",
-          "Description": "The name of the source family type\n\nstring[]",
+          "Description": "The name of the source family type.\n\nstring[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -424,8 +442,17 @@
         {
           "Id": "76e80f2fd6c44ba3a5cb6e87b02e0aa7",
           "Name": "targetName",
-          "Description": "The name of the target family type\n\nstring[]",
+          "Description": "The name of the target family type.\n\nstring[]",
           "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "343784655ce14eb3bb8bd8604d9f39d4",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
@@ -435,7 +462,7 @@
         {
           "Id": "272fe1b78fef4b31a07cabb9a8939423",
           "Name": "FamilyType",
-          "Description": "FamilyType as Orchid type",
+          "Description": "FamilyType as Orchid type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -443,18 +470,18 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Rename family type by name. NOTE: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.Rename (familyDocument: var = null, sourceName: string[], targetName: string[]): var[]..[]"
+      "Description": "Rename family type by name. Note: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.Rename (familyDocument: Document = null, sourceName: string[], targetName: string[], condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitFamily.Parameter.Rename@var,string,string",
+      "FunctionSignature": "Orchid.RevitFamily.Parameter.Rename@Orchid.RevitProject.Common.Document,string,string,bool",
       "Id": "bdbce0edf0f54d9696b058ce16c4c0ec",
       "Inputs": [
         {
           "Id": "a8ea8d4c3f1349a0a5bcf48a385f2c05",
           "Name": "familyDocument",
-          "Description": "Family document (rfa) as Orchid document\n\nvar\nDefault value : null",
+          "Description": "Family document (rfa) as Orchid document.\n\nDocument\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -463,7 +490,7 @@
         {
           "Id": "fe8da7ba0b224898b73a106d6cd2f11d",
           "Name": "sourceName",
-          "Description": "The name of the source parameter\n\nstring",
+          "Description": "The name of the source parameter.\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -472,8 +499,17 @@
         {
           "Id": "a697b0af0f854d1782edb8d6909d0a64",
           "Name": "targetName",
-          "Description": "The name of the target parameter\n\nstring",
+          "Description": "The name of the target parameter.\n\nstring",
           "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "8c59204c8c9d434cb97c2f345c321966",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
@@ -483,7 +519,7 @@
         {
           "Id": "4dc4d2348e8c4cff96068ef2131b7010",
           "Name": "boolean",
-          "Description": "bool value if parameter is renamed (if parameter existed)",
+          "Description": "Boolean value if parameter is renamed (if parameter existed).",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -491,7 +527,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Rename family parameter by parameter name\n\nParameter.Rename (familyDocument: var = null, sourceName: string, targetName: string): var[]..[]"
+      "Description": "Rename family parameter by parameter name.\n\nParameter.Rename (familyDocument: Document = null, sourceName: string, targetName: string, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
@@ -531,7 +567,7 @@
         {
           "Id": "9f3680a33b2147f49148bb60b09cca7d",
           "Name": "pass",
-          "Description": "Data to pass\n\nvar[]..[]",
+          "Description": "Data to pass.\n\nvar[]..[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -540,7 +576,7 @@
         {
           "Id": "087e3f88d40f4d259c810e3c8b2ecbcf",
           "Name": "waitFor",
-          "Description": "Data object to wait for\n\nvar[]..[]",
+          "Description": "Data object to wait for.\n\nvar[]..[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -551,7 +587,7 @@
         {
           "Id": "5d704a7983ab40d7bfc8e99acb48fe5d",
           "Name": "pass",
-          "Description": "Passed data",
+          "Description": "Passed data.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -559,7 +595,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Await a data stream before passing another data stream\n\nDataStream.Await (pass: var[]..[], waitFor: var[]..[]): var[]..[]"
+      "Description": "Await a data stream before passing another data stream.\n\nDataStream.Await (pass: var[]..[], waitFor: var[]..[]): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -570,7 +606,7 @@
         {
           "Id": "ebfd16a7b83547f294294aad33313ecb",
           "Name": "pass",
-          "Description": "Data to pass\n\nvar[]..[]",
+          "Description": "Data to pass.\n\nvar[]..[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -579,7 +615,7 @@
         {
           "Id": "b9521861e45a4591b45eec3c77f0e0b7",
           "Name": "waitFor",
-          "Description": "Data object to wait for\n\nvar[]..[]",
+          "Description": "Data object to wait for.\n\nvar[]..[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -590,7 +626,7 @@
         {
           "Id": "979f07c77fe74253a7bb2493037f2571",
           "Name": "pass",
-          "Description": "Passed data",
+          "Description": "Passed data.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -598,7 +634,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Await a data stream before passing another data stream\n\nDataStream.Await (pass: var[]..[], waitFor: var[]..[]): var[]..[]"
+      "Description": "Await a data stream before passing another data stream.\n\nDataStream.Await (pass: var[]..[], waitFor: var[]..[]): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -609,7 +645,7 @@
         {
           "Id": "3a27b56d89cc46b59aa3ccbd86707255",
           "Name": "pass",
-          "Description": "Data to pass\n\nvar[]..[]",
+          "Description": "Data to pass.\n\nvar[]..[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -618,7 +654,7 @@
         {
           "Id": "0a9b4b0fc9df47f9970db0f3694f4661",
           "Name": "waitFor",
-          "Description": "Data object to wait for\n\nvar[]..[]",
+          "Description": "Data object to wait for.\n\nvar[]..[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -629,7 +665,7 @@
         {
           "Id": "328e0ad40ab84222ab6f64e6c55d05a6",
           "Name": "pass",
-          "Description": "Passed data",
+          "Description": "Passed data.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -637,7 +673,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Await a data stream before passing another data stream\n\nDataStream.Await (pass: var[]..[], waitFor: var[]..[]): var[]..[]"
+      "Description": "Await a data stream before passing another data stream.\n\nDataStream.Await (pass: var[]..[], waitFor: var[]..[]): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -648,7 +684,7 @@
         {
           "Id": "154d25995b2242f5bb27fcd237ca3185",
           "Name": "pass",
-          "Description": "Data to pass\n\nvar[]..[]",
+          "Description": "Data to pass.\n\nvar[]..[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -657,7 +693,7 @@
         {
           "Id": "c902cf8c15d6487eb28b8bfc783a8694",
           "Name": "waitFor",
-          "Description": "Data object to wait for\n\nvar[]..[]",
+          "Description": "Data object to wait for.\n\nvar[]..[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -668,7 +704,7 @@
         {
           "Id": "af06aeac58c24c3f8ef4484e14a0fc73",
           "Name": "pass",
-          "Description": "Passed data",
+          "Description": "Passed data.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -676,7 +712,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Await a data stream before passing another data stream\n\nDataStream.Await (pass: var[]..[], waitFor: var[]..[]): var[]..[]"
+      "Description": "Await a data stream before passing another data stream.\n\nDataStream.Await (pass: var[]..[], waitFor: var[]..[]): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -756,7 +792,7 @@
         {
           "Id": "52cf21121ce24b038f34335ad114eb63",
           "Name": "string",
-          "Description": "Name as string",
+          "Description": "Name as string.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -764,7 +800,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get the family type name\n\nFamilyType.Name: string"
+      "Description": "Get the family type name.\n\nFamilyType.Name: string"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -776,7 +812,7 @@
         {
           "Id": "d0390ad473ac4ec68b8bc6d6a941d592",
           "Name": "FamilyType",
-          "Description": "FamilyType as Orchid type",
+          "Description": "FamilyType as Orchid type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -784,7 +820,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get all family types. NOTE: If no family types exists, then a default family type will be created named as the familyDocument. NOTE: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.All ( ): var[]..[]"
+      "Description": "Get all family types. Note: If no family types exists, then a default family type will be created named as the familyDocument. Note: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.All ( ): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -796,7 +832,7 @@
         {
           "Id": "f872127dbcfc4b0aa2cd15fc16d95932",
           "Name": "FamilyType",
-          "Description": "FamilyType as Orchid type",
+          "Description": "FamilyType as Orchid type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -804,7 +840,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get the current family type. NOTE: If no current family types exists, then a default family type will be created named as the familyDocument. NOTE: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.Current ( ): FamilyType"
+      "Description": "Get the current family type. Note: If no current family types exists, then a default family type will be created named as the familyDocument. Note: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.Current ( ): FamilyType"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -855,7 +891,7 @@
         {
           "Id": "f32098077dcb461a82720192c542c36b",
           "Name": "string",
-          "Description": "Name as string",
+          "Description": "Name as string.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -863,7 +899,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get the family type name\n\nFamilyType.Name: string"
+      "Description": "Get the family type name.\n\nFamilyType.Name: string"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -885,7 +921,7 @@
         {
           "Id": "b8e18bc7c3ea4f8a8101975e7fc7cb93",
           "Name": "string",
-          "Description": "Name as string",
+          "Description": "Name as string.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -893,7 +929,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get the family type name\n\nFamilyType.Name: string"
+      "Description": "Get the family type name.\n\nFamilyType.Name: string"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -964,7 +1000,7 @@
         {
           "Id": "eb3956010df542889b255cdc829e5a7b",
           "Name": "familyType",
-          "Description": "FamilyType as Revit type\n\nvar",
+          "Description": "FamilyType as Revit type.\n\nvar",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -975,7 +1011,7 @@
         {
           "Id": "0d99a8c5c10b4f1492d15cb24fe22b78",
           "Name": "FamilyType",
-          "Description": "FamilyType as Orchid type",
+          "Description": "FamilyType as Orchid type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -983,7 +1019,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Convert Autodesk Revit family type to Orchid family type. NOTE: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.ToOrchidType (familyType: var): FamilyType"
+      "Description": "Convert Autodesk Revit family type to Orchid family type. Note: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.ToOrchidType (familyType: var): FamilyType"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -1034,7 +1070,7 @@
         {
           "Id": "07bce56a5b2e418da8ae817d912a1bde",
           "Name": "string",
-          "Description": "Name as string",
+          "Description": "Name as string.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1042,7 +1078,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get the family type name\n\nFamilyType.Name: string"
+      "Description": "Get the family type name.\n\nFamilyType.Name: string"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -1053,7 +1089,7 @@
         {
           "Id": "f3a6a0f8f28049e984f566bca02a23b3",
           "Name": "pass",
-          "Description": "Data to pass\n\nvar[]..[]",
+          "Description": "Data to pass.\n\nvar[]..[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1062,7 +1098,7 @@
         {
           "Id": "0e8419d2331049bf8e97cbf84ccacbb5",
           "Name": "waitFor",
-          "Description": "Data object to wait for\n\nvar[]..[]",
+          "Description": "Data object to wait for.\n\nvar[]..[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1073,7 +1109,7 @@
         {
           "Id": "2f1e1d9dcd7a43898c6da728437a0453",
           "Name": "pass",
-          "Description": "Passed data",
+          "Description": "Passed data.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1081,58 +1117,19 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Await a data stream before passing another data stream\n\nDataStream.Await (pass: var[]..[], waitFor: var[]..[]): var[]..[]"
+      "Description": "Await a data stream before passing another data stream.\n\nDataStream.Await (pass: var[]..[], waitFor: var[]..[]): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitFamily.FamilyType.All@var",
-      "Id": "5ff4f4cdfa36462484db651bfcf69821",
-      "Inputs": [
-        {
-          "Id": "7a6ec4c9deed47bda85abb68ee8d3b8c",
-          "Name": "familyDocument",
-          "Description": "var\nDefault value : null",
-          "UsingDefaultValue": true,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Outputs": [
-        {
-          "Id": "b6983f6a40964c30bad69e3555efef27",
-          "Name": "FamilyType",
-          "Description": "FamilyType as Orchid type",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Auto",
-      "Description": "Get all family types. NOTE: If no family types exists, then a default family type will be created named as the familyDocument. NOTE: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.All (familyDocument: var = null): var[]..[]"
-    },
-    {
-      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
-      "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitFamily.FamilyType.ByName@var,string",
+      "FunctionSignature": "Orchid.RevitFamily.FamilyType.ByName@string",
       "Id": "8578558fbac74349915bf226eff5dd12",
       "Inputs": [
         {
           "Id": "4e48c4d1243e45cbaada5606aa6e1937",
-          "Name": "familyDocument",
-          "Description": "var\nDefault value : null",
-          "UsingDefaultValue": true,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "f378f1c452e44065a145e8df1668eeda",
           "Name": "name",
-          "Description": "Name as string value\n\nstring",
-          "UsingDefaultValue": false,
+          "Description": "Name as string value.\n\nstring",
+          "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
@@ -1142,7 +1139,7 @@
         {
           "Id": "2819281f446e4206a0bebcadb5857b44",
           "Name": "FamilyType",
-          "Description": "FamilyType as Orchid type",
+          "Description": "FamilyType as Orchid type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1150,24 +1147,113 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get family type by name in current document. NOTE: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.ByName (familyDocument: var = null, name: string): FamilyType"
+      "Description": "Get family type by name in current document. Note: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.ByName (name: string): FamilyType"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitFamily.FamilyType.All@Orchid.RevitProject.Common.Document",
+      "Id": "456da14ebbd94a3192737b278743565e",
+      "Inputs": [
+        {
+          "Id": "2b06c5dd17bb4ffca0980e4ea8622ca4",
+          "Name": "familyDocument",
+          "Description": "Family document (rfa) as Orchid document.\n\nDocument\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "6a97bed35ee345aa943717288bde2669",
+          "Name": "FamilyType",
+          "Description": "FamilyType as Orchid type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get all family types in the familyDocument. Note: If no family types exists, then a default family type will be created named as the familyDocument. Note: FamilyType in a family document and a project document is NOT the same! FamilyType in a project document is denoted FamilySymbol in the Autodesk Revit API!\n\nFamilyType.All (familyDocument: Document = null): var[]..[]"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "92ac2ea5f26f4aa2a8754acd75458d73",
+      "Inputs": [
+        {
+          "Id": "0456bceca0374160a654bf40613b9e5b",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "faf8bba318f64157aac67cacb636cc4c",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitFamily.FamilyType.Name",
+      "Id": "b83f8139886d4d9d9dbd7bae9dd9c9fc",
+      "Inputs": [
+        {
+          "Id": "29e83156119943898c61fd221bc5fc29",
+          "Name": "familyType",
+          "Description": "Orchid.RevitFamily.FamilyType",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "22e33d42322c416a893c120f170e3a77",
+          "Name": "string",
+          "Description": "Name as string.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get the family type name.\n\nFamilyType.Name: string"
     }
   ],
   "Connectors": [
     {
-      "Start": "1c24cbd586bf488ab08e53836dd573a1",
+      "Start": "724d22f9ec48421a85873a1c4099c76c",
       "End": "2f9a9c7197874cc29e145b6b384650d3",
-      "Id": "512900bc4ec742b4b9f32505e1aa9841"
+      "Id": "c3d1a03d1dd0442594229c5070c3e707"
     },
     {
-      "Start": "19596b17f7d141b0ac6040271895bf12",
+      "Start": "db21fa1338db40d78b4e1d679d3aecdd",
       "End": "0401b2dfdf804e419f1d36ea93bed265",
-      "Id": "ee88802eb8ea428792c9bceea6ef4cbb"
+      "Id": "b3e9052920c04b1e9075c64e77492d19"
     },
     {
-      "Start": "111cba40bd3145c5a15af4acb5451e54",
+      "Start": "bf6d458becee49658827d23cab03c207",
       "End": "d6783b16d0f84d199a8522fb51331c98",
-      "Id": "452cb6107a1f46ec821725a134b8b3d2"
+      "Id": "462214ab850f4c58b0cf51dff05fbb9f"
     },
     {
       "Start": "6eb41a686fa442d28cb4d6c28d31c6df",
@@ -1178,11 +1264,6 @@
       "Start": "43d6be19b16b4ec18fc4ba4229f43b94",
       "End": "76e80f2fd6c44ba3a5cb6e87b02e0aa7",
       "Id": "e41ace8f7a79479cb45a53bd552dd91c"
-    },
-    {
-      "Start": "02091a5b2a544e15899e2de265d89ff0",
-      "End": "f378f1c452e44065a145e8df1668eeda",
-      "Id": "ff15e3bf11d847cc8cf4e6fd037f7262"
     },
     {
       "Start": "0b3b80b5bde0449e9b2cf08ea17bda3f",
@@ -1245,9 +1326,19 @@
       "Id": "57f4d18fd947478f89354f48203269e2"
     },
     {
+      "Start": "272fe1b78fef4b31a07cabb9a8939423",
+      "End": "29e83156119943898c61fd221bc5fc29",
+      "Id": "c64958733a604926bfbee03872a96f98"
+    },
+    {
       "Start": "4dc4d2348e8c4cff96068ef2131b7010",
       "End": "0a9b4b0fc9df47f9970db0f3694f4661",
       "Id": "c77f1455968a4d16abd9e2d3917ffa2c"
+    },
+    {
+      "Start": "4dc4d2348e8c4cff96068ef2131b7010",
+      "End": "0456bceca0374160a654bf40613b9e5b",
+      "Id": "510154c4a54446899aa9b6594e0d5be4"
     },
     {
       "Start": "971b8fa064144847ac0aafe220523fc6",
@@ -1273,11 +1364,6 @@
       "Start": "979f07c77fe74253a7bb2493037f2571",
       "End": "511a38ab38174aa0aab32a66fe2bd197",
       "Id": "5b26ff868f304b9eb48580a16710f222"
-    },
-    {
-      "Start": "979f07c77fe74253a7bb2493037f2571",
-      "End": "4e48c4d1243e45cbaada5606aa6e1937",
-      "Id": "5725aaf7c0a04d1592ad33722b4126e2"
     },
     {
       "Start": "328e0ad40ab84222ab6f64e6c55d05a6",
@@ -1341,28 +1427,64 @@
     },
     {
       "Start": "2f1e1d9dcd7a43898c6da728437a0453",
-      "End": "7a6ec4c9deed47bda85abb68ee8d3b8c",
-      "Id": "7eecaaab9de74cb4ad060ca9d45d25dd"
-    },
-    {
-      "Start": "b6983f6a40964c30bad69e3555efef27",
-      "End": "bcd88ec8699e4e20a781374fb32ef5fd",
-      "Id": "0b9e430595484d3ba8bba487badee428"
+      "End": "2b06c5dd17bb4ffca0980e4ea8622ca4",
+      "Id": "81441d97211b4c6a802dc70c401cde2c"
     },
     {
       "Start": "2819281f446e4206a0bebcadb5857b44",
       "End": "171a108b3cd44687a0a690c9eabd605a",
       "Id": "b48089e7a7504f71907f616bb8154f97"
+    },
+    {
+      "Start": "6a97bed35ee345aa943717288bde2669",
+      "End": "bcd88ec8699e4e20a781374fb32ef5fd",
+      "Id": "040fa13fb2734147bd3c566bc1d1fd5e"
+    },
+    {
+      "Start": "22e33d42322c416a893c120f170e3a77",
+      "End": "4e48c4d1243e45cbaada5606aa6e1937",
+      "Id": "89780623d4b94ec0a7bb8331e974f007"
     }
   ],
   "Dependencies": [],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Orchid",
+      "Version": "203.3.0.7798",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "f504f016d8a64864b729038ddac7f502",
+        "433493a4de38436695e89c0eb581430b",
+        "06c2d83eae3241749a7aa9d7765d6c24",
+        "d281de87d63d4fd7b06bf13daf13b850",
+        "dea64820d4a4485089953b86b6a8a87a",
+        "cd88b9263f584bf4a098bd26e023fd08",
+        "bdbce0edf0f54d9696b058ce16c4c0ec",
+        "9c51c4f763dd4b3f9595bd8cd9c222d2",
+        "b67ed1adaaf8468ca64ad05e0f624cc5",
+        "9e2011c2e63e4fc394d1e7470169b45e",
+        "e563982665544e628a65c7613aaba631",
+        "8dbaf583d8a643f8aaad3b78542df0ff",
+        "bfd85b72dfda4c2285809e6b9aaeeff3",
+        "eb2cb8984506460da50d1f9f41d2eed8",
+        "5fa91f66d1ed44d09689b83cdef8c6ad",
+        "44992ebbd8d14cafb4550d8c897db3d9",
+        "765a719a1bf0451a97e5527ecd197a3d",
+        "d0e3c839a5f14a1297d22f0052edc7e5",
+        "171bd67ac6a24e288da6e4b70919887a",
+        "8578558fbac74349915bf226eff5dd12",
+        "456da14ebbd94a3192737b278743565e",
+        "b83f8139886d4d9d9dbd7bae9dd9c9fc"
+      ]
+    }
+  ],
   "Bindings": [],
   "View": {
     "Dynamo": {
       "ScaleFactor": 1.0,
       "HasRunWithoutCrash": true,
       "IsVisibleInDynamoLibrary": true,
-      "Version": "2.0.4.12684",
+      "Version": "2.3.0.5885",
       "RunType": "Manual",
       "RunPeriod": "1000"
     },
@@ -1386,8 +1508,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -547.288075369093,
-        "Y": -1025.34495520185
+        "X": -547.60326563399178,
+        "Y": -952.60286458727035
       },
       {
         "ShowGeometry": true,
@@ -1406,8 +1528,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 990.307215181739,
-        "Y": -1319.3278568818
+        "X": 990.07919745428285,
+        "Y": -1210.1010262650802
       },
       {
         "ShowGeometry": true,
@@ -1416,8 +1538,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 989.909273141505,
-        "Y": -919.737162748196
+        "X": 989.59408287660631,
+        "Y": -847.40394975243112
       },
       {
         "ShowGeometry": true,
@@ -1436,8 +1558,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -400.162966598247,
-        "Y": -1237.7083070563
+        "X": -406.01456812989522,
+        "Y": -1203.8990537623326
       },
       {
         "ShowGeometry": true,
@@ -1456,8 +1578,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -194.288075369093,
-        "Y": -1028.83828853519
+        "X": -194.60326563399155,
+        "Y": -956.09619792061028
       },
       {
         "ShowGeometry": true,
@@ -1466,8 +1588,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1281.9092731415,
-        "Y": -993.377162748196
+        "X": 1281.5940828766015,
+        "Y": -921.0439497524311
       },
       {
         "ShowGeometry": true,
@@ -1476,8 +1598,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1594.78245695819,
-        "Y": -1417.37998514559
+        "X": 1631.0791974542828,
+        "Y": -1400.0078035856209
       },
       {
         "ShowGeometry": true,
@@ -1496,8 +1618,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 601.970397424624,
-        "Y": -984.783819020569
+        "X": 601.65520715972548,
+        "Y": -912.04172840598926
       },
       {
         "ShowGeometry": true,
@@ -1506,8 +1628,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 309.970397424624,
-        "Y": -919.717152353903
+        "X": 309.65520715972548,
+        "Y": -846.97506173932322
       },
       {
         "ShowGeometry": true,
@@ -1526,8 +1648,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 990.307215181739,
-        "Y": -1453.9678568818
+        "X": 1309.0791974542828,
+        "Y": -1454.0078035856209
       },
       {
         "ShowGeometry": true,
@@ -1536,8 +1658,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 989.909273141505,
-        "Y": -1054.37716274819
+        "X": 989.59408287660631,
+        "Y": -982.043949752425
       },
       {
         "ShowGeometry": true,
@@ -1546,8 +1668,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 309.970397424624,
-        "Y": -1054.78381902057
+        "X": 309.65520715972548,
+        "Y": -982.04172840599028
       },
       {
         "ShowGeometry": true,
@@ -1556,8 +1678,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -27.532908505548,
-        "Y": -1747.75940091424
+        "X": -108.20679079024441,
+        "Y": -1720.8663540037169
       },
       {
         "ShowGeometry": true,
@@ -1566,8 +1688,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -341.873992317768,
-        "Y": -1747.44306302524
+        "X": -422.54787460246439,
+        "Y": -1720.550016114717
       },
       {
         "ShowGeometry": true,
@@ -1576,8 +1698,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -341.222944033478,
-        "Y": -1850.41871404108
+        "X": -421.89682631817436,
+        "Y": -1823.5256671305569
       },
       {
         "ShowGeometry": true,
@@ -1586,8 +1708,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -522.557686420578,
-        "Y": -1849.56361353747
+        "X": -603.23156870527441,
+        "Y": -1823.5256671305569
       },
       {
         "ShowGeometry": true,
@@ -1596,8 +1718,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -523.465754592248,
-        "Y": -2207.8894369542
+        "X": -603.142905910608,
+        "Y": -2181.3557105332725
       },
       {
         "ShowGeometry": true,
@@ -1606,8 +1728,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1205.62262146984,
-        "Y": -2263.90329265262
+        "X": 1206.1775703916683,
+        "Y": -2079.1053016838109
       },
       {
         "ShowGeometry": true,
@@ -1616,8 +1738,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 886.622621469844,
-        "Y": -2263.90329265262
+        "X": 887.17757039167225,
+        "Y": -2079.1053016838109
       },
       {
         "ShowGeometry": true,
@@ -1626,8 +1748,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -310.446657895364,
-        "Y": -2207.8894369542
+        "X": -390.12380921372403,
+        "Y": -2181.3557105332725
       },
       {
         "ShowGeometry": true,
@@ -1636,8 +1758,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 8.5533421046365,
-        "Y": -2207.8894369542
+        "X": -71.123809213723575,
+        "Y": -2181.3557105332725
       },
       {
         "ShowGeometry": true,
@@ -1646,8 +1768,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 309.622621469844,
-        "Y": -2263.90329265262
+        "X": 310.17757039167219,
+        "Y": -2079.1053016838109
       },
       {
         "ShowGeometry": true,
@@ -1656,8 +1778,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 533.622621469844,
-        "Y": -2263.90329265262
+        "X": 534.17757039167225,
+        "Y": -2079.1053016838109
       },
       {
         "ShowGeometry": true,
@@ -1666,8 +1788,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1307.5964172219185,
-        "Y": -1764.43672081171
+        "X": 1307.917212317082,
+        "Y": -1758.6624090987666
       },
       {
         "ShowGeometry": true,
@@ -1676,8 +1798,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 988.5964172219185,
-        "Y": -1764.43672081171
+        "X": 988.917212317082,
+        "Y": -1758.6624090987666
       },
       {
         "ShowGeometry": true,
@@ -1686,18 +1808,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 309.5964172219185,
-        "Y": -1764.43672081171
-      },
-      {
-        "ShowGeometry": true,
-        "Name": "FamilyType.All",
-        "Id": "5ff4f4cdfa36462484db651bfcf69821",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": 601.5964172219185,
-        "Y": -1764.43672081171
+        "X": 309.91721231708203,
+        "Y": -1758.6624090987666
       },
       {
         "ShowGeometry": true,
@@ -1706,8 +1818,38 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1241.11215389439,
-        "Y": -1332.46993143064
+        "X": 1309.0791974542828,
+        "Y": -1320.0078035856209
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "FamilyType.All",
+        "Id": "456da14ebbd94a3192737b278743565e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 601.917212317082,
+        "Y": -1758.6624090987666
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "92ac2ea5f26f4aa2a8754acd75458d73",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 820.38159665274634,
+        "Y": -648.24343385067607
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "FamilyType.Name",
+        "Id": "b83f8139886d4d9d9dbd7bae9dd9c9fc",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 990.07919745428285,
+        "Y": -1320.0078035856209
       }
     ],
     "Annotations": [
@@ -1718,12 +1860,12 @@
           "a4d4165e1e70456ea7927c360f37230a",
           "06c2d83eae3241749a7aa9d7765d6c24"
         ],
-        "Left": -557.288075369093,
-        "Top": -1074.83828853519,
-        "Width": 657.0,
-        "Height": 344.49333333333993,
+        "Left": -557.60326563399178,
+        "Top": -1002.0961979206103,
+        "Width": 657.00000000000023,
+        "Height": 379.49333333333993,
         "FontSize": 30.0,
-        "InitialTop": -1028.83828853519,
+        "InitialTop": -956.09619792061028,
         "InitialHeight": 148.49333333333993,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
@@ -1770,15 +1912,16 @@
           "9344bb21b61e4a67931e08536ad17999",
           "dea64820d4a4485089953b86b6a8a87a",
           "b67ed1adaaf8468ca64ad05e0f624cc5",
-          "8578558fbac74349915bf226eff5dd12"
+          "8578558fbac74349915bf226eff5dd12",
+          "b83f8139886d4d9d9dbd7bae9dd9c9fc"
         ],
-        "Left": 980.307215181739,
-        "Top": -1499.9678568818,
-        "Width": 892.47524177645107,
-        "Height": 282.63999999999987,
+        "Left": 980.07919745428285,
+        "Top": -1500.0078035856209,
+        "Width": 929.0,
+        "Height": 391.90677732054064,
         "FontSize": 30.0,
-        "InitialTop": -1453.9678568818,
-        "InitialHeight": 279.63999999999987,
+        "InitialTop": -1454.0078035856209,
+        "InitialHeight": 388.90677732054064,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       },
@@ -1790,12 +1933,12 @@
           "d281de87d63d4fd7b06bf13daf13b850",
           "9e2011c2e63e4fc394d1e7470169b45e"
         ],
-        "Left": 979.909273141505,
-        "Top": -1100.37716274819,
-        "Width": 580.99999999999511,
-        "Height": 282.63999999999385,
+        "Left": 979.59408287660631,
+        "Top": -1028.0439497524249,
+        "Width": 580.99999999999523,
+        "Height": 282.63999999999373,
         "FontSize": 30.0,
-        "InitialTop": -1054.37716274819,
+        "InitialTop": -982.043949752425,
         "InitialHeight": 279.63999999999385,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
@@ -1808,12 +1951,12 @@
           "ada38317769c4c7897e181313f8bc6a5",
           "e563982665544e628a65c7613aaba631"
         ],
-        "Left": 299.970397424624,
-        "Top": -1100.78381902057,
+        "Left": 299.65520715972548,
+        "Top": -1028.0417284059904,
         "Width": 580.0,
-        "Height": 318.06666666666706,
+        "Height": 318.06666666666717,
         "FontSize": 30.0,
-        "InitialTop": -1054.78381902057,
+        "InitialTop": -982.04172840599028,
         "InitialHeight": 280.06666666666706,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
@@ -1828,12 +1971,12 @@
           "ab54bc7f53804eddbd974d3de553cedb",
           "9a45c16a418544a99b7d0ce5c95bda7b"
         ],
-        "Left": -532.557686420578,
-        "Top": -2020.85413735359,
+        "Left": -613.23156870527441,
+        "Top": -1993.961090443067,
         "Width": 713.02477791503,
         "Height": 422.41107432834997,
         "FontSize": 30.0,
-        "InitialTop": -1974.85413735359,
+        "InitialTop": -1947.961090443067,
         "InitialHeight": 372.41107432834997,
         "TextblockHeight": 36.0,
         "Background": "#FFA4E1FF"
@@ -1847,12 +1990,12 @@
           "8c953a31fca143f299316a3893eb2dd3",
           "5b78e44534d343be910dfc9f441de20f"
         ],
-        "Left": -533.465754592248,
-        "Top": -2372.53487006453,
-        "Width": 713.0190966968845,
+        "Left": -613.142905910608,
+        "Top": -2346.0011436436025,
+        "Width": 713.01909669688439,
         "Height": 273.64543311033003,
         "FontSize": 30.0,
-        "InitialTop": -2326.53487006453,
+        "InitialTop": -2300.0011436436025,
         "InitialHeight": 263.64543311033003,
         "TextblockHeight": 36.0,
         "Background": "#FFA4E1FF"
@@ -1866,12 +2009,12 @@
           "765a719a1bf0451a97e5527ecd197a3d",
           "9f57f4ac00c6442baa2d6eda916dfc97"
         ],
-        "Left": 299.622621469844,
-        "Top": -2309.90329265262,
-        "Width": 1113.9999999999959,
+        "Left": 300.17757039167219,
+        "Top": -2125.1053016838109,
+        "Width": 1113.9999999999961,
         "Height": 225.0,
         "FontSize": 30.0,
-        "InitialTop": -2263.90329265262,
+        "InitialTop": -2079.1053016838109,
         "InitialHeight": 145.0,
         "TextblockHeight": 36.0,
         "Background": "#FFFFAA45"
@@ -1883,14 +2026,14 @@
           "171bd67ac6a24e288da6e4b70919887a",
           "d0e3c839a5f14a1297d22f0052edc7e5",
           "a453676e7cc3419a8714b86745e82890",
-          "5ff4f4cdfa36462484db651bfcf69821"
+          "456da14ebbd94a3192737b278743565e"
         ],
-        "Left": 299.5964172219185,
-        "Top": -1810.43672081171,
+        "Left": 299.91721231708203,
+        "Top": -1804.6624090987666,
         "Width": 1216.0,
         "Height": 225.0,
         "FontSize": 30.0,
-        "InitialTop": -1764.43672081171,
+        "InitialTop": -1758.6624090987666,
         "InitialHeight": 145.0,
         "TextblockHeight": 36.0,
         "Background": "#FFA4E1FF"
@@ -1899,8 +2042,8 @@
         "Id": "9a45c16a418544a99b7d0ce5c95bda7b",
         "Title": "This node is being processed among the first, while it always look at the current document and don't need a document to be loaded. Therefore, run the graph twice if you greate/delete types in the graph! This node is best to use in families where types are not added!",
         "Nodes": [],
-        "Left": -521.2239256482,
-        "Top": -1974.85413735359,
+        "Left": -601.8978079328964,
+        "Top": -1947.961090443067,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -1913,8 +2056,8 @@
         "Id": "5b78e44534d343be910dfc9f441de20f",
         "Title": "This node is being processed among the first, while it always look at the current document and don't need a document to be loaded. Therefore, run the graph twice if you greate/delete types in the graph! This node is best to use in families where types are not added!",
         "Nodes": [],
-        "Left": -521.539416858136,
-        "Top": -2326.53487006453,
+        "Left": -601.216568176496,
+        "Top": -2300.0011436436025,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -1924,8 +2067,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": 422.31480415466939,
-    "Y": 1602.9076897856223,
-    "Zoom": 0.676073120598444
+    "X": 399.56001122293037,
+    "Y": 1528.3032633021344,
+    "Zoom": 0.6126337386753864
   }
 }

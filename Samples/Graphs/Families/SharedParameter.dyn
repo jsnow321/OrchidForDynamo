@@ -58,12 +58,12 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
       "NodeType": "CodeBlockNode",
-      "Code": "//SP Parameter group\n[\"Floor\",\"Type\"];\n//Parameter group\n[\"INVALID\",\n\"PG_ADSK_MODEL_PROPERTIES\"];\n//Instance\n[true,false];\n//Reporting\n//NOTE: this list must follow the order\n//of true values in the \"Instance\" list.\n//This list does not have to have same\n//length as the above three lists!\n[true];",
+      "Code": "//SP Parameter group\n[\"Floor\",\"Type\"];\n//Parameter group\n[\"INVALID\",\n\"PG_ADSK_MODEL_PROPERTIES\"];\n//Instance\n[true,false];\n//Reporting\n//NOTE: this list must follow the order\n//of true values in the \"Instance\" list.\n//This list does not have to have same\n//length as the above three lists!\n[true];\n//Condense output\nfalse;",
       "Id": "1be32aa4e22046649851186934a07c39",
       "Inputs": [],
       "Outputs": [
         {
-          "Id": "89071f1cf82b485589f3263ad89cfefd",
+          "Id": "b87f9a4db2be4418a6c977702e58de56",
           "Name": "",
           "Description": "Value of expression at line 2",
           "UsingDefaultValue": false,
@@ -72,7 +72,7 @@
           "KeepListStructure": false
         },
         {
-          "Id": "1ef7ac9ee38f4ebeb6f463bf5a4a20e9",
+          "Id": "bd8571c8427c41358ed7273a6444cf73",
           "Name": "",
           "Description": "Value of expression at line 4",
           "UsingDefaultValue": false,
@@ -81,7 +81,7 @@
           "KeepListStructure": false
         },
         {
-          "Id": "4db08b312aa847709ebd1c59d8b3ad47",
+          "Id": "fb19e3baf51d47f48dfb27a08f84de6a",
           "Name": "",
           "Description": "Value of expression at line 7",
           "UsingDefaultValue": false,
@@ -90,9 +90,18 @@
           "KeepListStructure": false
         },
         {
-          "Id": "96d35cf0208a47438bd7831c19977abc",
+          "Id": "8e2f26695c8b4be3b1ad0d760e847373",
           "Name": "",
           "Description": "Value of expression at line 13",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "cf9e6de6cf7c4b26a8c0a0df4b908dc3",
+          "Name": "",
+          "Description": "Value of expression at line 15",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -241,12 +250,12 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
       "NodeType": "CodeBlockNode",
-      "Code": "//SP Parameter group\n[\"Energy\",\"Dimensions\"];\n//Parameter group\n[\"PG_ENERGY_ANALYSIS\",\n\"PG_GEOMETRY\"];\n//Instance\n[true,false];\n//Reporting\n//NOTE: this list must follow the order\n//of true values in the \"Instance\" list.\n//This list does not have to have same\n//length as the above three lists!\n[true];",
+      "Code": "//SP Parameter group\n[\"Energy\",\"Dimensions\"];\n//Parameter group\n[\"PG_ENERGY_ANALYSIS\",\n\"PG_GEOMETRY\"];\n//Instance\n[true,false];\n//Reporting\n//NOTE: this list must follow the order\n//of true values in the \"Instance\" list.\n//This list does not have to have same\n//length as the above three lists!\n[true];\n//Condense output\nfalse;",
       "Id": "7890a85349b14d6b90c7120fba537939",
       "Inputs": [],
       "Outputs": [
         {
-          "Id": "1b0110a81cd34a9aa6b873a6b9ed3176",
+          "Id": "457695d8337848c183d078348d40336e",
           "Name": "",
           "Description": "Value of expression at line 2",
           "UsingDefaultValue": false,
@@ -255,7 +264,7 @@
           "KeepListStructure": false
         },
         {
-          "Id": "05adb2d922634f669f799e3f73261d92",
+          "Id": "fca93e3dbe924b38b0615460faa5de67",
           "Name": "",
           "Description": "Value of expression at line 4",
           "UsingDefaultValue": false,
@@ -264,7 +273,7 @@
           "KeepListStructure": false
         },
         {
-          "Id": "beafb0fb66be4bc0bb38f24b3ae5b6d9",
+          "Id": "c5500822cd7246e7b70c147ccd30afa7",
           "Name": "",
           "Description": "Value of expression at line 7",
           "UsingDefaultValue": false,
@@ -273,9 +282,18 @@
           "KeepListStructure": false
         },
         {
-          "Id": "d93b53a745fe4ad19386dc58a2097423",
+          "Id": "bcbe59fa8b2a41b2bd0a498c2dcfe4bc",
           "Name": "",
           "Description": "Value of expression at line 13",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "16dca07564c24249a656d5c42bca4674",
+          "Name": "",
+          "Description": "Value of expression at line 15",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -317,13 +335,13 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitFamily.SharedParameter.AddByGroup@var[],string[],string[],bool[],bool[]",
+      "FunctionSignature": "Orchid.RevitFamily.SharedParameter.AddByGroup@Orchid.RevitProject.Common.Document[],string[],string[],bool[],bool[],bool",
       "Id": "64353a2c4bd14f0da3a24438fae9443c",
       "Inputs": [
         {
           "Id": "79fb0c3685d9450887b64735e083fd23",
           "Name": "familyDocument",
-          "Description": "Family document (rfa) as Orchid document.\n\nvar[]\nDefault value : null",
+          "Description": "Family document (rfa) as Orchid document.\n\nDocument[]\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -364,6 +382,15 @@
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
+        },
+        {
+          "Id": "bc699b4aa9ac4cf99e21de3d2cddf216",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
         }
       ],
       "Outputs": [
@@ -387,18 +414,18 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Add shared parameter by groupName, from current loaded shared parameter file. Parameters are set with the same settings pr. provided group.\n\nSharedParameter.AddByGroup (familyDocument: var[] = null, groupName: string[], group: string[], instance: bool[] = null, reporting: bool[] = null): var[]..[]"
+      "Description": "Add shared parameter by groupName, from current loaded shared parameter file. Parameters are set with the same settings pr. provided group.\n\nSharedParameter.AddByGroup (familyDocument: Document[] = null, groupName: string[], group: string[], instance: bool[] = null, reporting: bool[] = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitFamily.SharedParameter.AddByFile@var[],string,string[],string[],bool[],bool[]",
+      "FunctionSignature": "Orchid.RevitFamily.SharedParameter.AddByFile@Orchid.RevitProject.Common.Document[],string,string[],string[],bool[],bool[],bool",
       "Id": "abd63275426e463ba2e619358d2d64c9",
       "Inputs": [
         {
           "Id": "65d98da4d68744e4b460c05df890e1dd",
           "Name": "familyDocument",
-          "Description": "Family document (rfa) as Orchid document.\n\nvar[]\nDefault value : null",
+          "Description": "Family document (rfa) as Orchid document.\n\nDocument[]\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -448,6 +475,15 @@
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
+        },
+        {
+          "Id": "ed378ecfdce6497aa228ffc19c73646e",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
         }
       ],
       "Outputs": [
@@ -471,18 +507,27 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Add shared parameter by groupName, by the provided shared parameter file. Parameters are set with the same settings pr. provided group.\n\nSharedParameter.AddByFile (familyDocument: var[] = null, file: string, groupName: string[], group: string[], instance: bool[] = null, reporting: bool[] = null): var[]..[]"
+      "Description": "Add shared parameter by groupName, by the provided shared parameter file. Parameters are set with the same settings pr. provided group.\n\nSharedParameter.AddByFile (familyDocument: Document[] = null, file: string, groupName: string[], group: string[], instance: bool[] = null, reporting: bool[] = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitFamily.SharedParameter.AddIFC@var[]",
+      "FunctionSignature": "Orchid.RevitFamily.SharedParameter.AddIFC@Orchid.RevitProject.Common.Document[],bool",
       "Id": "502659d6b01c44739aa1f2490bc5bb8d",
       "Inputs": [
         {
           "Id": "a30add6f16b44d80b0902d54dca715eb",
           "Name": "familyDocument",
-          "Description": "Family document (rfa) as Orchid document.\n\nvar[]\nDefault value : null",
+          "Description": "Family document (rfa) as Orchid document.\n\nDocument[]\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "582c1a66dc97427a8661a703f65abbe8",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -501,18 +546,27 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Add basic IFC type and instance shared parameters in the family (IfcExportAs, IfcExportType, IfcDescription, IFC CAD Layer). Parameters are set with the same settings pr. group.\n\nSharedParameter.AddIFC (familyDocument: var[] = null): var[]..[]"
+      "Description": "Add basic IFC type and instance shared parameters in the family (IfcExportAs, IfcExportType, IfcDescription, IFC CAD Layer). Parameters are set with the same settings pr. group.\n\nSharedParameter.AddIFC (familyDocument: Document[] = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitFamily.SharedParameter.AddBIM7AA@var[]",
+      "FunctionSignature": "Orchid.RevitFamily.SharedParameter.AddBIM7AA@Orchid.RevitProject.Common.Document[],bool",
       "Id": "9458e41b178a46038ec88e9b56b4d34c",
       "Inputs": [
         {
           "Id": "fd6fc5003054420ca890fca107f1db94",
           "Name": "familyDocument",
-          "Description": "Family document (rfa) as Orchid document.\n\nvar[]\nDefault value : null",
+          "Description": "Family document (rfa) as Orchid document.\n\nDocument[]\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3476d5fed2a14403b6d3b9176437c614",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -531,7 +585,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Add BIM7AA type shared parameters in the family (BIM7AATypeID, BIM7AATypeCode, BIM7AATypeNumber, BIM7AATypeName, BIM7AATypeDescription, BIM7AATypeComments). Parameters are set with the same settings pr. group.\n\nSharedParameter.AddBIM7AA (familyDocument: var[] = null): var[]..[]"
+      "Description": "Add BIM7AA type shared parameters in the family (BIM7AATypeID, BIM7AATypeCode, BIM7AATypeNumber, BIM7AATypeName, BIM7AATypeDescription, BIM7AATypeComments). Parameters are set with the same settings pr. group.\n\nSharedParameter.AddBIM7AA (familyDocument: Document[] = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -715,13 +769,22 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitFamily.SharedParameter.AddCCS@var[]",
+      "FunctionSignature": "Orchid.RevitFamily.SharedParameter.AddCCS@Orchid.RevitProject.Common.Document[],bool",
       "Id": "286747cd1c254c1f85f8e8f292045ba3",
       "Inputs": [
         {
           "Id": "6fb8b85d600143948316a761a25d32ab",
           "Name": "familyDocument",
-          "Description": "Family document (rfa) as Orchid document.\n\nvar[]\nDefault value : null",
+          "Description": "Family document (rfa) as Orchid document.\n\nDocument[]\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "6efd774bd6ef4cd8b42e8d045d53b8f5",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -740,24 +803,24 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Add basic CCS type and instance shared parameters in the family. Parameters are set with the same settings pr. group.\n\nSharedParameter.AddCCS (familyDocument: var[] = null): var[]..[]"
+      "Description": "Add basic CCS type and instance shared parameters in the family. Parameters are set with the same settings pr. group.\n\nSharedParameter.AddCCS (familyDocument: Document[] = null, condense: bool = true): var[]..[]"
     }
   ],
   "Connectors": [
     {
-      "Start": "89071f1cf82b485589f3263ad89cfefd",
+      "Start": "b87f9a4db2be4418a6c977702e58de56",
       "End": "19deb2cab19e427694fa418d50b703c0",
-      "Id": "6ad4d6c76d5c4eddbd39cb8c941e2100"
+      "Id": "b2ae28c1993347e68002b1484833e48e"
     },
     {
-      "Start": "1ef7ac9ee38f4ebeb6f463bf5a4a20e9",
+      "Start": "bd8571c8427c41358ed7273a6444cf73",
       "End": "e15a1ade4740447eb336cf2f09cb8ef9",
-      "Id": "5f1b45c5d62d4baf84a2ad38c2938a77"
+      "Id": "73353cda9ab6472fa1dba69c79cf7539"
     },
     {
-      "Start": "4db08b312aa847709ebd1c59d8b3ad47",
+      "Start": "fb19e3baf51d47f48dfb27a08f84de6a",
       "End": "75d88aec2a3c4d17bcfbd4c336d80ce1",
-      "Id": "04cdcd93e6294ad3aaaf0bd408a4bc7b"
+      "Id": "bf7f859343b54e69823074f74cec89d0"
     },
     {
       "Start": "db636771b6324e9a83a1d46145ce3cd1",
@@ -765,19 +828,19 @@
       "Id": "734a06752c5a4ab6ac9750e1cfd2dbcc"
     },
     {
-      "Start": "1b0110a81cd34a9aa6b873a6b9ed3176",
+      "Start": "457695d8337848c183d078348d40336e",
       "End": "ca1c4d5cce664f3dbd1d9b2404ca35f1",
-      "Id": "099e6000c38d4533b72e39dcb1a085f2"
+      "Id": "34d3bfe8a9974d27a2a45ff547551ef3"
     },
     {
-      "Start": "05adb2d922634f669f799e3f73261d92",
+      "Start": "fca93e3dbe924b38b0615460faa5de67",
       "End": "25b40823ed7342d392efbf3956feb50d",
-      "Id": "4593b4f46d9947ccaac365287e34c893"
+      "Id": "ca08d7bcd0ee41e0bbfa5a970683e590"
     },
     {
-      "Start": "beafb0fb66be4bc0bb38f24b3ae5b6d9",
+      "Start": "c5500822cd7246e7b70c147ccd30afa7",
       "End": "d680d30b34ae43bd95f532ddc15e2d9e",
-      "Id": "2fec40328c9042e48888ed4ad0336e08"
+      "Id": "5f3bc45f4005470fa77c0a46626e2795"
     },
     {
       "Start": "3127ae24afe947b9b7595c38690b07b9",
@@ -841,13 +904,32 @@
     }
   ],
   "Dependencies": [],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Orchid",
+      "Version": "203.3.0.7798",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "64353a2c4bd14f0da3a24438fae9443c",
+        "abd63275426e463ba2e619358d2d64c9",
+        "502659d6b01c44739aa1f2490bc5bb8d",
+        "9458e41b178a46038ec88e9b56b4d34c",
+        "c879674eefa449edb7e43b1899def59c",
+        "2bdb706ce46b460e8a9238c3bebc29bc",
+        "17e1ed4b3a774c43aa9944abd115541f",
+        "befd266128624ee6aae2ac3473d0cddc",
+        "6129c9e73512431ea5d6a5fa93245d4e",
+        "286747cd1c254c1f85f8e8f292045ba3"
+      ]
+    }
+  ],
   "Bindings": [],
   "View": {
     "Dynamo": {
       "ScaleFactor": 1.0,
       "HasRunWithoutCrash": true,
       "IsVisibleInDynamoLibrary": true,
-      "Version": "2.0.4.12684",
+      "Version": "2.3.0.5885",
       "RunType": "Manual",
       "RunPeriod": "1000"
     },
@@ -871,8 +953,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -802.681847424944,
-        "Y": 863.3472326997196
+        "X": -799.66085809526464,
+        "Y": 843.27043010381465
       },
       {
         "ShowGeometry": true,
@@ -881,8 +963,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1889.8586773647,
-        "Y": 892.906988197388
+        "X": -1890.24242257281,
+        "Y": 873.20848943901524
       },
       {
         "ShowGeometry": true,
@@ -911,8 +993,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1076.87529955683,
-        "Y": 976.34466129351711
+        "X": -1073.8543102271506,
+        "Y": 956.26785869761216
       },
       {
         "ShowGeometry": true,
@@ -921,8 +1003,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1706.8586773647,
-        "Y": 793.090447540648
+        "X": -1707.24242257281,
+        "Y": 773.01364494474308
       },
       {
         "ShowGeometry": true,
@@ -931,8 +1013,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -802.681847424944,
-        "Y": 256.369731889366
+        "X": -787.66085809526464,
+        "Y": 262.05184583160326
       },
       {
         "ShowGeometry": true,
@@ -941,8 +1023,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1890.24120033865,
-        "Y": 259.783299782629
+        "X": -1890.24242257281,
+        "Y": 265.46541372486627
       },
       {
         "ShowGeometry": true,
@@ -951,8 +1033,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1076.87529955683,
-        "Y": 366.67527127740595
+        "X": -1073.8543102271506,
+        "Y": 372.35738521964322
       },
       {
         "ShowGeometry": true,
@@ -961,8 +1043,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1453.1078445342,
-        "Y": 256.369731889366
+        "X": -1449.7043322305713,
+        "Y": 262.05184583160326
       },
       {
         "ShowGeometry": true,
@@ -971,8 +1053,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1452.7253215602541,
-        "Y": 863.3472326997196
+        "X": -1449.7043322305713,
+        "Y": 843.270430103815
       },
       {
         "ShowGeometry": true,
@@ -1021,8 +1103,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1076.87529955683,
-        "Y": 256.369731889366
+        "X": -1073.8543102271506,
+        "Y": 262.05184583160326
       },
       {
         "ShowGeometry": true,
@@ -1031,8 +1113,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1076.87529955683,
-        "Y": 863.3472326997196
+        "X": -1073.8543102271506,
+        "Y": 843.27043010381465
       },
       {
         "ShowGeometry": true,
@@ -1076,8 +1158,8 @@
         ],
         "Left": -400.30165018755434,
         "Top": 956.03656590393689,
-        "Width": 798.0,
-        "Height": 146.0,
+        "Width": 965.0,
+        "Height": 334.0,
         "FontSize": 36.0,
         "InitialTop": 1009.0365659039369,
         "InitialHeight": 145.0,
@@ -1094,8 +1176,8 @@
         ],
         "Left": -400.30165018755434,
         "Top": 599.52143733614378,
-        "Width": 798.0,
-        "Height": 146.0,
+        "Width": 955.0,
+        "Height": 291.0,
         "FontSize": 36.0,
         "InitialTop": 652.52143733614378,
         "InitialHeight": 145.0,
@@ -1113,12 +1195,12 @@
           "befd266128624ee6aae2ac3473d0cddc",
           "abd63275426e463ba2e619358d2d64c9"
         ],
-        "Left": -1899.8586773647,
-        "Top": 740.090447540648,
-        "Width": 1185.1768299397561,
-        "Height": 447.8165406567399,
+        "Left": -1900.24242257281,
+        "Top": 720.01364494474308,
+        "Width": 1400.5815644775453,
+        "Height": 501.25678515907168,
         "FontSize": 36.0,
-        "InitialTop": 793.090447540648,
+        "InitialTop": 773.01364494474308,
         "InitialHeight": 328.25421375286908,
         "TextblockHeight": 43.0,
         "Background": "#FFFFAA45"
@@ -1133,12 +1215,12 @@
           "17e1ed4b3a774c43aa9944abd115541f",
           "64353a2c4bd14f0da3a24438fae9443c"
         ],
-        "Left": -1900.24120033865,
-        "Top": 203.369731889366,
-        "Width": 1185.5593529137061,
-        "Height": 351.413567893263,
+        "Left": -1900.24242257281,
+        "Top": 209.05184583160326,
+        "Width": 1400.5815644775453,
+        "Height": 431.0,
         "FontSize": 36.0,
-        "InitialTop": 256.369731889366,
+        "InitialTop": 262.05184583160326,
         "InitialHeight": 255.30553938803996,
         "TextblockHeight": 43.0,
         "Background": "#FFFFAA45"
@@ -1153,8 +1235,8 @@
         ],
         "Left": -400.30165018755434,
         "Top": 88.838280701401459,
-        "Width": 798.0,
-        "Height": 146.0,
+        "Width": 1010.0,
+        "Height": 431.0,
         "FontSize": 36.0,
         "InitialTop": 141.83828070140146,
         "InitialHeight": 145.0,
@@ -1162,8 +1244,8 @@
         "Background": "#FFBB87C6"
       }
     ],
-    "X": 1245.4014588661548,
-    "Y": -9.51549338393643,
-    "Zoom": 0.64298749738837924
+    "X": 912.13411314418136,
+    "Y": 320.88800512547635,
+    "Zoom": 0.46667776715301318
   }
 }

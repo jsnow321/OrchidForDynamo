@@ -579,7 +579,7 @@
         {
           "Id": "8e2b008c5148417f9beee519534c133c",
           "Name": "path",
-          "Description": "Path to file\n\nstring",
+          "Description": "Path to file.\n\nstring",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -588,7 +588,7 @@
         {
           "Id": "ea5786c822e9405a8e77922f579f3cd7",
           "Name": "file",
-          "Description": "Filename including file extension\n\nstring",
+          "Description": "Filename including file extension.\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -597,7 +597,7 @@
         {
           "Id": "3bc2ffeabc114b8db4fd4d2890cc1a52",
           "Name": "refresh",
-          "Description": "Toggle true/false for refreshing\n\nbool\nDefault value : false",
+          "Description": "Toggle true/false for refreshing!\n\nbool\nDefault value : false",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -608,7 +608,7 @@
         {
           "Id": "2357e1cefacc4a74960c92e28f4144eb",
           "Name": "script",
-          "Description": "Script",
+          "Description": "Script.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -616,7 +616,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Read 'script' file content, with refreshing option. Note: do not send a list of paths and/or files as input!\n\nScripting.ScriptFileReader (path: string, file: string, refresh: bool = false): string"
+      "Description": "Read 'script' file content, with refreshing option. Note: Do not send a list of paths and/or files as input!\n\nScripting.ScriptFileReader (path: string, file: string, refresh: bool = false): string"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -686,7 +686,7 @@
         {
           "Id": "3b5902a87c4745f7ab7fe4e43997a0ee",
           "Name": "string",
-          "Description": "Path",
+          "Description": "Path.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -706,7 +706,7 @@
         {
           "Id": "ca0eeb1e6bc5477d81a1b66672da4f57",
           "Name": "string",
-          "Description": "Path",
+          "Description": "Path.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -941,13 +941,13 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Common.Directory.Contents@string,string,bool",
+      "FunctionSignature": "Orchid.Common.Directory.Contents@string,string,bool,bool",
       "Id": "d785be1cf7484d59838a90c32eeb5f3d",
       "Inputs": [
         {
           "Id": "80b7c31589f745be94de58af31907dad",
           "Name": "directory",
-          "Description": "Directory to get contents from\n\nstring",
+          "Description": "Directory to get contents from.\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -956,7 +956,7 @@
         {
           "Id": "4eadb5a34ee047bca5026152300d7a2e",
           "Name": "searchString",
-          "Description": "Search string used to filter results\n\nstring\nDefault value : \"*\" (disabled)",
+          "Description": "Search string used to filter results.\n\nstring\nDefault value : \"*\" (disabled)",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -965,7 +965,16 @@
         {
           "Id": "95cee8a0e2c942f58de3c5f317e32bf6",
           "Name": "deepSearch",
-          "Description": "Search option used to search in all subfolders\n\nbool\nDefault value : false",
+          "Description": "Apply searching in all subfolders?\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "de68c86b94f0476f84dc164875fb931c",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -976,7 +985,7 @@
         {
           "Id": "d7fdb699a9164eb2a5aa9c648a1c5b11",
           "Name": "file",
-          "Description": "File",
+          "Description": "File.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -984,7 +993,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get the files in a directory and its subdirectories. Use string for extension type, default is * for all files! If files are are readonly but not hidden, are they included. If files are both hidden or readonly files (and thereby system files) are they left out.\n\nDirectory.Contents (directory: string, searchString: string = \"*\", deepSearch: bool = false): var[]..[]"
+      "Description": "Get the files in a directory and its subdirectories. Use string for extension type, default is * for all files! If files are are readonly but not hidden, are they included. If files are both hidden or readonly files (and thereby system files) are they left out.\n\nDirectory.Contents (directory: string, searchString: string = \"*\", deepSearch: bool = false, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
@@ -1029,13 +1038,13 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Common.Directory.Contents@string,string,bool",
+      "FunctionSignature": "Orchid.Common.Directory.Contents@string,string,bool,bool",
       "Id": "d29e9771c52a4bc9b91ed5b60938d2ec",
       "Inputs": [
         {
           "Id": "cbc2a43bc1324dc0a27cfdd3a6106fde",
           "Name": "directory",
-          "Description": "Directory to get contents from\n\nstring",
+          "Description": "Directory to get contents from.\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1044,7 +1053,7 @@
         {
           "Id": "34a8639d84794b1fa284c389a90b9779",
           "Name": "searchString",
-          "Description": "Search string used to filter results\n\nstring\nDefault value : \"*\"",
+          "Description": "Search string used to filter results.\n\nstring\nDefault value : \"*\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1053,7 +1062,16 @@
         {
           "Id": "8ab0c404652e49d49031eba1e5544211",
           "Name": "deepSearch",
-          "Description": "Search option used to search in all subfolders\n\nbool\nDefault value : false",
+          "Description": "Apply searching in all subfolders?\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "e0bf92c4583e4d0baa588b772c24b179",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1064,7 +1082,7 @@
         {
           "Id": "6643d4a9f1004b50b90bc709c148cca3",
           "Name": "file",
-          "Description": "File",
+          "Description": "File.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1072,7 +1090,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get the files in a directory and its subdirectories. Use string for extension type, default is * for all files! If files are are readonly but not hidden, are they included. If files are both hidden or readonly files (and thereby system files) are they left out.\n\nDirectory.Contents (directory: string, searchString: string = \"*\", deepSearch: bool = false): var[]..[]"
+      "Description": "Get the files in a directory and its subdirectories. Use string for extension type, default is * for all files! If files are are readonly but not hidden, are they included. If files are both hidden or readonly files (and thereby system files) are they left out.\n\nDirectory.Contents (directory: string, searchString: string = \"*\", deepSearch: bool = false, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -1084,7 +1102,7 @@
         {
           "Id": "17cc6bb683ba43ab9e9bb2acc97b48f6",
           "Name": "directory",
-          "Description": "Directory",
+          "Description": "Directory.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1092,7 +1110,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get current directory\n\nDirectory.Current: string"
+      "Description": "Get current directory.\n\nDirectory.Current: string"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -1103,7 +1121,7 @@
         {
           "Id": "7de79b4d13174d539d51f481dd77d23c",
           "Name": "path",
-          "Description": "Path to the file\n\nstring",
+          "Description": "Path to the file.\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1114,7 +1132,7 @@
         {
           "Id": "ac666c475b084558aedde72a62efb9fe",
           "Name": "file",
-          "Description": "File object",
+          "Description": "File object.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1122,7 +1140,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get file from a path\n\nFile.FromPath (path: string): string"
+      "Description": "Get file from a path.\n\nFile.FromPath (path: string): string"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -1220,7 +1238,7 @@
         {
           "Id": "e28305e6b4e74ed3a5b7ec584ec58fb6",
           "Name": "path",
-          "Description": "Path to the directory\n\nstring",
+          "Description": "Path to the directory.\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1231,7 +1249,7 @@
         {
           "Id": "83b355d4377e49cfbe77257397d544c6",
           "Name": "directory",
-          "Description": "Directory object",
+          "Description": "Directory object.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1239,7 +1257,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get a directory object from a path\n\nDirectory.FromPath (path: string): string"
+      "Description": "Get a directory object from a path.\n\nDirectory.FromPath (path: string): string"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -1418,7 +1436,7 @@
         {
           "Id": "c6b2573e0e8a477aa5e8d8b8e0934100",
           "Name": "pass",
-          "Description": "Data to pass\n\nvar[]..[]",
+          "Description": "Data to pass.\n\nvar[]..[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1427,7 +1445,7 @@
         {
           "Id": "735d3ca606ab41ce900d7f47877d9716",
           "Name": "waitFor",
-          "Description": "Data object to wait for\n\nvar[]..[]",
+          "Description": "Data object to wait for.\n\nvar[]..[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1438,7 +1456,7 @@
         {
           "Id": "451a9922595f455e8224b3c4a3f7229f",
           "Name": "pass",
-          "Description": "Passed data",
+          "Description": "Passed data.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1446,7 +1464,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Await a data stream before passing another data stream\n\nDataStream.Await (pass: var[]..[], waitFor: var[]..[]): var[]..[]"
+      "Description": "Await a data stream before passing another data stream.\n\nDataStream.Await (pass: var[]..[], waitFor: var[]..[]): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -1535,7 +1553,7 @@
         {
           "Id": "32fb687e7496478da82e43f8a14e0939",
           "Name": "pass",
-          "Description": "Data to pass\n\nvar[]..[]",
+          "Description": "Data to pass.\n\nvar[]..[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1544,7 +1562,7 @@
         {
           "Id": "ac4bbe02d89c4bd389b4f384b1f56c75",
           "Name": "state",
-          "Description": "Set a bool value for the state\n\nbool\nDefault value : false",
+          "Description": "Set a bool value for the state!\n\nbool\nDefault value : false",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1555,7 +1573,7 @@
         {
           "Id": "1dc613abf1ab4565a92ebbee28009e48",
           "Name": "pass",
-          "Description": "Passed data",
+          "Description": "Passed data.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1563,7 +1581,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Set a state (true/false) to pass a data stream in a circut\n\nDataStream.Circut (pass: var[]..[], state: bool = false): var[]..[]"
+      "Description": "Set a state (true/false) to pass a data stream in a circut.\n\nDataStream.Circut (pass: var[]..[], state: bool = false): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
@@ -1686,13 +1704,13 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Common.Object.TypeOf@var[]..[],var",
+      "FunctionSignature": "Orchid.Common.Object.TypeOf@var[]..[],var,bool",
       "Id": "36bd39f160f5460e91ba6d921caab226",
       "Inputs": [
         {
           "Id": "fc83a4abd5794195b9115dd8b8713173",
           "Name": "object",
-          "Description": "An object\n\nvar[]..[]",
+          "Description": "An object.\n\nvar[]..[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1701,8 +1719,17 @@
         {
           "Id": "c26e9690dde742eeb18e3d118e4383ec",
           "Name": "type",
-          "Description": "Type as System.RuntimeType\n\nvar",
+          "Description": "Type as System.RuntimeType.\n\nvar",
           "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "9f006d0966c149e783489ce3fb32a259",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
@@ -1712,7 +1739,7 @@
         {
           "Id": "18f395fd703c4ede99d4c00e43fe1268",
           "Name": "Object",
-          "Description": "An object",
+          "Description": "An object.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1720,7 +1747,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Returns the object if it is by the input type. Note: Note: Dynamo elements may fail due to the existence of the type \"UnknownElement\", in this case, use Element.TypeOf instead.\n\nObject.TypeOf (object: var[]..[], type: var): var[]..[]"
+      "Description": "Returns the object if it is by the input type. Note: Dynamo elements may fail due to the existence of the type \"UnknownElement\", in this case, use Element.TypeOf instead.\n\nObject.TypeOf (object: var[]..[], type: var, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -1731,7 +1758,7 @@
         {
           "Id": "cef8266f67d04e76be5cc40b0543d391",
           "Name": "string",
-          "Description": "A string\n\nstring",
+          "Description": "A string.\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1742,7 +1769,7 @@
         {
           "Id": "93e75b9e059f42a9888fd72080840155",
           "Name": "Type",
-          "Description": "Type as System.RuntimeType",
+          "Description": "Type as System.RuntimeType.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -2077,13 +2104,36 @@
     }
   ],
   "Dependencies": [],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Orchid",
+      "Version": "203.3.0.7798",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "97e666cb50d443b79660e2c8a6f69797",
+        "081c5c9b996140628ca4bfe0a0ff817d",
+        "1dd4f48b5b704019b8e7fb2b9f570f2a",
+        "d785be1cf7484d59838a90c32eeb5f3d",
+        "d29e9771c52a4bc9b91ed5b60938d2ec",
+        "56b0dd9ac98840c3b42bfe989102289d",
+        "9f7163d677b74cd9bd302f5880f10512",
+        "e86f1a8fc8ba4277a63f02e8b0bcbd40",
+        "751936dfe5d147f8991425bbed7ebd4a",
+        "05b5c57b11b749e1bf8e317009968dcf",
+        "19a400e7324a428fb4a96ad36e9536a7",
+        "cce7d003a04e4a4ba5c301f8666a4b41",
+        "36bd39f160f5460e91ba6d921caab226",
+        "da8dc1e70bde459c80fb8bc5e38fd8cf"
+      ]
+    }
+  ],
   "Bindings": [],
   "View": {
     "Dynamo": {
       "ScaleFactor": 1.0,
       "HasRunWithoutCrash": true,
       "IsVisibleInDynamoLibrary": true,
-      "Version": "2.0.4.12684",
+      "Version": "2.3.0.5885",
       "RunType": "Manual",
       "RunPeriod": "1000"
     },
@@ -2288,7 +2338,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "X": -873.323597800871,
-        "Y": 1927.62176553403
+        "Y": 1966.2282020377927
       },
       {
         "ShowGeometry": true,
@@ -2298,7 +2348,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "X": -1189.64024210363,
-        "Y": 1927.62176553403
+        "Y": 1966.2282020377927
       },
       {
         "ShowGeometry": true,
@@ -2317,7 +2367,7 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -472.811239751041,
+        "X": -475.77478702303216,
         "Y": 1747.32380459786
       },
       {
@@ -2327,7 +2377,7 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -471.491280360121,
+        "X": -475.77478702303216,
         "Y": 1625.88767924649
       },
       {
@@ -2337,8 +2387,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -472.811239751041,
-        "Y": 1927.32380459786
+        "X": -475.77478702303216,
+        "Y": 1965.9302411016229
       },
       {
         "ShowGeometry": true,
@@ -2781,8 +2831,8 @@
         ],
         "Left": -1199.64024210363,
         "Top": 1579.88767924649,
-        "Width": 1164.1489617435091,
-        "Height": 526.73408628753964,
+        "Width": 1159.8654550805979,
+        "Height": 580.34052279130265,
         "FontSize": 30.0,
         "InitialTop": 1625.88767924649,
         "InitialHeight": 446.73408628753987,
@@ -2958,8 +3008,8 @@
         "Background": "#FFA4E1FF"
       }
     ],
-    "X": 1208.3817357794339,
-    "Y": -75.574644915240384,
-    "Zoom": 0.45489658767546354
+    "X": 2028.4927339181595,
+    "Y": -496.46825448683308,
+    "Zoom": 0.76716971775046661
   }
 }
