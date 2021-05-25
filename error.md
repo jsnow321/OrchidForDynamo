@@ -1,6 +1,6 @@
 # Error handling  
   
-If the package is placed in the correct default folder according to the Revit/Dynamo installation out of the box, then should Orchid also work straight out of the box. However, If the default package folder is moved due to other reasons locally, then is there a need to tweak the Orchid folder location afterward. Another key error is that users dont keep their Revit/Dynamo updated to the latest release/update and by not doing this might the default dynamo folder location be outdated!  
+The executable installer will install Orchid in the first given path in Dynamo menu item 'Settings' -> 'Manage Node and Package Paths'. If you want to move the default location for packages, then put the path you want to use as the fist path. This may also include network and unc paths!  
   
 One thing there might go wrong. If Revit is running while installing, then will it work the first time Orchid is installed (after a restart of Dynamo), next time Orchid is being "upgraded" while Dynamo is running or has been started and Revit is still running, then will it fail. This is due to applications in Windows environment reads the needed assemblies (DLL files) when the application is opened. Windows will then protect these files from being changed unless they explicitly are unprotected. Unprotecting files could course other unintended issues and this is why Dynamo and Revit need to be closed during the installation of Orchid.  
   

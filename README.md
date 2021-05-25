@@ -10,7 +10,7 @@ Orchid is a solution designed for use in the [Dynamo](http://dynamobim.org) envi
 Built for Dynamo 2.10 (Revit 2022), Dynamo 2.6 (Revit 2021), 2.3 (Revit 2020), and 2.0 (Revit 2019, 2018).  
   
 **Orchid Samples:**  
-In the [samples](Samples) folder are examples using the Orchid package placed. For further informations read the [Readme](Samples/readme.md) file!  
+In the [samples](Samples) folder are examples using the Orchid package placed.    
   
 **History/Change Log:**  
 [![orchid](https://img.shields.io/badge/Orchid-210-lightgrey)](Orchid_210.md)
