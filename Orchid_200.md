@@ -4,7 +4,9 @@ The major number follows the Dynamo version, 200.x.x is usable in Dynamo +2.0.x.
 ### History of Orchid for Dynamo 2.0.x  
   
 200.4.0  
-- Nodes for (MEP) System is extended with many functions, Nodes for Reference and Assembly is added.  
+- Nodes for (MEP) System is extended with many functions.  
+- Nodes for Reference and Assembly is added.  
+- A wide range of Geometry functions (Nodes) is added.  
   
 200.3.0  
 - Version number changed from 204 to 200 to support two-digit Dynamo minor versioning. By this the Dynamo build number has been deprecated in the version number. Before 204 = 2.0.4, now 200 = 2.0.x.  
