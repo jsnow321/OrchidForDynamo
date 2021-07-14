@@ -8,24 +8,10 @@
   },
   "Inputs": [
     {
-      "Id": "50ff65ede3be4a1cad603f51a7840d62",
-      "Name": "String",
-      "Type": "string",
-      "Value": "%userprofile%\\Programming\\Source\\Testing\\Data\\2019_Data\\",
-      "Description": "Creates a string."
-    },
-    {
-      "Id": "24a2cb82342f48a0930029fdb6ffa442",
-      "Name": "String",
-      "Type": "string",
-      "Value": "2019_defaultProject",
-      "Description": "Creates a string."
-    },
-    {
       "Id": "5b596d3629ef4dfbbccb3b6038c7d5ba",
       "Name": "String",
       "Type": "string",
-      "Value": ".\\defaultBuilding_2019.rvt",
+      "Value": "defaultBuilding_2021.rvt",
       "Description": "Creates a string."
     },
     {
@@ -62,129 +48,36 @@
       "Type": "boolean",
       "Value": "true",
       "Description": "Selection between a true and false."
+    },
+    {
+      "Id": "a47075f8eef1459ea7a2b756a06692a6",
+      "Name": "String",
+      "Type": "string",
+      "Value": "defaultBuilding_2021.rvt",
+      "Description": "Creates a string."
     }
   ],
   "Outputs": [],
   "Nodes": [
     {
-      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
-      "NodeType": "StringInputNode",
-      "InputValue": "%userprofile%\\Programming\\Source\\Testing\\Data\\2019_Data\\",
-      "Id": "50ff65ede3be4a1cad603f51a7840d62",
-      "Inputs": [],
-      "Outputs": [
-        {
-          "Id": "544075b266ae475e91bac8793a23ab19",
-          "Name": "",
-          "Description": "String",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "Creates a string."
-    },
-    {
-      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
-      "NodeType": "StringInputNode",
-      "InputValue": "2019_defaultProject",
-      "Id": "24a2cb82342f48a0930029fdb6ffa442",
-      "Inputs": [],
-      "Outputs": [
-        {
-          "Id": "6eb21f4089694baeb9f0c8e958a46ce2",
-          "Name": "",
-          "Description": "String",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "Creates a string."
-    },
-    {
-      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
-      "NodeType": "CodeBlockNode",
-      "Code": "a+b+\".rvt\";",
-      "Id": "1599647c8d8042fa9d74648e71ee5d92",
-      "Inputs": [
-        {
-          "Id": "73951b2b16b443bd9639d0db05fcf005",
-          "Name": "a",
-          "Description": "a",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "aaf9664d031d471fb96140ff9976b348",
-          "Name": "b",
-          "Description": "b",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Outputs": [
-        {
-          "Id": "e1237fc8fd6d4132b6793d0656b6b6ad",
-          "Name": "",
-          "Description": "Value of expression at line 1",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "Allows for DesignScript code to be authored directly"
-    },
-    {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Common.File.FromPath@string",
-      "Id": "c8ba87309492438a8ca0b3f658f34ba4",
-      "Inputs": [
-        {
-          "Id": "4606ca328f4a4ae194228d22911ea8fe",
-          "Name": "path",
-          "Description": "Path to the file\n\nstring",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Outputs": [
-        {
-          "Id": "a9f0eb30462c4c0580931ba991020eae",
-          "Name": "file",
-          "Description": "File object",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Auto",
-      "Description": "Get file from a path\n\nFile.FromPath (path: string): string"
-    },
-    {
-      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
-      "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.Link.GetRevitFile@Orchid.RevitProject.Common.Document",
+      "FunctionSignature": "Orchid.RevitProject.Common.Link.GetRevitLink@Orchid.RevitProject.Common.Document,bool",
       "Id": "54cfff097d0d48cbbbd6554e9847e85c",
       "Inputs": [
         {
           "Id": "cc0b2cdbbe4b46cfb7059490de4e39a5",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nDocument\nDefault value : null",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "02dc84fe4f704108b1c84433eba293c4",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -195,7 +88,7 @@
         {
           "Id": "fc9acbd47fe04fe4a5c37a93264602a6",
           "Name": "Link",
-          "Description": "Revit link element as Dynamo type",
+          "Description": "Revit link element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -203,19 +96,28 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get external linked revit file in document\n\nLink.GetRevitFile (document: Document = null): var[]..[]"
+      "Description": "Get external revit link in document.\n\nLink.GetRevitLink (document: Document = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.Link.Reload@Revit.Elements.Element[]",
+      "FunctionSignature": "Orchid.RevitProject.Common.Link.Reload@Revit.Elements.Element[],bool",
       "Id": "aa673496825b4fe89461e38bfc3bb616",
       "Inputs": [
         {
           "Id": "fc954aa58ef541daa4937d98b89bb3b7",
           "Name": "link",
-          "Description": "External link element as Dynamo type\n\nElement[]",
+          "Description": "External link element as Dynamo type.\n\nElement[]",
           "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "2863c9c765e9477297782665e2a29936",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
@@ -225,7 +127,7 @@
         {
           "Id": "71d2371e2f294e09a98206e56c74ee69",
           "Name": "Link",
-          "Description": "External link element as Dynamo type",
+          "Description": "External link element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -233,18 +135,18 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Reload external linked file in document\n\nLink.Reload (link: Element[]): var[]..[]"
+      "Description": "Reload external linked file in document.\n\nLink.Reload (link: Element[], condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.Link.Repath@Revit.Elements.Element[],string",
+      "FunctionSignature": "Orchid.RevitProject.Common.Link.Repath@Revit.Elements.Element[],string,bool",
       "Id": "0664f2b4d5534dc2bd5754350fe7ae7c",
       "Inputs": [
         {
           "Id": "e90e64ca5b414c41bc4b12266d9c7c7a",
           "Name": "link",
-          "Description": "External link element as Dynamo type\n\nElement[]",
+          "Description": "External link element as Dynamo type.\n\nElement[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -253,8 +155,17 @@
         {
           "Id": "f0d0c642067e4bfaa2c8fb8784903788",
           "Name": "file",
-          "Description": "File (path) to set (repath)\n\nstring",
+          "Description": "File (path) to set (repath).\n\nstring",
           "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "733c1682159145ff81d71b096478eff9",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
@@ -264,7 +175,7 @@
         {
           "Id": "151fe2b56087474a97197ae58c7a1e82",
           "Name": "Link",
-          "Description": "External link element as Dynamo type",
+          "Description": "External link element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -272,19 +183,28 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Repath external linked file in document\n\nLink.Repath (link: Element[], file: string): var[]..[]"
+      "Description": "Repath external linked file in document.\n\nLink.Repath (link: Element[], file: string, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.Link.Unload@Revit.Elements.Element[]",
+      "FunctionSignature": "Orchid.RevitProject.Common.Link.Unload@Revit.Elements.Element[],bool",
       "Id": "d4ef4c485f044aeeb8d88badd3bd0450",
       "Inputs": [
         {
           "Id": "ec620170176c4e99bdc614d1afbd42a5",
           "Name": "link",
-          "Description": "External link element as Dynamo type\n\nElement[]",
+          "Description": "External link element as Dynamo type.\n\nElement[]",
           "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "0d28edbc8d9b4acea5426460c1f7183c",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
@@ -294,7 +214,7 @@
         {
           "Id": "fd2bcc38fd5e42d28fb23a5f83a856fb",
           "Name": "Link",
-          "Description": "External link element as Dynamo type",
+          "Description": "External link element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -302,7 +222,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Unload external linked file in document\n\nLink.Unload (link: Element[]): var[]..[]"
+      "Description": "Unload external linked file in document.\n\nLink.Unload (link: Element[], condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -483,14 +403,23 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.Link.Reload@Revit.Elements.Element[]",
+      "FunctionSignature": "Orchid.RevitProject.Common.Link.Reload@Revit.Elements.Element[],bool",
       "Id": "589eb3dce6db442aa7648a715387fb8e",
       "Inputs": [
         {
           "Id": "61aea70e5a004db5a42fe3bf4d9f80ac",
           "Name": "link",
-          "Description": "External link element as Dynamo type\n\nElement[]",
+          "Description": "External link element as Dynamo type.\n\nElement[]",
           "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "dea4c1fee88d4a92b36fe81d62ab46a3",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
@@ -500,7 +429,7 @@
         {
           "Id": "3dc6fe5f44fa47f6b3162f6fadfb4d59",
           "Name": "Link",
-          "Description": "External link element as Dynamo type",
+          "Description": "External link element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -508,7 +437,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Reload external linked file in document\n\nLink.Reload (link: Element[]): var[]..[]"
+      "Description": "Reload external linked file in document.\n\nLink.Reload (link: Element[], condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -542,13 +471,22 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.Link.GetCadFile@Orchid.RevitProject.Common.Document",
+      "FunctionSignature": "Orchid.RevitProject.Common.Link.GetCadLink@Orchid.RevitProject.Common.Document,bool",
       "Id": "bffc8add8d7b49368eb94faed71a4273",
       "Inputs": [
         {
           "Id": "bfc0f79d4c9742a0a00ac6eeaf38559e",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nDocument\nDefault value : null",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "835783b92e174dd6bd0ab9fad357a929",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -559,7 +497,7 @@
         {
           "Id": "33adb7f7d1474f34a1f575cad55d4359",
           "Name": "Link",
-          "Description": "CAD link element as Dynamo type",
+          "Description": "CAD link element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -567,18 +505,27 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get external linked cad file in document\n\nLink.GetCadFile (document: Document = null): var[]..[]"
+      "Description": "Get external cad link in document.\n\nLink.GetCadLink (document: Document = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.Link.GetFile@Orchid.RevitProject.Common.Document",
+      "FunctionSignature": "Orchid.RevitProject.Common.Link.GetLink@Orchid.RevitProject.Common.Document,bool",
       "Id": "f511f11f00d54a749b7e87b1b3c66a33",
       "Inputs": [
         {
           "Id": "abf16aed1b4a4e7d8469b6ee5592a6d9",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nDocument\nDefault value : null",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "79a0d46be53e4a318de4656937cb5ada",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -589,7 +536,7 @@
         {
           "Id": "a7ffb5cb0f474e5b844252dddfaa4b88",
           "Name": "Link",
-          "Description": "External link element as Dynamo type",
+          "Description": "External link element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -598,7 +545,7 @@
         {
           "Id": "db330076a85b404eb0c4dd20c2e5147c",
           "Name": "Type",
-          "Description": "External link type",
+          "Description": "External link type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -606,7 +553,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get external linked file in document\n\nLink.GetFile (document: Document = null): var[]..[]"
+      "Description": "Get external link in document.\n\nLink.GetLink (document: Document = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -754,8 +701,9 @@
       "Description": "Visualize the output of node."
     },
     {
-      "ConcreteType": "Orchid.E.RevitProject.Common.LinkedFile, OrchidRE",
+      "ConcreteType": "Orchid.E.RevitProject.Common.Links, OrchidRE",
       "SelectedIndex": 1,
+      "SelectedString": "Standard",
       "NodeType": "ExtensionNode",
       "Id": "6818a10a8106479e8f5124e501ee555e",
       "Inputs": [],
@@ -774,8 +722,9 @@
       "Description": "Dropdown for external links in document"
     },
     {
-      "ConcreteType": "Orchid.E.RevitProject.Common.LinkedRevit, OrchidRE",
-      "SelectedIndex": -1,
+      "ConcreteType": "Orchid.E.RevitProject.Common.RevitLinks, OrchidRE",
+      "SelectedIndex": 0,
+      "SelectedString": "defaultBuilding_2021.rvt",
       "NodeType": "ExtensionNode",
       "Id": "3a2e53ba763c410694a345d4410d09ec",
       "Inputs": [],
@@ -794,8 +743,9 @@
       "Description": "Dropdown for revit links in document"
     },
     {
-      "ConcreteType": "Orchid.E.RevitProject.Common.LinkedCad, OrchidRE",
-      "SelectedIndex": -1,
+      "ConcreteType": "Orchid.E.RevitProject.Common.CadLinks, OrchidRE",
+      "SelectedIndex": 0,
+      "SelectedString": "Drawing1",
       "NodeType": "ExtensionNode",
       "Id": "87e3c8738acf44f7be97bc6ae5224c98",
       "Inputs": [],
@@ -970,7 +920,7 @@
     {
       "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
       "NodeType": "StringInputNode",
-      "InputValue": ".\\defaultBuilding_2019.rvt",
+      "InputValue": "defaultBuilding_2021.rvt",
       "Id": "5b596d3629ef4dfbbccb3b6038c7d5ba",
       "Inputs": [],
       "Outputs": [
@@ -1104,7 +1054,7 @@
         {
           "Id": "d20b72c9dd0e47be9ed12708d1f7ce20",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nDocument\nDefault value : null",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1113,7 +1063,7 @@
         {
           "Id": "e54f13daecba459fa18a0150f6a18c79",
           "Name": "file",
-          "Description": "File (path) to link\n\nstring",
+          "Description": "File (path) to link.\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1122,7 +1072,7 @@
         {
           "Id": "adb6b4a50e3b48679be13ddb05a3f69a",
           "Name": "positioning",
-          "Description": "Link positioning\n\nstring\nDefault value : \"Origin\"",
+          "Description": "Link positioning.\n\nstring\nDefault value : \"Origin\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1131,7 +1081,7 @@
         {
           "Id": "04c40d0a72484297bc93c3b8142b60cd",
           "Name": "unit",
-          "Description": "Link unit\n\nstring\nDefault value : \"Default\"",
+          "Description": "Link unit.\n\nstring\nDefault value : \"Default\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1140,7 +1090,7 @@
         {
           "Id": "08e72c2e1b574e358a0888c22b2e5edf",
           "Name": "colorMode",
-          "Description": "Link color mode\n\nstring\nDefault value : \"Preserved\"",
+          "Description": "Link color mode.\n\nstring\nDefault value : \"Preserved\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1149,7 +1099,7 @@
         {
           "Id": "0d460ccd24034868a48711f254424eae",
           "Name": "referencePoint",
-          "Description": "Reference point for the file\n\nPoint\nDefault value : Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0)",
+          "Description": "Reference point for the file.\n\nPoint\nDefault value : Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0)",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1167,7 +1117,7 @@
         {
           "Id": "7ce96a97c9d8411389a93e8a8ea3dfd1",
           "Name": "view",
-          "Description": "Place the link at view (if orient to view is set to true)\n\nElement",
+          "Description": "Place the link at view (if orient to view is set to true).\n\nElement",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1196,7 +1146,7 @@
         {
           "Id": "fc3cda2b79f24fa8b3c9c45feb42e568",
           "Name": "Instance",
-          "Description": "Link instance as Dynamo type",
+          "Description": "Link instance as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1205,7 +1155,7 @@
         {
           "Id": "d9db047b2f114221ac043a3e812d9804",
           "Name": "Link",
-          "Description": "CAD link element as Dynamo type",
+          "Description": "CAD link element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1213,7 +1163,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Link external cad file in document\n\nLink.SetCadFile (document: Document = null, file: string, positioning: string = \"Origin\", unit: string = \"Default\", colorMode: string = \"Preserved\", referencePoint: Point = Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0), visibleLayersOnly: bool = true, view: Element, orientToView: bool = false, thisViewOnly: bool = false): var[]..[]"
+      "Description": "Link external cad file in document.\n\nLink.SetCadFile (document: Document = null, file: string, positioning: string = \"Origin\", unit: string = \"Default\", colorMode: string = \"Preserved\", referencePoint: Point = Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0), visibleLayersOnly: bool = true, view: Element, orientToView: bool = false, thisViewOnly: bool = false): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
@@ -1394,6 +1344,7 @@
     {
       "ConcreteType": "Orchid.E.RevitProject.Views.ModelView, OrchidRE",
       "SelectedIndex": 0,
+      "SelectedString": "Level 1 (door)",
       "NodeType": "ExtensionNode",
       "Id": "48e4bfeeb8ae45b9b07276012d91a7e3",
       "Inputs": [],
@@ -1434,6 +1385,7 @@
     {
       "ConcreteType": "Orchid.E.RevitProject.Common.Unit, OrchidRE",
       "SelectedIndex": 6,
+      "SelectedString": "Millimeter",
       "NodeType": "ExtensionNode",
       "Id": "726471bd8ba6414f801bf47d25c2a70f",
       "Inputs": [],
@@ -1454,6 +1406,7 @@
     {
       "ConcreteType": "Orchid.E.RevitProject.Common.ColorMode, OrchidRE",
       "SelectedIndex": 2,
+      "SelectedString": "BlackAndWhite",
       "NodeType": "ExtensionNode",
       "Id": "5bdbb877e37741d697f6107719a55281",
       "Inputs": [],
@@ -1474,6 +1427,7 @@
     {
       "ConcreteType": "Orchid.E.RevitProject.Common.Positioning, OrchidRE",
       "SelectedIndex": 0,
+      "SelectedString": "Center",
       "NodeType": "ExtensionNode",
       "Id": "a7325ed9f2ef432f950e8fcac51479c1",
       "Inputs": [],
@@ -1489,11 +1443,12 @@
         }
       ],
       "Replication": "Disabled",
-      "Description": "Dropdown for link positioning, Note: only Origin and Shared is applicable when positioning revit files!"
+      "Description": "Dropdown for link positioning, Note: Only Origin and Shared is applicable when positioning revit files!"
     },
     {
       "ConcreteType": "Orchid.E.RevitProject.Common.Positioning, OrchidRE",
       "SelectedIndex": 1,
+      "SelectedString": "Origin",
       "NodeType": "ExtensionNode",
       "Id": "a52fae1a4dea4f178dc1c68135169714",
       "Inputs": [],
@@ -1509,7 +1464,7 @@
         }
       ],
       "Replication": "Disabled",
-      "Description": "Dropdown for link positioning, Note: only Origin and Shared is applicable when positioning revit files!"
+      "Description": "Dropdown for link positioning, Note: Only Origin and Shared is applicable when positioning revit files!"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -1520,7 +1475,7 @@
         {
           "Id": "4c709f2b8e3f4139ba564053fe213373",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nDocument\nDefault value : null",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1529,7 +1484,7 @@
         {
           "Id": "25120645beaf4086a7f647967a2f2716",
           "Name": "file",
-          "Description": "File (path) to link\n\nstring",
+          "Description": "File (path) to link.\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1538,7 +1493,7 @@
         {
           "Id": "da4609e44e2143eeabc77bfba3ccb769",
           "Name": "positioning",
-          "Description": "Link positioning\n\nstring\nDefault value : \"Origin\"",
+          "Description": "Link positioning.\n\nstring\nDefault value : \"Origin\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1556,7 +1511,7 @@
         {
           "Id": "6d0d93d755d54ff698cd949fd21629a9",
           "Name": "referencePoint",
-          "Description": "Reference point for the file\n\nPoint\nDefault value : Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0)",
+          "Description": "Reference point for the file.\n\nPoint\nDefault value : Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0)",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1565,7 +1520,7 @@
         {
           "Id": "422cb42241c148ca99310db8cbf173ed",
           "Name": "attachmentType",
-          "Description": "Link attachment type\n\nstring\nDefault value : Overlay",
+          "Description": "Link attachment type.\n\nstring\nDefault value : Overlay",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1585,7 +1540,7 @@
         {
           "Id": "3e826056c292492bbe7d5c87f2cd4fea",
           "Name": "Instance",
-          "Description": "Link instance as Dynamo type",
+          "Description": "Link instance as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1594,7 +1549,7 @@
         {
           "Id": "3cdf99d13e3d45a6add83aeb5e61b9a3",
           "Name": "Link",
-          "Description": "CAD link element as Dynamo type",
+          "Description": "CAD link element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1602,11 +1557,12 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Link external revit file in document\n\nLink.SetRevitFile (document: Document = null, file: string, positioning: string = \"Origin\", atBasePoint: bool = false, referencePoint: Point = Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0), attachmentType: string = Overlay, relative: bool = true): var[]..[]"
+      "Description": "Link external revit file in document.\n\nLink.SetRevitFile (document: Document = null, file: string, positioning: string = \"Origin\", atBasePoint: bool = false, referencePoint: Point = Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0), attachmentType: string = Overlay, relative: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Orchid.E.RevitProject.Common.AttachmentType, OrchidRE",
       "SelectedIndex": 0,
+      "SelectedString": "Overlay",
       "NodeType": "ExtensionNode",
       "Id": "4ea490be82d04c33adbbf7013939330d",
       "Inputs": [],
@@ -1801,6 +1757,7 @@
     {
       "ConcreteType": "Orchid.E.RevitProject.Views.ModelView, OrchidRE",
       "SelectedIndex": 0,
+      "SelectedString": "Level 1 (door)",
       "NodeType": "ExtensionNode",
       "Id": "c7cce16d2be246bcbc93a04ba716fed4",
       "Inputs": [],
@@ -1827,7 +1784,7 @@
         {
           "Id": "2cd27ae93a1e45e38558f072ae2d3c62",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nDocument\nDefault value : null",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1836,7 +1793,7 @@
         {
           "Id": "a710e63909f3459a850124fe2ae3e210",
           "Name": "instance",
-          "Description": "Link instance as Dynamo type\n\nElement",
+          "Description": "Link instance as Dynamo type.\n\nElement",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1847,7 +1804,7 @@
         {
           "Id": "db586fea55c245eba7e6b98264b34cc4",
           "Name": "Link",
-          "Description": "Revit link element as Dynamo type",
+          "Description": "Revit link element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1855,7 +1812,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Convert link instance to link type\n\nLink.ConvertToLink (document: Document = null, instance: Element): var[]..[]"
+      "Description": "Convert link instance to link type.\n\nLink.ConvertToLink (document: Document = null, instance: Element): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -1866,7 +1823,7 @@
         {
           "Id": "d9ed5fb7e81b495e8583293a6db98493",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nDocument\nDefault value : null",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1875,7 +1832,7 @@
         {
           "Id": "2b7eee5c387e4a96b842cda2c8d8b954",
           "Name": "instance",
-          "Description": "Link instance as Dynamo type\n\nElement",
+          "Description": "Link instance as Dynamo type.\n\nElement",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1886,7 +1843,7 @@
         {
           "Id": "617259a1af9d4037b885516cc03c1a6f",
           "Name": "Link",
-          "Description": "Revit link element as Dynamo type",
+          "Description": "Revit link element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1894,7 +1851,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Convert link instance to link type\n\nLink.ConvertToLink (document: Document = null, instance: Element): var[]..[]"
+      "Description": "Convert link instance to link type.\n\nLink.ConvertToLink (document: Document = null, instance: Element): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -1905,7 +1862,7 @@
         {
           "Id": "e09b3649400d4e2a9268f5047bbbda4c",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nDocument\nDefault value : null",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1914,7 +1871,7 @@
         {
           "Id": "514d2bf4e8d1482792992567d67eb955",
           "Name": "file",
-          "Description": "File (path) to link\n\nstring",
+          "Description": "File (path) to link.\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1923,7 +1880,7 @@
         {
           "Id": "a84b6ddfb1c74e08981c50fe0a60fddc",
           "Name": "referencePoint",
-          "Description": "Reference point for the file\n\nPoint\nDefault value : Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0)",
+          "Description": "Reference point for the file.\n\nPoint\nDefault value : Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0)",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1941,7 +1898,7 @@
         {
           "Id": "f44d4700441a493da93b2b90a2166c58",
           "Name": "view",
-          "Description": "Place the link at view (if orient to view is set to true)\n\nElement",
+          "Description": "Place the link at view (if orient to view is set to true).\n\nElement",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1970,7 +1927,7 @@
         {
           "Id": "1402b245dec342ee90babb733aedae2b",
           "Name": "Instance",
-          "Description": "Link instance as Dynamo type",
+          "Description": "Link instance as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1979,7 +1936,7 @@
         {
           "Id": "a6ce9d49d61144eebbadc6c24d04d5d9",
           "Name": "Link",
-          "Description": "CAD link element as Dynamo type",
+          "Description": "CAD link element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1988,29 +1945,147 @@
       ],
       "Replication": "Auto",
       "Description": "Link external cad file in document. Defaults: positioning set to Origin, unit set to Default, colorMode set to Preserved!\n\nLink.SetCadFile (document: Document = null, file: string, referencePoint: Point = Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0), visibleLayersOnly: bool = true, view: Element, orientToView: bool = false, thisViewOnly: bool = false): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Common.Link.GetLinkByType@Orchid.RevitProject.Common.Document,string,bool",
+      "Id": "1437dc7325b74a25b65abb0dd8dd7c65",
+      "Inputs": [
+        {
+          "Id": "21313d511fb1462fa412ed347720c55c",
+          "Name": "document",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "64ffd360d96d46588964aa4afc55de3c",
+          "Name": "linkType",
+          "Description": "Type of link as string\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "386b15eabb7d45379184aa4c27c8b7a7",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "a065c855e6b44f8882b53375952455b0",
+          "Name": "Link",
+          "Description": "Link element as Dynamo type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get external link in document by link type.\n\nLink.GetLinkByType (document: Document = null, linkType: string, condense: bool = true): var[]..[]"
+    },
+    {
+      "ConcreteType": "Orchid.E.RevitProject.Common.LinkType, OrchidRE",
+      "SelectedIndex": 2,
+      "SelectedString": "Keynote Table",
+      "NodeType": "ExtensionNode",
+      "Id": "b5dcc4ecb9ad48fca468e3310b1217dc",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "22548a67dbdf4a5dbefb2db312985220",
+          "Name": "LinkType",
+          "Description": "The selected LinkType",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Dropdown for link type"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "\"RevitLink\";",
+      "Id": "b9f9b06cbb92404bbc81a684ff60b633",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "907e3c90b8e1418aab0897b28fee45b0",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "b31e7048f8074c78a970d9c15ebc1e38",
+      "Inputs": [
+        {
+          "Id": "3e347657b78d43a18ff5cc3fedc92d32",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "8bec06b428484d18b06c3b42f2ce2f7a",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "defaultBuilding_2021.rvt",
+      "Id": "a47075f8eef1459ea7a2b756a06692a6",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "8094bbdde16440a9a7ebc6231e8f2248",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
     }
   ],
   "Connectors": [
-    {
-      "Start": "544075b266ae475e91bac8793a23ab19",
-      "End": "73951b2b16b443bd9639d0db05fcf005",
-      "Id": "ff0862791db8406795193bb42aa295cc"
-    },
-    {
-      "Start": "6eb21f4089694baeb9f0c8e958a46ce2",
-      "End": "aaf9664d031d471fb96140ff9976b348",
-      "Id": "834be69a47d944c586c64c4b32767284"
-    },
-    {
-      "Start": "e1237fc8fd6d4132b6793d0656b6b6ad",
-      "End": "4606ca328f4a4ae194228d22911ea8fe",
-      "Id": "2adfd898f0ac469e8edd60d9e22af770"
-    },
-    {
-      "Start": "a9f0eb30462c4c0580931ba991020eae",
-      "End": "f0d0c642067e4bfaa2c8fb8784903788",
-      "Id": "5112100d4b44493fbff3914e036e4f57"
-    },
     {
       "Start": "fc9acbd47fe04fe4a5c37a93264602a6",
       "End": "83fbe40b295940a7aec76143ecfb0c11",
@@ -2250,16 +2325,64 @@
       "Start": "a6ce9d49d61144eebbadc6c24d04d5d9",
       "End": "a5c41d665393439cb2973a3144fa8d29",
       "Id": "bf9f059e290f48cf84b9e3529c994efb"
+    },
+    {
+      "Start": "a065c855e6b44f8882b53375952455b0",
+      "End": "3e347657b78d43a18ff5cc3fedc92d32",
+      "Id": "73e761eb37874580b6676359a58ace25"
+    },
+    {
+      "Start": "907e3c90b8e1418aab0897b28fee45b0",
+      "End": "64ffd360d96d46588964aa4afc55de3c",
+      "Id": "e5e949fd7b2846d7aaf09cb633208f93"
+    },
+    {
+      "Start": "8094bbdde16440a9a7ebc6231e8f2248",
+      "End": "f0d0c642067e4bfaa2c8fb8784903788",
+      "Id": "58c8ccc61fe64641b5003248a4ca8850"
     }
   ],
   "Dependencies": [],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Orchid",
+      "Version": "206.3.0.7865",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "54cfff097d0d48cbbbd6554e9847e85c",
+        "aa673496825b4fe89461e38bfc3bb616",
+        "0664f2b4d5534dc2bd5754350fe7ae7c",
+        "d4ef4c485f044aeeb8d88badd3bd0450",
+        "589eb3dce6db442aa7648a715387fb8e",
+        "bffc8add8d7b49368eb94faed71a4273",
+        "f511f11f00d54a749b7e87b1b3c66a33",
+        "6818a10a8106479e8f5124e501ee555e",
+        "3a2e53ba763c410694a345d4410d09ec",
+        "87e3c8738acf44f7be97bc6ae5224c98",
+        "0ab8e74674b849b882022754a87b6f75",
+        "48e4bfeeb8ae45b9b07276012d91a7e3",
+        "726471bd8ba6414f801bf47d25c2a70f",
+        "5bdbb877e37741d697f6107719a55281",
+        "a7325ed9f2ef432f950e8fcac51479c1",
+        "a52fae1a4dea4f178dc1c68135169714",
+        "4a08b8b300f344f0b62d20d50584efd4",
+        "4ea490be82d04c33adbbf7013939330d",
+        "c7cce16d2be246bcbc93a04ba716fed4",
+        "561eec1d31074108a0f1c9216913e4ce",
+        "31ed00b516a942959f509a137fb2983d",
+        "14a140030a994ce98cf2b1c490ab4a2a",
+        "1437dc7325b74a25b65abb0dd8dd7c65",
+        "b5dcc4ecb9ad48fca468e3310b1217dc"
+      ]
+    }
+  ],
   "Bindings": [],
   "View": {
     "Dynamo": {
       "ScaleFactor": 100.0,
-      "HasRunWithoutCrash": false,
+      "HasRunWithoutCrash": true,
       "IsVisibleInDynamoLibrary": true,
-      "Version": "2.0.4.12684",
+      "Version": "2.6.1.8786",
       "RunType": "Manual",
       "RunPeriod": "1000"
     },
@@ -2278,47 +2401,7 @@
     "NodeViews": [
       {
         "ShowGeometry": true,
-        "Name": "String",
-        "Id": "50ff65ede3be4a1cad603f51a7840d62",
-        "IsSetAsInput": true,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": 109.6873179139,
-        "Y": 167.949746747363
-      },
-      {
-        "ShowGeometry": true,
-        "Name": "String",
-        "Id": "24a2cb82342f48a0930029fdb6ffa442",
-        "IsSetAsInput": true,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": 109.6873179139,
-        "Y": 251.523080080696
-      },
-      {
-        "ShowGeometry": true,
-        "Name": "Code Block",
-        "Id": "1599647c8d8042fa9d74648e71ee5d92",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": 389.228437121592,
-        "Y": 205.575619852209
-      },
-      {
-        "ShowGeometry": true,
-        "Name": "File.FromPath",
-        "Id": "c8ba87309492438a8ca0b3f658f34ba4",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": 592.6873179139,
-        "Y": 200.949746747363
-      },
-      {
-        "ShowGeometry": true,
-        "Name": "Link.GetRevitFile",
+        "Name": "Link.GetRevitLink",
         "Id": "54cfff097d0d48cbbbd6554e9847e85c",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
@@ -2438,7 +2521,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Link.GetCadFile",
+        "Name": "Link.GetCadLink",
         "Id": "bffc8add8d7b49368eb94faed71a4273",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
@@ -2448,13 +2531,13 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Link.GetFile",
+        "Name": "Link.GetLink",
         "Id": "f511f11f00d54a749b7e87b1b3c66a33",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -689.827010508697,
-        "Y": 775.99948510539
+        "X": -689.69932425267518,
+        "Y": 875.78772431887
       },
       {
         "ShowGeometry": true,
@@ -2463,8 +2546,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -297.312652436984,
-        "Y": 1006.37715533008
+        "X": -383.69932425267518,
+        "Y": 1005.78772431887
       },
       {
         "ShowGeometry": true,
@@ -2473,8 +2556,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -297.312652436984,
-        "Y": 772.377155330079
+        "X": -383.69932425267518,
+        "Y": 771.78772431887
       },
       {
         "ShowGeometry": true,
@@ -2508,7 +2591,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Linked Files",
+        "Name": "Links",
         "Id": "6818a10a8106479e8f5124e501ee555e",
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
@@ -2518,7 +2601,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Linked Revit Files",
+        "Name": "Revit Links",
         "Id": "3a2e53ba763c410694a345d4410d09ec",
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
@@ -2528,7 +2611,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Linked CAD Files",
+        "Name": "CAD Links",
         "Id": "87e3c8738acf44f7be97bc6ae5224c98",
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
@@ -2738,7 +2821,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Import Unit",
+        "Name": "Import Units",
         "Id": "726471bd8ba6414f801bf47d25c2a70f",
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
@@ -2788,7 +2871,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Attachment Type",
+        "Name": "Attachment Types",
         "Id": "4ea490be82d04c33adbbf7013939330d",
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
@@ -2895,28 +2978,59 @@
         "Excluded": false,
         "X": -1399.08547700773,
         "Y": 1419.81282833367
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Link.GetLinkByType",
+        "Id": "1437dc7325b74a25b65abb0dd8dd7c65",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -456.64721049955267,
+        "Y": 499.59462049362708
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Link Types",
+        "Id": "b5dcc4ecb9ad48fca468e3310b1217dc",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -689.69478674446987,
+        "Y": 576.32910667106967
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "b9f9b06cbb92404bbc81a684ff60b633",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -686.038376787879,
+        "Y": 472.93389103609138
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "b31e7048f8074c78a970d9c15ebc1e38",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -191.05152147024188,
+        "Y": 499.59462049362708
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String",
+        "Id": "a47075f8eef1459ea7a2b756a06692a6",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 109.943378816743,
+        "Y": 492.22118881896733
       }
     ],
     "Annotations": [
-      {
-        "Id": "4ba61496409b44b5a6f1e7a01a41c024",
-        "Title": "",
-        "Nodes": [
-          "50ff65ede3be4a1cad603f51a7840d62",
-          "24a2cb82342f48a0930029fdb6ffa442",
-          "1599647c8d8042fa9d74648e71ee5d92",
-          "c8ba87309492438a8ca0b3f658f34ba4"
-        ],
-        "Left": 99.6873179139,
-        "Top": 137.949746747363,
-        "Width": 668.0,
-        "Height": 181.57333333333298,
-        "FontSize": 30.0,
-        "InitialTop": 167.949746747363,
-        "InitialHeight": 174.0,
-        "TextblockHeight": 0.0,
-        "Background": "#FFA4E1FF"
-      },
       {
         "Id": "a379fa342c4b416f9e0eb5f2e496ccd1",
         "Title": "Revit links",
@@ -2927,16 +3041,17 @@
           "d4ef4c485f044aeeb8d88badd3bd0450",
           "cb62aff6ad64483da32fe647e52e1b82",
           "dfd81b913907462e8ef190ba6e6798d1",
-          "8f29bdbcb799402eb00b35aa8c76ab48"
+          "8f29bdbcb799402eb00b35aa8c76ab48",
+          "a47075f8eef1459ea7a2b756a06692a6"
         ],
         "Left": 99.943378816743,
-        "Top": 435.854434604665,
-        "Width": 728.236179450573,
-        "Height": 708.7440987051649,
+        "Top": 419.854434604665,
+        "Width": 763.236179450573,
+        "Height": 740.471618529095,
         "FontSize": 30.0,
         "InitialTop": 465.854434604665,
-        "InitialHeight": 640.665651249946,
-        "TextblockHeight": 0.0,
+        "InitialHeight": 730.7440987051649,
+        "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       },
       {
@@ -2951,31 +3066,31 @@
           "bffc8add8d7b49368eb94faed71a4273"
         ],
         "Left": 99.91128761239,
-        "Top": 1316.01908459489,
-        "Width": 641.268270654926,
-        "Height": 425.0,
+        "Top": 1300.01908459489,
+        "Width": 739.268270654926,
+        "Height": 456.0,
         "FontSize": 30.0,
         "InitialTop": 1346.01908459489,
-        "InitialHeight": 368.0,
-        "TextblockHeight": 0.0,
+        "InitialHeight": 446.0,
+        "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       },
       {
         "Id": "3bbb894301e5420b98e385b8d3aa6508",
-        "Title": "Get all linked files",
+        "Title": "Get all links",
         "Nodes": [
           "f511f11f00d54a749b7e87b1b3c66a33",
           "d5ac08b31b6c4a64a9a95874e240e7d0",
           "33374178c8bb4adfa0d0a1357093842d"
         ],
-        "Left": -699.827010508697,
-        "Top": 742.377155330079,
-        "Width": 490.51435807171293,
-        "Height": 358.000000000001,
+        "Left": -699.69932425267518,
+        "Top": 725.78772431887,
+        "Width": 578.0,
+        "Height": 474.0,
         "FontSize": 30.0,
-        "InitialTop": 772.377155330079,
-        "InitialHeight": 234.0,
-        "TextblockHeight": 0.0,
+        "InitialTop": 771.78772431887,
+        "InitialHeight": 379.0,
+        "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       },
       {
@@ -2990,13 +3105,13 @@
           "87e3c8738acf44f7be97bc6ae5224c98"
         ],
         "Left": -699.583034257662,
-        "Top": 1315.657060528,
-        "Width": 382.523897044578,
-        "Height": 391.3026375300999,
+        "Top": 1299.657060528,
+        "Width": 480.523897044578,
+        "Height": 428.3026375300999,
         "FontSize": 30.0,
         "InitialTop": 1345.657060528,
-        "InitialHeight": 372.737001597202,
-        "TextblockHeight": 0.0,
+        "InitialHeight": 412.3026375300999,
+        "TextblockHeight": 36.0,
         "Background": "#FFA4E1FF"
       },
       {
@@ -3009,13 +3124,13 @@
           "561eec1d31074108a0f1c9216913e4ce"
         ],
         "Left": 1000.0231824452,
-        "Top": 966.190359840916,
+        "Top": 950.190359840916,
         "Width": 673.00000000000011,
-        "Height": 234.00000000000409,
+        "Height": 250.00000000000409,
         "FontSize": 30.0,
         "InitialTop": 996.190359840916,
-        "InitialHeight": 248.60148964167,
-        "TextblockHeight": 0.0,
+        "InitialHeight": 255.00000000000409,
+        "TextblockHeight": 36.0,
         "Background": "#FFD4B6DB"
       },
       {
@@ -3028,13 +3143,13 @@
           "31ed00b516a942959f509a137fb2983d"
         ],
         "Left": 1000.40840480531,
-        "Top": 1316.062832134,
+        "Top": 1300.062832134,
         "Width": 673.00000000001,
-        "Height": 234.0,
+        "Height": 250.0,
         "FontSize": 30.0,
         "InitialTop": 1346.062832134,
-        "InitialHeight": 243.400719365948,
-        "TextblockHeight": 0.0,
+        "InitialHeight": 255.0,
+        "TextblockHeight": 36.0,
         "Background": "#FFD4B6DB"
       },
       {
@@ -3052,13 +3167,13 @@
           "4ea490be82d04c33adbbf7013939330d"
         ],
         "Left": -1899.92264879616,
-        "Top": -237.72555112143,
-        "Width": 935.62417481102011,
-        "Height": 558.0,
+        "Top": -253.72555112143,
+        "Width": 1072.62417481102,
+        "Height": 574.0,
         "FontSize": 30.0,
         "InitialTop": -207.72555112143,
-        "InitialHeight": 584.78508765076,
-        "TextblockHeight": 0.0,
+        "InitialHeight": 605.0,
+        "TextblockHeight": 36.0,
         "Background": "#FFFF7BAC"
       },
       {
@@ -3078,13 +3193,13 @@
           "a7325ed9f2ef432f950e8fcac51479c1"
         ],
         "Left": -1900.1766713849,
-        "Top": 435.854434604665,
-        "Width": 935.87819739976,
-        "Height": 764.56751813026506,
+        "Top": 419.854434604665,
+        "Width": 1052.87819739976,
+        "Height": 780.56751813026506,
         "FontSize": 30.0,
         "InitialTop": 465.854434604665,
-        "InitialHeight": 98.0,
-        "TextblockHeight": 0.0,
+        "InitialHeight": 811.56751813026506,
+        "TextblockHeight": 36.0,
         "Background": "#FFFF7BAC"
       },
       {
@@ -3100,18 +3215,37 @@
           "2241a60d1d5c4540a76937c7225d7cdd"
         ],
         "Left": -1899.61830629523,
-        "Top": 1316.2972056637,
-        "Width": 935.31983231009008,
-        "Height": 450.0,
+        "Top": 1300.2972056637,
+        "Width": 1052.31983231009,
+        "Height": 466.0,
         "FontSize": 30.0,
         "InitialTop": 1346.2972056637,
-        "InitialHeight": 98.0,
-        "TextblockHeight": 0.0,
+        "InitialHeight": 497.0,
+        "TextblockHeight": 36.0,
         "Background": "#FFFF7BAC"
+      },
+      {
+        "Id": "616630f8a5ef4ab0bebf428e39000787",
+        "Title": "Get links by type",
+        "Nodes": [
+          "b5dcc4ecb9ad48fca468e3310b1217dc",
+          "b9f9b06cbb92404bbc81a684ff60b633",
+          "b31e7048f8074c78a970d9c15ebc1e38",
+          "1437dc7325b74a25b65abb0dd8dd7c65"
+        ],
+        "Left": -699.69478674446987,
+        "Top": 419.93389103609138,
+        "Width": 626.643265274228,
+        "Height": 249.39521563497829,
+        "FontSize": 36.0,
+        "InitialTop": 472.93389103609138,
+        "InitialHeight": 248.39521563497829,
+        "TextblockHeight": 43.0,
+        "Background": "#FFA4E1FF"
       }
     ],
-    "X": 314.13808312759875,
-    "Y": 299.3193134472898,
-    "Zoom": 0.14480095233385987
+    "X": 847.00910629662792,
+    "Y": 170.40364441214052,
+    "Zoom": 0.43223954599863906
   }
 }

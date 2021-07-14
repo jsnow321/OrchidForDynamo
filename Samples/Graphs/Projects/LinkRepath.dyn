@@ -296,7 +296,7 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.Link.GetRevitFile@var",
+      "FunctionSignature": "Orchid.RevitProject.Common.Link.GetRevitLink@var",
       "Id": "71f685936857475ebc15b97bd8cf49e2",
       "Inputs": [
         {
@@ -321,7 +321,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get external linked revit file in document\n\nLink.GetRevitFile (document: var = null): var[]..[]"
+      "Description": "Get external linked revit file in document\n\nLink.GetRevitLink (document: var = null): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -651,7 +651,7 @@
         "Id": "71f685936857475ebc15b97bd8cf49e2",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Link.GetRevitFile",
+        "Name": "Link.GetRevitLink",
         "ShowGeometry": true,
         "Excluded": false,
         "X": 686.038676646311,
