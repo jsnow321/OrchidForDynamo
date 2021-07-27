@@ -101,23 +101,14 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.Link.Reload@Revit.Elements.Element[],bool",
+      "FunctionSignature": "Orchid.RevitProject.Common.Link.Reload@Revit.Elements.Element",
       "Id": "aa673496825b4fe89461e38bfc3bb616",
       "Inputs": [
         {
           "Id": "fc954aa58ef541daa4937d98b89bb3b7",
           "Name": "link",
-          "Description": "External link element as Dynamo type.\n\nElement[]",
+          "Description": "External link element as Dynamo type.\n\nElement",
           "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "2863c9c765e9477297782665e2a29936",
-          "Name": "condense",
-          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
-          "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
@@ -135,18 +126,18 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Reload external linked file in document.\n\nLink.Reload (link: Element[], condense: bool = true): var[]..[]"
+      "Description": "Reload external linked file in document.\n\nLink.Reload (link: Element): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.Link.Repath@Revit.Elements.Element[],string,bool",
+      "FunctionSignature": "Orchid.RevitProject.Common.Link.Repath@Revit.Elements.Element,string",
       "Id": "0664f2b4d5534dc2bd5754350fe7ae7c",
       "Inputs": [
         {
           "Id": "e90e64ca5b414c41bc4b12266d9c7c7a",
           "Name": "link",
-          "Description": "External link element as Dynamo type.\n\nElement[]",
+          "Description": "External link element as Dynamo type.\n\nElement",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -157,15 +148,6 @@
           "Name": "file",
           "Description": "File (path) to set (repath).\n\nstring",
           "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "733c1682159145ff81d71b096478eff9",
-          "Name": "condense",
-          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
-          "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
@@ -183,28 +165,19 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Repath external linked file in document.\n\nLink.Repath (link: Element[], file: string, condense: bool = true): var[]..[]"
+      "Description": "Repath external linked file in document. Note: Cloud path cant be used!\n\nLink.Repath (link: Element, file: string): Element"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.Link.Unload@Revit.Elements.Element[],bool",
+      "FunctionSignature": "Orchid.RevitProject.Common.Link.Unload@Revit.Elements.Element",
       "Id": "d4ef4c485f044aeeb8d88badd3bd0450",
       "Inputs": [
         {
           "Id": "ec620170176c4e99bdc614d1afbd42a5",
           "Name": "link",
-          "Description": "External link element as Dynamo type.\n\nElement[]",
+          "Description": "External link element as Dynamo type.\n\nElement",
           "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "0d28edbc8d9b4acea5426460c1f7183c",
-          "Name": "condense",
-          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
-          "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
@@ -222,7 +195,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Unload external linked file in document.\n\nLink.Unload (link: Element[], condense: bool = true): var[]..[]"
+      "Description": "Unload external linked file in document.\n\nLink.Unload (link: Element): Element"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -403,23 +376,14 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.Link.Reload@Revit.Elements.Element[],bool",
+      "FunctionSignature": "Orchid.RevitProject.Common.Link.Reload@Revit.Elements.Element",
       "Id": "589eb3dce6db442aa7648a715387fb8e",
       "Inputs": [
         {
           "Id": "61aea70e5a004db5a42fe3bf4d9f80ac",
           "Name": "link",
-          "Description": "External link element as Dynamo type.\n\nElement[]",
+          "Description": "External link element as Dynamo type.\n\nElement",
           "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "dea4c1fee88d4a92b36fe81d62ab46a3",
-          "Name": "condense",
-          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
-          "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
@@ -437,7 +401,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Reload external linked file in document.\n\nLink.Reload (link: Element[], condense: bool = true): var[]..[]"
+      "Description": "Reload external linked file in document.\n\nLink.Reload (link: Element): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -1163,7 +1127,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Link external cad file in document.\n\nLink.SetCadFile (document: Document = null, file: string, positioning: string = \"Origin\", unit: string = \"Default\", colorMode: string = \"Preserved\", referencePoint: Point = Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0), visibleLayersOnly: bool = true, view: Element, orientToView: bool = false, thisViewOnly: bool = false): var[]..[]"
+      "Description": "Link external cad file in document. Note: Cloud links cant be created!\n\nLink.SetCadFile (document: Document = null, file: string, positioning: string = \"Origin\", unit: string = \"Default\", colorMode: string = \"Preserved\", referencePoint: Point = Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0), visibleLayersOnly: bool = true, view: Element, orientToView: bool = false, thisViewOnly: bool = false): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
@@ -1557,7 +1521,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Link external revit file in document.\n\nLink.SetRevitFile (document: Document = null, file: string, positioning: string = \"Origin\", atBasePoint: bool = false, referencePoint: Point = Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0), attachmentType: string = Overlay, relative: bool = true): var[]..[]"
+      "Description": "Link external revit file in document. Note: Cloud links cant be created!\n\nLink.SetRevitFile (document: Document = null, file: string, positioning: string = \"Origin\", atBasePoint: bool = false, referencePoint: Point = Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0), attachmentType: string = Overlay, relative: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Orchid.E.RevitProject.Common.AttachmentType, OrchidRE",
@@ -1944,7 +1908,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Link external cad file in document. Defaults: positioning set to Origin, unit set to Default, colorMode set to Preserved!\n\nLink.SetCadFile (document: Document = null, file: string, referencePoint: Point = Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0), visibleLayersOnly: bool = true, view: Element, orientToView: bool = false, thisViewOnly: bool = false): var[]..[]"
+      "Description": "Link external cad file in document. Defaults: positioning set to Origin, unit set to Default, colorMode set to Preserved! Note: Cloud links cant be created!\n\nLink.SetCadFile (document: Document = null, file: string, referencePoint: Point = Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0), visibleLayersOnly: bool = true, view: Element, orientToView: bool = false, thisViewOnly: bool = false): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -2346,7 +2310,7 @@
   "NodeLibraryDependencies": [
     {
       "Name": "Orchid",
-      "Version": "206.3.0.7865",
+      "Version": "206.3.0.7878",
       "ReferenceType": "Package",
       "Nodes": [
         "54cfff097d0d48cbbbd6554e9847e85c",
@@ -2415,7 +2379,7 @@
         "Id": "aa673496825b4fe89461e38bfc3bb616",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Excluded": true,
+        "Excluded": false,
         "X": 653.179558267316,
         "Y": 740.590243869212
       },
