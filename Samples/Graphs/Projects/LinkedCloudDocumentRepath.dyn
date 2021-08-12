@@ -1,0 +1,746 @@
+{
+  "Uuid": "3c9d0464-8643-5ffe-96e5-ab1769818209",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "LinkedCloudDocumentRepath",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Common.Link.Info@Revit.Elements.Element",
+      "Id": "64a0a900b7f04379bdc2cb10399ea7e2",
+      "Inputs": [
+        {
+          "Id": "ff6588433d014d67aa3794bb84e83273",
+          "Name": "link",
+          "Description": "External link element as Dynamo type.\n\nElement",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "36594e9cc24948838efbf97dc37aa3c5",
+          "Name": "Name",
+          "Description": "Name of the linked document.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "70dea810fd364b0d958df06f797514f7",
+          "Name": "Status",
+          "Description": "Status of the linked document.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "bb589f05113e47b6a67c7f093d3557a5",
+          "Name": "ReferenceType",
+          "Description": "Reference type of the linked document.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3f1a239d65d74eb3a2caf8d49809b0cf",
+          "Name": "Path",
+          "Description": "Path of the linked document.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5c125b6bae034e9b8578132a67b25a5c",
+          "Name": "PathType",
+          "Description": "Path type of the linked document.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get external link informations.\n\nLink.Info (link: Element): var[]..[]"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.CreateList, CoreNodeModels",
+      "VariableInputPorts": true,
+      "NodeType": "ExtensionNode",
+      "Id": "31bf1c3f43934ddba83746e1a7fc1b42",
+      "Inputs": [
+        {
+          "Id": "8d65960858244344b6c0c3c33464a1bc",
+          "Name": "item0",
+          "Description": "Item Index #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "e1cf96c5230d45db8e94b3775ca31f07",
+          "Name": "item1",
+          "Description": "Item Index #1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "8a91401e37b84d03850729e83a8a38aa",
+          "Name": "item2",
+          "Description": "Item Index #2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "05b496176a9a4eac9e70aa8ebfbb245a",
+          "Name": "item3",
+          "Description": "Item Index #3",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "0573c789966a419c9edac5ffe1252ed6",
+          "Name": "item4",
+          "Description": "Item Index #4",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b436c0ff14934601a408da39b1f900f9",
+          "Name": "list",
+          "Description": "A list",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Makes a new list out of the given inputs"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Common.Link.GetRevitLink@Orchid.RevitProject.Common.Document,bool",
+      "Id": "cb2eda0dddf84311954d701af2f7f0f9",
+      "Inputs": [
+        {
+          "Id": "ac78b3ad32654030977bd85601dae04c",
+          "Name": "document",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b6898084aef4483aa59533fdaaaec226",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "f23c5247cf4341b88cdbfb9cb328b65e",
+          "Name": "Link",
+          "Description": "Revit link element as Dynamo type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get external revit link in document.\n\nLink.GetRevitLink (document: Document = null, condense: bool = true): var[]..[]"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "33d821434f5f4bddb651f942ea605f6e",
+      "Inputs": [
+        {
+          "Id": "1b906f12a93e4324a51d5ad661e5c24d",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "fca5f06c166345d1aca645c589aea318",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "b4e8ff7fc2dc42c6b4226f3ccba81d8c",
+      "Inputs": [
+        {
+          "Id": "e8394066852444049af1baaac992c132",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "93fa5f2ff3e44a92b8f6356c75a89fb3",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "92fde0a8114d40c3bc573b2cdbb1d742",
+      "Inputs": [
+        {
+          "Id": "6956926c3a6945cda0f51e344187b9e3",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "e557df1365df4c5c84eb0cbdb9775026",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.File.CloudToLocal@string,int",
+      "Id": "5c8bfe123c8342758ebacc8aaaab3c1a",
+      "Inputs": [
+        {
+          "Id": "de9e4000dcc1439da00bc9fd11e350dc",
+          "Name": "path",
+          "Description": "Cloud path to the document.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "467ff70812d84cda8f6ec6a7b1fa48f2",
+          "Name": "step",
+          "Description": "Step relative to current directory.\n\nint\nDefault value : 1",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "8ba20b0ce91f470e8222a18e8e0f0682",
+          "Name": "relative",
+          "Description": "Relative path.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "291f2c7938b44a5a9ebed973239d3b76",
+          "Name": "absolute",
+          "Description": "Absolute path.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Convert the cloud path to a local path relative to the document containing the cloud link. Note: Integer given for step is relatively steps from where current document is located, \"0\" is the same directory, \"1\" is a step up relative to current directory.\n\nFile.CloudToLocal (path: string, step: int = 1): var[]..[]"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "8a4553eb41824ac882ef79b1ed9f15c7",
+      "Inputs": [
+        {
+          "Id": "cbb0e987a23444bda91e217ae0b96f25",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "f357c66dd807464699f7ab3019d9a3f0",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.Directory.CloudToLocal@string,int",
+      "Id": "f834b20ac13a4a2ea7f619fd4cfb4e41",
+      "Inputs": [
+        {
+          "Id": "91323a378f274e109153fbe4f0c7db1d",
+          "Name": "path",
+          "Description": "Cloud path to the document.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c6ef213718cb40b3a9b8eb9e664450bf",
+          "Name": "step",
+          "Description": "Step relative to current directory.\n\nint\nDefault value : 1",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "a7bc5a581b074ff38611ba14a8563c86",
+          "Name": "relative",
+          "Description": "Relative path.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "129c101c462b44db9f8276750e246880",
+          "Name": "absolute",
+          "Description": "Absolute path.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Convert the cloud path to a local path relative to the document containing the cloud link. Note: Integer given for step is relatively steps from where current document is located, \"0\" is the same directory, \"1\" is a step up relative to current directory.\n\nDirectory.CloudToLocal (path: string, step: int = 1): var[]..[]"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "133e265661b04b28a258a47ccf88173f",
+      "Inputs": [
+        {
+          "Id": "b442b01838bb499883f9d716eccd4ffb",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "aec8b744e537434296f66da035560eeb",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.RevitProject.Common.Link.Repath@Revit.Elements.Element,string,string",
+      "Id": "36ecd331da4c4bf6a2acdfc9640688fe",
+      "Inputs": [
+        {
+          "Id": "d6f3958de81849a2a1551599c90e3277",
+          "Name": "link",
+          "Description": "External link element as Dynamo type.\n\nElement",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "50b5a920b2534ddfb3eb391ab464ae06",
+          "Name": "file",
+          "Description": "File (path) to set (repath).\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f9ac32b81e904fd7a742dfc589baee35",
+          "Name": "pathType",
+          "Description": "Path type of the linked document.\n\nstring\nDefault value : \"Relative\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "55f2d1d180a44e80bc97826bf6ccb317",
+          "Name": "Link",
+          "Description": "External link element as Dynamo type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Repath external linked file in document. Note: Cloud path cant be used! ...and if Cloud path is being replaced by a local path, the document might need to be saved and reopened before link are visible.\n\nLink.Repath (link: Element, file: string, pathType: string = \"Relative\"): Element"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "36594e9cc24948838efbf97dc37aa3c5",
+      "End": "8d65960858244344b6c0c3c33464a1bc",
+      "Id": "0b347513d87a4a38beb4712965fda102"
+    },
+    {
+      "Start": "70dea810fd364b0d958df06f797514f7",
+      "End": "e1cf96c5230d45db8e94b3775ca31f07",
+      "Id": "3df3a14eb643455ea7ca9a4810032cdc"
+    },
+    {
+      "Start": "bb589f05113e47b6a67c7f093d3557a5",
+      "End": "8a91401e37b84d03850729e83a8a38aa",
+      "Id": "4056b4336e4f4dc2b6dcb12654e0a5ca"
+    },
+    {
+      "Start": "3f1a239d65d74eb3a2caf8d49809b0cf",
+      "End": "05b496176a9a4eac9e70aa8ebfbb245a",
+      "Id": "7dacb81dd84a426296b229a73832c5ea"
+    },
+    {
+      "Start": "3f1a239d65d74eb3a2caf8d49809b0cf",
+      "End": "de9e4000dcc1439da00bc9fd11e350dc",
+      "Id": "3b930dfda6bc479d88ba9ec444129f94"
+    },
+    {
+      "Start": "3f1a239d65d74eb3a2caf8d49809b0cf",
+      "End": "91323a378f274e109153fbe4f0c7db1d",
+      "Id": "855a210398e2401592cea201c6531185"
+    },
+    {
+      "Start": "5c125b6bae034e9b8578132a67b25a5c",
+      "End": "0573c789966a419c9edac5ffe1252ed6",
+      "Id": "2f9a4c41e3f048988baa232238f08a50"
+    },
+    {
+      "Start": "b436c0ff14934601a408da39b1f900f9",
+      "End": "1b906f12a93e4324a51d5ad661e5c24d",
+      "Id": "b5187cb21b254a5796198b71d97537bc"
+    },
+    {
+      "Start": "f23c5247cf4341b88cdbfb9cb328b65e",
+      "End": "ff6588433d014d67aa3794bb84e83273",
+      "Id": "9559ab464c2d4d288f1ad6d8fddb8357"
+    },
+    {
+      "Start": "f23c5247cf4341b88cdbfb9cb328b65e",
+      "End": "d6f3958de81849a2a1551599c90e3277",
+      "Id": "cb066f722b104077b4c964b1694619ca"
+    },
+    {
+      "Start": "8ba20b0ce91f470e8222a18e8e0f0682",
+      "End": "e8394066852444049af1baaac992c132",
+      "Id": "9336a8baa30f4a148244afe75a02ea28"
+    },
+    {
+      "Start": "291f2c7938b44a5a9ebed973239d3b76",
+      "End": "6956926c3a6945cda0f51e344187b9e3",
+      "Id": "e3bb01ae362f44c4a99211fe838dd999"
+    },
+    {
+      "Start": "291f2c7938b44a5a9ebed973239d3b76",
+      "End": "50b5a920b2534ddfb3eb391ab464ae06",
+      "Id": "0e6ecc28e2ce40e793708cfa59d7e1d8"
+    },
+    {
+      "Start": "a7bc5a581b074ff38611ba14a8563c86",
+      "End": "cbb0e987a23444bda91e217ae0b96f25",
+      "Id": "36310517ee3c41d0a21699e046de9749"
+    },
+    {
+      "Start": "129c101c462b44db9f8276750e246880",
+      "End": "b442b01838bb499883f9d716eccd4ffb",
+      "Id": "2d06d759705f476c9c31d26ec039f3bb"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Orchid",
+      "Version": "206.3.0.7894",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "64a0a900b7f04379bdc2cb10399ea7e2",
+        "cb2eda0dddf84311954d701af2f7f0f9",
+        "5c8bfe123c8342758ebacc8aaaab3c1a",
+        "f834b20ac13a4a2ea7f619fd4cfb4e41",
+        "36ecd331da4c4bf6a2acdfc9640688fe"
+      ]
+    }
+  ],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 100.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.6.1.8786",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Link.Info",
+        "Id": "64a0a900b7f04379bdc2cb10399ea7e2",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -87.74569237432047,
+        "Y": -154.25470404633091
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "List Create",
+        "Id": "31bf1c3f43934ddba83746e1a7fc1b42",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 242.25430762567953,
+        "Y": -154.25470404633091
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Link.GetRevitLink",
+        "Id": "cb2eda0dddf84311954d701af2f7f0f9",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -389.74569237432047,
+        "Y": -115.25470404633091
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "33d821434f5f4bddb651f942ea605f6e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 462.25430762567953,
+        "Y": -154.25470404633091
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "b4e8ff7fc2dc42c6b4226f3ccba81d8c",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 508.92646619510367,
+        "Y": 332.7271478804725
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "92fde0a8114d40c3bc573b2cdbb1d742",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 508.92646619510367,
+        "Y": 512.72714788047256
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "File.CloudToLocal",
+        "Id": "5c8bfe123c8342758ebacc8aaaab3c1a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 227.08731999096051,
+        "Y": 409.7271478804725
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "8a4553eb41824ac882ef79b1ed9f15c7",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 508.92646619510367,
+        "Y": 691.74443067810148
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Directory.CloudToLocal",
+        "Id": "f834b20ac13a4a2ea7f619fd4cfb4e41",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 209.92646619509958,
+        "Y": 768.74443067810148
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "133e265661b04b28a258a47ccf88173f",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 508.92646619510367,
+        "Y": 871.74443067810239
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Link.Repath",
+        "Id": "36ecd331da4c4bf6a2acdfc9640688fe",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 873.40153405287344,
+        "Y": 409.7271478804725
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "e05dba9defff42dcba5d42ebf9c3e68f",
+        "Title": "Get Revit Linked document",
+        "Nodes": [
+          "64a0a900b7f04379bdc2cb10399ea7e2",
+          "31bf1c3f43934ddba83746e1a7fc1b42",
+          "cb2eda0dddf84311954d701af2f7f0f9",
+          "33d821434f5f4bddb651f942ea605f6e"
+        ],
+        "Left": -399.74569237432047,
+        "Top": -207.25470404633091,
+        "Width": 1162.0,
+        "Height": 407.0,
+        "FontSize": 36.0,
+        "InitialTop": -154.25470404633091,
+        "InitialHeight": 184.0,
+        "TextblockHeight": 43.0,
+        "Background": "#FFFFAA45"
+      },
+      {
+        "Id": "757f34551fd547c9947c3396adcda9c7",
+        "Title": "Repath Cloud link to local path",
+        "Nodes": [
+          "b4e8ff7fc2dc42c6b4226f3ccba81d8c",
+          "92fde0a8114d40c3bc573b2cdbb1d742",
+          "5c8bfe123c8342758ebacc8aaaab3c1a",
+          "f834b20ac13a4a2ea7f619fd4cfb4e41",
+          "36ecd331da4c4bf6a2acdfc9640688fe",
+          "8a4553eb41824ac882ef79b1ed9f15c7",
+          "133e265661b04b28a258a47ccf88173f"
+        ],
+        "Left": 199.92646619509958,
+        "Top": 279.7271478804725,
+        "Width": 880.47506785777387,
+        "Height": 756.01728279762983,
+        "FontSize": 36.0,
+        "InitialTop": 332.7271478804725,
+        "InitialHeight": 663.01728279762983,
+        "TextblockHeight": 43.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": 390.07803151429272,
+    "Y": 224.7339788514322,
+    "Zoom": 0.92387943871991729
+  }
+}

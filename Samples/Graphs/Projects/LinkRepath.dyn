@@ -11,14 +11,14 @@
       "Id": "49ce3e67e7c542bba0d4b2f0e35e0209",
       "Name": "String",
       "Type": "string",
-      "Value": "%userprofile%\\Programming\\Source\\Testing\\Data\\2019_Data\\",
+      "Value": "%userprofile%\\Programming\\Source\\Testing\\Data\\2021_Data\\",
       "Description": "Creates a string."
     },
     {
       "Id": "c2eef2dc045a41428af97ec282626768",
       "Name": "String",
       "Type": "string",
-      "Value": "2019_LinkedProject",
+      "Value": "LinkedProject_2021",
       "Description": "Creates a string."
     },
     {
@@ -32,7 +32,7 @@
       "Id": "02a590cde4734a28a34507da69b4dabb",
       "Name": "String",
       "Type": "string",
-      "Value": "2019_defaultProject",
+      "Value": "defaultProject_2021",
       "Description": "Creates a string."
     },
     {
@@ -48,7 +48,7 @@
     {
       "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
       "NodeType": "StringInputNode",
-      "InputValue": "%userprofile%\\Programming\\Source\\Testing\\Data\\2019_Data\\",
+      "InputValue": "%userprofile%\\Programming\\Source\\Testing\\Data\\2021_Data\\",
       "Id": "49ce3e67e7c542bba0d4b2f0e35e0209",
       "Inputs": [],
       "Outputs": [
@@ -68,7 +68,7 @@
     {
       "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
       "NodeType": "StringInputNode",
-      "InputValue": "2019_LinkedProject",
+      "InputValue": "LinkedProject_2021",
       "Id": "c2eef2dc045a41428af97ec282626768",
       "Inputs": [],
       "Outputs": [
@@ -147,7 +147,7 @@
     {
       "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
       "NodeType": "StringInputNode",
-      "InputValue": "2019_defaultProject",
+      "InputValue": "defaultProject_2021",
       "Id": "02a590cde4734a28a34507da69b4dabb",
       "Inputs": [],
       "Outputs": [
@@ -212,7 +212,7 @@
         {
           "Id": "c5936ad8cbbf4d7580c4ab50e1a6c4f6",
           "Name": "path",
-          "Description": "Path to the file\n\nstring",
+          "Description": "Path to the file.\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -223,7 +223,7 @@
         {
           "Id": "f67c646079bf4f0e9d629cbdcb9ede63",
           "Name": "file",
-          "Description": "File object",
+          "Description": "File object.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -231,7 +231,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get file from a path\n\nFile.FromPath (path: string): string"
+      "Description": "Get file from a path.\n\nFile.FromPath (path: string): string"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -242,7 +242,7 @@
         {
           "Id": "8da8176daf754ee384b2301e4fa5b62b",
           "Name": "path",
-          "Description": "Path to the file\n\nstring",
+          "Description": "Path to the file.\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -253,7 +253,7 @@
         {
           "Id": "650ebfc57fe841f3a15949ed1df46c91",
           "Name": "file",
-          "Description": "File object",
+          "Description": "File object.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -261,7 +261,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get file from a path\n\nFile.FromPath (path: string): string"
+      "Description": "Get file from a path.\n\nFile.FromPath (path: string): string"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -272,7 +272,7 @@
         {
           "Id": "df75fed843d24c9188869eec64422db3",
           "Name": "file",
-          "Description": "File (path) to open in the background\n\nstring",
+          "Description": "File (path) to open in the background.\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -283,7 +283,7 @@
         {
           "Id": "1c79ad0e16b54c13b4670ac6e7bd912f",
           "Name": "Document",
-          "Description": "Document as Revit type",
+          "Description": "Document as Revit type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -291,18 +291,27 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Open documents in background\n\nDocument.BackgroundOpen (file: string): Document"
+      "Description": "Open documents in background.\n\nDocument.BackgroundOpen (file: string): Document"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.Link.GetRevitLink@var",
+      "FunctionSignature": "Orchid.RevitProject.Common.Link.GetRevitLink@Orchid.RevitProject.Common.Document,bool",
       "Id": "71f685936857475ebc15b97bd8cf49e2",
       "Inputs": [
         {
           "Id": "3d6e5d8f97324405b6eab14c29bc24fc",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nvar\nDefault value : null",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "20df3419d9f94b569f1c381e302a7537",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -313,7 +322,7 @@
         {
           "Id": "9ee3358587804a53b74bf120cc8e0c9f",
           "Name": "Link",
-          "Description": "Revit link element as Dynamo type",
+          "Description": "Revit link element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -321,18 +330,18 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get external linked revit file in document\n\nLink.GetRevitLink (document: var = null): var[]..[]"
+      "Description": "Get external revit link in document.\n\nLink.GetRevitLink (document: Document = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.Link.Repath@Revit.Elements.Element[],string",
+      "FunctionSignature": "Orchid.RevitProject.Common.Link.Repath@Revit.Elements.Element,string,string",
       "Id": "34145f9a0d9549628986b84d84ebe209",
       "Inputs": [
         {
           "Id": "fc8f56ab64e04073b9166df5470506ac",
           "Name": "link",
-          "Description": "External link element as Dynamo type\n\nElement[]",
+          "Description": "External link element as Dynamo type.\n\nElement",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -341,8 +350,17 @@
         {
           "Id": "80601dadf8424f60807f295a7c9fd925",
           "Name": "file",
-          "Description": "File (path) to set (repath)\n\nstring",
+          "Description": "File (path) to set (repath).\n\nstring",
           "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b6bb8a1ff5db4e99a108bee215a4d980",
+          "Name": "pathType",
+          "Description": "Path type of the linked document.\n\nstring\nDefault value : \"Relative\"",
+          "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
@@ -352,7 +370,7 @@
         {
           "Id": "a06454f15ccb43ce9138c51e38ca1300",
           "Name": "Link",
-          "Description": "External link element as Dynamo type",
+          "Description": "External link element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -360,7 +378,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Repath external linked file in document\n\nLink.Repath (link: Element[], file: string): var[]..[]"
+      "Description": "Repath external linked file in document. Note: Cloud path cant be used! ...and if Cloud path is being replaced by a local path, the document might need to be saved and reopened before link are visible.\n\nLink.Repath (link: Element, file: string, pathType: string = \"Relative\"): Element"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -371,7 +389,7 @@
         {
           "Id": "f26cd116615c4a0e9ed8c3a5e7dc4fb7",
           "Name": "pass",
-          "Description": "Data to pass\n\nvar[]..[]",
+          "Description": "Data to pass.\n\nvar[]..[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -380,7 +398,7 @@
         {
           "Id": "84626eff1cae4690a372983922ede024",
           "Name": "waitFor",
-          "Description": "Data object to wait for\n\nvar[]..[]",
+          "Description": "Data object to wait for.\n\nvar[]..[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -391,7 +409,7 @@
         {
           "Id": "5c4a8322721149808ed2acbed18a4705",
           "Name": "pass",
-          "Description": "Passed data",
+          "Description": "Passed data.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -399,7 +417,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Await a data stream before passing another data stream\n\nDataStream.Await (pass: var[]..[], waitFor: var[]..[]): var[]..[]"
+      "Description": "Await a data stream before passing another data stream.\n\nDataStream.Await (pass: var[]..[], waitFor: var[]..[]): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
@@ -424,13 +442,13 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.Document.Close@var,bool",
+      "FunctionSignature": "Orchid.RevitProject.Common.Document.Close@Orchid.RevitProject.Common.Document,bool",
       "Id": "791cac5fe2834e0183c77d3b84289522",
       "Inputs": [
         {
           "Id": "458d393fde494d1d91eef3b9ecd6e608",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nvar",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -450,7 +468,7 @@
         {
           "Id": "47a012fc5e7d436d9b1982f18c7bf883",
           "Name": "watch",
-          "Description": "Add a watch node to verify the output",
+          "Description": "Add a watch node to verify the output.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -458,7 +476,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Close document\n\nDocument.Close (document: var, save: bool = false): string"
+      "Description": "Close document.\n\nDocument.Close (document: Document, save: bool = false): string"
     }
   ],
   "Connectors": [
@@ -534,13 +552,29 @@
     }
   ],
   "Dependencies": [],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Orchid",
+      "Version": "206.3.0.7893",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "36ee43062d7b4c4895ab768d2b748c64",
+        "692bc76c80e64a1a9a2a5cf51dacbd6b",
+        "359fe60b86e34a22a25a4165bf56a4ef",
+        "71f685936857475ebc15b97bd8cf49e2",
+        "34145f9a0d9549628986b84d84ebe209",
+        "ae92fb3febc64626915abfbe4aa8d4f7",
+        "791cac5fe2834e0183c77d3b84289522"
+      ]
+    }
+  ],
   "Bindings": [],
   "View": {
     "Dynamo": {
       "ScaleFactor": 1.0,
       "HasRunWithoutCrash": true,
       "IsVisibleInDynamoLibrary": true,
-      "Version": "2.0.3.8810",
+      "Version": "2.6.1.8786",
       "RunType": "Manual",
       "RunPeriod": "1000"
     },
@@ -558,141 +592,141 @@
     },
     "NodeViews": [
       {
+        "ShowGeometry": true,
+        "Name": "String",
         "Id": "49ce3e67e7c542bba0d4b2f0e35e0209",
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
-        "Name": "String",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": -412.961323353689,
         "Y": 291.757543905447
       },
       {
+        "ShowGeometry": true,
+        "Name": "String",
         "Id": "c2eef2dc045a41428af97ec282626768",
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
-        "Name": "String",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": -412.961323353689,
         "Y": 391.33087723878
       },
       {
+        "ShowGeometry": true,
+        "Name": "Code Block",
         "Id": "4e9d42d864be48ceb47d481b9ddb7a6e",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Code Block",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": -119.961323353689,
         "Y": 336.97087723878
       },
       {
+        "ShowGeometry": true,
+        "Name": "String",
         "Id": "dee21106382645b190ef20ba601ae0b6",
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
-        "Name": "String",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 189.063536348467,
         "Y": 584.185326570895
       },
       {
+        "ShowGeometry": true,
+        "Name": "String",
         "Id": "02a590cde4734a28a34507da69b4dabb",
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
-        "Name": "String",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 189.063536348467,
         "Y": 683.758659904228
       },
       {
+        "ShowGeometry": true,
+        "Name": "Code Block",
         "Id": "6b729d10f96440e085c5fa36e24b4d07",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Code Block",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 482.063536348467,
         "Y": 629.398659904228
       },
       {
+        "ShowGeometry": true,
+        "Name": "File.FromPath",
         "Id": "36ee43062d7b4c4895ab768d2b748c64",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "File.FromPath",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 723.063536348467,
         "Y": 625.185326570895
       },
       {
+        "ShowGeometry": true,
+        "Name": "File.FromPath",
         "Id": "692bc76c80e64a1a9a2a5cf51dacbd6b",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "File.FromPath",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 121.038676646311,
         "Y": 332.757543905447
       },
       {
+        "ShowGeometry": true,
+        "Name": "Document.BackgroundOpen",
         "Id": "359fe60b86e34a22a25a4165bf56a4ef",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Document.BackgroundOpen",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 386.038676646311,
         "Y": 332.757543905447
       },
       {
+        "ShowGeometry": true,
+        "Name": "Link.GetRevitLink",
         "Id": "71f685936857475ebc15b97bd8cf49e2",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Link.GetRevitLink",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 686.038676646311,
         "Y": 332.757543905447
       },
       {
+        "ShowGeometry": true,
+        "Name": "Link.Repath",
         "Id": "34145f9a0d9549628986b84d84ebe209",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Link.Repath",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 992.542288427051,
         "Y": 477.713395690909
       },
       {
+        "ShowGeometry": true,
+        "Name": "DataStream.Await",
         "Id": "ae92fb3febc64626915abfbe4aa8d4f7",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "DataStream.Await",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 1266.84491513995,
         "Y": 334.564449204101
       },
       {
+        "ShowGeometry": true,
+        "Name": "Boolean",
         "Id": "e0c595a882334a1c9b797973d7ef0ec5",
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
-        "Name": "Boolean",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 1266.84491513995,
         "Y": 468.564449204101
       },
       {
+        "ShowGeometry": true,
+        "Name": "Document.Close",
         "Id": "791cac5fe2834e0183c77d3b84289522",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Document.Close",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 1558.84491513995,
         "Y": 388.564449204101
@@ -712,7 +746,7 @@
         ],
         "Left": -422.961323353689,
         "Top": 245.757543905447,
-        "Width": 1325.0,
+        "Width": 1321.0,
         "Height": 213.57333333333298,
         "FontSize": 30.0,
         "InitialTop": 291.757543905447,
@@ -758,8 +792,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": 152.6352773759595,
-    "Y": 337.28307131096665,
-    "Zoom": 0.29696552786113095
+    "X": 333.38080926237353,
+    "Y": 126.20181333543752,
+    "Zoom": 0.73464702892415168
   }
 }

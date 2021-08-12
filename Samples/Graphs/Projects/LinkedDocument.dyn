@@ -131,7 +131,7 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.Link.Repath@Revit.Elements.Element,string",
+      "FunctionSignature": "Orchid.RevitProject.Common.Link.Repath@Revit.Elements.Element,string,string",
       "Id": "0664f2b4d5534dc2bd5754350fe7ae7c",
       "Inputs": [
         {
@@ -151,6 +151,15 @@
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
+        },
+        {
+          "Id": "f0eed3d32be248729aad444e4aabab72",
+          "Name": "pathType",
+          "Description": "Path type of the linked document.\n\nstring\nDefault value : \"Relative\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
         }
       ],
       "Outputs": [
@@ -165,7 +174,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Repath external linked file in document. Note: Cloud path cant be used!\n\nLink.Repath (link: Element, file: string): Element"
+      "Description": "Repath external linked file in document. Note: Cloud path cant be used! ...and if Cloud path is being replaced by a local path, the document might need to be saved and reopened before link are visible.\n\nLink.Repath (link: Element, file: string, pathType: string = \"Relative\"): Element"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -1960,8 +1969,8 @@
     },
     {
       "ConcreteType": "Orchid.E.RevitProject.Common.LinkType, OrchidRE",
-      "SelectedIndex": 2,
-      "SelectedString": "Keynote Table",
+      "SelectedIndex": 0,
+      "SelectedString": "Revit Link",
       "NodeType": "ExtensionNode",
       "Id": "b5dcc4ecb9ad48fca468e3310b1217dc",
       "Inputs": [],
@@ -2047,6 +2056,27 @@
       ],
       "Replication": "Disabled",
       "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "Orchid.E.RevitProject.Common.PathType, OrchidRE",
+      "SelectedIndex": 0,
+      "SelectedString": "Relative",
+      "NodeType": "ExtensionNode",
+      "Id": "d60f633297564c1c9e9cf46b55ad7279",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "969bb9c10c774501ae30ab6403099b11",
+          "Name": "PathType",
+          "Description": "The selected PathType",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Dropdown for path type"
     }
   ],
   "Connectors": [
@@ -2298,7 +2328,7 @@
     {
       "Start": "907e3c90b8e1418aab0897b28fee45b0",
       "End": "64ffd360d96d46588964aa4afc55de3c",
-      "Id": "e5e949fd7b2846d7aaf09cb633208f93"
+      "Id": "272632deabfd41c98999aab96ba36648"
     },
     {
       "Start": "8094bbdde16440a9a7ebc6231e8f2248",
@@ -2310,7 +2340,7 @@
   "NodeLibraryDependencies": [
     {
       "Name": "Orchid",
-      "Version": "206.3.0.7878",
+      "Version": "206.3.0.7893",
       "ReferenceType": "Package",
       "Nodes": [
         "54cfff097d0d48cbbbd6554e9847e85c",
@@ -2336,7 +2366,8 @@
         "31ed00b516a942959f509a137fb2983d",
         "14a140030a994ce98cf2b1c490ab4a2a",
         "1437dc7325b74a25b65abb0dd8dd7c65",
-        "b5dcc4ecb9ad48fca468e3310b1217dc"
+        "b5dcc4ecb9ad48fca468e3310b1217dc",
+        "d60f633297564c1c9e9cf46b55ad7279"
       ]
     }
   ],
@@ -2992,6 +3023,16 @@
         "Excluded": false,
         "X": 109.943378816743,
         "Y": 492.22118881896733
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Path Types",
+        "Id": "d60f633297564c1c9e9cf46b55ad7279",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 161.53346920688807,
+        "Y": 566.76606801769753
       }
     ],
     "Annotations": [
@@ -3006,7 +3047,8 @@
           "cb62aff6ad64483da32fe647e52e1b82",
           "dfd81b913907462e8ef190ba6e6798d1",
           "8f29bdbcb799402eb00b35aa8c76ab48",
-          "a47075f8eef1459ea7a2b756a06692a6"
+          "a47075f8eef1459ea7a2b756a06692a6",
+          "d60f633297564c1c9e9cf46b55ad7279"
         ],
         "Left": 99.943378816743,
         "Top": 419.854434604665,
@@ -3199,7 +3241,7 @@
         ],
         "Left": -699.69478674446987,
         "Top": 419.93389103609138,
-        "Width": 626.643265274228,
+        "Width": 694.643265274228,
         "Height": 249.39521563497829,
         "FontSize": 36.0,
         "InitialTop": 472.93389103609138,
@@ -3208,8 +3250,8 @@
         "Background": "#FFA4E1FF"
       }
     ],
-    "X": 847.00910629662792,
-    "Y": 170.40364441214052,
-    "Zoom": 0.43223954599863906
+    "X": 885.30640815428228,
+    "Y": 154.76631524395964,
+    "Zoom": 0.45250077471732525
   }
 }
