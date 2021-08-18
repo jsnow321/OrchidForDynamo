@@ -239,35 +239,6 @@
       "Description": "Visualize the output of node."
     },
     {
-      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
-      "NodeType": "ExtensionNode",
-      "Id": "92fde0a8114d40c3bc573b2cdbb1d742",
-      "Inputs": [
-        {
-          "Id": "6956926c3a6945cda0f51e344187b9e3",
-          "Name": "",
-          "Description": "Node to evaluate.",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Outputs": [
-        {
-          "Id": "e557df1365df4c5c84eb0cbdb9775026",
-          "Name": "",
-          "Description": "Watch contents.",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "Visualize the output of node."
-    },
-    {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
       "FunctionSignature": "Orchid.Common.File.CloudToLocal@string,int",
@@ -295,17 +266,8 @@
       "Outputs": [
         {
           "Id": "8ba20b0ce91f470e8222a18e8e0f0682",
-          "Name": "relative",
-          "Description": "Relative path.",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "291f2c7938b44a5a9ebed973239d3b76",
-          "Name": "absolute",
-          "Description": "Absolute path.",
+          "Name": "File",
+          "Description": "File object.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -313,7 +275,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Convert the cloud path to a local path relative to the document containing the cloud link. Note: Integer given for step is relatively steps from where current document is located, \"0\" is the same directory, \"1\" is a step up relative to current directory.\n\nFile.CloudToLocal (path: string, step: int = 1): var[]..[]"
+      "Description": "Convert the cloud path to a local path relative to the document containing the cloud link. Note: Integer given for step is relatively steps from where current document is located, \"0\" is the same directory, \"1\" is a step up relative to current directory.\n\nFile.CloudToLocal (path: string, step: int = 1): string"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -372,17 +334,8 @@
       "Outputs": [
         {
           "Id": "a7bc5a581b074ff38611ba14a8563c86",
-          "Name": "relative",
-          "Description": "Relative path.",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "129c101c462b44db9f8276750e246880",
-          "Name": "absolute",
-          "Description": "Absolute path.",
+          "Name": "Directory",
+          "Description": "Directory object.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -390,36 +343,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Convert the cloud path to a local path relative to the document containing the cloud link. Note: Integer given for step is relatively steps from where current document is located, \"0\" is the same directory, \"1\" is a step up relative to current directory.\n\nDirectory.CloudToLocal (path: string, step: int = 1): var[]..[]"
-    },
-    {
-      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
-      "NodeType": "ExtensionNode",
-      "Id": "133e265661b04b28a258a47ccf88173f",
-      "Inputs": [
-        {
-          "Id": "b442b01838bb499883f9d716eccd4ffb",
-          "Name": "",
-          "Description": "Node to evaluate.",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Outputs": [
-        {
-          "Id": "aec8b744e537434296f66da035560eeb",
-          "Name": "",
-          "Description": "Watch contents.",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "Visualize the output of node."
+      "Description": "Convert the cloud path to a local path relative to the document containing the cloud link. Note: Integer given for step is relatively steps from where current document is located, \"0\" is the same directory, \"1\" is a step up relative to current directory.\n\nDirectory.CloudToLocal (path: string, step: int = 1): string"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -527,31 +451,21 @@
       "Id": "9336a8baa30f4a148244afe75a02ea28"
     },
     {
-      "Start": "291f2c7938b44a5a9ebed973239d3b76",
-      "End": "6956926c3a6945cda0f51e344187b9e3",
-      "Id": "e3bb01ae362f44c4a99211fe838dd999"
-    },
-    {
-      "Start": "291f2c7938b44a5a9ebed973239d3b76",
+      "Start": "8ba20b0ce91f470e8222a18e8e0f0682",
       "End": "50b5a920b2534ddfb3eb391ab464ae06",
-      "Id": "0e6ecc28e2ce40e793708cfa59d7e1d8"
+      "Id": "35e8b2dbeda84a0981e6bebfcd21d442"
     },
     {
       "Start": "a7bc5a581b074ff38611ba14a8563c86",
       "End": "cbb0e987a23444bda91e217ae0b96f25",
       "Id": "36310517ee3c41d0a21699e046de9749"
-    },
-    {
-      "Start": "129c101c462b44db9f8276750e246880",
-      "End": "b442b01838bb499883f9d716eccd4ffb",
-      "Id": "2d06d759705f476c9c31d26ec039f3bb"
     }
   ],
   "Dependencies": [],
   "NodeLibraryDependencies": [
     {
       "Name": "Orchid",
-      "Version": "206.3.0.7894",
+      "Version": "206.3.0.7895",
       "ReferenceType": "Package",
       "Nodes": [
         "64a0a900b7f04379bdc2cb10399ea7e2",
@@ -632,18 +546,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 508.92646619510367,
-        "Y": 332.7271478804725
-      },
-      {
-        "ShowGeometry": true,
-        "Name": "Watch",
-        "Id": "92fde0a8114d40c3bc573b2cdbb1d742",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": 508.92646619510367,
-        "Y": 512.72714788047256
+        "X": 461.15877301192984,
+        "Y": 492.97983927602684
       },
       {
         "ShowGeometry": true,
@@ -652,8 +556,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 227.08731999096051,
-        "Y": 409.7271478804725
+        "X": 158.15877301192978,
+        "Y": 425.97983927602689
       },
       {
         "ShowGeometry": true,
@@ -662,8 +566,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 508.92646619510367,
-        "Y": 691.74443067810148
+        "X": 461.15877301192984,
+        "Y": 675.95869199827223
       },
       {
         "ShowGeometry": true,
@@ -672,18 +576,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 209.92646619509958,
-        "Y": 768.74443067810148
-      },
-      {
-        "ShowGeometry": true,
-        "Name": "Watch",
-        "Id": "133e265661b04b28a258a47ccf88173f",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": 508.92646619510367,
-        "Y": 871.74443067810239
+        "X": 158.15877301192978,
+        "Y": 675.95869199827223
       },
       {
         "ShowGeometry": true,
@@ -692,8 +586,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 873.40153405287344,
-        "Y": 409.7271478804725
+        "X": 461.15877301192984,
+        "Y": 332.97983927602689
       }
     ],
     "Annotations": [
@@ -721,26 +615,24 @@
         "Title": "Repath Cloud link to local path",
         "Nodes": [
           "b4e8ff7fc2dc42c6b4226f3ccba81d8c",
-          "92fde0a8114d40c3bc573b2cdbb1d742",
           "5c8bfe123c8342758ebacc8aaaab3c1a",
           "f834b20ac13a4a2ea7f619fd4cfb4e41",
           "36ecd331da4c4bf6a2acdfc9640688fe",
-          "8a4553eb41824ac882ef79b1ed9f15c7",
-          "133e265661b04b28a258a47ccf88173f"
+          "8a4553eb41824ac882ef79b1ed9f15c7"
         ],
-        "Left": 199.92646619509958,
-        "Top": 279.7271478804725,
-        "Width": 880.47506785777387,
-        "Height": 756.01728279762983,
+        "Left": 148.15877301192978,
+        "Top": 279.97983927602689,
+        "Width": 613.0,
+        "Height": 559.97885272224539,
         "FontSize": 36.0,
-        "InitialTop": 332.7271478804725,
-        "InitialHeight": 663.01728279762983,
+        "InitialTop": 332.97983927602689,
+        "InitialHeight": 487.97885272224534,
         "TextblockHeight": 43.0,
         "Background": "#FFC1D676"
       }
     ],
-    "X": 390.07803151429272,
-    "Y": 224.7339788514322,
-    "Zoom": 0.92387943871991729
+    "X": 552.06910713250329,
+    "Y": 219.3324343587999,
+    "Zoom": 0.81532571885197935
   }
 }
