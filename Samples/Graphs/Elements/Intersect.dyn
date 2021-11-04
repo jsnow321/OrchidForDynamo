@@ -281,13 +281,13 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.Selection.ElementByCategory@var,var[]..[]",
+      "FunctionSignature": "Orchid.RevitProject.Elements.Selection.ElementByCategory@Orchid.RevitProject.Common.Document,var[],bool",
       "Id": "a7ee005450a14919a9ad3ee00634736c",
       "Inputs": [
         {
           "Id": "8f504b6a45404b3e92798bf72a098dad",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nvar\nDefault value : null",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -296,7 +296,16 @@
         {
           "Id": "4268c47edc874b6489b3a70401b1049c",
           "Name": "category",
-          "Description": "Category\n\nvar[]..[]\nDefault value : null",
+          "Description": "Category.\n\nvar[]\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "43cfb967f5d14669b4dc6dcf016c6d2d",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -307,7 +316,7 @@
         {
           "Id": "3d84c7751fa341ffb1f00efba8a19e87",
           "Name": "Element",
-          "Description": "Element",
+          "Description": "Element.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -316,7 +325,7 @@
         {
           "Id": "b327b1bd5a664b94a2a84adbefd5b3d4",
           "Name": "Category",
-          "Description": "Category",
+          "Description": "Category.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -324,7 +333,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get all elements by category in document, return element grouped by category.\n\nSelection.ElementByCategory (document: var = null, category: var[]..[] = null): var[]..[]"
+      "Description": "Get all elements by category in document, return element grouped by category.\n\nSelection.ElementByCategory (document: Document = null, category: var[] = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -335,7 +344,7 @@
         {
           "Id": "d63cded7094c48f9bacb5c1734d4470e",
           "Name": "list",
-          "Description": "List\n\nvar[]..[]",
+          "Description": "List.\n\nvar[]..[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -344,7 +353,7 @@
         {
           "Id": "2b36c9394d1f415bae5bedb26f9bc90c",
           "Name": "searchFor",
-          "Description": "Item(s) to search for\n\nvar[]..[]\nDefault value : [null, \"\", []]",
+          "Description": "Item(s) to search for.\n\nvar[]..[]\nDefault value : [null, \"\", []]",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -355,7 +364,7 @@
         {
           "Id": "3ceaf59f034e4c23b41699c8604bb997",
           "Name": "list",
-          "Description": "List",
+          "Description": "List.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -363,7 +372,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Clean nD list\n\nList.Clean (list: var[]..[], searchFor: var[]..[] = [null, \"\", []]): var[]..[]"
+      "Description": "Clean nD list.\n\nList.Clean (list: var[]..[], searchFor: var[]..[] = [null, \"\", []]): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -426,13 +435,22 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.Selection.ElementHasMaterial@var",
+      "FunctionSignature": "Orchid.RevitProject.Elements.Selection.ElementHasMaterial@Orchid.RevitProject.Common.Document,bool",
       "Id": "c849c70573884a84ac1e88986093528c",
       "Inputs": [
         {
           "Id": "7e11a3e4ac3f4ea696d654013a405786",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nvar\nDefault value : null",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "aae76e28186e4c189571a2ff84e623f6",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -443,7 +461,7 @@
         {
           "Id": "f541b8dba72246d4be2f4e80f614e6a8",
           "Name": "Element",
-          "Description": "Element",
+          "Description": "Element.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -452,7 +470,7 @@
         {
           "Id": "4818b009a8ae4d40af5ad01bc367aacc",
           "Name": "Category",
-          "Description": "Category",
+          "Description": "Category.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -460,19 +478,28 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get elements that has material quantities in document, return element grouped by category.\n\nSelection.ElementHasMaterial (document: var = null): var[]..[]"
+      "Description": "Get elements that has material quantities in document, return element grouped by category.\n\nSelection.ElementHasMaterial (document: Document = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.Element.HasIntersect@Revit.Elements.Element",
+      "FunctionSignature": "Orchid.RevitProject.Elements.Element.DoesIntersectOther@Revit.Elements.Element,bool",
       "Id": "d5fb64e8d1c94b05a1b75a37d734d484",
       "Inputs": [
         {
           "Id": "88e9ddf7004e4421a7de055607d55234",
           "Name": "element",
-          "Description": "Element as Dynamo type\n\nElement",
+          "Description": "Element as Dynamo type.\n\nElement",
           "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f5fcfca8cdff4eef8984e1a2aa67775c",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
@@ -482,7 +509,7 @@
         {
           "Id": "9bdf985908f14cfd94a1177337ba963e",
           "Name": "boolean",
-          "Description": "Boolean",
+          "Description": "Whether true or false value.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -490,18 +517,18 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Verify if element has intersecting element.\n\nElement.HasIntersect (element: Element): var[]..[]"
+      "Description": "Verify if element has intersecting element.\n\nElement.DoesIntersectOther (element: Element, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.Element.CategoryIntersect@Revit.Elements.Element,Revit.Elements.Category[]",
+      "FunctionSignature": "Orchid.RevitProject.Elements.Element.IntersectCategory@Revit.Elements.Element,Revit.Elements.Category[],bool",
       "Id": "b147c63edfc84a69b470f67bb6678bb7",
       "Inputs": [
         {
           "Id": "c9392767222f4ab49b8dde360b84b030",
           "Name": "element",
-          "Description": "Element as Dynamo type\n\nElement",
+          "Description": "Element as Dynamo type.\n\nElement",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -510,7 +537,16 @@
         {
           "Id": "9e1df70d6c204a72bd4308a2b412dbb1",
           "Name": "category",
-          "Description": "Category as Dynamo type, default is set to all catgories in document\n\nCategory[]\nDefault value : null",
+          "Description": "Category as Dynamo type, default is set to all catgories in document.\n\nCategory[]\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "15c6049bef2f46df9e79d7c3b2ace0e1",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -521,7 +557,7 @@
         {
           "Id": "d513a2886eab4dc89d3ecefe2ca17837",
           "Name": "Element",
-          "Description": "Intersecting element as Dynamo type",
+          "Description": "Intersecting element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -529,18 +565,18 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get intersecting element. Output is filtered if category is provided.\n\nElement.CategoryIntersect (element: Element, category: Category[] = null): var[]..[]"
+      "Description": "Get intersecting element. Output is filtered if category is provided.\n\nElement.IntersectCategory (element: Element, category: Category[] = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.Element.CategoryIntersect@Revit.Elements.Element,Revit.Elements.Category[]",
+      "FunctionSignature": "Orchid.RevitProject.Elements.Element.IntersectCategory@Revit.Elements.Element,Revit.Elements.Category[],bool",
       "Id": "8a75bc9a39bd4ebc95f4031245645cfc",
       "Inputs": [
         {
           "Id": "67cbc248288744aa866abe2542b95536",
           "Name": "element",
-          "Description": "Element as Dynamo type\n\nElement",
+          "Description": "Element as Dynamo type.\n\nElement",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -549,7 +585,16 @@
         {
           "Id": "7d4bad571fc7408a90130b302d2b0581",
           "Name": "category",
-          "Description": "Category as Dynamo type, default is set to all catgories in document\n\nCategory[]\nDefault value : null",
+          "Description": "Category as Dynamo type, default is set to all catgories in document.\n\nCategory[]\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f55fca1f1af74db994ebee30a9386495",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -560,7 +605,7 @@
         {
           "Id": "3cbe67f347f340c6ab282d5578d9902c",
           "Name": "Element",
-          "Description": "Intersecting element as Dynamo type",
+          "Description": "Intersecting element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -568,7 +613,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get intersecting element. Output is filtered if category is provided.\n\nElement.CategoryIntersect (element: Element, category: Category[] = null): var[]..[]"
+      "Description": "Get intersecting element. Output is filtered if category is provided.\n\nElement.IntersectCategory (element: Element, category: Category[] = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -602,13 +647,13 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.Element.CategoryIntersect@Revit.Elements.Element,Revit.Elements.Category[]",
+      "FunctionSignature": "Orchid.RevitProject.Elements.Element.IntersectCategory@Revit.Elements.Element,Revit.Elements.Category[],bool",
       "Id": "84f0c906a14f495198d9c498d73e389b",
       "Inputs": [
         {
           "Id": "aa65a2a7f18645f8ad9da92c574a4d99",
           "Name": "element",
-          "Description": "Element as Dynamo type\n\nElement",
+          "Description": "Element as Dynamo type.\n\nElement",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -617,7 +662,16 @@
         {
           "Id": "5a4d98385e6f4732b0b2c1a9feafb5df",
           "Name": "category",
-          "Description": "Category as Dynamo type, default is set to all catgories in document\n\nCategory[]\nDefault value : null",
+          "Description": "Category as Dynamo type, default is set to all catgories in document.\n\nCategory[]\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b037f356ce3241db9d5b0d169f64788f",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -628,7 +682,7 @@
         {
           "Id": "c4d37dffa9284e9fb83a1f9e27f43709",
           "Name": "Element",
-          "Description": "Intersecting element as Dynamo type",
+          "Description": "Intersecting element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -636,18 +690,18 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get intersecting element. Output is filtered if category is provided.\n\nElement.CategoryIntersect (element: Element, category: Category[] = null): var[]..[]"
+      "Description": "Get intersecting element. Output is filtered if category is provided.\n\nElement.IntersectCategory (element: Element, category: Category[] = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.Element.CategoryIntersect@Revit.Elements.Element,Revit.Elements.Category[]",
+      "FunctionSignature": "Orchid.RevitProject.Elements.Element.IntersectCategory@Revit.Elements.Element,Revit.Elements.Category[],bool",
       "Id": "3787ec9471c9447a85887a8a9c618b38",
       "Inputs": [
         {
           "Id": "3b99913c95324ef8b8d657f831c3bc77",
           "Name": "element",
-          "Description": "Element as Dynamo type\n\nElement",
+          "Description": "Element as Dynamo type.\n\nElement",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -656,7 +710,16 @@
         {
           "Id": "9ba4fd72a1f04c8b9ea8face1c4aa174",
           "Name": "category",
-          "Description": "Category as Dynamo type, default is set to all catgories in document\n\nCategory[]\nDefault value : null",
+          "Description": "Category as Dynamo type, default is set to all catgories in document.\n\nCategory[]\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f620b6ed35774e3cad9b44765f7136e9",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -667,7 +730,7 @@
         {
           "Id": "7248d9e8928b48b8af4c8f8043887be9",
           "Name": "Element",
-          "Description": "Intersecting element as Dynamo type",
+          "Description": "Intersecting element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -675,7 +738,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get intersecting element. Output is filtered if category is provided.\n\nElement.CategoryIntersect (element: Element, category: Category[] = null): var[]..[]"
+      "Description": "Get intersecting element. Output is filtered if category is provided.\n\nElement.IntersectCategory (element: Element, category: Category[] = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -802,7 +865,7 @@
         {
           "Id": "fb291e46bae34429bd29c63fd2b2cebf",
           "Name": "list",
-          "Description": "List to be checked on whether any items are true\n\nbool[]",
+          "Description": "List to be checked whether any items are true!?\n\nbool[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": true,
@@ -813,7 +876,7 @@
         {
           "Id": "254b6ad827a04d4cb510918060f3f9c9",
           "Name": "boolean",
-          "Description": "Whether any items are true",
+          "Description": "Whether any items are true.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -971,13 +1034,13 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.Element.CategoryIntersect@Revit.Elements.Element,Revit.Elements.Category[]",
+      "FunctionSignature": "Orchid.RevitProject.Elements.Element.IntersectCategory@Revit.Elements.Element,Revit.Elements.Category[],bool",
       "Id": "c9c678a0f9624157af40c883e2e2b0fa",
       "Inputs": [
         {
           "Id": "bbb8bdf30fc741269280cb47f6d9bf7a",
           "Name": "element",
-          "Description": "Element as Dynamo type\n\nElement",
+          "Description": "Element as Dynamo type.\n\nElement",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -986,7 +1049,16 @@
         {
           "Id": "54a4a6367cb64069a10626e50f3eaa87",
           "Name": "category",
-          "Description": "Category as Dynamo type, default is set to all catgories in document\n\nCategory[]\nDefault value : null",
+          "Description": "Category as Dynamo type, default is set to all catgories in document.\n\nCategory[]\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "23f4560ffee04feabb4c59a5986323a4",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -997,7 +1069,7 @@
         {
           "Id": "7bdbbccb9b00412dafa1549e8399bf63",
           "Name": "Element",
-          "Description": "Intersecting element as Dynamo type",
+          "Description": "Intersecting element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1005,7 +1077,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get intersecting element. Output is filtered if category is provided.\n\nElement.CategoryIntersect (element: Element, category: Category[] = null): var[]..[]"
+      "Description": "Get intersecting element. Output is filtered if category is provided.\n\nElement.IntersectCategory (element: Element, category: Category[] = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -1362,13 +1434,22 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.Selection.ElementHasMaterial@var",
+      "FunctionSignature": "Orchid.RevitProject.Elements.Selection.ElementHasMaterial@Orchid.RevitProject.Common.Document,bool",
       "Id": "5611e1fd2216441e87ad9d50df5cdeef",
       "Inputs": [
         {
           "Id": "541e03c5bac244c5987886d4e1ee8a1b",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nvar\nDefault value : null",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "08e28366cbb74bd79e5c3064ec3e1168",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1379,7 +1460,7 @@
         {
           "Id": "3a9d120dc708449b843f9cb7d2dda73e",
           "Name": "Element",
-          "Description": "Element",
+          "Description": "Element.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1388,7 +1469,7 @@
         {
           "Id": "5a466772bb194f95ac9b093273df936c",
           "Name": "Category",
-          "Description": "Category",
+          "Description": "Category.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1396,7 +1477,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get elements that has material quantities in document, return element grouped by category.\n\nSelection.ElementHasMaterial (document: var = null): var[]..[]"
+      "Description": "Get elements that has material quantities in document, return element grouped by category.\n\nSelection.ElementHasMaterial (document: Document = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -1430,14 +1511,23 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.Element.ElementIntersect@Revit.Elements.Element",
+      "FunctionSignature": "Orchid.RevitProject.Elements.Element.Intersect@Revit.Elements.Element,bool",
       "Id": "0a452a0efc5243b4af22242de5e100b5",
       "Inputs": [
         {
           "Id": "d378c5abec484e45b0e3a5bdb9520966",
           "Name": "element",
-          "Description": "Element as Dynamo type\n\nElement",
+          "Description": "Element as Dynamo type.\n\nElement",
           "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "0e2e9c358fd7458f807b9cfa13e4c01e",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
@@ -1447,7 +1537,7 @@
         {
           "Id": "5f24ec2bac2a431b97362196b718ee7c",
           "Name": "Element",
-          "Description": "Intersecting element as Dynamo type",
+          "Description": "Intersecting element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1455,18 +1545,18 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get intersecting element.\n\nElement.ElementIntersect (element: Element): var[]..[]"
+      "Description": "Get intersecting element.\n\nElement.Intersect (element: Element, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.Element.ElementIntersect@Revit.Elements.Element,Revit.Elements.Element[]",
+      "FunctionSignature": "Orchid.RevitProject.Elements.Element.Intersect@Revit.Elements.Element,Revit.Elements.Element[],bool",
       "Id": "e3538fa6780e4befa2ac21c575160724",
       "Inputs": [
         {
           "Id": "0f2531b15b4d40fb92b9268676dccb23",
           "Name": "element",
-          "Description": "Element as Dynamo type\n\nElement",
+          "Description": "Element as Dynamo type.\n\nElement",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1480,13 +1570,22 @@
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
+        },
+        {
+          "Id": "4489a7f7271f40158480c45ceeb80ced",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
         }
       ],
       "Outputs": [
         {
           "Id": "16a3c454c89e4fd881bfd2ae0def90b8",
           "Name": "Element",
-          "Description": "Intersecting element as Dynamo type",
+          "Description": "Intersecting element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1494,7 +1593,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get intersecting element.\n\nElement.ElementIntersect (element: Element, elements: Element[]): var[]..[]"
+      "Description": "Get intersecting element.\n\nElement.Intersect (element: Element, elements: Element[], condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -1606,13 +1705,13 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.Element.ElementIntersect@Revit.Elements.Element,Revit.Elements.Element[]",
+      "FunctionSignature": "Orchid.RevitProject.Elements.Element.Intersect@Revit.Elements.Element,Revit.Elements.Element[],bool",
       "Id": "27a4297da9ff43ca85a9816c299deed4",
       "Inputs": [
         {
           "Id": "9862e6bd9fa64c0d8ee7adb5686e0300",
           "Name": "element",
-          "Description": "Element as Dynamo type\n\nElement",
+          "Description": "Element as Dynamo type.\n\nElement",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1626,13 +1725,22 @@
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
+        },
+        {
+          "Id": "3105be6dd0fe48049de678b0d291b478",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
         }
       ],
       "Outputs": [
         {
           "Id": "e63341b250514ce99667c86ff264373d",
           "Name": "Element",
-          "Description": "Intersecting element as Dynamo type",
+          "Description": "Intersecting element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1640,7 +1748,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get intersecting element.\n\nElement.ElementIntersect (element: Element, elements: Element[]): var[]..[]"
+      "Description": "Get intersecting element.\n\nElement.Intersect (element: Element, elements: Element[], condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -1703,13 +1811,22 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.Selection.ElementHasMaterial@var",
+      "FunctionSignature": "Orchid.RevitProject.Elements.Selection.ElementHasMaterial@Orchid.RevitProject.Common.Document,bool",
       "Id": "be98c7215e5247da865a6131db44c74d",
       "Inputs": [
         {
           "Id": "fd367393891744fe862af5fb81c3a9cd",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nvar\nDefault value : null",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "4434e36c8e2646e2a8572d3c36320013",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1720,7 +1837,7 @@
         {
           "Id": "288286d2e778459486b126be9fdf0cca",
           "Name": "Element",
-          "Description": "Element",
+          "Description": "Element.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1729,7 +1846,7 @@
         {
           "Id": "64d4ae328535459fb3f93be898c6f207",
           "Name": "Category",
-          "Description": "Category",
+          "Description": "Category.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1737,7 +1854,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get elements that has material quantities in document, return element grouped by category.\n\nSelection.ElementHasMaterial (document: var = null): var[]..[]"
+      "Description": "Get elements that has material quantities in document, return element grouped by category.\n\nSelection.ElementHasMaterial (document: Document = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -2027,13 +2144,37 @@
     }
   ],
   "Dependencies": [],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Orchid",
+      "Version": "206.3.0.7978",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "a7ee005450a14919a9ad3ee00634736c",
+        "6f64e2cd17634e9e8f31d609e8919237",
+        "c849c70573884a84ac1e88986093528c",
+        "d5fb64e8d1c94b05a1b75a37d734d484",
+        "b147c63edfc84a69b470f67bb6678bb7",
+        "8a75bc9a39bd4ebc95f4031245645cfc",
+        "84f0c906a14f495198d9c498d73e389b",
+        "3787ec9471c9447a85887a8a9c618b38",
+        "1137a6e65e404f72ada08ebce225aaa6",
+        "c9c678a0f9624157af40c883e2e2b0fa",
+        "5611e1fd2216441e87ad9d50df5cdeef",
+        "0a452a0efc5243b4af22242de5e100b5",
+        "e3538fa6780e4befa2ac21c575160724",
+        "27a4297da9ff43ca85a9816c299deed4",
+        "be98c7215e5247da865a6131db44c74d"
+      ]
+    }
+  ],
   "Bindings": [],
   "View": {
     "Dynamo": {
       "ScaleFactor": 1.0,
       "HasRunWithoutCrash": true,
       "IsVisibleInDynamoLibrary": true,
-      "Version": "2.0.4.12684",
+      "Version": "2.6.1.8786",
       "RunType": "Manual",
       "RunPeriod": "1000"
     },
@@ -2077,8 +2218,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1357.04389789355,
-        "Y": 1892.68442758861
+        "X": -1395.2335932566175,
+        "Y": 1895.06849868707
       },
       {
         "ShowGeometry": true,
@@ -2192,7 +2333,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Element.HasIntersect",
+        "Name": "Element.DoesIntersectOther",
         "Id": "d5fb64e8d1c94b05a1b75a37d734d484",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
@@ -2202,7 +2343,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Element.CategoryIntersect",
+        "Name": "Element.IntersectCategory",
         "Id": "b147c63edfc84a69b470f67bb6678bb7",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
@@ -2212,7 +2353,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Element.CategoryIntersect",
+        "Name": "Element.IntersectCategory",
         "Id": "8a75bc9a39bd4ebc95f4031245645cfc",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
@@ -2232,17 +2373,17 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Element.CategoryIntersect",
+        "Name": "Element.IntersectCategory",
         "Id": "84f0c906a14f495198d9c498d73e389b",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Excluded": false,
+        "Excluded": true,
         "X": 489.976748309626,
         "Y": 2626.14191666725
       },
       {
         "ShowGeometry": true,
-        "Name": "Element.CategoryIntersect",
+        "Name": "Element.IntersectCategory",
         "Id": "3787ec9471c9447a85887a8a9c618b38",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
@@ -2268,7 +2409,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "X": 786.295249197239,
-        "Y": 1883.81376232214
+        "Y": 1860.6680545661809
       },
       {
         "ShowGeometry": true,
@@ -2342,7 +2483,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Element.CategoryIntersect",
+        "Name": "Element.IntersectCategory",
         "Id": "c9c678a0f9624157af40c883e2e2b0fa",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
@@ -2492,7 +2633,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Element.ElementIntersect",
+        "Name": "Element.Intersect",
         "Id": "0a452a0efc5243b4af22242de5e100b5",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
@@ -2502,7 +2643,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Element.ElementIntersect",
+        "Name": "Element.Intersect",
         "Id": "e3538fa6780e4befa2ac21c575160724",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
@@ -2542,7 +2683,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Element.ElementIntersect",
+        "Name": "Element.Intersect",
         "Id": "27a4297da9ff43ca85a9816c299deed4",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
@@ -2608,7 +2749,7 @@
         "Height": 819.98738815113984,
         "FontSize": 30.0,
         "InitialTop": 1725.88161443418,
-        "InitialHeight": 309.578775792934,
+        "InitialHeight": 540.98738815113984,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       },
@@ -2619,8 +2760,8 @@
           "8c56c1f1fb344c2ba4c223803a8f7fce",
           "a074beb2e0b94bfa9424be1eff4429ac",
           "8cbe842898734c30adbbf4d1694a6e52",
-          "74419af840d648909c0107a91c4b9f13",
-          "6f64e2cd17634e9e8f31d609e8919237"
+          "6f64e2cd17634e9e8f31d609e8919237",
+          "74419af840d648909c0107a91c4b9f13"
         ],
         "Left": -499.781747041317,
         "Top": 2580.36226977272,
@@ -2628,7 +2769,7 @@
         "Height": 579.93777939384972,
         "FontSize": 30.0,
         "InitialTop": 2626.36226977272,
-        "InitialHeight": 442.38639290398,
+        "InitialHeight": 300.93777939384972,
         "TextblockHeight": 36.0,
         "Background": "#FFD8D8D8"
       },
@@ -2648,7 +2789,7 @@
         "Height": 819.98738815113586,
         "FontSize": 30.0,
         "InitialTop": 825.884786880954,
-        "InitialHeight": 297.462504997676,
+        "InitialHeight": 540.98738815113586,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       },
@@ -2661,11 +2802,11 @@
         ],
         "Left": 479.976748309626,
         "Top": 2580.14191666725,
-        "Width": 310.0,
-        "Height": 580.15813249931989,
+        "Width": 243.0,
+        "Height": 296.15813249931989,
         "FontSize": 30.0,
         "InitialTop": 2626.14191666725,
-        "InitialHeight": 339.57167499873,
+        "InitialHeight": 301.15813249931989,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       },
@@ -2684,12 +2825,12 @@
           "db3c81bdff444bebaef8da45426659b6"
         ],
         "Left": 480.295249197239,
-        "Top": 1837.81376232214,
+        "Top": 1814.6680545661809,
         "Width": 1459.850631888871,
-        "Height": 661.81422398308,
+        "Height": 684.95993173903912,
         "FontSize": 30.0,
-        "InitialTop": 1883.81376232214,
-        "InitialHeight": 311.584069343917,
+        "InitialTop": 1860.6680545661809,
+        "InitialHeight": 405.95993173903912,
         "TextblockHeight": 36.0,
         "Background": "#FFFFAA45"
       },
@@ -2711,7 +2852,7 @@
         "Height": 538.74008166784984,
         "FontSize": 30.0,
         "InitialTop": 2006.97400759795,
-        "InitialHeight": 519.98738815114,
+        "InitialHeight": 286.74008166784984,
         "TextblockHeight": 36.0,
         "Background": "#FFA4E1FF"
       },
@@ -2735,7 +2876,7 @@
         "Height": 602.66440311070028,
         "FontSize": 30.0,
         "InitialTop": 2625.72800552208,
-        "InitialHeight": 265.74008166785,
+        "InitialHeight": 350.66440311070028,
         "TextblockHeight": 36.0,
         "Background": "#FFA4E1FF"
       },
@@ -2756,7 +2897,7 @@
         "Height": 819.98738815114007,
         "FontSize": 30.0,
         "InitialTop": 825.85456130679,
-        "InitialHeight": 519.987388151136,
+        "InitialHeight": 540.98738815114007,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       },
@@ -2776,7 +2917,7 @@
         "Height": 819.987388151131,
         "FontSize": 30.0,
         "InitialTop": 826.078152422999,
-        "InitialHeight": 519.987388151136,
+        "InitialHeight": 540.987388151131,
         "TextblockHeight": 36.0,
         "Background": "#FFBB87C6"
       },
@@ -2795,8 +2936,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": 481.58048949787462,
-    "Y": -222.91197081771531,
-    "Zoom": 0.33276778311949479
+    "X": 475.07390803464892,
+    "Y": -132.91486617310744,
+    "Zoom": 0.31899598044783384
   }
 }

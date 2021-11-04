@@ -348,11 +348,20 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.Link.Repath@Revit.Elements.Element,string,string",
+      "FunctionSignature": "Orchid.RevitProject.Common.Link.Repath@Orchid.RevitProject.Common.Document,Revit.Elements.Element,string,string",
       "Id": "36ecd331da4c4bf6a2acdfc9640688fe",
       "Inputs": [
         {
           "Id": "d6f3958de81849a2a1551599c90e3277",
+          "Name": "document",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "50b5a920b2534ddfb3eb391ab464ae06",
           "Name": "link",
           "Description": "External link element as Dynamo type.\n\nElement",
           "UsingDefaultValue": false,
@@ -361,18 +370,18 @@
           "KeepListStructure": false
         },
         {
-          "Id": "50b5a920b2534ddfb3eb391ab464ae06",
+          "Id": "f9ac32b81e904fd7a742dfc589baee35",
           "Name": "file",
           "Description": "File (path) to set (repath).\n\nstring",
-          "UsingDefaultValue": false,
+          "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
         },
         {
-          "Id": "f9ac32b81e904fd7a742dfc589baee35",
+          "Id": "e006d17d47824aff83bcbd259b337b65",
           "Name": "pathType",
-          "Description": "Path type of the linked document.\n\nstring\nDefault value : \"Relative\"",
+          "Description": "Link path type.\n\nstring\nDefault value : \"Relative\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -391,7 +400,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Repath external linked file in document. Note: Cloud path cant be used! ...and if Cloud path is being replaced by a local path, the document might need to be saved and reopened before link are visible.\n\nLink.Repath (link: Element, file: string, pathType: string = \"Relative\"): Element"
+      "Description": "Repath external linked file in document. Note: Cloud path cant be used! ...and if Cloud path is being replaced by a local path, the document might need to be saved and reopened before link are visible.\n\nLink.Repath (document: Document = null, link: Element, file: string, pathType: string = \"Relative\"): Element"
     }
   ],
   "Connectors": [
@@ -442,8 +451,8 @@
     },
     {
       "Start": "f23c5247cf4341b88cdbfb9cb328b65e",
-      "End": "d6f3958de81849a2a1551599c90e3277",
-      "Id": "cb066f722b104077b4c964b1694619ca"
+      "End": "50b5a920b2534ddfb3eb391ab464ae06",
+      "Id": "9c29436e38044c33b07808cade5d2602"
     },
     {
       "Start": "8ba20b0ce91f470e8222a18e8e0f0682",
@@ -452,8 +461,8 @@
     },
     {
       "Start": "8ba20b0ce91f470e8222a18e8e0f0682",
-      "End": "50b5a920b2534ddfb3eb391ab464ae06",
-      "Id": "35e8b2dbeda84a0981e6bebfcd21d442"
+      "End": "f9ac32b81e904fd7a742dfc589baee35",
+      "Id": "c7fe58e649e94447a56d594d03a15d11"
     },
     {
       "Start": "a7bc5a581b074ff38611ba14a8563c86",
@@ -547,7 +556,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "X": 461.15877301192984,
-        "Y": 492.97983927602684
+        "Y": 512.97983927602684
       },
       {
         "ShowGeometry": true,
@@ -557,7 +566,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "X": 158.15877301192978,
-        "Y": 425.97983927602689
+        "Y": 445.97983927602689
       },
       {
         "ShowGeometry": true,
@@ -567,7 +576,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "X": 461.15877301192984,
-        "Y": 675.95869199827223
+        "Y": 695.95869199827223
       },
       {
         "ShowGeometry": true,
@@ -577,7 +586,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "X": 158.15877301192978,
-        "Y": 675.95869199827223
+        "Y": 695.95869199827223
       },
       {
         "ShowGeometry": true,
@@ -587,7 +596,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "X": 461.15877301192984,
-        "Y": 332.97983927602689
+        "Y": 333.43131123787248
       }
     ],
     "Annotations": [
@@ -602,8 +611,8 @@
         ],
         "Left": -399.74569237432047,
         "Top": -207.25470404633091,
-        "Width": 1162.0,
-        "Height": 407.0,
+        "Width": 950.0,
+        "Height": 250.0,
         "FontSize": 36.0,
         "InitialTop": -154.25470404633091,
         "InitialHeight": 184.0,
@@ -621,18 +630,18 @@
           "8a4553eb41824ac882ef79b1ed9f15c7"
         ],
         "Left": 148.15877301192978,
-        "Top": 279.97983927602689,
-        "Width": 613.0,
-        "Height": 559.97885272224539,
+        "Top": 280.43131123787248,
+        "Width": 525.0,
+        "Height": 534.52738076039975,
         "FontSize": 36.0,
-        "InitialTop": 332.97983927602689,
+        "InitialTop": 333.43131123787248,
         "InitialHeight": 487.97885272224534,
         "TextblockHeight": 43.0,
         "Background": "#FFC1D676"
       }
     ],
-    "X": 552.06910713250329,
-    "Y": 219.3324343587999,
-    "Zoom": 0.81532571885197935
+    "X": 496.29081665001087,
+    "Y": 270.70283012678448,
+    "Zoom": 0.75691689550411356
   }
 }

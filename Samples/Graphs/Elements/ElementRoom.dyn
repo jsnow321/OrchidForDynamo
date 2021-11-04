@@ -58,7 +58,7 @@
         {
           "Id": "99b3fe70fc7947b698b8c5c9be9a6148",
           "Name": "boundingBox",
-          "Description": "BoundingBox as Dynamo type\n\nBoundingBox",
+          "Description": "BoundingBox as Dynamo type.\n\nBoundingBox",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -67,7 +67,7 @@
         {
           "Id": "7ddd96d3483e460e875b83e84fec2704",
           "Name": "point",
-          "Description": "Point as Dynamo type\n\nPoint",
+          "Description": "Point as Dynamo type.\n\nPoint",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -76,7 +76,7 @@
         {
           "Id": "c979fa8cf69a456ba3439a01f7f63f3b",
           "Name": "tolerence",
-          "Description": "Set a tolerence as double value. Positive values gives a gap/margin to the boundingbox, while negative values set a overlap/oversize to the boundingbox\n\ndouble\nDefault value : 0",
+          "Description": "Set a tolerence as double value. Positive values gives a gap/margin to the boundingbox, while negative values set a overlap/oversize to the boundingbox.\n\ndouble\nDefault value : 0",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -87,7 +87,7 @@
         {
           "Id": "3a0894caf9bd49708f003423f5c8a7c2",
           "Name": "boolean",
-          "Description": "True if boundingbox contains point",
+          "Description": "True if boundingbox contains point.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -95,18 +95,18 @@
         }
       ],
       "Replication": "CrossProduct",
-      "Description": "Filter point inside a boundingbox\n\nBoundingBox.PointInside (boundingBox: BoundingBox, point: Point, tolerence: double = 0): bool"
+      "Description": "Filter point inside a boundingbox.\n\nBoundingBox.PointInside (boundingBox: BoundingBox, point: Point, tolerence: double = 0): bool"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.Selection.ElementByCategory@var,var[]..[]",
+      "FunctionSignature": "Orchid.RevitProject.Elements.Selection.ElementByCategory@Orchid.RevitProject.Common.Document,var[],bool",
       "Id": "f82af155ffe14732bc790fde1caa5f45",
       "Inputs": [
         {
           "Id": "6d357e8c85cc45fa8c49b744b7227bf0",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nvar\nDefault value : null",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -115,7 +115,16 @@
         {
           "Id": "52b97dee7ac44b58a438f5ccbe601772",
           "Name": "category",
-          "Description": "Category\n\nvar[]..[]\nDefault value : null",
+          "Description": "Category.\n\nvar[]\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "2bb8c74b0ec44d9bbb5d049be08937c8",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -126,7 +135,7 @@
         {
           "Id": "cbcff83796074f79818d97e11f29cb9a",
           "Name": "Element",
-          "Description": "Element",
+          "Description": "Element.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -135,7 +144,7 @@
         {
           "Id": "fb9341fb378e4d1db034ed81a1e21984",
           "Name": "Category",
-          "Description": "Category",
+          "Description": "Category.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -143,18 +152,18 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get all elements by category in document, return element grouped by category.\n\nSelection.ElementByCategory (document: var = null, category: var[]..[] = null): var[]..[]"
+      "Description": "Get all elements by category in document, return element grouped by category.\n\nSelection.ElementByCategory (document: Document = null, category: var[] = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.Selection.ElementByCategory@var,var[]..[]",
+      "FunctionSignature": "Orchid.RevitProject.Elements.Selection.ElementByCategory@Orchid.RevitProject.Common.Document,var[],bool",
       "Id": "a5c7c1c11bcb4443bd92ee613b4666db",
       "Inputs": [
         {
           "Id": "122c2c2b16554715ade6ebeab737af92",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nvar\nDefault value : null",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -163,7 +172,16 @@
         {
           "Id": "bc0e68bf17f64c8daaf6c86c9e9087f1",
           "Name": "category",
-          "Description": "Category\n\nvar[]..[]\nDefault value : null",
+          "Description": "Category.\n\nvar[]\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "8c0d249188f246c5831def1a57b4b333",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -174,7 +192,7 @@
         {
           "Id": "ff5ec2eab1214161966c2bcb15864d00",
           "Name": "Element",
-          "Description": "Element",
+          "Description": "Element.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -183,7 +201,7 @@
         {
           "Id": "f33837fb3e26482ba743603bc18c5859",
           "Name": "Category",
-          "Description": "Category",
+          "Description": "Category.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -191,7 +209,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get all elements by category in document, return element grouped by category.\n\nSelection.ElementByCategory (document: var = null, category: var[]..[] = null): var[]..[]"
+      "Description": "Get all elements by category in document, return element grouped by category.\n\nSelection.ElementByCategory (document: Document = null, category: var[] = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -400,7 +418,7 @@
         {
           "Id": "14e05678441f46128d8b528affdce5b0",
           "Name": "boundingBox",
-          "Description": "BoundingBox as Dynamo type\n\nBoundingBox",
+          "Description": "BoundingBox as Dynamo type.\n\nBoundingBox",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -409,7 +427,7 @@
         {
           "Id": "cf1e0a29bf8d44e085a86476bf03d108",
           "Name": "point",
-          "Description": "Point as Dynamo type\n\nPoint",
+          "Description": "Point as Dynamo type.\n\nPoint",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -418,7 +436,7 @@
         {
           "Id": "9f70b2a5c35245b29e35e6391ed4b892",
           "Name": "tolerence",
-          "Description": "Set a tolerence as double value. Positive values gives a gap/margin to the boundingbox, while negative values set a overlap/oversize to the boundingbox\n\ndouble\nDefault value : 0",
+          "Description": "Set a tolerence as double value. Positive values gives a gap/margin to the boundingbox, while negative values set a overlap/oversize to the boundingbox.\n\ndouble\nDefault value : 0",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -429,7 +447,7 @@
         {
           "Id": "50ed1b177dd0462b91d9842cc2507c1e",
           "Name": "boolean",
-          "Description": "True if boundingbox contains point",
+          "Description": "True if boundingbox contains point.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -437,7 +455,7 @@
         }
       ],
       "Replication": "CrossProduct",
-      "Description": "Filter point inside a boundingbox\n\nBoundingBox.PointInside (boundingBox: BoundingBox, point: Point, tolerence: double = 0): bool"
+      "Description": "Filter point inside a boundingbox.\n\nBoundingBox.PointInside (boundingBox: BoundingBox, point: Point, tolerence: double = 0): bool"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
@@ -573,7 +591,7 @@
         {
           "Id": "49ccb0079ec349c1b8579f249e812e41",
           "Name": "pass",
-          "Description": "Data to pass\n\nvar[]..[]",
+          "Description": "Data to pass.\n\nvar[]..[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -582,7 +600,7 @@
         {
           "Id": "51c279de78da454c93e84523d0b550bc",
           "Name": "waitFor",
-          "Description": "Data object to wait for\n\nvar[]..[]",
+          "Description": "Data object to wait for.\n\nvar[]..[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -593,7 +611,7 @@
         {
           "Id": "0133153293e14bbaa7165f987507c085",
           "Name": "pass",
-          "Description": "Passed data",
+          "Description": "Passed data.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -601,7 +619,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Await a data stream before passing another data stream\n\nDataStream.Await (pass: var[]..[], waitFor: var[]..[]): var[]..[]"
+      "Description": "Await a data stream before passing another data stream.\n\nDataStream.Await (pass: var[]..[], waitFor: var[]..[]): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -741,13 +759,13 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.FamilyInstance.GetFromToCalculationPoints@Revit.Elements.FamilyInstance",
+      "FunctionSignature": "Orchid.RevitProject.Elements.FamilyInstance.GetFromToCalculationPoints@Revit.Elements.AbstractFamilyInstance",
       "Id": "b45b75a025114618b497769266e4136d",
       "Inputs": [
         {
           "Id": "c858592c2416444c8b2e8c9755325ad0",
           "Name": "familyInstance",
-          "Description": "FamilyInstance as Dynamo type\n\nFamilyInstance",
+          "Description": "FamilyInstance as Dynamo type.\n\nAbstractFamilyInstance",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -758,7 +776,7 @@
         {
           "Id": "baefb06939db484fadbd067a50a03d40",
           "Name": "Point",
-          "Description": "Points as Dynamo type",
+          "Description": "Points as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -766,18 +784,18 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get family instance spatial from/to calculation point. First point given is the \"from\" location, last point given is the \"to\" location.\n\nFamilyInstance.GetFromToCalculationPoints (familyInstance: FamilyInstance): var[]..[]"
+      "Description": "Get family instance spatial from/to calculation point. First point given is the \"from\" location, last point given is the \"to\" location.\n\nFamilyInstance.GetFromToCalculationPoints (familyInstance: AbstractFamilyInstance): Point[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Common.Geometry.BoundingBox.ElementIntersect@Autodesk.DesignScript.Geometry.BoundingBox,Revit.Elements.Element[],double",
+      "FunctionSignature": "Orchid.Common.Geometry.BoundingBox.Intersect@Autodesk.DesignScript.Geometry.BoundingBox,Revit.Elements.Element[],double",
       "Id": "ef71f094f0994fffae21f827c9cb09cd",
       "Inputs": [
         {
           "Id": "ae531766a4144d8884fb3f03bdb6d96f",
           "Name": "boundingBox",
-          "Description": "BoundingBox as Dynamo type\n\nBoundingBox",
+          "Description": "BoundingBox as Dynamo type.\n\nBoundingBox",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -785,7 +803,7 @@
         },
         {
           "Id": "720a4b433f2f46eabf1c3bca20cf608d",
-          "Name": "elements",
+          "Name": "element",
           "Description": "Element[]",
           "UsingDefaultValue": false,
           "Level": 2,
@@ -795,7 +813,7 @@
         {
           "Id": "5aee4f5529684e6bbbf58b3d3525c9b4",
           "Name": "tolerence",
-          "Description": "Set a tolerence as double value. Positive values gives a gap/margin to the boundingbox, while negative values set a overlap/oversize to the boundingbox\n\ndouble\nDefault value : 0",
+          "Description": "Set a tolerence as double value. Positive values gives a gap/margin to the boundingbox, while negative values set a overlap/oversize to the boundingbox.\n\ndouble\nDefault value : 0",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -806,7 +824,7 @@
         {
           "Id": "94e89b880033477aaee58a8a8cb2bebd",
           "Name": "Element",
-          "Description": "Intersecting element as Dynamo type",
+          "Description": "Intersecting element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -814,18 +832,18 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get elements intersecting with a boundingbox\n\nBoundingBox.ElementIntersect (boundingBox: BoundingBox, elements: Element[], tolerence: double = 0): var[]..[]"
+      "Description": "Get elements intersecting with a boundingbox.\n\nBoundingBox.Intersect (boundingBox: BoundingBox, element: Element[], tolerence: double = 0): Element[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Common.Geometry.BoundingBox.ElementIntersect@Autodesk.DesignScript.Geometry.BoundingBox,double",
+      "FunctionSignature": "Orchid.Common.Geometry.BoundingBox.Intersect@Autodesk.DesignScript.Geometry.BoundingBox,double",
       "Id": "dff40b46dbb04e3ca0f7770d11a41078",
       "Inputs": [
         {
           "Id": "cdc4929c894147a1836c20255e94acc8",
           "Name": "boundingBox",
-          "Description": "BoundingBox as Dynamo type\n\nBoundingBox",
+          "Description": "BoundingBox as Dynamo type.\n\nBoundingBox",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -834,7 +852,7 @@
         {
           "Id": "a27da628ab2546dc9781087c047d5f53",
           "Name": "tolerence",
-          "Description": "Set a tolerence as double value. Positive values gives a gap/margin to the boundingbox, while negative values set a overlap/oversize to the boundingbox\n\ndouble\nDefault value : 0",
+          "Description": "Set a tolerence as double value. Positive values gives a gap/margin to the boundingbox, while negative values set a overlap/oversize to the boundingbox.\n\ndouble\nDefault value : 0",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -845,7 +863,7 @@
         {
           "Id": "d72b64fccde447edbe96c716d0351632",
           "Name": "Element",
-          "Description": "Intersecting element as Dynamo type",
+          "Description": "Intersecting element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -853,19 +871,28 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get elements intersecting with a boundingbox\n\nBoundingBox.ElementIntersect (boundingBox: BoundingBox, tolerence: double = 0): var[]..[]"
+      "Description": "Get elements intersecting with a boundingbox.\n\nBoundingBox.Intersect (boundingBox: BoundingBox, tolerence: double = 0): Element[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Common.Geometry.Solid.ElementIntersect@Autodesk.DesignScript.Geometry.Solid",
+      "FunctionSignature": "Orchid.Common.Geometry.Solid.Intersect@Autodesk.DesignScript.Geometry.Solid,bool",
       "Id": "d6a87be4a9c84e8084506e71b91144a4",
       "Inputs": [
         {
           "Id": "c4fb4953ac8542e5b8539dcb8c3d9a73",
           "Name": "solid",
-          "Description": "Solid as Dynamo type\n\nSolid",
+          "Description": "Solid as Dynamo type.\n\nSolid",
           "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "542559ccbec947a1adae2eaa9469d333",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
@@ -875,7 +902,7 @@
         {
           "Id": "3bead031324940ebb19de33ad263c987",
           "Name": "Element",
-          "Description": "Intersecting element as Dynamo type",
+          "Description": "Intersecting element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -883,18 +910,18 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get elements intersecting with a solid\n\nSolid.ElementIntersect (solid: Solid): var[]..[]"
+      "Description": "Get elements intersecting with a solid.\n\nSolid.Intersect (solid: Solid, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Common.Geometry.Solid.ElementIntersect@Autodesk.DesignScript.Geometry.Solid,Revit.Elements.Element[]",
+      "FunctionSignature": "Orchid.Common.Geometry.Solid.Intersect@Autodesk.DesignScript.Geometry.Solid,Revit.Elements.Element[],bool",
       "Id": "807a15b369294116a4e879bf1a63ce5e",
       "Inputs": [
         {
           "Id": "0e167fc3d8a2406f92feb0ca02df92f0",
           "Name": "solid",
-          "Description": "Solid as Dynamo type\n\nSolid",
+          "Description": "Solid as Dynamo type.\n\nSolid",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -908,13 +935,22 @@
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
+        },
+        {
+          "Id": "99fa79cf861e476faff572f4498cf6c8",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
         }
       ],
       "Outputs": [
         {
           "Id": "77c7ae1bca81427fbf9f42a3d3d3a3a6",
           "Name": "Element",
-          "Description": "Intersecting element as Dynamo type",
+          "Description": "Intersecting element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -922,7 +958,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get elements intersecting with a solid\n\nSolid.ElementIntersect (solid: Solid, elements: Element[]): var[]..[]"
+      "Description": "Get elements intersecting with a solid.\n\nSolid.Intersect (solid: Solid, elements: Element[], condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -1365,13 +1401,32 @@
     }
   ],
   "Dependencies": [],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Orchid",
+      "Version": "206.3.0.7978",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "b001e728e5004b2b8aebc6d43d83ff4a",
+        "f82af155ffe14732bc790fde1caa5f45",
+        "a5c7c1c11bcb4443bd92ee613b4666db",
+        "32eb3c89e0c94391a4308438766d6ee6",
+        "772c4d98a9e64429be579427b73d7d07",
+        "b45b75a025114618b497769266e4136d",
+        "ef71f094f0994fffae21f827c9cb09cd",
+        "dff40b46dbb04e3ca0f7770d11a41078",
+        "d6a87be4a9c84e8084506e71b91144a4",
+        "807a15b369294116a4e879bf1a63ce5e"
+      ]
+    }
+  ],
   "Bindings": [],
   "View": {
     "Dynamo": {
       "ScaleFactor": 1.0,
       "HasRunWithoutCrash": true,
       "IsVisibleInDynamoLibrary": true,
-      "Version": "2.0.4.12684",
+      "Version": "2.6.1.8786",
       "RunType": "Manual",
       "RunPeriod": "1000"
     },
@@ -1590,7 +1645,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "BoundingBox.ElementIntersect",
+        "Name": "BoundingBox.Intersect",
         "Id": "ef71f094f0994fffae21f827c9cb09cd",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
@@ -1600,7 +1655,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "BoundingBox.ElementIntersect",
+        "Name": "BoundingBox.Intersect",
         "Id": "dff40b46dbb04e3ca0f7770d11a41078",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
@@ -1610,7 +1665,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Solid.ElementIntersect",
+        "Name": "Solid.Intersect",
         "Id": "d6a87be4a9c84e8084506e71b91144a4",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
@@ -1620,7 +1675,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Solid.ElementIntersect",
+        "Name": "Solid.Intersect",
         "Id": "807a15b369294116a4e879bf1a63ce5e",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
@@ -1722,11 +1777,11 @@
         ],
         "Left": 389.240091886106,
         "Top": 580.238393343141,
-        "Width": 1318.057235556764,
-        "Height": 249.653681290725,
+        "Width": 1317.057235556764,
+        "Height": 271.44034795739208,
         "FontSize": 30.0,
         "InitialTop": 626.238393343141,
-        "InitialHeight": 288.750880403251,
+        "InitialHeight": 255.653681290725,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       },
@@ -1746,10 +1801,10 @@
         "Left": 389.240091886106,
         "Top": -6.3022347456211989,
         "Width": 1711.4346268524539,
-        "Height": 406.4687893104072,
+        "Height": 428.37399671643419,
         "FontSize": 30.0,
         "InitialTop": 39.6977652543788,
-        "InitialHeight": 482.98039291692,
+        "InitialHeight": 412.4687893104072,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       },
@@ -1771,7 +1826,7 @@
         "Height": 485.794134896213,
         "FontSize": 30.0,
         "InitialTop": 386.488413925714,
-        "InitialHeight": 655.824853687512,
+        "InitialHeight": 465.794134896213,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       },
@@ -1786,11 +1841,11 @@
         ],
         "Left": 1200.00006254446,
         "Top": 920.492142321041,
-        "Width": 543.10081765729,
-        "Height": 596.74242987499906,
+        "Width": 542.10081765729,
+        "Height": 312.74242987499906,
         "FontSize": 30.0,
         "InitialTop": 966.492142321041,
-        "InitialHeight": 569.970870492215,
+        "InitialHeight": 317.74242987499906,
         "TextblockHeight": 36.0,
         "Background": "#FFA4E1FF"
       },
@@ -1806,16 +1861,16 @@
         "Left": 1900.02555440644,
         "Top": 920.094633106696,
         "Width": 586.3915917713,
-        "Height": 596.742429875004,
+        "Height": 312.74242987500395,
         "FontSize": 30.0,
         "InitialTop": 966.094633106696,
-        "InitialHeight": 588.576295022854,
+        "InitialHeight": 317.74242987500395,
         "TextblockHeight": 36.0,
         "Background": "#FFA4E1FF"
       }
     ],
-    "X": -153.33979557014428,
-    "Y": 169.79079398879898,
-    "Zoom": 0.459221905054683
+    "X": -147.17026594143468,
+    "Y": 246.46823076761291,
+    "Zoom": 0.44376872348776353
   }
 }

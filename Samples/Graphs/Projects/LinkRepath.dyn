@@ -222,7 +222,7 @@
       "Outputs": [
         {
           "Id": "f67c646079bf4f0e9d629cbdcb9ede63",
-          "Name": "file",
+          "Name": "File",
           "Description": "File object.",
           "UsingDefaultValue": false,
           "Level": 2,
@@ -252,7 +252,7 @@
       "Outputs": [
         {
           "Id": "650ebfc57fe841f3a15949ed1df46c91",
-          "Name": "file",
+          "Name": "File",
           "Description": "File object.",
           "UsingDefaultValue": false,
           "Level": 2,
@@ -335,11 +335,20 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.Link.Repath@Revit.Elements.Element,string,string",
+      "FunctionSignature": "Orchid.RevitProject.Common.Link.Repath@Orchid.RevitProject.Common.Document,Revit.Elements.Element,string,string",
       "Id": "34145f9a0d9549628986b84d84ebe209",
       "Inputs": [
         {
           "Id": "fc8f56ab64e04073b9166df5470506ac",
+          "Name": "document",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "80601dadf8424f60807f295a7c9fd925",
           "Name": "link",
           "Description": "External link element as Dynamo type.\n\nElement",
           "UsingDefaultValue": false,
@@ -348,18 +357,18 @@
           "KeepListStructure": false
         },
         {
-          "Id": "80601dadf8424f60807f295a7c9fd925",
+          "Id": "b6bb8a1ff5db4e99a108bee215a4d980",
           "Name": "file",
           "Description": "File (path) to set (repath).\n\nstring",
-          "UsingDefaultValue": false,
+          "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
         },
         {
-          "Id": "b6bb8a1ff5db4e99a108bee215a4d980",
+          "Id": "3ad097b6bb864eeabc5929655e976807",
           "Name": "pathType",
-          "Description": "Path type of the linked document.\n\nstring\nDefault value : \"Relative\"",
+          "Description": "Link path type.\n\nstring\nDefault value : \"Relative\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -378,7 +387,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Repath external linked file in document. Note: Cloud path cant be used! ...and if Cloud path is being replaced by a local path, the document might need to be saved and reopened before link are visible.\n\nLink.Repath (link: Element, file: string, pathType: string = \"Relative\"): Element"
+      "Description": "Repath external linked file in document. Note: Cloud path cant be used! ...and if Cloud path is being replaced by a local path, the document might need to be saved and reopened before link are visible.\n\nLink.Repath (document: Document = null, link: Element, file: string, pathType: string = \"Relative\"): Element"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -512,8 +521,8 @@
     },
     {
       "Start": "f67c646079bf4f0e9d629cbdcb9ede63",
-      "End": "80601dadf8424f60807f295a7c9fd925",
-      "Id": "e57d512d3b38452db982b4d83367f30b"
+      "End": "b6bb8a1ff5db4e99a108bee215a4d980",
+      "Id": "8c273e83a58c4343a47f1ab058c4f577"
     },
     {
       "Start": "650ebfc57fe841f3a15949ed1df46c91",
@@ -527,13 +536,13 @@
     },
     {
       "Start": "9ee3358587804a53b74bf120cc8e0c9f",
-      "End": "fc8f56ab64e04073b9166df5470506ac",
-      "Id": "6972627a3b2a41c2851bcb7791b9c803"
+      "End": "f26cd116615c4a0e9ed8c3a5e7dc4fb7",
+      "Id": "6f089bf68ddd40c1a2e4f8710b9a9122"
     },
     {
       "Start": "9ee3358587804a53b74bf120cc8e0c9f",
-      "End": "f26cd116615c4a0e9ed8c3a5e7dc4fb7",
-      "Id": "6f089bf68ddd40c1a2e4f8710b9a9122"
+      "End": "80601dadf8424f60807f295a7c9fd925",
+      "Id": "22fa476f03c54142b94e9c4dde1d329d"
     },
     {
       "Start": "a06454f15ccb43ce9138c51e38ca1300",
@@ -765,7 +774,7 @@
         ],
         "Left": 179.063536348467,
         "Top": 538.185326570895,
-        "Width": 719.0,
+        "Width": 722.0,
         "Height": 213.57333333333304,
         "FontSize": 30.0,
         "InitialTop": 584.185326570895,
@@ -792,8 +801,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": 333.38080926237353,
-    "Y": 126.20181333543752,
-    "Zoom": 0.73464702892415168
+    "X": 317.15521871724661,
+    "Y": 146.40743774660189,
+    "Zoom": 0.69535620523790975
   }
 }

@@ -113,7 +113,7 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.Selection.ElementByCategory@Orchid.RevitProject.Common.Document,var[]",
+      "FunctionSignature": "Orchid.RevitProject.Elements.Selection.ElementByCategory@Orchid.RevitProject.Common.Document,var[],bool",
       "Id": "e4174ff81540424e8f6b29f99e3ed140",
       "Inputs": [
         {
@@ -129,6 +129,15 @@
           "Id": "aaefcaa1ea2f46bda3a8bf2f0f0d3803",
           "Name": "category",
           "Description": "Category.\n\nvar[]\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "63f6e1edb4414d8fb467cfd8bb655c17",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -156,7 +165,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get all elements by category in document, return element grouped by category.\n\nSelection.ElementByCategory (document: Document = null, category: var[] = null): var[]..[]"
+      "Description": "Get all elements by category in document, return element grouped by category.\n\nSelection.ElementByCategory (document: Document = null, category: var[] = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -191,7 +200,7 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Common.Geometry.Solid.ElementIntersect@Autodesk.DesignScript.Geometry.Solid,Revit.Elements.Element[]",
+      "FunctionSignature": "Orchid.Common.Geometry.Solid.Intersect@Autodesk.DesignScript.Geometry.Solid,Revit.Elements.Element[],bool",
       "Id": "bc9e1552281d4a4b9d075595263a581a",
       "Inputs": [
         {
@@ -211,6 +220,15 @@
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
+        },
+        {
+          "Id": "5835186496964632b4cdf78b70ad2854",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
         }
       ],
       "Outputs": [
@@ -225,12 +243,12 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get elements intersecting with a solid.\n\nSolid.ElementIntersect (solid: Solid, elements: Element[]): Element[]"
+      "Description": "Get elements intersecting with a solid.\n\nSolid.Intersect (solid: Solid, elements: Element[], condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.Selection.ElementByCategory@Orchid.RevitProject.Common.Document,var[]",
+      "FunctionSignature": "Orchid.RevitProject.Elements.Selection.ElementByCategory@Orchid.RevitProject.Common.Document,var[],bool",
       "Id": "6c10830e742c42ffa8b8be55ddbf0840",
       "Inputs": [
         {
@@ -246,6 +264,15 @@
           "Id": "ad4b3752b5df458c8e60d72815350865",
           "Name": "category",
           "Description": "Category.\n\nvar[]\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "8457586a39f140a48a48b8c9d1fd0db9",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -273,7 +300,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get all elements by category in document, return element grouped by category.\n\nSelection.ElementByCategory (document: Document = null, category: var[] = null): var[]..[]"
+      "Description": "Get all elements by category in document, return element grouped by category.\n\nSelection.ElementByCategory (document: Document = null, category: var[] = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -378,7 +405,7 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Common.Geometry.Form.Solid@Revit.Elements.Element",
+      "FunctionSignature": "Orchid.Common.Geometry.Form.Solid@Revit.Elements.Element,bool",
       "Id": "33b3a0db5ddd47c182493a8074ce346f",
       "Inputs": [
         {
@@ -386,6 +413,15 @@
           "Name": "form",
           "Description": "Form element as Dynamo type.\n\nElement",
           "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "88efa3f4c4b9412692cdcaaf856e80c3",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
@@ -403,12 +439,12 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get Dynamo solid from solid and void form.\n\nForm.Solid (form: Element): var[]..[]"
+      "Description": "Get Dynamo solid from solid and void form.\n\nForm.Solid (form: Element, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.Family.Edit@Revit.Elements.Family[]",
+      "FunctionSignature": "Orchid.RevitProject.Elements.Family.Edit@Revit.Elements.Family[],bool",
       "Id": "f5b76ae2aa17433d989c5d3fa5ab16d5",
       "Inputs": [
         {
@@ -416,6 +452,15 @@
           "Name": "family",
           "Description": "List of families as Dynamo type.\n\nFamily[]",
           "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "4a3219b2262843eeb29f1b66d505b85f",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
@@ -433,7 +478,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Edit family document.\n\nFamily.Edit (family: Family[]): var[]..[]"
+      "Description": "Edit family document.\n\nFamily.Edit (family: Family[], condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
@@ -458,13 +503,22 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Common.Geometry.Form.Get@Orchid.RevitProject.Common.Document",
+      "FunctionSignature": "Orchid.Common.Geometry.Form.Get@Orchid.RevitProject.Common.Document,bool",
       "Id": "b555db072fc14197affe46a0bc28bfd8",
       "Inputs": [
         {
           "Id": "bacd1c45dbd34639ada56adac392ef9d",
           "Name": "document",
           "Description": "Document (rvt) as Orchid document.\n\nDocument\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "1fa20df6a0e446b6b3aee56d3c30e9e5",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -483,7 +537,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get Form element in document.\n\nForm.Get (document: Document = null): var[]..[]"
+      "Description": "Get Form element in document.\n\nForm.Get (document: Document = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -518,13 +572,13 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Common.DataStream.Await@var[],var[]",
+      "FunctionSignature": "Orchid.Common.DataStream.Await@var[]..[],var[]..[]",
       "Id": "fcbaa6204d564ba89941b09b0b098c3f",
       "Inputs": [
         {
           "Id": "4579a67a459340faa3fa7ba1da6b4c11",
           "Name": "pass",
-          "Description": "Data to pass.\n\nvar[]",
+          "Description": "Data to pass.\n\nvar[]..[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -533,7 +587,7 @@
         {
           "Id": "d213d65fcff047208339aa0d01ac831f",
           "Name": "waitFor",
-          "Description": "Data object to wait for.\n\nvar[]",
+          "Description": "Data object to wait for.\n\nvar[]..[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -552,7 +606,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Await a data stream before passing another data stream.\n\nDataStream.Await (pass: var[], waitFor: var[]): var[]..[]"
+      "Description": "Await a data stream before passing another data stream.\n\nDataStream.Await (pass: var[]..[], waitFor: var[]..[]): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -596,7 +650,7 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Common.Geometry.OcSolid.ElementIntersect@Orchid.Common.Geometry.OcSolid,Revit.Elements.Element[]",
+      "FunctionSignature": "Orchid.Common.Geometry.OcSolid.Intersect@Orchid.Common.Geometry.OcSolid,Revit.Elements.Element[],bool",
       "Id": "900fc00e0e2643bc973bf679022f5565",
       "Inputs": [
         {
@@ -616,6 +670,15 @@
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
+        },
+        {
+          "Id": "4c6a413f9c854d56b8fb22aa8a370d27",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
         }
       ],
       "Outputs": [
@@ -630,12 +693,12 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get elements intersecting with a form.\n\nOcSolid.ElementIntersect (ocSolid: OcSolid, elements: Element[]): Element[]"
+      "Description": "Get elements intersecting with a OcSolid.\n\nOcSolid.Intersect (ocSolid: OcSolid, elements: Element[], condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Common.Geometry.OcSolid.ElementIntersect@Orchid.Common.Geometry.OcSolid",
+      "FunctionSignature": "Orchid.Common.Geometry.OcSolid.Intersect@Orchid.Common.Geometry.OcSolid,bool",
       "Id": "8306b02e5613489ba8cda27d0832de99",
       "Inputs": [
         {
@@ -643,6 +706,15 @@
           "Name": "ocSolid",
           "Description": "Solid as Orchid type.\n\nOcSolid",
           "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "45c0732900a24705a95f30f244b3f527",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
@@ -660,12 +732,12 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get elements intersecting with a form.\n\nOcSolid.ElementIntersect (ocSolid: OcSolid): Element[]"
+      "Description": "Get elements intersecting with a OcSolid.\n\nOcSolid.Intersect (ocSolid: OcSolid, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Common.Geometry.Form.OcSolid@Revit.Elements.Element",
+      "FunctionSignature": "Orchid.Common.Geometry.Form.OcSolid@Revit.Elements.Element,bool",
       "Id": "db9effbbe6a4407e90596b0969fbfe2b",
       "Inputs": [
         {
@@ -673,6 +745,15 @@
           "Name": "form",
           "Description": "Form element as Dynamo type.\n\nElement",
           "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "9824a05cf365442aab6501ce63dca042",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
@@ -690,7 +771,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get Orchid solid from solid and void form.\n\nForm.OcSolid (form: Element): var[]..[]"
+      "Description": "Get Orchid solid from solid and void form.\n\nForm.OcSolid (form: Element, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -782,7 +863,7 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Common.Geometry.Solid.ElementIntersect@Autodesk.DesignScript.Geometry.Solid",
+      "FunctionSignature": "Orchid.Common.Geometry.Solid.Intersect@Autodesk.DesignScript.Geometry.Solid,bool",
       "Id": "949285384dbe48ff95af4e324741aa04",
       "Inputs": [
         {
@@ -790,6 +871,15 @@
           "Name": "solid",
           "Description": "Solid as Dynamo type.\n\nSolid",
           "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "aca7b0ba8ec94c86b4e1e20018ee1263",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
@@ -807,7 +897,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get elements intersecting with a solid.\n\nSolid.ElementIntersect (solid: Solid): Element[]"
+      "Description": "Get elements intersecting with a solid.\n\nSolid.Intersect (solid: Solid, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -980,7 +1070,7 @@
   "NodeLibraryDependencies": [
     {
       "Name": "Orchid",
-      "Version": "203.2.0.7786",
+      "Version": "206.3.0.7978",
       "ReferenceType": "Package",
       "Nodes": [
         "e4174ff81540424e8f6b29f99e3ed140",
@@ -1004,7 +1094,7 @@
       "ScaleFactor": 1.0,
       "HasRunWithoutCrash": true,
       "IsVisibleInDynamoLibrary": true,
-      "Version": "2.3.0.5885",
+      "Version": "2.6.1.8786",
       "RunType": "Manual",
       "RunPeriod": "1000"
     },
@@ -1063,7 +1153,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Solid.ElementIntersect",
+        "Name": "Solid.Intersect",
         "Id": "bc9e1552281d4a4b9d075595263a581a",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
@@ -1193,7 +1283,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "OcSolid.ElementIntersect",
+        "Name": "OcSolid.Intersect",
         "Id": "900fc00e0e2643bc973bf679022f5565",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
@@ -1203,7 +1293,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "OcSolid.ElementIntersect",
+        "Name": "OcSolid.Intersect",
         "Id": "8306b02e5613489ba8cda27d0832de99",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
@@ -1253,7 +1343,7 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Solid.ElementIntersect",
+        "Name": "Solid.Intersect",
         "Id": "949285384dbe48ff95af4e324741aa04",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
@@ -1289,7 +1379,7 @@
         ],
         "Left": -2185.2533345924348,
         "Top": -5759.9319770882075,
-        "Width": 2305.0003240560118,
+        "Width": 2322.0003240560118,
         "Height": 323.39444656022442,
         "FontSize": 36.0,
         "InitialTop": -5706.9319770882075,
@@ -1309,11 +1399,11 @@
         ],
         "Left": 1079.9675331152548,
         "Top": -6078.0969013376143,
-        "Width": 763.5,
-        "Height": 378.0,
+        "Width": 726.5,
+        "Height": 368.0,
         "FontSize": 36.0,
         "InitialTop": -6025.0969013376143,
-        "InitialHeight": 293.01924801344285,
+        "InitialHeight": 315.0,
         "TextblockHeight": 43.0,
         "Background": "#FFA4E1FF"
       },
@@ -1345,11 +1435,11 @@
         ],
         "Left": 280.10948431361248,
         "Top": -5759.8272669861553,
-        "Width": 681.71221466700354,
-        "Height": 287.50531279360257,
+        "Width": 677.71221466700354,
+        "Height": 309.29197946026852,
         "FontSize": 36.0,
         "InitialTop": -5706.8272669861553,
-        "InitialHeight": 352.96465168773739,
+        "InitialHeight": 286.50531279360257,
         "TextblockHeight": 43.0,
         "Background": "#FFA4E1FF"
       },
@@ -1365,17 +1455,17 @@
         ],
         "Left": 1079.9345576687288,
         "Top": -5620.0778214063412,
-        "Width": 763.532975446526,
-        "Height": 378.0,
+        "Width": 726.532975446526,
+        "Height": 368.0,
         "FontSize": 36.0,
         "InitialTop": -5567.0778214063412,
-        "InitialHeight": 272.90428964516286,
+        "InitialHeight": 315.0,
         "TextblockHeight": 43.0,
         "Background": "#FFFFAA45"
       }
     ],
-    "X": 1021.840268956175,
-    "Y": 3273.9643615640844,
-    "Zoom": 0.45596540558436177
+    "X": 855.81011452478026,
+    "Y": 2695.6168791231034,
+    "Zoom": 0.37963859261455069
   }
 }

@@ -95,7 +95,7 @@
         {
           "Id": "1248f3d397934d3bbb512b4637c48f7c",
           "Name": "path",
-          "Description": "Path to the file\n\nstring",
+          "Description": "Path to the file.\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -105,8 +105,8 @@
       "Outputs": [
         {
           "Id": "54e77d3d3d354fc7bf8ccaee705afcb5",
-          "Name": "file",
-          "Description": "File object",
+          "Name": "File",
+          "Description": "File object.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -114,7 +114,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get file from a path\n\nFile.FromPath (path: string): string"
+      "Description": "Get file from a path.\n\nFile.FromPath (path: string): string"
     },
     {
       "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
@@ -178,13 +178,13 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.Document.Close@var,bool",
+      "FunctionSignature": "Orchid.RevitProject.Common.Document.Close@Orchid.RevitProject.Common.Document,bool",
       "Id": "7f53662a5aa246e7b1aeefee09c2aee7",
       "Inputs": [
         {
           "Id": "d2a3f657208e4eb1be6ebb42a3c22c78",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nvar",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -204,7 +204,7 @@
         {
           "Id": "94f93c6f6154407cbcc7a42c31961b63",
           "Name": "watch",
-          "Description": "Add a watch node to verify the output",
+          "Description": "Add a watch node to verify the output.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -212,18 +212,18 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Close document\n\nDocument.Close (document: var, save: bool = false): string"
+      "Description": "Close document.\n\nDocument.Close (document: Document, save: bool = false): string"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.Document.BackgroundOpen@string,bool,bool,bool",
+      "FunctionSignature": "Orchid.RevitProject.Common.Document.BackgroundOpen@string,bool,bool,bool,bool",
       "Id": "59cf9ff0132a489d8b7afaf9d500cabf",
       "Inputs": [
         {
           "Id": "44eff4b6a0324a06b69c95f816b1cb47",
           "Name": "file",
-          "Description": "File (path) to open in the background\n\nstring",
+          "Description": "File (path) to open in the background.\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -255,13 +255,22 @@
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
+        },
+        {
+          "Id": "6b48551ee9bc473d9e3a97ade7b6b9b4",
+          "Name": "unload",
+          "Description": "Force unload of Revit document link?\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
         }
       ],
       "Outputs": [
         {
           "Id": "3e8ee348bd7c408abcef8c74651ad4b4",
           "Name": "Document",
-          "Description": "Document as Revit type",
+          "Description": "Document as Revit type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -269,7 +278,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Open documents in background.\n\nDocument.BackgroundOpen (file: string, detachFromCentral: bool = false, discardWorksets: bool = false, audit: bool = false): Document"
+      "Description": "Open documents in background.\n\nDocument.BackgroundOpen (file: string, detachFromCentral: bool = false, discardWorksets: bool = false, audit: bool = false, unload: bool = false): Document"
     },
     {
       "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
@@ -413,13 +422,13 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.Document.SaveAs@var,string,bool",
+      "FunctionSignature": "Orchid.RevitProject.Common.Document.SaveAs@Orchid.RevitProject.Common.Document,string,bool",
       "Id": "9d195164b8fd408c8b78bbf793ef045a",
       "Inputs": [
         {
           "Id": "7621460e43ef46a7b0e1b0ac1c2ca674",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nvar\nDefault value : null",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -428,7 +437,7 @@
         {
           "Id": "c57d053c913a403b98f1cbfc66854497",
           "Name": "name",
-          "Description": "Name for the document incl. path\n\nstring",
+          "Description": "Name for the document incl. path.\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -448,7 +457,7 @@
         {
           "Id": "7801a86db46f40e7b5ac58f7c61e9e79",
           "Name": "Document",
-          "Description": "Document as Revit type",
+          "Description": "Document as Revit type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -456,7 +465,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "SaveAs document\n\nDocument.SaveAs (document: var = null, name: string, overwrite: bool = false): Document"
+      "Description": "SaveAs document.\n\nDocument.SaveAs (document: Document = null, name: string, overwrite: bool = false): Document"
     },
     {
       "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
@@ -547,13 +556,26 @@
     }
   ],
   "Dependencies": [],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Orchid",
+      "Version": "206.3.0.7978",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "52465bcf733e4e1097b861a1e0928455",
+        "7f53662a5aa246e7b1aeefee09c2aee7",
+        "59cf9ff0132a489d8b7afaf9d500cabf",
+        "9d195164b8fd408c8b78bbf793ef045a"
+      ]
+    }
+  ],
   "Bindings": [],
   "View": {
     "Dynamo": {
       "ScaleFactor": 1.0,
       "HasRunWithoutCrash": false,
       "IsVisibleInDynamoLibrary": true,
-      "Version": "2.0.3.8810",
+      "Version": "2.6.1.8786",
       "RunType": "Manual",
       "RunPeriod": "1000"
     },
@@ -668,7 +690,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "X": 1075.27593597352,
-        "Y": 1166.97979934154
+        "Y": 1190.8060843543492
       },
       {
         "ShowGeometry": true,
@@ -688,7 +710,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "X": 1075.27593597352,
-        "Y": 1285.76646600821
+        "Y": 1309.5927510210192
       },
       {
         "ShowGeometry": true,
@@ -708,12 +730,12 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "X": 1075.27593597352,
-        "Y": 1369.76646600821
+        "Y": 1393.5927510210192
       }
     ],
     "Annotations": [],
-    "X": -91.8470730001635,
-    "Y": -138.677534879157,
-    "Zoom": 0.384041331802526
+    "X": -274.45725744988658,
+    "Y": -357.6159783236435,
+    "Zoom": 0.73754766779842007
   }
 }

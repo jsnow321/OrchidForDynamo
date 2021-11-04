@@ -12,13 +12,22 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.SpatialElement.GetAreaBoundary@var",
+      "FunctionSignature": "Orchid.RevitProject.Elements.SpatialElement.GetAreaBoundary@Orchid.RevitProject.Common.Document,bool",
       "Id": "1c4f19e599564902b85f095c67b01cc1",
       "Inputs": [
         {
           "Id": "7519704547584e94aa1043dd6441e6ab",
           "Name": "document",
-          "Description": "Document (rfa) as Orchid document\n\nvar\nDefault value : null",
+          "Description": "Document as Orchid document.\n\nDocument\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "52ae173ad2144054999666f2976ef47f",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -29,7 +38,7 @@
         {
           "Id": "c4d457c27bbd498a85ffa373f985fe70",
           "Name": "Area",
-          "Description": "Area as Dynamo type",
+          "Description": "Area as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -38,7 +47,7 @@
         {
           "Id": "b12e20fe378141999c7873fac73a821f",
           "Name": "Element",
-          "Description": "Element as Dynamo type",
+          "Description": "Element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -47,7 +56,7 @@
         {
           "Id": "fba4e85ac75c441abdf4922657614fe1",
           "Name": "Curve",
-          "Description": "Curve as Dynamo type",
+          "Description": "Curve as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -55,18 +64,27 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get area boundary\n\nSpatialElement.GetAreaBoundary (document: var = null): var[]..[]"
+      "Description": "Get area boundary.\n\nSpatialElement.GetAreaBoundary (document: Document = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.SpatialElement.GetBoundary@var",
+      "FunctionSignature": "Orchid.RevitProject.Elements.SpatialElement.GetBoundary@Orchid.RevitProject.Common.Document,bool",
       "Id": "c45c9964ba9c438ab6be2d4681b1f37a",
       "Inputs": [
         {
           "Id": "e9095d480d884843bac43e5cfbc77058",
           "Name": "document",
-          "Description": "Document (rfa) as Orchid document\n\nvar\nDefault value : null",
+          "Description": "Document as Orchid document.\n\nDocument\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b0ee3767e4514edf8f6f877b396c96c7",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -77,7 +95,7 @@
         {
           "Id": "df0761b9dab340c29b276c543ebc4471",
           "Name": "SpatialElement",
-          "Description": "SpatialElement as Dynamo type",
+          "Description": "SpatialElement as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -86,7 +104,7 @@
         {
           "Id": "7ed11db7930944a29ba9069b14521cef",
           "Name": "Element",
-          "Description": "Element as Dynamo type",
+          "Description": "Element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -95,7 +113,7 @@
         {
           "Id": "f484d8e82add4afb887dcd5fa820b2cb",
           "Name": "Curve",
-          "Description": "Curve as Dynamo type",
+          "Description": "Curve as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -103,18 +121,27 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get spatial element boundary\n\nSpatialElement.GetBoundary (document: var = null): var[]..[]"
+      "Description": "Get spatial element boundary.\n\nSpatialElement.GetBoundary (document: Document = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.SpatialElement.GetRoomBoundary@var",
+      "FunctionSignature": "Orchid.RevitProject.Elements.SpatialElement.GetRoomBoundary@Orchid.RevitProject.Common.Document,bool",
       "Id": "a154f1da64d245aeb326d2b0edbcf5a0",
       "Inputs": [
         {
           "Id": "cfdfa56f966447b48795db483faa57f0",
           "Name": "document",
-          "Description": "Document (rfa) as Orchid document\n\nvar\nDefault value : null",
+          "Description": "Document as Orchid document.\n\nDocument\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "9b8b17f1ac764e4a969edd823d0884a7",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -125,7 +152,7 @@
         {
           "Id": "4ef69d69fe154ae0889bf1450e0b0764",
           "Name": "Room",
-          "Description": "Room as Dynamo type",
+          "Description": "Room as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -134,7 +161,7 @@
         {
           "Id": "0f7d8805a7064ee2b47da1a0455cbcac",
           "Name": "Element",
-          "Description": "Element as Dynamo type",
+          "Description": "Element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -143,7 +170,7 @@
         {
           "Id": "8cad7010f1c24ad38a50d1969507713d",
           "Name": "Curve",
-          "Description": "Curve as Dynamo type",
+          "Description": "Curve as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -151,18 +178,27 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get room boundary\n\nSpatialElement.GetRoomBoundary (document: var = null): var[]..[]"
+      "Description": "Get room boundary.\n\nSpatialElement.GetRoomBoundary (document: Document = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.SpatialElement.GetSeparationLine@var",
+      "FunctionSignature": "Orchid.RevitProject.Elements.SpatialElement.GetSeparationLine@Orchid.RevitProject.Common.Document,bool",
       "Id": "31206d3af1204cab874dd532ae17b3cf",
       "Inputs": [
         {
           "Id": "05e4433a9eb04b46a28a0dba98fe4c70",
           "Name": "document",
-          "Description": "Document (rfa) as Orchid document\n\nvar\nDefault value : null",
+          "Description": "Document as Orchid document.\n\nDocument\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "be0d1cfc901d4c8e98a732e1d4fd45bd",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -173,7 +209,7 @@
         {
           "Id": "98146681a982412d8657aa72b63d3a94",
           "Name": "SpatialElement",
-          "Description": "SpatialElement as Dynamo type",
+          "Description": "SpatialElement as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -182,7 +218,7 @@
         {
           "Id": "4056d10753954b92994ebb29ded60ac8",
           "Name": "Element",
-          "Description": "Element as Dynamo type",
+          "Description": "Element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -191,7 +227,7 @@
         {
           "Id": "2e49833ec48a4a63a598b60a1af492f8",
           "Name": "Curve",
-          "Description": "Curve as Dynamo type",
+          "Description": "Curve as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -199,18 +235,27 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get spatial element separation line\n\nSpatialElement.GetSeparationLine (document: var = null): var[]..[]"
+      "Description": "Get spatial element separation line.\n\nSpatialElement.GetSeparationLine (document: Document = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.SpatialElement.GetSpaceBoundary@var",
+      "FunctionSignature": "Orchid.RevitProject.Elements.SpatialElement.GetSpaceBoundary@Orchid.RevitProject.Common.Document,bool",
       "Id": "91b0255b28264141a57a633da81298d2",
       "Inputs": [
         {
           "Id": "d5d833a4c83f4a9fb4673e238ff36291",
           "Name": "document",
-          "Description": "Document (rfa) as Orchid document\n\nvar\nDefault value : null",
+          "Description": "Document as Orchid document.\n\nDocument\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "265745d6c31b4b41866eef704c8e2951",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -221,7 +266,7 @@
         {
           "Id": "974335b2a6fa4791ac19313081ee40ff",
           "Name": "Space",
-          "Description": "Space as Dynamo type",
+          "Description": "Space as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -230,7 +275,7 @@
         {
           "Id": "efa325d4880047ca96d62979a9b302b4",
           "Name": "Element",
-          "Description": "Element as Dynamo type",
+          "Description": "Element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -239,7 +284,7 @@
         {
           "Id": "6ef0f5c856484fd9b4ef264114d171af",
           "Name": "Curve",
-          "Description": "Curve as Dynamo type",
+          "Description": "Curve as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -247,7 +292,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get space boundary\n\nSpatialElement.GetSpaceBoundary (document: var = null): var[]..[]"
+      "Description": "Get space boundary.\n\nSpatialElement.GetSpaceBoundary (document: Document = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -538,66 +583,6 @@
       ],
       "Replication": "Disabled",
       "Description": "Visualize the output of node."
-    },
-    {
-      "ConcreteType": "DSRevitNodesUI.Categories, DSRevitNodesUI",
-      "SelectedIndex": 74,
-      "NodeType": "ExtensionNode",
-      "Id": "e9006b52bfd54455834210a76dfd2c13",
-      "Inputs": [],
-      "Outputs": [
-        {
-          "Id": "65bec90d78da47338fb037b9ee48729c",
-          "Name": "Category",
-          "Description": "The selected Category.",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "All built-in categories."
-    },
-    {
-      "ConcreteType": "DSRevitNodesUI.Categories, DSRevitNodesUI",
-      "SelectedIndex": 457,
-      "NodeType": "ExtensionNode",
-      "Id": "a11576cd145d415cbb7e2ec89bd06ee6",
-      "Inputs": [],
-      "Outputs": [
-        {
-          "Id": "8d26055064b1421e8ac9032027c72cc8",
-          "Name": "Category",
-          "Description": "The selected Category.",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "All built-in categories."
-    },
-    {
-      "ConcreteType": "DSRevitNodesUI.Categories, DSRevitNodesUI",
-      "SelectedIndex": 425,
-      "NodeType": "ExtensionNode",
-      "Id": "407e6e8139ca4c8a9d900c48b12aee13",
-      "Inputs": [],
-      "Outputs": [
-        {
-          "Id": "74207406e8024ddb9766f436eb31eb6b",
-          "Name": "Category",
-          "Description": "The selected Category.",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "All built-in categories."
     },
     {
       "ConcreteType": "DSRevitNodesUI.ElementsOfCategory, DSRevitNodesUI",
@@ -892,13 +877,13 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.SpatialElement.GetBoundary@var,Revit.Elements.Element[]",
+      "FunctionSignature": "Orchid.RevitProject.Elements.SpatialElement.GetBoundary@Orchid.RevitProject.Common.Document,Revit.Elements.Element[],bool",
       "Id": "e1be8ae1d6be4334822641efb8da80ef",
       "Inputs": [
         {
           "Id": "dd408b97433145d39064c4cedab4a1b5",
           "Name": "document",
-          "Description": "Document (rfa) as Orchid document\n\nvar\nDefault value : null",
+          "Description": "Document as Orchid document.\n\nDocument\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -912,13 +897,22 @@
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
+        },
+        {
+          "Id": "5d57f2b8f45d43d0989b056dc5e600a5",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
         }
       ],
       "Outputs": [
         {
           "Id": "e7ee09d1297d4b58a8da5471f8261b85",
-          "Name": "Element",
-          "Description": "SpatialElement as Dynamo type",
+          "Name": "SpatialElement",
+          "Description": "SpatialElement as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -926,8 +920,8 @@
         },
         {
           "Id": "81f5e03c6c894ee0afe8e3b24172e625",
-          "Name": "Curve",
-          "Description": "Element as Dynamo type",
+          "Name": "Element",
+          "Description": "Element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -935,18 +929,18 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get spatial element boundary\n\nSpatialElement.GetBoundary (document: var = null, spatialElement: Element[] = null): var[]..[]"
+      "Description": "Get spatial element boundary.\n\nSpatialElement.GetBoundary (document: Document = null, spatialElement: Element[] = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.SpatialElement.GetSeparationLine@var,Revit.Elements.Element[]",
+      "FunctionSignature": "Orchid.RevitProject.Elements.SpatialElement.GetSeparationLine@Orchid.RevitProject.Common.Document,Revit.Elements.Element[],bool",
       "Id": "e8004d2ee49f4a0299d8b29aaea26b5c",
       "Inputs": [
         {
           "Id": "ed0945dd1b684ab7a4f51926d639563b",
           "Name": "document",
-          "Description": "Document (rfa) as Orchid document\n\nvar\nDefault value : null",
+          "Description": "Document as Orchid document.\n\nDocument\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -960,13 +954,22 @@
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
+        },
+        {
+          "Id": "7c383bc53d204f5aaffbe5e7fe703408",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
         }
       ],
       "Outputs": [
         {
           "Id": "cc657059d0d2461a848a4ca444ccea2e",
-          "Name": "Element",
-          "Description": "SpatialElement as Dynamo type",
+          "Name": "SpatialElement",
+          "Description": "SpatialElement as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -974,8 +977,8 @@
         },
         {
           "Id": "ada4d614a41b4acaa354401d2b74f108",
-          "Name": "Curve",
-          "Description": "Element as Dynamo type",
+          "Name": "Element",
+          "Description": "Element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -983,67 +986,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get spatial element separation line\n\nSpatialElement.GetSeparationLine (document: var = null, spatialElement: Element[] = null): var[]..[]"
-    },
-    {
-      "ConcreteType": "DSRevitNodesUI.Categories, DSRevitNodesUI",
-      "SelectedIndex": 74,
-      "NodeType": "ExtensionNode",
-      "Id": "6b7d6e664e9e41eb972e23d50ef50fe6",
-      "Inputs": [],
-      "Outputs": [
-        {
-          "Id": "bbab9727a05d4fafbf77735cb6ccf1a5",
-          "Name": "Category",
-          "Description": "The selected Category.",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "All built-in categories."
-    },
-    {
-      "ConcreteType": "DSRevitNodesUI.Categories, DSRevitNodesUI",
-      "SelectedIndex": 457,
-      "NodeType": "ExtensionNode",
-      "Id": "6b2b005e9c284f15bb0b686ae4157118",
-      "Inputs": [],
-      "Outputs": [
-        {
-          "Id": "cd2f1208792c4228b037920dfcf4cd6e",
-          "Name": "Category",
-          "Description": "The selected Category.",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "All built-in categories."
-    },
-    {
-      "ConcreteType": "DSRevitNodesUI.Categories, DSRevitNodesUI",
-      "SelectedIndex": 425,
-      "NodeType": "ExtensionNode",
-      "Id": "1bf1e0d0d84f4803966e516d32e0acc7",
-      "Inputs": [],
-      "Outputs": [
-        {
-          "Id": "f984f7a73de04e3eb062ebc91f7bd82f",
-          "Name": "Category",
-          "Description": "The selected Category.",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "All built-in categories."
+      "Description": "Get spatial element separation line.\n\nSpatialElement.GetSeparationLine (document: Document = null, spatialElement: Element[] = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -1164,13 +1107,13 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.SpatialElement.GetSeparationLine@var,Revit.Elements.Element[]",
+      "FunctionSignature": "Orchid.RevitProject.Elements.SpatialElement.GetSeparationLine@Orchid.RevitProject.Common.Document,Revit.Elements.Element[],bool",
       "Id": "6a4789e2ddb3461395b0ce3d420d4cc0",
       "Inputs": [
         {
           "Id": "19ce6cdbb4f34a62be7bd5f78fb40360",
           "Name": "document",
-          "Description": "Document (rfa) as Orchid document\n\nvar\nDefault value : null",
+          "Description": "Document as Orchid document.\n\nDocument\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1184,13 +1127,22 @@
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
+        },
+        {
+          "Id": "ef837fe27f80466490235b4fde4f76dd",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
         }
       ],
       "Outputs": [
         {
           "Id": "3403f5cf3eb840d0a33d460b6c26c887",
-          "Name": "Element",
-          "Description": "SpatialElement as Dynamo type",
+          "Name": "SpatialElement",
+          "Description": "SpatialElement as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1198,8 +1150,8 @@
         },
         {
           "Id": "d1cbe4f74d8a4d22935181f35989b121",
-          "Name": "Curve",
-          "Description": "Element as Dynamo type",
+          "Name": "Element",
+          "Description": "Element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1207,18 +1159,18 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get spatial element separation line\n\nSpatialElement.GetSeparationLine (document: var = null, spatialElement: Element[] = null): var[]..[]"
+      "Description": "Get spatial element separation line.\n\nSpatialElement.GetSeparationLine (document: Document = null, spatialElement: Element[] = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.SpatialElement.GetBoundary@var,Revit.Elements.Element[]",
+      "FunctionSignature": "Orchid.RevitProject.Elements.SpatialElement.GetBoundary@Orchid.RevitProject.Common.Document,Revit.Elements.Element[],bool",
       "Id": "382fb6751ffb48ee83e27770b23234d1",
       "Inputs": [
         {
           "Id": "70f750ce6a194b1599244ff2a9795e36",
           "Name": "document",
-          "Description": "Document (rfa) as Orchid document\n\nvar\nDefault value : null",
+          "Description": "Document as Orchid document.\n\nDocument\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1232,13 +1184,22 @@
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
+        },
+        {
+          "Id": "cecf0b849558460fba21f34ab984a111",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
         }
       ],
       "Outputs": [
         {
           "Id": "b5c38e02d5cc4a598e1f2759f8e85eee",
-          "Name": "Element",
-          "Description": "SpatialElement as Dynamo type",
+          "Name": "SpatialElement",
+          "Description": "SpatialElement as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1246,8 +1207,8 @@
         },
         {
           "Id": "1dbe9837f54b45ceb233bcadbe3f56d0",
-          "Name": "Curve",
-          "Description": "Element as Dynamo type",
+          "Name": "Element",
+          "Description": "Element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1255,18 +1216,27 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get spatial element boundary\n\nSpatialElement.GetBoundary (document: var = null, spatialElement: Element[] = null): var[]..[]"
+      "Description": "Get spatial element boundary.\n\nSpatialElement.GetBoundary (document: Document = null, spatialElement: Element[] = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.Link.GetRevitFile@var",
+      "FunctionSignature": "Orchid.RevitProject.Common.Link.GetRevitLink@Orchid.RevitProject.Common.Document,bool",
       "Id": "5ee538df30eb4053bda8b4fef1c59e93",
       "Inputs": [
         {
           "Id": "7512c51aced043b49138a4e613ffa4e8",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nvar\nDefault value : null",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "98fb0b91db5a49bcb0bc4fc9b207b476",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1277,7 +1247,7 @@
         {
           "Id": "fc01cddc33e94c329cf62c3cf50783d7",
           "Name": "Link",
-          "Description": "Revit link element as Dynamo type",
+          "Description": "Revit link element as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1285,7 +1255,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get external linked revit file in document\n\nLink.GetRevitFile (document: var = null): var[]..[]"
+      "Description": "Get external revit link in document.\n\nLink.GetRevitLink (document: Document = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -1296,7 +1266,7 @@
         {
           "Id": "b2d22103d7134794bfa6969658767ac5",
           "Name": "link",
-          "Description": "External link element as Dynamo type\n\nElement",
+          "Description": "External link element as Dynamo type.\n\nElement",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1307,7 +1277,7 @@
         {
           "Id": "07ad4d1b7bc744a09aa8f031da58d1f7",
           "Name": "Instance",
-          "Description": "Link instance as Dynamo type",
+          "Description": "Link instance as Dynamo type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1315,7 +1285,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get link instance from link in document\n\nLink.Instance (link: Element): Element"
+      "Description": "Get link instance from link in document.\n\nLink.Instance (link: Element): Element"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -1326,7 +1296,7 @@
         {
           "Id": "83fef31a52d14a6f87fa36c8cdb00679",
           "Name": "instance",
-          "Description": "External link element as Dynamo type\n\nElement",
+          "Description": "External link element as Dynamo type.\n\nElement",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1337,7 +1307,7 @@
         {
           "Id": "100d024c237d4ae29debc8a129e54636",
           "Name": "Document",
-          "Description": "Document as Orchid type",
+          "Description": "Document as Orchid type.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1345,18 +1315,18 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get copy monitored element in document\n\nLink.Document (instance: Element): var"
+      "Description": "Get copy monitored element in document.\n\nLink.Document (instance: Element): Document"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.Selection.ElementByCategory@var[],var[]..[]",
+      "FunctionSignature": "Orchid.RevitProject.Elements.Selection.ElementByCategory@Orchid.RevitProject.Common.Document,var[],bool",
       "Id": "dc31371919654c379867e43fb7aa29d0",
       "Inputs": [
         {
           "Id": "193a6debae624515b6e55d22daf81509",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nvar[]\nDefault value : null",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1365,7 +1335,16 @@
         {
           "Id": "1173af41249546e4a2fffe6fd4c408a6",
           "Name": "category",
-          "Description": "Category\n\nvar[]..[]\nDefault value : null",
+          "Description": "Category.\n\nvar[]\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "4a19d8ef7d9b447d833e9dc00a380eeb",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -1376,7 +1355,7 @@
         {
           "Id": "872b06913d4348728f542c88202db44b",
           "Name": "Element",
-          "Description": "Element",
+          "Description": "Element.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1384,6 +1363,74 @@
         },
         {
           "Id": "729f594acdf041c2ac019c7c005a522e",
+          "Name": "Category",
+          "Description": "Category.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get all elements by category in document, return element grouped by category.\n\nSelection.ElementByCategory (document: Document = null, category: var[] = null, condense: bool = true): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "\"Rooms\";\n\"Spaces\";\n\"Areas\";",
+      "Id": "666b8def88264617a548c1c45870d035",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "d8534f418378496a9193cd32b9e6963c",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "6337dd9693a44280992c337ac7fc3ea3",
+          "Name": "",
+          "Description": "Value of expression at line 2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "e92ad48538ea40b099f76ef11522b1fd",
+          "Name": "",
+          "Description": "Value of expression at line 3",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.Elements.Category.ByName@string",
+      "Id": "58dc03a9b8f4470a932e365522017f9f",
+      "Inputs": [
+        {
+          "Id": "47cce9072f964cebbf7ab1b8fcae72f0",
+          "Name": "name",
+          "Description": "The built in category name.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "6168a3078f4c4bbcb1debdc509f83b49",
           "Name": "Category",
           "Description": "Category",
           "UsingDefaultValue": false,
@@ -1393,7 +1440,75 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get all elements by category in document, return element grouped by category.\n\nSelection.ElementByCategory (document: var[] = null, category: var[]..[] = null): var[]..[]"
+      "Description": "Gets a Revit category by the built-in category name.\n\nCategory.ByName (name: string): Category"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.Elements.Category.ByName@string",
+      "Id": "46d51d0b744e4042930f8cf81b436f7a",
+      "Inputs": [
+        {
+          "Id": "a24ea27cba8c45419c0a1f20e6cd0870",
+          "Name": "name",
+          "Description": "The built in category name.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "1bf0a0dec40a4375b3a7353ad1903c43",
+          "Name": "Category",
+          "Description": "Category",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Gets a Revit category by the built-in category name.\n\nCategory.ByName (name: string): Category"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "\"Rooms\";\n\"Spaces\";\n\"Areas\";",
+      "Id": "3e534db5b1fb4fd091650559f769b658",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "24977081fde747599ba5b6f8e00c02f5",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "cc3df5a177894fb98f3acdd528c0a303",
+          "Name": "",
+          "Description": "Value of expression at line 2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "e22528f7c83e4f0ca872b8cb2b0fe4d6",
+          "Name": "",
+          "Description": "Value of expression at line 3",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
     }
   ],
   "Connectors": [
@@ -1473,11 +1588,6 @@
       "Id": "5e23860fca1f4e9a8bf52cfe64735964"
     },
     {
-      "Start": "74207406e8024ddb9766f436eb31eb6b",
-      "End": "7779bfe1760d4b9b9971c095cf854445",
-      "Id": "2f5082b3bac040f9a18edf87dacfbdbc"
-    },
-    {
       "Start": "d2b99989797540a5ad03b7308b3b53e8",
       "End": "326acd3d5b684dfc99e83e8cd92e564e",
       "Id": "1a148de46cae40d89cd2a9a0d4293145"
@@ -1506,11 +1616,6 @@
       "Start": "ada4d614a41b4acaa354401d2b74f108",
       "End": "68339b55de6445a0a6f60f4d37ecab57",
       "Id": "d0909abe0d5a4837bad5e3a30e24f5b8"
-    },
-    {
-      "Start": "f984f7a73de04e3eb062ebc91f7bd82f",
-      "End": "1173af41249546e4a2fffe6fd4c408a6",
-      "Id": "ead5eb4460e14271a04206d793dadeb7"
     },
     {
       "Start": "3403f5cf3eb840d0a33d460b6c26c887",
@@ -1566,16 +1671,58 @@
       "Start": "872b06913d4348728f542c88202db44b",
       "End": "f250a4c04ff74f19bd4cf53f4df2b4fb",
       "Id": "93bf24034de04fc1803ffc42ac9a43e7"
+    },
+    {
+      "Start": "d8534f418378496a9193cd32b9e6963c",
+      "End": "47cce9072f964cebbf7ab1b8fcae72f0",
+      "Id": "87ad92af998d4ec4b93aa5e069a31d4b"
+    },
+    {
+      "Start": "6168a3078f4c4bbcb1debdc509f83b49",
+      "End": "1173af41249546e4a2fffe6fd4c408a6",
+      "Id": "6785895197ad467f89de065925694884"
+    },
+    {
+      "Start": "1bf0a0dec40a4375b3a7353ad1903c43",
+      "End": "7779bfe1760d4b9b9971c095cf854445",
+      "Id": "56c506a2f7114734aa659ccb1fd79b23"
+    },
+    {
+      "Start": "24977081fde747599ba5b6f8e00c02f5",
+      "End": "a24ea27cba8c45419c0a1f20e6cd0870",
+      "Id": "06ab60fb4c2a4507a0316d7805d35674"
     }
   ],
   "Dependencies": [],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Orchid",
+      "Version": "206.3.0.7978",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "1c4f19e599564902b85f095c67b01cc1",
+        "c45c9964ba9c438ab6be2d4681b1f37a",
+        "a154f1da64d245aeb326d2b0edbcf5a0",
+        "31206d3af1204cab874dd532ae17b3cf",
+        "91b0255b28264141a57a633da81298d2",
+        "e1be8ae1d6be4334822641efb8da80ef",
+        "e8004d2ee49f4a0299d8b29aaea26b5c",
+        "6a4789e2ddb3461395b0ce3d420d4cc0",
+        "382fb6751ffb48ee83e27770b23234d1",
+        "5ee538df30eb4053bda8b4fef1c59e93",
+        "9e1d6bef97db4ce8b1a1aaf1a70b5834",
+        "a28d9c7b02e143b6a587f076af2ad6c9",
+        "dc31371919654c379867e43fb7aa29d0"
+      ]
+    }
+  ],
   "Bindings": [],
   "View": {
     "Dynamo": {
       "ScaleFactor": 1.0,
       "HasRunWithoutCrash": true,
       "IsVisibleInDynamoLibrary": true,
-      "Version": "2.0.3.8810",
+      "Version": "2.6.1.8786",
       "RunType": "Manual",
       "RunPeriod": "1000"
     },
@@ -1744,43 +1891,13 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Categories",
-        "Id": "e9006b52bfd54455834210a76dfd2c13",
-        "IsSetAsInput": true,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": 609.688141754993,
-        "Y": -1170.0052393343535
-      },
-      {
-        "ShowGeometry": true,
-        "Name": "Categories",
-        "Id": "a11576cd145d415cbb7e2ec89bd06ee6",
-        "IsSetAsInput": true,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": 609.688141754993,
-        "Y": -1284.0372535955735
-      },
-      {
-        "ShowGeometry": true,
-        "Name": "Categories",
-        "Id": "407e6e8139ca4c8a9d900c48b12aee13",
-        "IsSetAsInput": true,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": 609.688141754993,
-        "Y": -1395.5453079523836
-      },
-      {
-        "ShowGeometry": true,
         "Name": "All Elements of Category",
         "Id": "f2399a39bbcf4db3a3ba839c8ceece97",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 840.164258364473,
-        "Y": -1284.0372535955735
+        "X": 1095.9030547615851,
+        "Y": -1286.4442069734287
       },
       {
         "ShowGeometry": true,
@@ -1789,8 +1906,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1440.41301573859,
-        "Y": -1119.4263120946534
+        "X": 1696.1518121357021,
+        "Y": -1121.8332654725086
       },
       {
         "ShowGeometry": true,
@@ -1799,8 +1916,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1712.76624378696,
-        "Y": -1119.4263120946534
+        "X": 1968.5050401840722,
+        "Y": -1121.8332654725086
       },
       {
         "ShowGeometry": true,
@@ -1809,8 +1926,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1440.41301573859,
-        "Y": -1530.2966454580937
+        "X": 1696.1518121357021,
+        "Y": -1532.7035988359489
       },
       {
         "ShowGeometry": true,
@@ -1819,8 +1936,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1712.76624378696,
-        "Y": -1530.2966454580937
+        "X": 1968.5050401840722,
+        "Y": -1532.7035988359489
       },
       {
         "ShowGeometry": true,
@@ -1879,8 +1996,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1122.90200385953,
-        "Y": -1530.2966454580937
+        "X": 1378.640800256642,
+        "Y": -1532.7035988359489
       },
       {
         "ShowGeometry": true,
@@ -1889,38 +2006,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1122.90200385953,
-        "Y": -1119.4263120946534
-      },
-      {
-        "ShowGeometry": true,
-        "Name": "Categories",
-        "Id": "6b7d6e664e9e41eb972e23d50ef50fe6",
-        "IsSetAsInput": true,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": 1144.55296156907,
-        "Y": -1808.56076323751
-      },
-      {
-        "ShowGeometry": true,
-        "Name": "Categories",
-        "Id": "6b2b005e9c284f15bb0b686ae4157118",
-        "IsSetAsInput": true,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": 1144.55296156907,
-        "Y": -1922.59277749873
-      },
-      {
-        "ShowGeometry": true,
-        "Name": "Categories",
-        "Id": "1bf1e0d0d84f4803966e516d32e0acc7",
-        "IsSetAsInput": true,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": 1144.55296156907,
-        "Y": -2034.10083185554
+        "X": 1378.640800256642,
+        "Y": -1121.8332654725086
       },
       {
         "ShowGeometry": true,
@@ -1984,13 +2071,13 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Link.GetRevitFile",
+        "Name": "Link.GetRevitLink",
         "Id": "5ee538df30eb4053bda8b4fef1c59e93",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
         "X": 610.173255367947,
-        "Y": -2173.15626511128
+        "Y": -2190.8079450689352
       },
       {
         "ShowGeometry": true,
@@ -1999,8 +2086,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 883.299431984407,
-        "Y": -2173.15626511128
+        "X": 870.9432560140483,
+        "Y": -2190.8079450689352
       },
       {
         "ShowGeometry": true,
@@ -2010,7 +2097,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "X": 1144.55296156907,
-        "Y": -2173.15626511128
+        "Y": -2190.8079450689352
       },
       {
         "ShowGeometry": true,
@@ -2021,6 +2108,46 @@
         "Excluded": false,
         "X": 1437.04855800251,
         "Y": -1917.31531886384
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "666b8def88264617a548c1c45870d035",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 936.9432560140483,
+        "Y": -1904.187616922035
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Category.ByName",
+        "Id": "58dc03a9b8f4470a932e365522017f9f",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1144.55296156907,
+        "Y": -1890.8531567741998
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Category.ByName",
+        "Id": "46d51d0b744e4042930f8cf81b436f7a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 817.35203524722954,
+        "Y": -1286.2530001266889
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "3e534db5b1fb4fd091650559f769b658",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 609.74232969220759,
+        "Y": -1299.5874602745189
       }
     ],
     "Annotations": [
@@ -2039,8 +2166,8 @@
         ],
         "Left": 600.308402238787,
         "Top": -799.796797805586,
-        "Width": 899.595014231013,
-        "Height": 601.870333363441,
+        "Width": 1111.595014231013,
+        "Height": 781.870333363441,
         "FontSize": 30.0,
         "InitialTop": -753.796797805586,
         "InitialHeight": 555.870333363441,
@@ -2066,8 +2193,8 @@
         ],
         "Left": 1799.74089114115,
         "Top": -799.682548586285,
-        "Width": 899.59501423102006,
-        "Height": 1030.106645344119,
+        "Width": 1111.59501423102,
+        "Height": 1079.106645344119,
         "FontSize": 30.0,
         "InitialTop": -753.682548586285,
         "InitialHeight": 984.1066453441191,
@@ -2079,23 +2206,22 @@
         "Title": "",
         "Nodes": [
           "f2399a39bbcf4db3a3ba839c8ceece97",
-          "e9006b52bfd54455834210a76dfd2c13",
-          "a11576cd145d415cbb7e2ec89bd06ee6",
-          "407e6e8139ca4c8a9d900c48b12aee13",
           "f97af01719724221bf8f8bd81f986ae1",
           "2c70e55a3b194ced801e3bbbb136de0e",
           "efa8f5aeffb244d4a3382e083edd5289",
           "2c02b45fcee54490812ab0917bf09587",
           "e8004d2ee49f4a0299d8b29aaea26b5c",
-          "e1be8ae1d6be4334822641efb8da80ef"
+          "e1be8ae1d6be4334822641efb8da80ef",
+          "46d51d0b744e4042930f8cf81b436f7a",
+          "3e534db5b1fb4fd091650559f769b658"
         ],
-        "Left": 599.688141754993,
-        "Top": -1576.2966454580937,
-        "Width": 1201.0781020319671,
-        "Height": 575.8703333634403,
+        "Left": 599.74232969220759,
+        "Top": -1578.7035988359489,
+        "Width": 1668.7627104918647,
+        "Height": 676.8703333634403,
         "FontSize": 30.0,
-        "InitialTop": -1530.2966454580937,
-        "InitialHeight": 555.87033336344007,
+        "InitialTop": -1532.7035988359489,
+        "InitialHeight": 555.8703333634403,
         "TextblockHeight": 36.0,
         "Background": "#FFA4E1FF"
       },
@@ -2103,9 +2229,6 @@
         "Id": "cb929273b96847718dbb7698898b8297",
         "Title": "Revit links",
         "Nodes": [
-          "6b7d6e664e9e41eb972e23d50ef50fe6",
-          "6b2b005e9c284f15bb0b686ae4157118",
-          "1bf1e0d0d84f4803966e516d32e0acc7",
           "980d235a6aef4344a8ddeb1a0d69799e",
           "b85cea569dee4e76b63fd6751fe6a432",
           "598a6b21b02c406fb540b17626a061dd",
@@ -2115,21 +2238,23 @@
           "dc31371919654c379867e43fb7aa29d0",
           "a28d9c7b02e143b6a587f076af2ad6c9",
           "9e1d6bef97db4ce8b1a1aaf1a70b5834",
-          "5ee538df30eb4053bda8b4fef1c59e93"
+          "5ee538df30eb4053bda8b4fef1c59e93",
+          "58dc03a9b8f4470a932e365522017f9f",
+          "666b8def88264617a548c1c45870d035"
         ],
         "Left": 600.173255367947,
         "Top": -2400.28931334664,
-        "Width": 1915.1106280515428,
-        "Height": 684.72855010913008,
+        "Width": 2127.1106280515428,
+        "Height": 752.87033336344007,
         "FontSize": 30.0,
         "InitialTop": -2354.28931334664,
-        "InitialHeight": 690.72855010913008,
+        "InitialHeight": 608.43615657244027,
         "TextblockHeight": 36.0,
         "Background": "#FFFFAA45"
       }
     ],
-    "X": 55.773027694953413,
-    "Y": 685.41912505383425,
-    "Zoom": 0.27127436588171355
+    "X": 155.47758009757951,
+    "Y": 882.275877322358,
+    "Zoom": 0.36200983137065745
   }
 }

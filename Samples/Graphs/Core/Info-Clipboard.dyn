@@ -45,13 +45,13 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Common.Directory.Contents@string,string,bool",
+      "FunctionSignature": "Orchid.Common.Directory.Contents@string,string,bool,bool",
       "Id": "3ed5d9727555429ba4d2af61d14fb1d6",
       "Inputs": [
         {
           "Id": "059a22402ae14f5a94f269e0c97c89ee",
           "Name": "directory",
-          "Description": "Directory to get contents from\n\nstring",
+          "Description": "Directory to get contents from.\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -60,7 +60,7 @@
         {
           "Id": "aa8b1fdcaf0e4d2786cac1d9993f806d",
           "Name": "searchString",
-          "Description": "Search string used to filter results\n\nstring\nDefault value : \"*\"",
+          "Description": "Search string used to filter results.\n\nstring\nDefault value : \"*\"",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -69,7 +69,16 @@
         {
           "Id": "26699e60b8f64e54a97fd41105e192c3",
           "Name": "deepSearch",
-          "Description": "Search option used to search in all subfolders\n\nbool\nDefault value : false",
+          "Description": "Apply searching in all subfolders?\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "459e1d2d5dc741348e8d302aa108dfab",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -79,8 +88,8 @@
       "Outputs": [
         {
           "Id": "6db533d37ec048feb982bae460359aa5",
-          "Name": "file",
-          "Description": "File",
+          "Name": "File",
+          "Description": "File object.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -88,7 +97,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get the files in a directory and its subdirectories. Use string for extension type, default is * for all files! If files are are readonly but not hidden, are they included. If files are both hidden or readonly files (and thereby system files) are they left out.\n\nDirectory.Contents (directory: string, searchString: string = \"*\", deepSearch: bool = false): var[]..[]"
+      "Description": "Get the files in a directory and its subdirectories. Use string for extension type, default is * for all files! If files are are readonly but not hidden, are they included. If files are both hidden or readonly files (and thereby system files) are they left out.\n\nDirectory.Contents (directory: string, searchString: string = \"*\", deepSearch: bool = false, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -151,13 +160,13 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Common.Document.Info@var",
+      "FunctionSignature": "Orchid.RevitProject.Common.Document.Info@Orchid.RevitProject.Common.Document",
       "Id": "aa57eb2587874fd19fa85c0fa7622c6a",
       "Inputs": [
         {
           "Id": "459348fb718043a8ac679b01853a4ed6",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nvar\nDefault value : null",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument\nDefault value : null",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -168,7 +177,7 @@
         {
           "Id": "d0f3a5fa13c44397876639937b928ffe",
           "Name": "info",
-          "Description": "Document info",
+          "Description": "Document info.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -176,7 +185,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get document info\n\nDocument.Info (document: var = null): string"
+      "Description": "Get document info.\n\nDocument.Info (document: Document = null): string"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -187,7 +196,7 @@
         {
           "Id": "9497b4a44f3d4de99796db7da5c60792",
           "Name": "file",
-          "Description": "File incl. path\n\nstring",
+          "Description": "File incl. path.\n\nstring",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -198,7 +207,7 @@
         {
           "Id": "c1b3041aa76d46558bf1f8fabeed4c57",
           "Name": "info",
-          "Description": "File info",
+          "Description": "File info.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -206,7 +215,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get file(s) info\n\nFile.Info (file: string): string"
+      "Description": "Get file(s) info.\n\nFile.Info (file: string): string"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -269,14 +278,23 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Common.Clipboard.CopyTo@var[]..[]",
+      "FunctionSignature": "Orchid.Common.Clipboard.CopyTo@var[]..[],bool",
       "Id": "4797bb1fe29642ab9a5871039b6d3919",
       "Inputs": [
         {
           "Id": "b0a1eaff900f4aeaa664ffdbddbd8fd7",
-          "Name": "element",
-          "Description": "element\n\nvar[]..[]",
+          "Name": "object",
+          "Description": "Object(s) to copy.\n\nvar[]..[]",
           "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "893886d0c06f4263aa475709302a56eb",
+          "Name": "id",
+          "Description": "Add element id (if exists) to output?\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
@@ -286,7 +304,7 @@
         {
           "Id": "1647f2180e034117852fc5c8dcee9e2b",
           "Name": "watch",
-          "Description": "Add a watch node to verify the output",
+          "Description": "Add a watch node to verify the output.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -294,19 +312,28 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Copy object to Clipboard. Can copy elements from a 1D list, but not from 2D..nD! If List Level is used, then will the last item be available in the clipboard.\n\nClipboard.CopyTo (element: var[]..[]): var[]..[]"
+      "Description": "Copy object to Clipboard. Can copy objects from a 1D list, but not from 2D...nD! If List Level is used, then will the last item be available in the clipboard.\n\nClipboard.CopyTo (object: var[]..[], id: bool = false): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Common.Clipboard.CopyTo@var[]..[]",
+      "FunctionSignature": "Orchid.Common.Clipboard.CopyTo@var[]..[],bool",
       "Id": "e8a2569d1a974b1794fd15f5a4162e03",
       "Inputs": [
         {
           "Id": "fbcf50a5b21248e6892ff3e511b46757",
-          "Name": "element",
-          "Description": "element\n\nvar[]..[]",
+          "Name": "object",
+          "Description": "Object(s) to copy.\n\nvar[]..[]",
           "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "d3154e965f724680865d43d07d91e255",
+          "Name": "id",
+          "Description": "Add element id (if exists) to output?\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
@@ -316,7 +343,7 @@
         {
           "Id": "0d417a279871418281283f161e3a8bf3",
           "Name": "watch",
-          "Description": "Add a watch node to verify the output",
+          "Description": "Add a watch node to verify the output.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -324,7 +351,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Copy object to Clipboard. Can copy elements from a 1D list, but not from 2D..nD! If List Level is used, then will the last item be available in the clipboard.\n\nClipboard.CopyTo (element: var[]..[]): var[]..[]"
+      "Description": "Copy object to Clipboard. Can copy objects from a 1D list, but not from 2D...nD! If List Level is used, then will the last item be available in the clipboard.\n\nClipboard.CopyTo (object: var[]..[], id: bool = false): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
@@ -378,13 +405,22 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.RevitProject.Elements.Selection.ElementHasMaterial@var[]",
+      "FunctionSignature": "Orchid.RevitProject.Elements.Selection.ElementHasMaterial@Orchid.RevitProject.Common.Document,bool",
       "Id": "9f49cb6c97594332aeed63d71ce8107f",
       "Inputs": [
         {
           "Id": "9a8f57d2ce234e0c9b0f554b2f85521c",
           "Name": "document",
-          "Description": "Document (rvt) as Orchid document\n\nvar[]\nDefault value : null",
+          "Description": "Document (rvt) as Orchid document.\n\nDocument\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "6201f126974d4bc686d0313b28b6f297",
+          "Name": "condense",
+          "Description": "Condense to shortest feasible output?\n\nbool\nDefault value : true",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -395,7 +431,7 @@
         {
           "Id": "1640d94a3da049d5b4c628d9693d2ab0",
           "Name": "Element",
-          "Description": "Element",
+          "Description": "Element.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -404,7 +440,7 @@
         {
           "Id": "63f29fdd51444ecf8b7f1486c108bf38",
           "Name": "Category",
-          "Description": "Category",
+          "Description": "Category.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -412,7 +448,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Get elements that has material quantities in document, return element grouped by category.\n\nSelection.ElementHasMaterial (document: var[] = null): var[]..[]"
+      "Description": "Get elements that has material quantities in document, return element grouped by category.\n\nSelection.ElementHasMaterial (document: Document = null, condense: bool = true): var[]..[]"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -475,14 +511,23 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Common.Clipboard.CopyTo@var[]..[]",
+      "FunctionSignature": "Orchid.Common.Clipboard.CopyTo@var[]..[],bool",
       "Id": "1864165fb5e64a10840900bfb320f386",
       "Inputs": [
         {
           "Id": "02c65dc941154c81b4b08d431e366c8c",
-          "Name": "element",
-          "Description": "element\n\nvar[]..[]",
+          "Name": "object",
+          "Description": "Object(s) to copy.\n\nvar[]..[]",
           "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "fb9ce3c36ccb4102b5e6025b6144ec19",
+          "Name": "id",
+          "Description": "Add element id (if exists) to output?\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
@@ -492,7 +537,7 @@
         {
           "Id": "cd226169ef0b44a09fc8a53ab16cb5fc",
           "Name": "watch",
-          "Description": "Add a watch node to verify the output",
+          "Description": "Add a watch node to verify the output.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -500,19 +545,28 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Copy object to Clipboard. Can copy elements from a 1D list, but not from 2D..nD! If List Level is used, then will the last item be available in the clipboard.\n\nClipboard.CopyTo (element: var[]..[]): var[]..[]"
+      "Description": "Copy object to Clipboard. Can copy objects from a 1D list, but not from 2D...nD! If List Level is used, then will the last item be available in the clipboard.\n\nClipboard.CopyTo (object: var[]..[], id: bool = false): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "Orchid.Common.Clipboard.CopyTo@var[]..[]",
+      "FunctionSignature": "Orchid.Common.Clipboard.CopyTo@var[]..[],bool",
       "Id": "6e3804fb56b749e2a7637afeb3097e04",
       "Inputs": [
         {
           "Id": "fea3c61b0376490cac133b020543b523",
-          "Name": "element",
-          "Description": "element\n\nvar[]..[]",
+          "Name": "object",
+          "Description": "Object(s) to copy.\n\nvar[]..[]",
           "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "9fa00505ef2d4eeb9648e89577a4ec19",
+          "Name": "id",
+          "Description": "Add element id (if exists) to output?\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
@@ -522,7 +576,7 @@
         {
           "Id": "87e7a19b3b0e425e8b2cac9ef3ae91f5",
           "Name": "watch",
-          "Description": "Add a watch node to verify the output",
+          "Description": "Add a watch node to verify the output.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -530,7 +584,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Copy object to Clipboard. Can copy elements from a 1D list, but not from 2D..nD! If List Level is used, then will the last item be available in the clipboard.\n\nClipboard.CopyTo (element: var[]..[]): var[]..[]"
+      "Description": "Copy object to Clipboard. Can copy objects from a 1D list, but not from 2D...nD! If List Level is used, then will the last item be available in the clipboard.\n\nClipboard.CopyTo (object: var[]..[], id: bool = false): var[]..[]"
     }
   ],
   "Connectors": [
@@ -596,13 +650,30 @@
     }
   ],
   "Dependencies": [],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Orchid",
+      "Version": "206.3.0.7978",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "3ed5d9727555429ba4d2af61d14fb1d6",
+        "aa57eb2587874fd19fa85c0fa7622c6a",
+        "cad7a2ec5ad2494dadf98f5f0f482827",
+        "4797bb1fe29642ab9a5871039b6d3919",
+        "e8a2569d1a974b1794fd15f5a4162e03",
+        "9f49cb6c97594332aeed63d71ce8107f",
+        "1864165fb5e64a10840900bfb320f386",
+        "6e3804fb56b749e2a7637afeb3097e04"
+      ]
+    }
+  ],
   "Bindings": [],
   "View": {
     "Dynamo": {
       "ScaleFactor": 1.0,
       "HasRunWithoutCrash": true,
       "IsVisibleInDynamoLibrary": true,
-      "Version": "2.0.3.8810",
+      "Version": "2.6.1.8786",
       "RunType": "Manual",
       "RunPeriod": "1000"
     },
@@ -626,8 +697,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 611.717241887194,
-        "Y": 611.806968383295
+        "X": 640.32532346115863,
+        "Y": 629.0437579357058
       },
       {
         "ShowGeometry": true,
@@ -636,8 +707,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1502.26671438421,
-        "Y": 849.733273115515
+        "X": 1501.02525101094,
+        "Y": 918.81376184643182
       },
       {
         "ShowGeometry": true,
@@ -646,8 +717,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1501.12086142322,
-        "Y": 614.432246781031
+        "X": 1501.02525101094,
+        "Y": 628.72043649839509
       },
       {
         "ShowGeometry": true,
@@ -656,8 +727,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 982.657082820209,
-        "Y": 896.910566571028
+        "X": 909.51756081828819,
+        "Y": 962.24753202180784
       },
       {
         "ShowGeometry": true,
@@ -666,8 +737,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 924.717241887194,
-        "Y": 611.806968383295
+        "X": 924.967241887194,
+        "Y": 629.0437579357058
       },
       {
         "ShowGeometry": true,
@@ -677,7 +748,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "X": 1501.02525101094,
-        "Y": 493.60498226947
+        "Y": 496.34177182188074
       },
       {
         "ShowGeometry": true,
@@ -686,8 +757,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1500.62938082442,
-        "Y": 986.925267654624
+        "X": 1501.02525101094,
+        "Y": 1041.3743515225683
       },
       {
         "ShowGeometry": true,
@@ -696,8 +767,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1186.65708282021,
-        "Y": 987.911640431911
+        "X": 1177.2796314904178,
+        "Y": 1041.2415626970244
       },
       {
         "ShowGeometry": true,
@@ -706,8 +777,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1185.71724188719,
-        "Y": 543.667447647745
+        "X": 1177.7579688528581,
+        "Y": 546.15565907357836
       },
       {
         "ShowGeometry": true,
@@ -716,8 +787,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 909.406073757125,
-        "Y": 3.06285299059113
+        "X": 849.83749265736549,
+        "Y": 124.3216966369875
       },
       {
         "ShowGeometry": true,
@@ -726,8 +797,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1088.40607375713,
-        "Y": 52.8495196572581
+        "X": 1018.5328448225164,
+        "Y": 210.92697825746785
       },
       {
         "ShowGeometry": true,
@@ -736,8 +807,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 209.16781547708,
-        "Y": -0.587127433252817
+        "X": 210.48091959041915,
+        "Y": -39.904046381489479
       },
       {
         "ShowGeometry": true,
@@ -746,8 +817,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 544.16781547708,
-        "Y": 53.4128725667472
+        "X": 531.294012817364,
+        "Y": 42.964865156065173
       },
       {
         "ShowGeometry": true,
@@ -756,8 +827,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 209.717241887194,
-        "Y": 598.446968383295
+        "X": 209.96724188719395,
+        "Y": 615.68375793570578
       },
       {
         "ShowGeometry": true,
@@ -766,8 +837,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": true,
-        "X": 544.16781547708,
-        "Y": -54.5871274332528
+        "X": 531.294012817364,
+        "Y": -93.509965637793471
       },
       {
         "ShowGeometry": true,
@@ -776,8 +847,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": true,
-        "X": 1088.40607375713,
-        "Y": -55.150480342742
+        "X": 1018.5328448225164,
+        "Y": 66.108363303654357
       }
     ],
     "Annotations": [
@@ -790,13 +861,13 @@
           "5b7ad24b09d543feb4a51552f9543df8",
           "e8a2569d1a974b1794fd15f5a4162e03"
         ],
-        "Left": 199.717241887194,
-        "Top": 497.667447647745,
-        "Width": 1200.9999999999961,
-        "Height": 259.13952073555004,
+        "Left": 199.96724188719395,
+        "Top": 500.15565907357836,
+        "Width": 1179.7907269656641,
+        "Height": 299.88809886212744,
         "FontSize": 30.0,
-        "InitialTop": 543.667447647745,
-        "InitialHeight": 187.817860971855,
+        "InitialTop": 546.15565907357836,
+        "InitialHeight": 213.13952073555004,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       },
@@ -808,13 +879,13 @@
           "96e5c9ebb0ba4bc4a1b0995b68a65985",
           "6e3804fb56b749e2a7637afeb3097e04"
         ],
-        "Left": 899.406073757125,
-        "Top": -101.150480342742,
-        "Width": 404.00000000000489,
-        "Height": 363.00000000000011,
+        "Left": 839.83749265736549,
+        "Top": 20.108363303654357,
+        "Width": 380.69535216515089,
+        "Height": 399.81861495381349,
         "FontSize": 30.0,
-        "InitialTop": -55.150480342742,
-        "InitialHeight": 227.437889113011,
+        "InitialTop": 66.108363303654357,
+        "InitialHeight": 253.00000000000011,
         "TextblockHeight": 36.0,
         "Background": "#FFA4E1FF"
       },
@@ -826,13 +897,13 @@
           "5d8194be92fd4d609921003c61b7a3a6",
           "1864165fb5e64a10840900bfb320f386"
         ],
-        "Left": 199.16781547708,
-        "Top": -100.5871274332528,
-        "Width": 575.0,
-        "Height": 532.0,
+        "Left": 200.48091959041915,
+        "Top": -139.50996563779347,
+        "Width": 560.81309322694483,
+        "Height": 560.4748307938587,
         "FontSize": 30.0,
-        "InitialTop": -54.5871274332528,
-        "InitialHeight": 262.167862586103,
+        "InitialTop": -93.509965637793471,
+        "InitialHeight": 253.0,
         "TextblockHeight": 36.0,
         "Background": "#FFA4E1FF"
       },
@@ -843,19 +914,19 @@
           "aa57eb2587874fd19fa85c0fa7622c6a",
           "4797bb1fe29642ab9a5871039b6d3919"
         ],
-        "Left": 972.657082820209,
-        "Top": 814.910566571028,
-        "Width": 429.000000000001,
-        "Height": 266.001073860883,
+        "Left": 899.51756081828819,
+        "Top": 880.24753202180784,
+        "Width": 479.76207067212965,
+        "Height": 279.99403067521655,
         "FontSize": 30.0,
-        "InitialTop": 896.910566571028,
-        "InitialHeight": 150.199767626049,
+        "InitialTop": 962.24753202180784,
+        "InitialHeight": 236.00107386088303,
         "TextblockHeight": 72.0,
         "Background": "#FFC1D676"
       }
     ],
-    "X": -55.946463672359329,
-    "Y": 226.25602083513832,
-    "Zoom": 0.410897171136623
+    "X": 59.771484099523832,
+    "Y": 101.56192779337422,
+    "Zoom": 0.765286644105571
   }
 }

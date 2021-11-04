@@ -1,0 +1,2131 @@
+{
+  "Uuid": "3e9f03bc-32a0-4b64-a3ce-aa65205a55db",
+  "IsCustomNode": false,
+  "Description": null,
+  "Name": "Culture",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Orchid.E.Common.Culture, OrchidRE",
+      "SelectedIndex": 118,
+      "SelectedString": "da-DK",
+      "NodeType": "ExtensionNode",
+      "Id": "d22f04078c0b4b8e9613d9fa325a98b6",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "e6f64bd230dc49fb99baf935376ca901",
+          "Name": "Culture",
+          "Description": "The selected Culture",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Dropdown for available cultures (countries)"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.Culture.Name",
+      "Id": "0a4e182dd2f84bfc8adf18279496aeb0",
+      "Inputs": [
+        {
+          "Id": "20eaa1b9daf74052b84ba8bea82d617b",
+          "Name": "culture",
+          "Description": "Orchid.Common.Culture",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "a2ebb1ce17404598a2d1e1820e46f624",
+          "Name": "string",
+          "Description": "String value.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "The name of the culture.\n\nCulture.Name: string"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.Culture.ByName@string",
+      "Id": "4a1f601e3932421e8e854864ce164ad0",
+      "Inputs": [
+        {
+          "Id": "d2f85fec0f264bf18184763deb15bc3b",
+          "Name": "name",
+          "Description": "Name of the culture as string.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "6921478449e3458bbfa2c74f18f18b4c",
+          "Name": "Culture",
+          "Description": "Culture as Orchid type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get culture by name.\n\nCulture.ByName (name: string): Culture"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "8df76715f8c640aea2ab92496a9acec5",
+      "Inputs": [
+        {
+          "Id": "b7b18383f38d46bd804667206db583de",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b1b15496aec940a893459d3346f0e88f",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.Culture.SetNumber@Orchid.Common.Culture,int,string,string",
+      "Id": "c2fbe51b4c604729b5d39f89ad35c2a5",
+      "Inputs": [
+        {
+          "Id": "8ce663d1896140cc898a1f40668dbc15",
+          "Name": "culture",
+          "Description": "Culture as Orchid type. Default value, see summary note!\n\nCulture\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "262d4d9920dd41ecb1797f45544d6b81",
+          "Name": "digit",
+          "Description": "Number of digits, default is two.\n\nint\nDefault value : 2",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ece4cb575dce4eb7b89892a4473056f3",
+          "Name": "decimal",
+          "Description": "Decimal separator.\n\nstring\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "e70a21e91dc74c66900994f383d3cca8",
+          "Name": "group",
+          "Description": "Grouping seperator.\n\nstring\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "c7fafe37d7664079b4392770416975ae",
+          "Name": "Culture",
+          "Description": "Culture as Orchid type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Set number values in given culture. Note: Default culture (none provided) is the Revit culture if Dynamo is used with Revit, and Windows system default culture if Dynamo sandbox is used! Default culture is also applied as modificable!\n\nCulture.SetNumber (culture: Culture = null, digit: int = 2, decimal: string = null, group: string = null): Culture"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.DateTime.DayOfWeek@var",
+      "Id": "607b0d15929a460093564d9491516d41",
+      "Inputs": [
+        {
+          "Id": "24367f725c72433490efbe1673b8d264",
+          "Name": "dateTime",
+          "Description": "A DateTime object.\n\nvar",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "acbefd08da39487f815cc7727b2e1b45",
+          "Name": "dayOfWeek",
+          "Description": "Day of the week",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Returns the Day of the Week from a given DateTime.\n\nDateTime.DayOfWeek (dateTime: var): DayOfWeek"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.DateTime.Today",
+      "Id": "a296087ed64e4bfcb4e7e5b9270dc973",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "b0731c8807584862a6af6a5f11c6be47",
+          "Name": "dateTime",
+          "Description": "DateTime",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "The current system date, with time set at midnight.\n\nDateTime.Today: var"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.DateTime.Format@var,string",
+      "Id": "72bfe97804d148d0ada030ccc572b1e5",
+      "Inputs": [
+        {
+          "Id": "b42057ab5e214d91ae7470b2c3c6dd4f",
+          "Name": "dateTime",
+          "Description": "The DateTime to format.\n\nvar",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5cfddf1af26a49c8a79b3755d5400f21",
+          "Name": "format",
+          "Description": "String representation of the date format. Uses InvariantCulture, which outputs independent of the user's operating system language. Defaults to standard format \"F\" : \"Tuesday, 21 February 2017 23:02:43\" Search \"MSDN Custom Date and Time Format Strings\" for a comprehensive list of format specifiers.\n\nstring\nDefault value : \"F\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "e6ad01907c434e3da6aebfeea6d9ddde",
+          "Name": "string",
+          "Description": "The specified date and time as a string, in the specified format.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Return a specified date and time as a string, in the specified format.\n\nDateTime.Format (dateTime: var, format: string = \"F\"): string"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.Culture.All",
+      "Id": "d9cd42fb0c2349869f25ef332166010b",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "1210dc44c3124fa092ea01c9d3cc1acc",
+          "Name": "Culture",
+          "Description": "Culture as Orchid type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get all culture(s) in Windows (.Net) system.\n\nCulture.All ( ): Culture[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.Culture.Current",
+      "Id": "df429928f418402fa803d86f10234afb",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "51b99484a467452d83901a7c1a8513c7",
+          "Name": "Culture",
+          "Description": "Culture as Orchid type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get current culture set in Windows (.Net) system.\n\nCulture.Current: Culture"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.Culture.SetPercentage@Orchid.Common.Culture,int,string,string",
+      "Id": "018e1f8b219b47e081ccb30675cfebac",
+      "Inputs": [
+        {
+          "Id": "951c738b675943198d7531cdb986aadf",
+          "Name": "culture",
+          "Description": "Culture as Orchid type. Default value, see summary note!\n\nCulture\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "a7f3e1706b4e4dd5849ec56dab8aa9b0",
+          "Name": "digit",
+          "Description": "Number of digits, default is two.\n\nint\nDefault value : 2",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ef6931f6e2744ef699d7ff5dbfee3116",
+          "Name": "decimal",
+          "Description": "Decimal separator.\n\nstring\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3afefcb959b043e6a37736ce4e934085",
+          "Name": "group",
+          "Description": "Grouping seperator.\n\nstring\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "1437a509843d4a99b17f8edb0bb16752",
+          "Name": "Culture",
+          "Description": "Culture as Orchid type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Set percentage values in given culture. Note: Default culture (none provided) is the Revit culture if Dynamo is used with Revit, and Windows system default culture if Dynamo sandbox is used! Default culture is also applied as modificable!\n\nCulture.SetPercentage (culture: Culture = null, digit: int = 2, decimal: string = null, group: string = null): Culture"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.Culture.SetCurrency@Orchid.Common.Culture,int,string,string",
+      "Id": "f5a9de342f69488dbacf45e943ab078e",
+      "Inputs": [
+        {
+          "Id": "0039acf3d4b9452b85ad2a04b1ebf7e8",
+          "Name": "culture",
+          "Description": "Culture as Orchid type. Default value, see summary note!\n\nCulture\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "177b492ef1614c17907fd5484ce0bb70",
+          "Name": "digit",
+          "Description": "Number of digits, default is two.\n\nint\nDefault value : 2",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "fbacaccf126a4d09aafd59bea4a14ad2",
+          "Name": "decimal",
+          "Description": "Decimal separator.\n\nstring\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "8cc197976a1e40d88b4ed0ce2a7aadab",
+          "Name": "group",
+          "Description": "Grouping seperator.\n\nstring\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "ae6ee54164be47048231511ad283d0c1",
+          "Name": "Culture",
+          "Description": "Culture as Orchid type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Set currency values in given culture. Note: Default culture (none provided) is the Revit culture if Dynamo is used with Revit, and Windows system default culture if Dynamo sandbox is used! Default culture is also applied as modificable!\n\nCulture.SetCurrency (culture: Culture = null, digit: int = 2, decimal: string = null, group: string = null): Culture"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "9f61615599d44b25b0619deac5efd480",
+      "Inputs": [
+        {
+          "Id": "2c7ef921cb4c45e3beecb090f9433eea",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "4563c67bd82d48babe5595ba5c46a49c",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.Culture.SetCalendar@Orchid.Common.Culture,string,string,string,string",
+      "Id": "d676da39768e4d1cac0d3d812f3ce218",
+      "Inputs": [
+        {
+          "Id": "d0d4871f480147448734b40c7a92452e",
+          "Name": "culture",
+          "Description": "Culture as Orchid type. Default value, see summary note!\n\nCulture\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "0cd2d44cc4554e49b7b1f4c4cab3cd40",
+          "Name": "firstDay",
+          "Description": "First day of the week.\n\nstring\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "7424ab4ddba643fb922cb671fa1ad4d5",
+          "Name": "weekRule",
+          "Description": "Calendar week rule.\n\nstring\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "fd425e63691646ef9aabb93a00b35990",
+          "Name": "monthDay",
+          "Description": "Month and day pattern.\n\nstring\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "d153e1e46abc4d91afb28bb7a06028ba",
+          "Name": "yearMonth",
+          "Description": "Year and month pattern.\n\nstring\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "25532cfe3076495fb7bd9a6b75240b3c",
+          "Name": "Culture",
+          "Description": "Culture as Orchid type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Set calendar in given culture. Note: Default culture (none provided) is the Revit culture if Dynamo is used with Revit, and Windows system default culture if Dynamo sandbox is used! Default culture is also applied as modificable!\n\nCulture.SetCalendar (culture: Culture = null, firstDay: string = null, weekRule: string = null, monthDay: string = null, yearMonth: string = null): Culture"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.Culture.SetDate@Orchid.Common.Culture,string,string,string",
+      "Id": "01c00a9db884488eacb277c251b0141a",
+      "Inputs": [
+        {
+          "Id": "6070a892ac144216b0bd4bb1a926dc2c",
+          "Name": "culture",
+          "Description": "Culture as Orchid type. Default value, see summary note!\n\nCulture\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "bf68214792544644b467c867d24e4193",
+          "Name": "separator",
+          "Description": "Date separator.\n\nstring\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "32fff631de6d4e698e948c6623a048d4",
+          "Name": "short",
+          "Description": "Short date pattern.\n\nstring\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "4de01d51dada4f3eb09748b62188c94d",
+          "Name": "long",
+          "Description": "Long date pattern.\n\nstring\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "60310cb3bc25447cab666a742dd3db42",
+          "Name": "Culture",
+          "Description": "Culture as Orchid type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Set date patterns in given culture. Note: Default culture (none provided) is the Revit culture if Dynamo is used with Revit, and Windows system default culture if Dynamo sandbox is used! Default culture is also applied as modificable!\n\nCulture.SetDate (culture: Culture = null, separator: string = null, short: string = null, long: string = null): Culture"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.Culture.SetDateTime@Orchid.Common.Culture,string",
+      "Id": "81e17d20f0dd4c81b44f361fc15e4006",
+      "Inputs": [
+        {
+          "Id": "619c144e7ad448c4b709f272e55021f3",
+          "Name": "culture",
+          "Description": "Culture as Orchid type. Default value, see summary note!\n\nCulture\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ecec26c79d4c47b481cc32069035f973",
+          "Name": "full",
+          "Description": "Full date and time pattern.\n\nstring\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "dd975efe5cc34df69d170978a429bed9",
+          "Name": "Culture",
+          "Description": "Culture as Orchid type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Set date and time patterns in given culture. Note: Default culture (none provided) is the Revit culture if Dynamo is used with Revit, and Windows system default culture if Dynamo sandbox is used! Default culture is also applied as modificable!\n\nCulture.SetDateTime (culture: Culture = null, full: string = null): Culture"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.Culture.SetTime@Orchid.Common.Culture,string,string,string",
+      "Id": "407ac314fcc8497889566fbc76de4398",
+      "Inputs": [
+        {
+          "Id": "dd0b24056ecd4e57b2f77f082ec87409",
+          "Name": "culture",
+          "Description": "Culture as Orchid type. Default value, see summary note!\n\nCulture\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "2feda9ed7e144d9b8f87b1fd3030288f",
+          "Name": "separator",
+          "Description": "Time separator.\n\nstring\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ab100aee7dfb4c56a3f4540eb435be54",
+          "Name": "short",
+          "Description": "Short time pattern.\n\nstring\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "d8dc204f63624b5c9542e721b152de57",
+          "Name": "long",
+          "Description": "Long time pattern.\n\nstring\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "a5d8f876baba487a89871e4243bd8169",
+          "Name": "Culture",
+          "Description": "Culture as Orchid type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Set time patterns in given culture. Note: Default culture (none provided) is the Revit culture if Dynamo is used with Revit, and Windows system default culture if Dynamo sandbox is used! Default culture is also applied as modificable!\n\nCulture.SetTime (culture: Culture = null, separator: string = null, short: string = null, long: string = null): Culture"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "4;\n\",\";",
+      "Id": "48a0ee57191c4e7ca249fba2199cbffa",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "c2aed93b0cdd42319b7dc1778ec174c6",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "784a1b0108684ffda775690ad443f6a0",
+          "Name": "",
+          "Description": "Value of expression at line 2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "\"Tuesday\";",
+      "Id": "c43eefcbc39443a6887eb08fcc61e930",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "b3c21b75805145fc8e4071f33c8dbe24",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.Culture.DisplayName",
+      "Id": "8f5b746977d042b5a5d9afd4da604839",
+      "Inputs": [
+        {
+          "Id": "39ee4ad2f5d64ac48c8c995b8812e921",
+          "Name": "culture",
+          "Description": "Orchid.Common.Culture",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b6a84f3925014bbca14cfc1828ae6c81",
+          "Name": "string",
+          "Description": "String value.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get current culture set in Windows (.Net) system.\n\nCulture.DisplayName: string"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "1a691bae5db74b71a05cfada7d9b873f",
+      "Inputs": [
+        {
+          "Id": "a95a18e6bee44029a39b365fec0f95f0",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "747eb1a895824d24a9b083d244fd62a2",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.Revit.Culture",
+      "Id": "bf3fcd2700714b188f36fbe46c5bdd68",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "1c566a34283d4002ab67163299068d19",
+          "Name": "Culture",
+          "Description": "Culture as Orchid type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get current culture set in Revit.\n\nRevit.Culture: Culture"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.Revit.Language",
+      "Id": "727b0f94fcd946ccaec75990eee14dc8",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "0a91d7f1355e45b5802c9b50ec3373c0",
+          "Name": "Language",
+          "Description": "Current language.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get the Revit current language.\n\nRevit.Language ( ): var"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "2086f000f4854678978b87818ee32d7e",
+      "Inputs": [
+        {
+          "Id": "dc3d0149457e4472911a1ccc777c1959",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "8105741851814eb2a362ee5d673c3b85",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "4;\n\"..\";\n\"#\";",
+      "Id": "0cbd1617223e406886aefeffa7034556",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "d424f2f7a8764a39967f00a8f69b52a6",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "da269c215fb7436da93ccdbe2dfd4e47",
+          "Name": "",
+          "Description": "Value of expression at line 2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "219daa7eebfb428595c3c2a0ee732c07",
+          "Name": "",
+          "Description": "Value of expression at line 3",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.Culture.Edit@Orchid.Common.Culture",
+      "Id": "10bb3ce525e6461b97be3f1762498bde",
+      "Inputs": [
+        {
+          "Id": "ba1aaa787a02404ba82a8a67def20ac0",
+          "Name": "culture",
+          "Description": "Culture as Orchid type.\n\nCulture",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "4d2a8fbe16ab4c809e66c5ea7dad474d",
+          "Name": "Culture",
+          "Description": "Culture as Orchid type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Edit (create) culture for modification(s).\n\nCulture.Edit (culture: Culture): Culture"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.Culture.SetPercentageSymbol@Orchid.Common.Culture,string,string",
+      "Id": "ea63af8ab61c4626a8289f1512f9fec2",
+      "Inputs": [
+        {
+          "Id": "9042ebd632e44d1db210d2a08edc1642",
+          "Name": "culture",
+          "Description": "Culture as Orchid type. Default value, see summary note!\n\nCulture\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "e61bfad34baf4c57898f5673229ae890",
+          "Name": "percent",
+          "Description": "Percent symbol.\n\nstring\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b8dfe7e9523c447fa13c235f5e4df7c2",
+          "Name": "permille",
+          "Description": "Permille symbol.\n\nstring\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "95a9a7400927424c96e561f95e81d0a9",
+          "Name": "Culture",
+          "Description": "Culture as Orchid type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Set percentage symbols in given culture. Note: Default culture (none provided) is the Revit culture if Dynamo is used with Revit, and Windows system default culture if Dynamo sandbox is used! Default culture is also applied as modificable!\n\nCulture.SetPercentageSymbol (culture: Culture = null, percent: string = null, permille: string = null): Culture"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.Culture.SetNumberSymbol@Orchid.Common.Culture,string,string,string",
+      "Id": "24bed73a3e9e4de5a7f690dbc9d9c0f3",
+      "Inputs": [
+        {
+          "Id": "51f10f5ed36f4387acb0db60ce331868",
+          "Name": "culture",
+          "Description": "Culture as Orchid type. Default value, see summary note!\n\nCulture\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ed069d5b51c344a4953bd52bbf79e283",
+          "Name": "negative",
+          "Description": "Negative symbol.\n\nstring\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "a2821d05d2ca42c481837c598210942a",
+          "Name": "positiveInfinity",
+          "Description": "Positive infinity symbol.\n\nstring\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c3c93b4afb504dc5b0764c664f6d707a",
+          "Name": "negativeInfinity",
+          "Description": "Negative infinity symbol.\n\nstring\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "d7bac5a69663443f8e47c20e609575f5",
+          "Name": "Culture",
+          "Description": "Culture as Orchid type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Set number symbols in given culture. Note: Default culture (none provided) is the Revit culture if Dynamo is used with Revit, and Windows system default culture if Dynamo sandbox is used! Default culture is also applied as modificable!\n\nCulture.SetNumberSymbol (culture: Culture = null, negative: string = null, positiveInfinity: string = null, negativeInfinity: string = null): Culture"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.Culture.SetCurrencySymbol@Orchid.Common.Culture,string",
+      "Id": "5132ef40f71941f6bcced427e8a8f112",
+      "Inputs": [
+        {
+          "Id": "eaf70548a6504451bb798b39c76bb81f",
+          "Name": "culture",
+          "Description": "Culture as Orchid type. Default value, see summary note!\n\nCulture\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "6a76e79eb10245288ea666e350c7eb71",
+          "Name": "symbol",
+          "Description": "Currency symbol.\n\nstring\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "99e51e6a605240af9674047c05e11e1f",
+          "Name": "Culture",
+          "Description": "Culture as Orchid type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Set currency values in given culture. Note: Default culture (none provided) is the Revit culture if Dynamo is used with Revit, and Windows system default culture if Dynamo sandbox is used! Default culture is also applied as modificable!\n\nCulture.SetCurrencySymbol (culture: Culture = null, symbol: string = null): Culture"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "4;\n\",,\";",
+      "Id": "ddc7e6f305564669b7b27d847cd10276",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "57ae9dc49240471289a8ecae4e1ad0be",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "e1c893b28a284bf59e56cc27938f8860",
+          "Name": "",
+          "Description": "Value of expression at line 2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.Object.Type@var",
+      "Id": "57aae30b877d44d48f1ef78ad34fb07e",
+      "Inputs": [
+        {
+          "Id": "9264aa2e84894be4a658cc1958505868",
+          "Name": "obj",
+          "Description": "An object.\n\nvar",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "3fbbf99b3f2d4214a0cd0a03b53e569a",
+          "Name": "string",
+          "Description": "Type of object.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Returns the type of object represented as string.\n\nObject.Type (obj: var): string"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "47c92efce152451dbf37a29f74bb9d15",
+      "Inputs": [
+        {
+          "Id": "323942a056ba40d592b3425678cbf5d2",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "a50b7c19d1924049a250d18bbdb36d2c",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.Language.All",
+      "Id": "55e5a8e9ed3d44bf9b587ee877df17b5",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "e6e532d6523e41d4ad676743c380499d",
+          "Name": "Language",
+          "Description": "Revit language as Autodesk type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get all Revit language.\n\nLanguage.All ( ): var[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.Language.Culture@var",
+      "Id": "20ee0515c07941b0a334ace0dc0bae0e",
+      "Inputs": [
+        {
+          "Id": "de9ae89303be4ea4ad4a0b518edfd5c4",
+          "Name": "language",
+          "Description": "Revit language as Autodesk type.\n\nvar",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b99f96e1ab984f708901b96dc555bb71",
+          "Name": "Culture",
+          "Description": "Culture as Orchid type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get culture by Revit language.\n\nLanguage.Culture (language: var): Culture"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "84911f633a0644c99ed3a2fc0dc0a824",
+      "Inputs": [
+        {
+          "Id": "77835ef810c54b3292bb9bbf19822ad2",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "7ce8347ad04e45c1bf779d8270caef58",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "259e869ff2d24c95b0f2fb6455e47561",
+      "Inputs": [
+        {
+          "Id": "1cf7bf30abc148ce9f7ba119eed77530",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "1625ffaa90b649509700f8cd6e5a519f",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "Orchid.E.Common.Language, OrchidRE",
+      "SelectedIndex": 0,
+      "SelectedString": "English_USA",
+      "NodeType": "ExtensionNode",
+      "Id": "9a61dbb9f4534723a105957f32a45dfa",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "c8f33b9378724b3c8dc7d4addb1a890b",
+          "Name": "Language",
+          "Description": "The selected Language",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Dropdown for revit Language"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "57d73c020a70499dad439c024a7b4c8d",
+      "Inputs": [
+        {
+          "Id": "a68e47c1ebf64b1ea42d073b886e13ce",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "52126a5257ca43d48128cc7def242559",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Orchid.Common.Language.ByName@string",
+      "Id": "86f50b28815c44b5b2a0da887e1a1892",
+      "Inputs": [
+        {
+          "Id": "ae663b70ae904a2bab8e6f7d83c8a8a0",
+          "Name": "name",
+          "Description": "Name of the language as string.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "330009889fad4fe690b06b9f5c1da6c2",
+          "Name": "Language",
+          "Description": "Revit language as Autodesk type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get Revit language by name.\n\nLanguage.ByName (name: string): var"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "e6f64bd230dc49fb99baf935376ca901",
+      "End": "d2f85fec0f264bf18184763deb15bc3b",
+      "Id": "17ae9e9f44cd492a8c2e7159605d6c49"
+    },
+    {
+      "Start": "a2ebb1ce17404598a2d1e1820e46f624",
+      "End": "a68e47c1ebf64b1ea42d073b886e13ce",
+      "Id": "92e7acb79e074fc089d31200e64e162d"
+    },
+    {
+      "Start": "6921478449e3458bbfa2c74f18f18b4c",
+      "End": "b7b18383f38d46bd804667206db583de",
+      "Id": "76dd3a7760a44726a2f91dc39b8167a1"
+    },
+    {
+      "Start": "6921478449e3458bbfa2c74f18f18b4c",
+      "End": "39ee4ad2f5d64ac48c8c995b8812e921",
+      "Id": "2bc87e713534412ca66923f01268cc01"
+    },
+    {
+      "Start": "6921478449e3458bbfa2c74f18f18b4c",
+      "End": "20eaa1b9daf74052b84ba8bea82d617b",
+      "Id": "e0e884c3979f4cb5b28b496e4d0ad950"
+    },
+    {
+      "Start": "c7fafe37d7664079b4392770416975ae",
+      "End": "51f10f5ed36f4387acb0db60ce331868",
+      "Id": "1b6d88909b94438a916b577e1ecc5d3a"
+    },
+    {
+      "Start": "b0731c8807584862a6af6a5f11c6be47",
+      "End": "24367f725c72433490efbe1673b8d264",
+      "Id": "17f909cc08cb4e7493de610270e7b416"
+    },
+    {
+      "Start": "b0731c8807584862a6af6a5f11c6be47",
+      "End": "b42057ab5e214d91ae7470b2c3c6dd4f",
+      "Id": "701a277984cc4e7ab740bedf9a03eab4"
+    },
+    {
+      "Start": "1210dc44c3124fa092ea01c9d3cc1acc",
+      "End": "2c7ef921cb4c45e3beecb090f9433eea",
+      "Id": "f6fa17bcde394ff5a6464b9ceb4263d2"
+    },
+    {
+      "Start": "1437a509843d4a99b17f8edb0bb16752",
+      "End": "9042ebd632e44d1db210d2a08edc1642",
+      "Id": "ba8438fbe1b847bb9c5511c8ea7a55ba"
+    },
+    {
+      "Start": "ae6ee54164be47048231511ad283d0c1",
+      "End": "eaf70548a6504451bb798b39c76bb81f",
+      "Id": "527b43ed22264527bec4b630405192c1"
+    },
+    {
+      "Start": "25532cfe3076495fb7bd9a6b75240b3c",
+      "End": "619c144e7ad448c4b709f272e55021f3",
+      "Id": "3ffc3ae9d75141c0b8721637c639c0cd"
+    },
+    {
+      "Start": "60310cb3bc25447cab666a742dd3db42",
+      "End": "dd0b24056ecd4e57b2f77f082ec87409",
+      "Id": "ae65100b2f49435fb193485e4bdfd874"
+    },
+    {
+      "Start": "dd975efe5cc34df69d170978a429bed9",
+      "End": "6070a892ac144216b0bd4bb1a926dc2c",
+      "Id": "093abcd9af3c4e72bab95c75a1ab38be"
+    },
+    {
+      "Start": "c2aed93b0cdd42319b7dc1778ec174c6",
+      "End": "262d4d9920dd41ecb1797f45544d6b81",
+      "Id": "441e7f6a4cf5490d8bef9fd78568096a"
+    },
+    {
+      "Start": "784a1b0108684ffda775690ad443f6a0",
+      "End": "ece4cb575dce4eb7b89892a4473056f3",
+      "Id": "8e845bd9815b404e9ffe2e7633f38e0f"
+    },
+    {
+      "Start": "b3c21b75805145fc8e4071f33c8dbe24",
+      "End": "0cd2d44cc4554e49b7b1f4c4cab3cd40",
+      "Id": "0ba69ab445b14e22b3b74e98b34fdd1f"
+    },
+    {
+      "Start": "b6a84f3925014bbca14cfc1828ae6c81",
+      "End": "a95a18e6bee44029a39b365fec0f95f0",
+      "Id": "6de85b4b29024cdeb049e2e16565c674"
+    },
+    {
+      "Start": "1c566a34283d4002ab67163299068d19",
+      "End": "ba1aaa787a02404ba82a8a67def20ac0",
+      "Id": "e236d17736d649e7ab891929360313d9"
+    },
+    {
+      "Start": "0a91d7f1355e45b5802c9b50ec3373c0",
+      "End": "323942a056ba40d592b3425678cbf5d2",
+      "Id": "42996e0b8c3043c685eb26deba160b7d"
+    },
+    {
+      "Start": "0a91d7f1355e45b5802c9b50ec3373c0",
+      "End": "de9ae89303be4ea4ad4a0b518edfd5c4",
+      "Id": "1c90b758b6fd436f9a0bef48ba4f77b0"
+    },
+    {
+      "Start": "d424f2f7a8764a39967f00a8f69b52a6",
+      "End": "177b492ef1614c17907fd5484ce0bb70",
+      "Id": "02c2540a0b4a4f209b2411268d909db0"
+    },
+    {
+      "Start": "da269c215fb7436da93ccdbe2dfd4e47",
+      "End": "fbacaccf126a4d09aafd59bea4a14ad2",
+      "Id": "1388637d8ed140d98110c2f1f92029f3"
+    },
+    {
+      "Start": "219daa7eebfb428595c3c2a0ee732c07",
+      "End": "6a76e79eb10245288ea666e350c7eb71",
+      "Id": "2bc326fac22e4178a89b7a50f1b3c611"
+    },
+    {
+      "Start": "4d2a8fbe16ab4c809e66c5ea7dad474d",
+      "End": "951c738b675943198d7531cdb986aadf",
+      "Id": "ee92fcb8871c4026aba95ed638ecf3d2"
+    },
+    {
+      "Start": "4d2a8fbe16ab4c809e66c5ea7dad474d",
+      "End": "d0d4871f480147448734b40c7a92452e",
+      "Id": "b44563c87f1b474ca3e69b1df14f9e5c"
+    },
+    {
+      "Start": "4d2a8fbe16ab4c809e66c5ea7dad474d",
+      "End": "0039acf3d4b9452b85ad2a04b1ebf7e8",
+      "Id": "c8cf85ea3925486dad5127a66777bbbd"
+    },
+    {
+      "Start": "4d2a8fbe16ab4c809e66c5ea7dad474d",
+      "End": "8ce663d1896140cc898a1f40668dbc15",
+      "Id": "fdfb0fe1f9494566add90b7365a70cdf"
+    },
+    {
+      "Start": "57ae9dc49240471289a8ecae4e1ad0be",
+      "End": "a7f3e1706b4e4dd5849ec56dab8aa9b0",
+      "Id": "51311137815f4a75b722b498a64dd937"
+    },
+    {
+      "Start": "e1c893b28a284bf59e56cc27938f8860",
+      "End": "ef6931f6e2744ef699d7ff5dbfee3116",
+      "Id": "ddc32292ba07460ca0de37fe9b93852a"
+    },
+    {
+      "Start": "e6e532d6523e41d4ad676743c380499d",
+      "End": "1cf7bf30abc148ce9f7ba119eed77530",
+      "Id": "2ee96e4079124625bfaaa4ccc1596cc8"
+    },
+    {
+      "Start": "b99f96e1ab984f708901b96dc555bb71",
+      "End": "77835ef810c54b3292bb9bbf19822ad2",
+      "Id": "b747cf03e04a41ac9e92cdf7f758f1c6"
+    },
+    {
+      "Start": "c8f33b9378724b3c8dc7d4addb1a890b",
+      "End": "ae663b70ae904a2bab8e6f7d83c8a8a0",
+      "Id": "fa58fa1d148649e899e86bf2b88317b0"
+    },
+    {
+      "Start": "330009889fad4fe690b06b9f5c1da6c2",
+      "End": "dc3d0149457e4472911a1ccc777c1959",
+      "Id": "9fa8bef0ee874fcfa06a6b8ca30dad8d"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Orchid",
+      "Version": "206.3.0.7978",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "d22f04078c0b4b8e9613d9fa325a98b6",
+        "0a4e182dd2f84bfc8adf18279496aeb0",
+        "4a1f601e3932421e8e854864ce164ad0",
+        "c2fbe51b4c604729b5d39f89ad35c2a5",
+        "d9cd42fb0c2349869f25ef332166010b",
+        "df429928f418402fa803d86f10234afb",
+        "018e1f8b219b47e081ccb30675cfebac",
+        "f5a9de342f69488dbacf45e943ab078e",
+        "d676da39768e4d1cac0d3d812f3ce218",
+        "01c00a9db884488eacb277c251b0141a",
+        "81e17d20f0dd4c81b44f361fc15e4006",
+        "407ac314fcc8497889566fbc76de4398",
+        "8f5b746977d042b5a5d9afd4da604839",
+        "bf3fcd2700714b188f36fbe46c5bdd68",
+        "727b0f94fcd946ccaec75990eee14dc8",
+        "10bb3ce525e6461b97be3f1762498bde",
+        "ea63af8ab61c4626a8289f1512f9fec2",
+        "24bed73a3e9e4de5a7f690dbc9d9c0f3",
+        "5132ef40f71941f6bcced427e8a8f112",
+        "55e5a8e9ed3d44bf9b587ee877df17b5",
+        "20ee0515c07941b0a334ace0dc0bae0e",
+        "9a61dbb9f4534723a105957f32a45dfa",
+        "86f50b28815c44b5b2a0da887e1a1892"
+      ]
+    }
+  ],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.6.1.8786",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Culture",
+        "Id": "d22f04078c0b4b8e9613d9fa325a98b6",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -1500.563204601051,
+        "Y": 689.19679750301816
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Culture.Name",
+        "Id": "0a4e182dd2f84bfc8adf18279496aeb0",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -944.563204601051,
+        "Y": 565.19679750301816
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Culture.ByName",
+        "Id": "4a1f601e3932421e8e854864ce164ad0",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -1243.563204601051,
+        "Y": 689.19679750301816
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "8df76715f8c640aea2ab92496a9acec5",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -648.563204601051,
+        "Y": 813.19679750301816
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Culture.SetNumber",
+        "Id": "c2fbe51b4c604729b5d39f89ad35c2a5",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 882.90742728775444,
+        "Y": 485.4641512847644
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "DateTime.DayOfWeek",
+        "Id": "607b0d15929a460093564d9491516d41",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -329.04689703792133,
+        "Y": 1726.8060907105837
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "DateTime.Today",
+        "Id": "a296087ed64e4bfcb4e7e5b9270dc973",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -528.140066029255,
+        "Y": 1634.2798738725683
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "DateTime.Format",
+        "Id": "72bfe97804d148d0ada030ccc572b1e5",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -300.04104785755726,
+        "Y": 1590.1614280820722
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Culture.All",
+        "Id": "d9cd42fb0c2349869f25ef332166010b",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -402.13275449900914,
+        "Y": 547.08671069009029
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Culture.Current",
+        "Id": "df429928f418402fa803d86f10234afb",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 135.05819332605267,
+        "Y": 1014.4543686613862
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Culture.SetPercentage",
+        "Id": "018e1f8b219b47e081ccb30675cfebac",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 889.2468858208988,
+        "Y": 766.1060075035416
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Culture.SetCurrency",
+        "Id": "f5a9de342f69488dbacf45e943ab078e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 860.257566360727,
+        "Y": 1053.1616002724054
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "9f61615599d44b25b0619deac5efd480",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -205.13275449900914,
+        "Y": 547.08671069009029
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Culture.SetCalendar",
+        "Id": "d676da39768e4d1cac0d3d812f3ce218",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 935.34340232871409,
+        "Y": 1375.3713628910743
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Culture.SetDate",
+        "Id": "01c00a9db884488eacb277c251b0141a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1573.3434023287141,
+        "Y": 1375.3713628910743
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Culture.SetDateTime",
+        "Id": "81e17d20f0dd4c81b44f361fc15e4006",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1266.3434023287141,
+        "Y": 1375.3713628910743
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Culture.SetTime",
+        "Id": "407ac314fcc8497889566fbc76de4398",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1896.3434023287141,
+        "Y": 1375.3713628910743
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "48a0ee57191c4e7ca249fba2199cbffa",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 703.90742728775433,
+        "Y": 519.89081795143113
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "c43eefcbc39443a6887eb08fcc61e930",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 714.34340232871409,
+        "Y": 1405.5846962244079
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Culture.DisplayName",
+        "Id": "8f5b746977d042b5a5d9afd4da604839",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -944.563204601051,
+        "Y": 689.19679750301816
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "1a691bae5db74b71a05cfada7d9b873f",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -648.563204601051,
+        "Y": 689.19679750301816
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Revit.Culture",
+        "Id": "bf3fcd2700714b188f36fbe46c5bdd68",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 135.05819332605267,
+        "Y": 1126.4990512220568
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Revit.Language",
+        "Id": "727b0f94fcd946ccaec75990eee14dc8",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -1211.2555635482149,
+        "Y": 1113.2629630254228
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "2086f000f4854678978b87818ee32d7e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -654.25556354821492,
+        "Y": 1301.8505133283127
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "0cbd1617223e406886aefeffa7034556",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 711.05486390231385,
+        "Y": 1162.3881327101192
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Culture.Edit",
+        "Id": "10bb3ce525e6461b97be3f1762498bde",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 329.05819332605267,
+        "Y": 1063.4990512220568
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Culture.SetPercentageSymbol",
+        "Id": "ea63af8ab61c4626a8289f1512f9fec2",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1200.2468858208988,
+        "Y": 766.1060075035416
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Culture.SetNumberSymbol",
+        "Id": "24bed73a3e9e4de5a7f690dbc9d9c0f3",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1193.9074272877544,
+        "Y": 485.4641512847644
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Culture.SetCurrencySymbol",
+        "Id": "5132ef40f71941f6bcced427e8a8f112",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1141.4602688191399,
+        "Y": 1167.5447747062394
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "ddc7e6f305564669b7b27d847cd10276",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 710.2468858208988,
+        "Y": 800.53267417020834
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Object.Type",
+        "Id": "57aae30b877d44d48f1ef78ad34fb07e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -250.6645202548425,
+        "Y": 1861.1468772219425
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "47c92efce152451dbf37a29f74bb9d15",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -654.25556354821492,
+        "Y": 1051.2629630254228
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Language.All",
+        "Id": "55e5a8e9ed3d44bf9b587ee877df17b5",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -406.68987884794456,
+        "Y": 1052.1073597701447
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Language.Culture",
+        "Id": "20ee0515c07941b0a334ace0dc0bae0e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -946.25556354821492,
+        "Y": 1175.2629630254228
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "84911f633a0644c99ed3a2fc0dc0a824",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -654.25556354821492,
+        "Y": 1175.2629630254228
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "259e869ff2d24c95b0f2fb6455e47561",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -195.68987884794456,
+        "Y": 1052.1073597701447
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Revit Language",
+        "Id": "9a61dbb9f4534723a105957f32a45dfa",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -1211.2555635482149,
+        "Y": 1301.8505133283127
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "57d73c020a70499dad439c024a7b4c8d",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -648.563204601051,
+        "Y": 565.19679750301816
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Language.ByName",
+        "Id": "86f50b28815c44b5b2a0da887e1a1892",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -946.25556354821492,
+        "Y": 1301.8505133283127
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "9bb4ab6bd8224190a0b99779f7d651c5",
+        "Title": "Modify number",
+        "Nodes": [
+          "c2fbe51b4c604729b5d39f89ad35c2a5",
+          "24bed73a3e9e4de5a7f690dbc9d9c0f3",
+          "48a0ee57191c4e7ca249fba2199cbffa"
+        ],
+        "Left": 693.90742728775433,
+        "Top": 432.4641512847644,
+        "Width": 761.00000000000011,
+        "Height": 224.0,
+        "FontSize": 36.0,
+        "InitialTop": 485.4641512847644,
+        "InitialHeight": 179.42666666666673,
+        "TextblockHeight": 43.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "1d6398b2735b4cf291d4a6cb23831bc9",
+        "Title": "Culture name, by name, and display name",
+        "Nodes": [
+          "d22f04078c0b4b8e9613d9fa325a98b6",
+          "4a1f601e3932421e8e854864ce164ad0",
+          "8df76715f8c640aea2ab92496a9acec5",
+          "1a691bae5db74b71a05cfada7d9b873f",
+          "8f5b746977d042b5a5d9afd4da604839",
+          "57d73c020a70499dad439c024a7b4c8d",
+          "0a4e182dd2f84bfc8adf18279496aeb0"
+        ],
+        "Left": -1510.563204601051,
+        "Top": 512.19679750301816,
+        "Width": 1013.0,
+        "Height": 410.0,
+        "FontSize": 36.0,
+        "InitialTop": 565.19679750301816,
+        "InitialHeight": 393.0,
+        "TextblockHeight": 43.0,
+        "Background": "#FFA4E1FF"
+      },
+      {
+        "Id": "33da213f966341ce9227c0201f33a434",
+        "Title": "Current culture\r\nCurrent revit culture",
+        "Nodes": [
+          "df429928f418402fa803d86f10234afb",
+          "bf3fcd2700714b188f36fbe46c5bdd68",
+          "10bb3ce525e6461b97be3f1762498bde"
+        ],
+        "Left": 125.05819332605267,
+        "Top": 918.45436866138618,
+        "Width": 421.0,
+        "Height": 301.04468256067059,
+        "FontSize": 36.0,
+        "InitialTop": 1014.4543686613862,
+        "InitialHeight": 257.04468256067059,
+        "TextblockHeight": 86.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "7b742654bb934bc9908e8c32a4052553",
+        "Title": "Modify calendar, time and date",
+        "Nodes": [
+          "d676da39768e4d1cac0d3d812f3ce218",
+          "01c00a9db884488eacb277c251b0141a",
+          "81e17d20f0dd4c81b44f361fc15e4006",
+          "407ac314fcc8497889566fbc76de4398",
+          "c43eefcbc39443a6887eb08fcc61e930"
+        ],
+        "Left": 704.34340232871409,
+        "Top": 1322.3713628910743,
+        "Width": 1422.0,
+        "Height": 250.0,
+        "FontSize": 36.0,
+        "InitialTop": 1375.3713628910743,
+        "InitialHeight": 175.21333333333359,
+        "TextblockHeight": 43.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "81feaf88c6e34c4a95c78c1e674399f9",
+        "Title": "Modify percentage",
+        "Nodes": [
+          "018e1f8b219b47e081ccb30675cfebac",
+          "ea63af8ab61c4626a8289f1512f9fec2",
+          "ddc7e6f305564669b7b27d847cd10276"
+        ],
+        "Left": 700.2468858208988,
+        "Top": 713.1060075035416,
+        "Width": 721.0,
+        "Height": 224.0,
+        "FontSize": 36.0,
+        "InitialTop": 766.1060075035416,
+        "InitialHeight": 179.42666666666673,
+        "TextblockHeight": 43.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "bd2b0e42b28246ae9242b90c055c7afb",
+        "Title": "Modify currency",
+        "Nodes": [
+          "f5a9de342f69488dbacf45e943ab078e",
+          "0cbd1617223e406886aefeffa7034556",
+          "5132ef40f71941f6bcced427e8a8f112"
+        ],
+        "Left": 701.05486390231385,
+        "Top": 1000.1616002724054,
+        "Width": 655.405404916826,
+        "Height": 286.38317443383403,
+        "FontSize": 36.0,
+        "InitialTop": 1053.1616002724054,
+        "InitialHeight": 259.38317443383403,
+        "TextblockHeight": 43.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "de65cf3e8626498493ae0d37d3724820",
+        "Title": "All Cultures",
+        "Nodes": [
+          "d9cd42fb0c2349869f25ef332166010b",
+          "9f61615599d44b25b0619deac5efd480"
+        ],
+        "Left": -412.13275449900914,
+        "Top": 494.08671069009029,
+        "Width": 425.0,
+        "Height": 431.0,
+        "FontSize": 36.0,
+        "InitialTop": 547.08671069009029,
+        "InitialHeight": 145.0,
+        "TextblockHeight": 43.0,
+        "Background": "#FFA4E1FF"
+      },
+      {
+        "Id": "0a7bf7bbaf8344bf90e0fb98fbbb2c46",
+        "Title": "Language name and by name",
+        "Nodes": [
+          "727b0f94fcd946ccaec75990eee14dc8",
+          "2086f000f4854678978b87818ee32d7e",
+          "47c92efce152451dbf37a29f74bb9d15",
+          "20ee0515c07941b0a334ace0dc0bae0e",
+          "84911f633a0644c99ed3a2fc0dc0a824",
+          "9a61dbb9f4534723a105957f32a45dfa",
+          "86f50b28815c44b5b2a0da887e1a1892"
+        ],
+        "Left": -1221.2555635482149,
+        "Top": 998.26296302542278,
+        "Width": 718.0,
+        "Height": 412.58755030288989,
+        "FontSize": 36.0,
+        "InitialTop": 1051.2629630254228,
+        "InitialHeight": 395.58755030288989,
+        "TextblockHeight": 43.0,
+        "Background": "#FFFFAA45"
+      },
+      {
+        "Id": "2d5f35e21a894f0baff14ce39671d7ad",
+        "Title": "All Languages",
+        "Nodes": [
+          "55e5a8e9ed3d44bf9b587ee877df17b5",
+          "259e869ff2d24c95b0f2fb6455e47561"
+        ],
+        "Left": -416.68987884794456,
+        "Top": 999.10735977014474,
+        "Width": 465.0,
+        "Height": 431.0,
+        "FontSize": 36.0,
+        "InitialTop": 1052.1073597701447,
+        "InitialHeight": 145.0,
+        "TextblockHeight": 43.0,
+        "Background": "#FFFFAA45"
+      }
+    ],
+    "X": 661.439361200832,
+    "Y": -6.1400708435359945,
+    "Zoom": 0.42080157587811196
+  }
+}
